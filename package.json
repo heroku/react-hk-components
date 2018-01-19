@@ -8,11 +8,15 @@
   "license": "MIT",
   "dependencies": {
     "@heroku/react-malibu": "3.2.0",
+    "prop-types": "15.x",
     "react": "15.x",
     "react-dom": "15.x"
   },
   "devDependencies": {
     "@storybook/react": "^3.3.10",
+    "@types/prop-types": "^15.5.2",
+    "@types/react": "^16.0.34",
+    "@types/react-dom": "^16.0.3",
     "babel-core": "^6.26.0",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^11.0.0-beta.0",
@@ -20,10 +24,12 @@
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.5.1",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "typescript": "^2.6.2"
   },
   "scripts": {
     "lint": "eslint ./src",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build": "tsc"
   }
 }
