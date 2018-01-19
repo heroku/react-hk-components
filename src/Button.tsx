@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as PropTypes from 'prop-types'
 
-export default class Button  extends React.Component<any, any> {
+export default class Button extends React.Component<any, any> {
   static propTypes = {
     async: PropTypes.bool,
     children: PropTypes.node.isRequired,
