@@ -1,0 +1,14 @@
+{
+  "name": "react-hk-components",
+  "version": "0.0.1",
+  "description": "React components for Heroku",
+  "main": "index.js",
+  "repository": "git@github.com:heroku/react-hk-components.git",
+  "author": "Idan Gazit <idan@heroku.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@heroku/react-malibu": "3.2.0",
+    "react": "15.x",
+    "react-dom": "15.x"
+  }
+}
