@@ -1,20 +1,28 @@
 import * as React from 'react'
-import * as PropTypes from 'prop-types'
 
-export default class Button extends React.Component<any, any> {
-  static propTypes = {
-    async: PropTypes.bool,
-    children: PropTypes.node.isRequired,
-    className: PropTypes.string,
-    disabled: PropTypes.bool,
-    onClick: PropTypes.func,
-    small: PropTypes.bool,
-    title: PropTypes.string,
-    type: PropTypes.oneOf(['primary', 'secondary', 'tertiary', 'danger', 'warning', 'info']),
-    value: PropTypes.string,
-  }
+enum Type {
+  Primary = 'primary',
+  Secondary = 'secondary',
+  Tertiary = 'tertiary',
+  Danger = 'danger',
+  Warning = 'warning',
+  Info = 'info',
+}
 
-  static defaultProps = {
+interface IButtonProps {
+  async?: boolean,
+  children: JSX.Element,
+  className?: string,
+  disabled?: boolean,
+  onClick?: (e: React.MouseEvent<HTMLElement>) => void,
+  small?: boolean,
+  title?: string,
+  type?: Type,
+  value?: string,
+}
+
+export default class Button extends React.Component<IButtonProps, {}> {
+  public static defaultProps = {
     async: false,
     className: '',
     disabled: false,
@@ -22,13 +30,7 @@ export default class Button extends React.Component<any, any> {
     type: 'secondary',
   }
 
-  handleClick = (e) => {
-    if (this.props.onClick) {
-      this.props.onClick(e)
-    }
-  }
-
-  render () {
+  public render () {
     const { async, disabled, small, type, children, className, title, value } = this.props
     let buttonClass = 'hk-button'
     if (async) {
@@ -44,5 +46,11 @@ export default class Button extends React.Component<any, any> {
     return (
       <button type='button' className={buttonClass} disabled={disabled} onClick={this.handleClick} title={title} value={value || title}> {children} </button>
     )
+  }
+
+  private handleClick = (e: React.MouseEvent<HTMLElement>) => {
+    if (this.props.onClick) {
+      this.props.onClick(e)
+    }
   }
 }
