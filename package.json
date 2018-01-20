@@ -41,7 +41,7 @@
   },
   "scripts": {
     "lint": "eslint ./src",
-    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook": "start-storybook -p ${PORT:-9001} -c .storybook",
     "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch",
