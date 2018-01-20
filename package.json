@@ -49,7 +49,7 @@
     "storybook": "start-storybook -p ${PORT:-9001} -c .storybook",
     "build": "rm ./dist/*; tsc",
     "prepublish": "yarn run build",
-    "test": "jest",
+    "test": "jest --testPathPattern $PWD/test",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
