@@ -10,4 +10,3 @@ storiesOf('Button', module)
   .add('primary', () => (
     <Button type='primary' onClick={action('clicked')}>Primary</Button>
   ))
-

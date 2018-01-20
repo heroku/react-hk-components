@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should match the snapshot 1`] = `
+<button
+  className="hk-button--secondary"
+  disabled={false}
+  onClick={[Function]}
+  title={undefined}
+  type="button"
+  value={undefined}
+>
+   
+  Foobar
+   
+</button>
+`;

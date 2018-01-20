@@ -14,6 +14,7 @@
     "simple-react-modal": "0.5.1"
   },
   "devDependencies": {
+    "@storybook/addon-storyshots": "^3.3.10",
     "@storybook/react": "^3.3.10",
     "@types/enzyme": "^3.1.6",
     "@types/enzyme-adapter-react-15": "^1.0.1",
@@ -21,6 +22,7 @@
     "@types/prop-types": "^15.5.2",
     "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
+    "@types/react-test-renderer": "15",
     "@types/storybook__react": "^3.0.6",
     "awesome-typescript-loader": "^3.4.1",
     "babel-core": "^6.26.0",
@@ -52,7 +54,7 @@
       "^.+\\.tsx?$": "ts-jest"
     },
     "setupFiles": [
-      "<rootDir>/test/test-setup.ts"
+      "<rootDir>/test/lib/jestSetup.ts"
     ],
     "testPathIgnorePatterns": [
       "/node_modules/"
