@@ -37,10 +37,15 @@
     "jest": "^22.1.4",
     "react-test-renderer": "15",
     "ts-jest": "^22.0.1",
+    "tslint": "^5.9.1",
+    "tslint-config-standard": "^7.0.0",
+    "tslint-react": "^3.4.0",
     "typescript": "^2.6.2"
   },
   "scripts": {
-    "lint": "eslint ./src",
+    "eslint": "eslint ./src",
+    "tslint": "tslint -c tslint.json 'src/**/*.tsx?'",
+    "lint": "yarn run eslint && yarn run tslint",
     "storybook": "start-storybook -p ${PORT:-9001} -c .storybook",
     "build": "tsc",
     "test": "jest",
