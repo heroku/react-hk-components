@@ -1,11 +1,11 @@
 {
-  "name": "react-hk-components",
+  "name": "@heroku/react-hk-components",
   "version": "0.0.1",
   "description": "React components for Heroku",
-  "main": "src/index.js",
-  "repository": "git@github.com:heroku/react-hk-components.git",
+  "main": "dist/index.js",
+  "repository": "https://github.com/heroku/react-hk-components.git",
   "author": "Idan Gazit <idan@heroku.com>",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "@heroku/react-malibu": "3.2.0",
     "prop-types": "15.x",
@@ -47,7 +47,8 @@
     "tslint": "tslint -c tslint.json 'src/**/*.tsx?'",
     "lint": "yarn run eslint && yarn run tslint",
     "storybook": "start-storybook -p ${PORT:-9001} -c .storybook",
-    "build": "tsc",
+    "build": "rm ./dist/*; tsc",
+    "prepublish": "yarn run build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
@@ -69,5 +70,10 @@
       "js",
       "jsx"
     ]
-  }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ]
 }
