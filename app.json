@@ -2,6 +2,12 @@
   "name": "react-hk-components",
   "description": "React components for Heroku's Purple 3",
   "repository": "https://github.com/heroku/react-hk-components",
+  "env": {
+    "NPM_CONFIG_PRODUCTION": {
+      "description": "Ensure node buildpack leaves dev deps for Storybook",
+      "value": "false"
+    }
+  },
   "environments": {
     "test": {
       "scripts": {
