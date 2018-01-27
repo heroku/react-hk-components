@@ -1,11 +1,24 @@
-import React from 'react'
+import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { HKModal, HKButton } from '../src'
+import { default as HKModal } from '../src/HKModal'
+import { default as HKButton } from '../src/HKButton'
 
-class ModalWrapper extends React.Component {
-  state = {
-    showModal: false
+interface IModalWrapperProps {
+  initialShowModal?: boolean,
+}
+
+interface IModalWrapperState {
+  showModal: boolean,
+}
+
+class ModalWrapper extends React.Component<IModalWrapperProps, IModalWrapperState> {
+
+  constructor (props) {
+    super(props)
+    this.state = {
+      showModal: props.initialShowModal
+    }
   }
 
   handleModalDismiss = () => {
@@ -16,7 +29,7 @@ class ModalWrapper extends React.Component {
     this.setState({ showModal: true })
   }
 
-  render () {
+  public render () {
     return (<div>
       <button onClick={this.showModal}>show it</button>
       <HKModal
@@ -36,7 +49,10 @@ class ModalWrapper extends React.Component {
   }
 }
 
-storiesOf('Modal', module)
+storiesOf('HKModal', module)
   .add('default', () => (
     <ModalWrapper />
+  ))
+  .add('initially open', () => (
+    <ModalWrapper initialShowModal={true} />
   ))
