@@ -8,19 +8,22 @@
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "@heroku/react-malibu": "3.2.0",
+    "@types/storybook__addon-actions": "^3.0.1",
     "prop-types": "15.x",
     "react": "15.x",
     "react-dom": "15.x",
     "simple-react-modal": "0.5.1"
   },
   "devDependencies": {
+    "@storybook/addon-storyshots": "^3.3.11",
     "@storybook/react": "^3.3.10",
     "@types/enzyme": "^3.1.6",
     "@types/enzyme-adapter-react-15": "^1.0.1",
-    "@types/jest": "^22.0.1",
+    "@types/jest": "^22.1.1",
     "@types/prop-types": "^15.5.2",
     "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
+    "@types/react-test-renderer": "^16.0.0",
     "@types/storybook__react": "^3.0.6",
     "awesome-typescript-loader": "^3.4.1",
     "babel-core": "^6.26.0",
@@ -55,7 +58,7 @@
   },
   "jest": {
     "transform": {
-      "^.+\\.tsx?$": "ts-jest"
+      "^.+\\.[tj]sx?$": "ts-jest"
     },
     "setupFiles": [
       "<rootDir>/test/test-setup.ts"
@@ -63,12 +66,14 @@
     "testPathIgnorePatterns": [
       "/node_modules/"
     ],
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$",
     "moduleFileExtensions": [
       "ts",
       "tsx",
       "js",
-      "jsx"
+      "jsx",
+      "json",
+      "node"
     ]
   },
   "files": [

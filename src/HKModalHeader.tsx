@@ -2,7 +2,7 @@ import { MalibuIcon } from '@heroku/react-malibu'
 import * as React from 'react'
 
 interface IModalProps {
-  children: JSX.Element,
+  children: React.ReactNode,
   onDismiss: (...args: any[]) => any,
 }
 

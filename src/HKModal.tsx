@@ -5,9 +5,9 @@ import HKModalHeader from './HKModalHeader'
 import HKModalFooter from './HKModalFooter'
 
 interface IModalProps {
-  children: JSX.Element,
-  header: JSX.Element,
-  footer: JSX.Element,
+  children: React.ReactNode,
+  header: React.ReactNode,
+  footer: React.ReactNode,
   onDismiss: (...args: any[]) => any,
   show: boolean,
 }

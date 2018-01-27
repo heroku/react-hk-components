@@ -1,9 +1,11 @@
-import React from 'react'
+import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { HKButton } from '../src'
+import { default as HKButton, Type } from '../src/HKButton'
 
-const types = ['primary', 'secondary', 'tertiary', 'danger', 'warning', 'info']
+const types = [
+  Type.Primary, Type.Secondary, Type.Tertiary, Type.Danger, Type.Warning, Type.Info
+]
 const smallProp = [true, false]
 const disabledProps = [true, false]
 const asyncProps = [true, false]

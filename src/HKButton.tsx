@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-enum Type {
+export enum Type {
   Primary = 'primary',
   Secondary = 'secondary',
   Tertiary = 'tertiary',
@@ -11,7 +11,7 @@ enum Type {
 
 interface IButtonProps {
   async?: boolean,
-  children: JSX.Element,
+  children: JSX.Element | JSX.Element[] | string,
   className?: string,
   disabled?: boolean,
   onClick?: (e: React.MouseEvent<HTMLElement>) => void,
