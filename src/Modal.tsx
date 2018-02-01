@@ -1,6 +1,6 @@
 import { MalibuIcon } from '@heroku/react-malibu'
 import * as React from 'react'
-import * as SRMModal from 'simple-react-modal'
+import SRMModal from 'simple-react-modal'
 
 interface IModalProps {
   children: JSX.Element,
