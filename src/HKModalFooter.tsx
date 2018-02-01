@@ -5,7 +5,7 @@ interface IModalProps {
   children: JSX.Element
 }
 
-export default class ModalHeader extends React.Component<IModalProps, {}> {
+export default class ModalFooter extends React.Component<IModalProps, {}> {
   public render () {
     const { children } = this.props
     return (
