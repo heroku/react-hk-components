@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { Modal, ModalHeader } from '../src'
+import { Modal, ModalHeader, ModalFooter, Button } from '../src'
 
 class ModalWrapper extends React.Component {
   state = {
@@ -25,9 +25,12 @@ class ModalWrapper extends React.Component {
             header text
           </div>
         </ModalHeader>
-        <div className='tc pa5'>
+        <div className='pa6'>
           with some important details here below
         </div>
+        <ModalFooter>
+          <Button>Submit</Button>
+        </ModalFooter>
       </Modal>
     </div>)
   }
