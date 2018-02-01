@@ -13,18 +13,14 @@ export default class Modal extends React.Component<IModalProps, {}> {
     const { show, children, onDismiss } = this.props
     return (
       <SRMModal
-        style={{ fontFamily: undefined }}
-        containerStyle={{ borderRadius: '5px', borderWidth: '1px', borderColor: 'black', width: 500 }}
+        containerStyle={{}}
+        containerClassName="w-100 mw7 center bg-white shadow-outer-1 br1"
+        style={{ position: 'fixed', top: 0, bottom: 0, left: 0, right: 0, "zIndex": 9999, background: 'rgba(0,0,0,.2)' }}
+        className="flex flex-column items-center justify-center"
         closeOnOuterClick={true}
         show={show}
         onClose={onDismiss}
       >
-      <div
-        style={{ position: 'absolute', right: '20px', top: '20px', cursor: 'pointer' }}
-        onClick={onDismiss}
-      >
-        <MalibuIcon name='edit-reject-16' size={12} fillClass='dark-gray' />
-      </div>
       {children}
       </SRMModal>
     )
