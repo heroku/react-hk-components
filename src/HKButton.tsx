@@ -21,7 +21,7 @@ interface IButtonProps {
   value?: string,
 }
 
-export default class Button extends React.Component<IButtonProps, {}> {
+export default class HKButton extends React.Component<IButtonProps, {}> {
   public static defaultProps = {
     async: false,
     className: '',
