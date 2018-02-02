@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { HKModal, HKModalHeader, HKModalFooter, Button } from '../src'
+import { HKModal, Button } from '../src'
 
 class ModalWrapper extends React.Component {
   state = {
@@ -19,18 +19,18 @@ class ModalWrapper extends React.Component {
   render () {
     return (<div>
       <button onClick={this.showModal}>show it</button>
-      <HKModal show={this.state.showModal} onDismiss={this.handleModalDismiss}>
-        <HKModalHeader onDismiss={this.handleModalDismiss}>
-          <div>
-            header text
-          </div>
-        </HKModalHeader>
+      <HKModal
+        show={this.state.showModal}
+        onDismiss={this.handleModalDismiss}
+        header={
+          <div>header text</div>
+        }
+        footer={
+          <Button>Submit</Button>
+        }>
         <div className='pa6'>
           with some important details here below
         </div>
-        <HKModalFooter>
-          <Button>Submit</Button>
-        </HKModalFooter>
       </HKModal>
     </div>)
   }

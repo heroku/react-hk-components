@@ -1,16 +1,20 @@
 import { MalibuIcon } from '@heroku/react-malibu'
 import * as React from 'react'
 import SRMModal from 'simple-react-modal'
+import HKModalHeader from './HKModalHeader'
+import HKModalFooter from './HKModalFooter'
 
 interface IModalProps {
   children: JSX.Element,
+  header: JSX.Element,
+  footer: JSX.Element,
   onDismiss: (...args: any[]) => any,
   show: boolean,
 }
 
 export default class Modal extends React.Component<IModalProps, {}> {
   public render () {
-    const { show, children, onDismiss } = this.props
+    const { show, children, onDismiss, header, footer } = this.props
     return (
       <SRMModal
         containerStyle={{}}
@@ -21,7 +25,15 @@ export default class Modal extends React.Component<IModalProps, {}> {
         show={show}
         onClose={onDismiss}
       >
-      {children}
+        <HKModalHeader onDismiss={onDismiss}>
+          {header}
+        </HKModalHeader>
+
+        {children}
+
+        <HKModalFooter>
+          {footer}
+        </HKModalFooter>
       </SRMModal>
     )
   }
