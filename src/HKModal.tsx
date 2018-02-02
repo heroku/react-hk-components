@@ -18,7 +18,7 @@ export default class Modal extends React.Component<IModalProps, {}> {
     return (
       <SRMModal
         containerStyle={{}}
-        containerClassName="w-100 mw7 center bg-white shadow-outer-1 br1"
+        containerClassName="w-100 mw7 center bg-white shadow-outer-1 br1 relative"
         style={{ position: 'fixed', top: 0, bottom: 0, left: 0, right: 0, "zIndex": 9999, background: 'rgba(0,0,0,.2)' }}
         className="flex flex-column items-center justify-center"
         closeOnOuterClick={true}
