@@ -21,7 +21,7 @@ export default class ModalHeader extends React.Component<IModalProps, {}> {
     }
 
     return (
-      <div className="bg-near-white dark-gray bb b--light-silver f4 flex items-center justify-center relative br--top br2">
+      <div className="bg-near-white dark-gray bb b--light-silver f4 flex items-center justify-center br--top br2">
         {childrenNode}
         {dismissNode}
       </div>
