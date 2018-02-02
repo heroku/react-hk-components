@@ -1,8 +1,8 @@
 import { MalibuIcon } from '@heroku/react-malibu'
 import * as React from 'react'
 import SRMModal from 'simple-react-modal'
+
 import HKModalHeader from './HKModalHeader'
-import HKModalFooter from './HKModalFooter'
 
 interface IModalProps {
   children: React.ReactNode,
@@ -30,10 +30,9 @@ export default class Modal extends React.Component<IModalProps, {}> {
         </HKModalHeader>
 
         {children}
-
-        <HKModalFooter>
+        <div className="bt b--light-silver w-100 pa3 tr">
           {footer}
-        </HKModalFooter>
+        </div>
       </SRMModal>
     )
   }
