@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { shallow } from 'enzyme'
 
-import { Button } from '../src'
+import { HKButton } from '../src'
 
-describe('Button', () => {
+describe('HKButton', () => {
   it('should render badge with className', () => {
-    const wrapper = shallow(<Button>Foobar</Button>)
+    const wrapper = shallow(<HKButton>Foobar</HKButton>)
     expect(wrapper.prop('className')).toEqual('hk-button--secondary')
   })
 })

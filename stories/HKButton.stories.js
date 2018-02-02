@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { Button } from '../src'
+import { HKButton } from '../src'
 
 const types = ['primary', 'secondary', 'tertiary', 'danger', 'warning', 'info']
 const smallProp = [true, false]
@@ -9,7 +9,7 @@ const disabledProps = [true, false]
 const asyncProps = [true, false]
 
 types.forEach((type) => {
-  const stories = storiesOf(`Button/${type}`, module)
+  const stories = storiesOf(`HKButton/${type}`, module)
   asyncProps.forEach((isAsync) => {
     // N.B.: async does not work with small or non-disabled
     // buttons so we skip those stories
@@ -20,25 +20,25 @@ types.forEach((type) => {
         const asyncStr = isAsync ? 'async' : 'normal'
         const storyName = `${sizeStr}-${disabledStr}-${asyncStr}`
         stories.add(storyName, () => (
-          <Button
+          <HKButton
             type={type} small={small} disabled={disabled}
             async={isAsync} onClick={action('clicked')}>
             Click Me
-          </Button>
+          </HKButton>
         ))
       })
     })
   })
 })
 
-storiesOf('Button', module)
+storiesOf('HKButton', module)
   .add('with custom title', () => (
-    <Button title='a custom title' onClick={action('clicked')}>
+    <HKButton title='a custom title' onClick={action('clicked')}>
       Click Me
-    </Button>
+    </HKButton>
   ))
   .add('with custom value', () => (
-    <Button value='a custom value' onClick={action('clicked')}>
+    <HKButton value='a custom value' onClick={action('clicked')}>
       Click Me
-    </Button>
+    </HKButton>
   ))
