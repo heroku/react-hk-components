@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { HKModal, Button } from '../src'
+import { HKModal, HKButton } from '../src'
 
 class ModalWrapper extends React.Component {
   state = {
@@ -26,7 +26,7 @@ class ModalWrapper extends React.Component {
           <div>header text</div>
         }
         footer={
-          <Button>Submit</Button>
+          <HKButton>Submit</HKButton>
         }>
         <div className='pa6'>
           with some important details here below
