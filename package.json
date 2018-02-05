@@ -52,7 +52,8 @@
     "prepublish": "yarn run build",
     "test": "jest --testPathPattern $PWD/test",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "release": "np"
   },
   "jest": {
     "transform": {
