@@ -48,7 +48,7 @@
     "tslint": "tslint -c tslint.json 'src/**/*.tsx?'",
     "lint": "yarn run eslint && yarn run tslint",
     "storybook": "start-storybook -p ${PORT:-9001} -c .storybook",
-    "build": "rm ./dist/*; tsc --module commonjs",
+    "build": "rm ./dist/*; tsc --module amd",
     "prepublish": "yarn run build",
     "test": "jest --testPathPattern $PWD/test",
     "test:watch": "jest --watch",
