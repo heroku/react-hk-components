@@ -514,11 +514,11 @@ exports[`Storyshots HKModal initially open 1`] = `
     }
   >
     <div
-      className="w-100 mw7 center bg-white shadow-outer-1 br1"
+      className="w-100 mw7 center bg-white shadow-outer-1 br1 relative"
       style={Object {}}
     >
       <div
-        className="bg-near-white dark-gray bb b--light-silver f4 flex items-center justify-center relative br--top br2"
+        className="bg-near-white dark-gray bb b--light-silver f4 flex items-center justify-center br--top br2"
       >
         <div
           className="hk-modal-header pa4 bg-near-white"
