@@ -48,7 +48,7 @@
   },
   "scripts": {
     "eslint": "eslint ./src",
-    "tslint": "tslint -c tslint.json 'src/**/*.tsx?'",
+    "tslint": "tslint -c tslint.json --project .",
     "lint": "yarn run eslint && yarn run tslint",
     "storybook": "start-storybook -p ${PORT:-9001} -c .storybook",
     "build": "rm ./dist/*; tsc --module commonjs --target es5",

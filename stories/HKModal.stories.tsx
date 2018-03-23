@@ -1,8 +1,9 @@
 import * as React from 'react'
+
 import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
-import { default as HKModal } from '../src/HKModal'
+
 import { default as HKButton } from '../src/HKButton'
+import { default as HKModal } from '../src/HKModal'
 
 interface IModalWrapperProps {
   initialShowModal?: boolean,
@@ -17,35 +18,34 @@ class ModalWrapper extends React.Component<IModalWrapperProps, IModalWrapperStat
   constructor (props) {
     super(props)
     this.state = {
-      showModal: props.initialShowModal
+      showModal: props.initialShowModal,
     }
   }
 
-  handleModalDismiss = () => {
+  public render () {
+    return (
+      <div>
+        <button onClick={this.showModal}>show it</button>
+        <HKModal
+          show={this.state.showModal}
+          onDismiss={this.handleModalDismiss}
+          header={<div>header text</div>}
+          footer={<HKButton>Submit</HKButton>}
+        >
+          <div className='pa6'>
+            with some important details here below
+          </div>
+        </HKModal>
+      </div>
+    )
+  }
+
+  private handleModalDismiss = () => {
     this.setState({ showModal: false })
   }
 
-  showModal = () => {
+  private showModal = () => {
     this.setState({ showModal: true })
-  }
-
-  public render () {
-    return (<div>
-      <button onClick={this.showModal}>show it</button>
-      <HKModal
-        show={this.state.showModal}
-        onDismiss={this.handleModalDismiss}
-        header={
-          <div>header text</div>
-        }
-        footer={
-          <HKButton>Submit</HKButton>
-        }>
-        <div className='pa6'>
-          with some important details here below
-        </div>
-      </HKModal>
-    </div>)
   }
 }
 

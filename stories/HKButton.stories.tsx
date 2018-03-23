@@ -1,10 +1,13 @@
 import * as React from 'react'
+
 import { storiesOf } from '@storybook/react'
+
 import { action } from '@storybook/addon-actions'
+
 import { default as HKButton, Type } from '../src/HKButton'
 
 const types = [
-  Type.Primary, Type.Secondary, Type.Tertiary, Type.Danger, Type.Warning, Type.Info
+  Type.Primary, Type.Secondary, Type.Tertiary, Type.Danger, Type.Warning, Type.Info,
 ]
 const smallProp = [true, false]
 const disabledProps = [true, false]
@@ -22,9 +25,7 @@ types.forEach((type) => {
         const asyncStr = isAsync ? 'async' : 'normal'
         const storyName = `${sizeStr}-${disabledStr}-${asyncStr}`
         stories.add(storyName, () => (
-          <HKButton
-            type={type} small={small} disabled={disabled}
-            async={isAsync} onClick={action('clicked')}>
+          <HKButton type={type} small={small} disabled={disabled} async={isAsync} onClick={action('clicked')}>
             Click Me
           </HKButton>
         ))
