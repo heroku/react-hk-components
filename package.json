@@ -51,7 +51,7 @@
     "tslint": "tslint -c tslint.json --project .",
     "lint": "yarn run eslint && yarn run tslint",
     "storybook": "start-storybook -p ${PORT:-9001} -c .storybook",
-    "build": "rm ./dist/*; tsc --module commonjs --target es5",
+    "build": "rm -rf ./dist; tsc --project tsconfig.build.json",
     "prepublish": "yarn run build",
     "test": "jest --testPathPattern $PWD/test",
     "test:watch": "jest --watch",
