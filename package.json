@@ -10,7 +10,7 @@
     "@heroku/react-malibu": "3.2.0",
     "@types/storybook__addon-actions": "^3.0.1",
     "prop-types": "15.x",
-    "react": "16.x",
+    "react": "^16.4.0",
     "react-dom": "16.x",
     "simple-react-modal": "0.5.1"
   },
