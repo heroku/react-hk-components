@@ -1,9 +1,7 @@
-import { MalibuIcon } from '@heroku/react-malibu'
 import * as React from 'react'
 
 import * as d3scale from 'd3-scale'
 import * as d3array from 'd3-array'
-import * as d3select from 'd3-selection'
 
 interface IBarGraphProps {
   data: number[],
@@ -20,7 +18,7 @@ interface IBarGraphState {
 }
 
 export default class HKBarGraph extends React.Component<IBarGraphProps, IBarGraphState> {
-  private node: SVGSVGElement
+  private node: SVGSVGElement | null
 
   constructor(props) {
     super(props)
@@ -70,32 +68,20 @@ export default class HKBarGraph extends React.Component<IBarGraphProps, IBarGrap
           width={width}
           height={height}
           viewBox={`0 0 ${width} ${height}`}
-          ref={node => this.node = node}
-          onMouseMove={this.handleMouseMove}
-          onMouseLeave={this.handleMouseLeave}>
+          ref={node => this.node = node}>
             {data.map((d, i) => {
               return (
-                <g>
                 <rect
                   x={xScale(d)} // x-axis top-left corner
                   y ={this.props.height - yScale(d) - barWidth} // y-axis top-left corner
                   height={yScale(d)}
                   width={xScale.bandwidth()}
                   fill="#cfd7e6"
-                />
-                {/* <text x={xScale(d)} y={barWidth} textAnchor="middle"> {d} </text> */}
-                </g>)
+                />)
             })}
             {xAxis}
         </svg>
     )
   }
 
-  private handleMouseMove (e) {
-    console.log("move: ", e)
-  }
-
-  private handleMouseLeave (e) {
-    console.log("leave: ", e)
-  }
 }
