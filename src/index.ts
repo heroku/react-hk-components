@@ -1,3 +1,5 @@
 export { default as HKButton } from './HKButton'
 export { default as HKModal } from './HKModal'
 export { default as HKBarGraph } from './HKBarGraph'
+export { default as HKLineGraph } from './HKLineGraph'
+export { default as HKGrid } from './HKGrid'

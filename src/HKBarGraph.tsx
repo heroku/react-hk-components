@@ -27,7 +27,7 @@ export default class HKBarGraph extends React.Component<IBarGraphProps, IBarGrap
       height: props.height,
       width: props.width,
       xScale: d3scale.scaleBand()
-                .domain(props.data)
+                .domain(props.data.map((d,i) => i))
                 .range([0, props.width])
                 .padding(0.1),
       yScale : d3scale.scaleLinear()
@@ -45,7 +45,10 @@ export default class HKBarGraph extends React.Component<IBarGraphProps, IBarGrap
         data: nextProps.data,
         height: nextProps.height,
         width: nextProps.width,
-        xScale: d3scale.scaleBand().domain(nextProps.data).range([0, nextProps.width]).padding(0.1),
+        xScale: d3scale.scaleBand()
+                  .domain(nextProps.data.map((d,i) => i))
+                  .range([0, nextProps.width])
+                  .padding(0.1),
         yScale : d3scale.scaleLinear()
                   .domain([0, d3array.max(nextProps.data)])
                   .range([0, nextProps.height]),
@@ -59,7 +62,7 @@ export default class HKBarGraph extends React.Component<IBarGraphProps, IBarGrap
     const xAxis = (
       <g transform={`translate(0, ${height - barWidth} )`}>
       {data.map((d, i) =>
-            <text x={xScale(d)} y={barWidth}> {d} </text>
+            <text x={xScale(i)} y={barWidth}> {d} </text>
       )}
     </g>)
 
@@ -72,7 +75,7 @@ export default class HKBarGraph extends React.Component<IBarGraphProps, IBarGrap
             {data.map((d, i) => {
               return (
                 <rect
-                  x={xScale(d)} // x-axis top-left corner
+                  x={xScale(i)} // x-axis top-left corner
                   y ={this.props.height - yScale(d) - barWidth} // y-axis top-left corner
                   height={yScale(d)}
                   width={xScale.bandwidth()}
