@@ -2,11 +2,11 @@ import * as React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import { default as HKLineGraph } from '../src/HKLineGraph'
+import { default as HKUpperLineGraph } from '../src/HKUpperLineGraph'
 
-storiesOf('HKLineGraph', module)
+storiesOf('HKUpperLineGraph', module)
   .add('default', () => (
-    <HKLineGraph
+    <HKUpperLineGraph
       data={
         [["2015-04-23 17:18:06.074707+00",
         [92048, 493280, 34934]],
@@ -16,10 +16,8 @@ storiesOf('HKLineGraph', module)
         [93860, 478796, 100345]],
         ["2015-04-23 17:19:06.083126+00",
         [95056, 899412, 10000]]]}
-      height={270}
-      width={250}
-      onHover={() =>{}}
-      toggleInfo={{}}
-      labels={['','']}
+      height={100}
+      width={100}
+      labels={['dragonfruit', 'mango', 'nectarines']}
     />
   ))
