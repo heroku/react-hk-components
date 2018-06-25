@@ -4,7 +4,7 @@ import * as d3scale from 'd3-scale'
 import * as d3axis from 'd3-axis'
 
 interface IGridProps {
-  coordinates: any,
+  data: any,
   height: number,
   width: number,
   yInterval?: any,

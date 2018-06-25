@@ -62,7 +62,7 @@ export default class HKBarGraph extends React.Component<IBarGraphProps, IBarGrap
     const xAxis = (
       <g transform={`translate(0, ${height - barWidth} )`}>
       {data.map((d, i) =>
-            <text x={xScale(i)} y={barWidth}> {d} </text>
+        <text key={i} x={xScale(i)} y={barWidth}> {d} </text>
       )}
     </g>)
 
@@ -74,13 +74,15 @@ export default class HKBarGraph extends React.Component<IBarGraphProps, IBarGrap
           ref={node => this.node = node}>
             {data.map((d, i) => {
               return (
-                <rect
-                  x={xScale(i)} // x-axis top-left corner
-                  y ={this.props.height - yScale(d) - barWidth} // y-axis top-left corner
-                  height={yScale(d)}
-                  width={xScale.bandwidth()}
-                  fill="#cfd7e6"
-                />)
+                <g key={i}>
+                  <rect
+                    x={xScale(i)} // x-axis top-left corner
+                    y ={this.props.height - yScale(d) - barWidth} // y-axis top-left corner
+                    height={yScale(d)}
+                    width={xScale.bandwidth()}
+                    fill="#cfd7e6"
+                  />
+                </g>)
             })}
             {xAxis}
         </svg>
