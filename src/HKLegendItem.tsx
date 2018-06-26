@@ -1,43 +1,55 @@
 import * as React from 'react'
+
 import { MalibuIcon } from '@heroku/react-malibu'
 
 interface IHKLegendItemProps {
-  onToggle: (...args: any[]) => any,
+  zIndex: number,
+  onToggle?: (...args: any[]) => any,
   show: boolean,
   value: number,
   label: string,
   className?: string,
+  disableToggle?: boolean,
 }
 
 export default class HKLegendItem extends React.PureComponent<IHKLegendItemProps, {}> {
+  public static defaultProps = {
+    disableToggle: false,
+  }
 
   public render () {
-    const { onToggle, value, label, className, show} = this.props
+    const { className, disableToggle, label, show, onToggle, value, zIndex } = this.props
+    const hoverProps = show ? 'bg-lightest-silver' : ''
 
-    let hoverProps = show ? 'bg-lightest-silver' : ''
+    const handleOnClick = () => {
+      if (disableToggle) {
+        return null
+      }
+
+      if (onToggle) {
+        onToggle(label)
+      }
+    }
+
+    const legendIcon = show && (
+      <div className='flex items-center'>
+        <MalibuIcon name='confirm-16' fillClass='dark-gray' extraClasses='icon malibu-icon h1 w1 mr1 fill-dark-gray di'/>
+        <svg width='7' height='31' viewBox={`0 0 7 31`} className='mr1'>
+          <rect x='0' y='0' height='100%' width='7' fill='#79589f' fillOpacity={0.2 * (zIndex + 1)}/>
+        </svg>
+      </div>
+    )
 
     return (
-      <a className='cursor-hand' onClick={() => this.handleLabelToggle(label)}>
-        <div className={`hk-label ${className} flex flex-row br2 pa2 items-center ${hoverProps}`}>
-            {show && (
-              <div className='flex items-center'>
-                <MalibuIcon name='confirm-16' fillClass='dark-gray' extraClasses='icon malibu-icon h1 w1 mr1 fill-dark-gray di'/>
-                <svg width='7' height='31' viewBox={`0 0 7 31`} className='mr1'>
-                  <rect x='0' y='0' height='100%' width='7' fill='#cfd736'/>
-                </svg>
-              </div>
-            )}
+      <a className='cursor-hand' onClick={handleOnClick}>
+        <div className={`hk-label ${className} flex flex-row br2 pa2 mh2 items-center ${hoverProps}`}>
+            {legendIcon}
             <div className='items-center'>
               <span className='db ma1 ttu f7 tracked'>{label}</span>
               <span className='db ma1 ttu b f6'>{value}</span>
             </div>
         </div>
-      </a>)
-  }
-
-  handleLabelToggle = (label: string) => {
-    if (this.props.onToggle) {
-      this.props.onToggle(label)
-    }
+      </a>
+    )
   }
 }

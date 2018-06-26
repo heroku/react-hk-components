@@ -1,101 +1,89 @@
 import * as React from 'react'
 
-import * as _ from 'lodash'
-import * as d3scale from 'd3-scale'
 import * as d3array from 'd3-array'
+import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
+import * as _ from 'lodash'
 import * as moment from 'moment'
 
 import { default as HKGrid } from './HKGrid'
 import { default as HKLine } from './HKLine'
 
 interface ILineGraphProps {
+  data: any, // Assumes the data comes in the format [{time, value},...]
   height: number,
   width: number,
-  data: any, // Assumes the data comes in the format [{time, value},...]
-  onHover: any,
-  toggleInfo: any,
   labels: string[],
+  onHover: any,
+  toggleInfo: object,
 }
 
 interface ILineGraphState {
+  data: any, // Points for graph
+  measurements: any, // Cleansed data
   height: number,
   width: number,
   hoverIndex: number,
   idx: number,
+  area: any,
+  line: any,
   xScale: any,
   yScale: any,
-  line: any,
-  area: any,
-  data: any, // Points for graph
-  measurements: any, // Cleansed data
-  ref: any, // Reference for the svg for hover animations
 }
 
-export default class HKLineGraph extends React.Component<ILineGraphProps, ILineGraphState> {
+export default class HKLineGraph extends React.PureComponent<ILineGraphProps, ILineGraphState> {
   private ref: SVGSVGElement | null
 
-  constructor(props) {
+  constructor (props) {
     super(props)
 
     this.state = {
       height: props.height,
       width: props.width,
+
       hoverIndex: -1,
       idx: -1, // For hovering animations, will re-render everytime any hover related state changes
-      ref: null,  // Initializes in componentDidMount
       /* Initializes in getDerivedStateFromProps**/
+
       data: null,
       measurements: null,
+
+      area: null,
+      line: null,
       xScale: null,
       yScale: null,
-      line: null,
-      area: null,
     }
   }
 
-  /* We only want to rerender if either hoverIndex or props changes */
-  public shouldComponentUpdate(nextProps, nextState) {
-   const propsChanged = Object.keys(this.props)
-                        .some(o => this.props[o] !== nextProps[o])
-   const hoverChanged = this.state.hoverIndex !== nextState.hoverIndex
-   const refChanged = this.state.ref !== nextState.ref
-
-   return propsChanged || hoverChanged || refChanged
-  }
-
   // setState based on new props passed
-  static getDerivedStateFromProps(newProps, prevState) {
-    if (Object.keys(newProps).every(o => newProps[o] === prevState[o])) {
+  public static getDerivedStateFromProps (newProps, prevState) {
+
+    if (['data', 'width', 'height'].every((o) => newProps[o] === prevState[o])) {
       return null
     }
 
     const { width, height, data } = newProps
+    const values = _.flatMap(data.map((d) => d[1]))
 
-    const getTimeMeasurements = data => {
-      if (!data) {
+    const formatData = (dataSet) => {
+      if (!dataSet) {
         return null
       }
-      return newProps.data.map(d => {
-        return ({
-          x: moment.utc(d[0]).toDate(),
-          y: d[1].map(v => _.isFinite(v) ? v : 0)
-        })})
+      return dataSet.map((d) => ({
+        x: moment.utc(d[0]).toDate(),
+        y: d[1].map((v) => _.isFinite(v) ? v : 0),
+      }))
     }
-
-    const values = _.flatMap(newProps.data.map(d => d[1]))
 
     // Cleanse data into valid format(date and values)
     // Make sure our coordinates are sorted by date asscending
-    const measurements = getTimeMeasurements(newProps.data)
-                  .sort((a, b) => {
-                    return moment(a.x).diff(moment(b.x))
-                  })
+    const measurements = formatData(data)
+                  .sort((a, b) => moment(a.x).diff(moment(b.x)))
 
     // Domain of x coordinates (date)
     const timeExtent = [
       _.head(measurements).x,
-      _.last(measurements).x
+      _.last(measurements).x,
     ]
 
     // Domain of y coordinates (value)
@@ -107,89 +95,105 @@ export default class HKLineGraph extends React.Component<ILineGraphProps, ILineG
 
     const yScale = d3scale.scaleLinear()
      // multily by 5% so we can have some spacing b/w the last point and the top of the graph
-                    .domain([valueExtent[0], valueExtent[1] * 1.05])
+                    .domain([valueExtent[0] < 0 ? valueExtent[0] : 0, valueExtent[1] * 1.05])
                     .range([height, 0])
 
     const line = d3shape.line()
-                  .x(d => xScale(d.x))
-                  .y(d => yScale(d.y))
+                  .x((d) => xScale(d.x))
+                  .y((d) => yScale(d.y))
                   .curve(d3shape.curveStepBefore)
 
     const area = d3shape.area()
                   .x((d) => xScale(d.x))
-                  .y0(yScale(valueExtent[0]))
+                  .y0(yScale(valueExtent[0] < 0 ? yScale(valueExtent) : 0))
                   .y1((d) => yScale(d.y))
                   .curve(d3shape.curveStepBefore)
     return {
-      width,
-      height,
-      xScale,
-      yScale,
-      line,
-      area,
       data,
       measurements,
+
+      height,
+      width,
+
+      area,
+      line,
+      xScale,
+      yScale,
     }
   }
 
-  public componentDidMount() {
-    this.setState({ ref: this.ref })
-  }
-
   public handleMouseMove = (e) => {
-    const { measurements, xScale , idx } = this.state
+    const { measurements, xScale } = this.state
 
-    const hoverIndex =  e.clientX -  this.state.ref.getBoundingClientRect().left
-    const bisectDate = d3array.bisector(d => d.x).left
-    const newIdx = bisectDate(measurements, xScale.invert(hoverIndex))
+    if (!this.ref) {
+      return null
+    }
 
+    // TODO: Optimize rendering performance here
+    const hoverIndex = e.clientX - this.ref.getBoundingClientRect().left
+    const bisectX = d3array.bisector((d) => d.x).left
+    const newIdx = bisectX(measurements, xScale.invert(hoverIndex))
     this.setState({ idx: newIdx, hoverIndex })
-    const values = measurements[newIdx].y // Remember to figure out empty case
-    this.props.onHover(values)
 
+    if (measurements[newIdx]) {
+      const values = measurements[newIdx].y // Remember to figure out empty case
+      this.props.onHover(values)
+    }
   }
 
-  public handleMouseLeave = (e) => this.setState({ idx: -1 })
+  public handleMouseLeave = (e) => this.setState({ hoverIndex: -1, idx: -1 })
 
   public render () {
-    const { height, width, xScale, yScale, line, area, measurements, idx, hoverIndex } = this.state
-    const { onHover, toggleInfo, labels } = this.props
+    const { height, width, yScale, line, area, measurements, idx, hoverIndex } = this.state
+    const { toggleInfo, labels } = this.props
+    const isHovering = hoverIndex !== -1
 
-    let valueIndexes: number[] = []
+    const valueIndexes: number[] = []
     labels.forEach((label, i) => {
       if (toggleInfo[`${label}`]) {
         valueIndexes.push(i)
       }
     })
 
-    const timeseries = valueIndexes.map(i => {
+    const timeseries = valueIndexes.map((i) => {
       const lineProps = {
-        line,
         area,
-        key: i,
-        data: measurements.map(m => ({
+        data: measurements.map((m) => ({
           x: m.x,
           y: m.y[i],
-        }))
+        })),
+        line,
       }
-      return <HKLine {...lineProps} />
+      return <HKLine key={i} {...lineProps} />
     })
 
-    const indicator = <line  x1={hoverIndex} y1='0' x2={hoverIndex} y2={height} stroke='#79589f' strokeWidth='1' />
+    const indicatorPoint = valueIndexes.map((v,i) => measurements[idx] ? (
+      <circle
+        key={i}
+        className='indicatorPoint'
+        cx={hoverIndex}
+        cy={yScale(measurements[idx].y[i])}
+        r={2}
+      />) : null)
+
+    const indicator = isHovering && (
+      <g>
+        <line x1={hoverIndex} y1='0' x2={hoverIndex} y2={height} stroke='#79589f' strokeWidth='1' />
+        {indicatorPoint}
+      </g>)
 
     return (
         <svg
+          preserveAspectRatio='none'
           width={width}
           height={height}
           viewBox={`0 0 ${width} ${height}`}
           onMouseMove={this.handleMouseMove}
           onMouseLeave={this.handleMouseLeave}
-          ref={ref => this.ref = ref}
-          className='br0 ba b--gray'>
+          ref={(ref) => this.ref = ref}
+          className='br0 ba b--silver overflow-hidden'
+        >
           {indicator}
-          <HKGrid
-            {...this.state}
-          />
           {timeseries}
         </svg>
     )

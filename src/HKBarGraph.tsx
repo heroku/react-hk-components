@@ -1,11 +1,13 @@
 import * as React from 'react'
 
-import * as d3scale from 'd3-scale'
 import * as d3array from 'd3-array'
+import * as d3format from 'd3-format'
+import * as d3scale from 'd3-scale'
 
 interface IBarGraphProps {
   data: number[],
   height: number,
+  onHover: any,
   width: number,
 }
 
@@ -13,80 +15,104 @@ interface IBarGraphState {
   data: number[],
   height: number,
   width: number,
+  hoverIndex: number,
   xScale: any,
   yScale: any,
 }
 
-export default class HKBarGraph extends React.Component<IBarGraphProps, IBarGraphState> {
-  private node: SVGSVGElement | null
+export default class HKBarGraph extends React.PureComponent<IBarGraphProps, IBarGraphState> {
+  private ref: SVGSVGElement | null
 
-  constructor(props) {
+  constructor (props) {
     super(props)
+
     this.state = {
-      data: props.data,
-      height: props.height,
-      width: props.width,
-      xScale: d3scale.scaleBand()
-                .domain(props.data.map((d,i) => i))
-                .range([0, props.width])
-                .padding(0.1),
-      yScale : d3scale.scaleLinear()
-                .domain([0, d3array.max(props.data)])
-                .range([0, props.height]),
+      data: [],
+      height: 0,
+      width: 0,
+      xScale: null,
+      yScale : null,
+      hoverIndex: -1,
     }
   }
 
-  static getDerivedStateFromProps (nextProps, prevState) {
-      if (nextProps.data === prevState.data) {
-        return null
-      }
+  public static getDerivedStateFromProps (newProps, prevState) {
+    if (['data', 'width', 'height'].every((o) => newProps[o] === prevState[o])) {
+      return null
+    }
 
-      return {
-        data: nextProps.data,
-        height: nextProps.height,
-        width: nextProps.width,
-        xScale: d3scale.scaleBand()
-                  .domain(nextProps.data.map((d,i) => i))
-                  .range([0, nextProps.width])
-                  .padding(0.1),
-        yScale : d3scale.scaleLinear()
-                  .domain([0, d3array.max(nextProps.data)])
-                  .range([0, nextProps.height]),
-      }
+    const { data, height, width } = newProps
+    const valueExtent = d3array.extent(data)
+
+    return {
+      data,
+      height,
+      width,
+      xScale: d3scale.scaleBand()
+                .domain(data.map((d,i) => i))
+                .range([0, width])
+                .padding(0.1),
+      yScale : d3scale.scaleLinear()
+                .domain([valueExtent[0] < 0 ? valueExtent[0] : 0, valueExtent[1] * 1.05])
+                .range([0, height]),
+    }
+  }
+
+  public handleMouseMove = (e) => {
+    if (!this.ref) {
+      return null
+    }
+
+    const { data, width } = this.state
+    const hoverIndex = e.clientX - this.ref.getBoundingClientRect().left
+    const interpolateIndex = hoverIndex * data.length / width
+    const index = interpolateIndex > (data.length - 1) ? data.length - 1 : interpolateIndex
+    const value = data[d3format.format('.0f')(index)]
+
+    if (this.props.onHover) {
+      this.props.onHover(value)
+    }
+  }
+
+  public handleMouseLeave = (e) => {
+    if (this.props.onHover) {
+      this.props.onHover(d3array.max(this.props.data))
+    }
   }
 
   public render () {
-    const barWidth = 30
     const { data, height, width, yScale, xScale } = this.state
 
-    const xAxis = (
-      <g transform={`translate(0, ${height - barWidth} )`}>
-      {data.map((d, i) =>
-        <text key={i} x={xScale(i)} y={barWidth}> {d} </text>
-      )}
-    </g>)
+    if (xScale == null || yScale == null) {
+      return null
+    }
+
+    const bars = data.map((d, i) => (
+      <g key={i}>
+        <rect
+          x={xScale(i)} // x-axis top-left corner
+          y={height - yScale(d)} // y-axis top-left corner
+          height={yScale(d)}
+          width={xScale.bandwidth()}
+          fill='#cfd7e6'
+          className='dim cursor-hand'
+        />
+      </g>
+    ))
 
     return (
         <svg
+          preserveAspectRatio='none'
           width={width}
           height={height}
+          onMouseMove={this.handleMouseMove}
+          onMouseLeave={this.handleMouseLeave}
           viewBox={`0 0 ${width} ${height}`}
-          ref={node => this.node = node}>
-            {data.map((d, i) => {
-              return (
-                <g key={i}>
-                  <rect
-                    x={xScale(i)} // x-axis top-left corner
-                    y ={this.props.height - yScale(d) - barWidth} // y-axis top-left corner
-                    height={yScale(d)}
-                    width={xScale.bandwidth()}
-                    fill="#cfd7e6"
-                  />
-                </g>)
-            })}
-            {xAxis}
+          ref={(ref) => this.ref = ref}
+          className='br0 ba b--silver'
+        >
+          {bars}
         </svg>
     )
   }
-
 }
