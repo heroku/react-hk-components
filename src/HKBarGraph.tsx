@@ -15,6 +15,7 @@ interface IBarGraphState {
   data: number[],
   height: number,
   width: number,
+
   hoverIndex: number,
   xScale: any,
   yScale: any,
@@ -30,9 +31,10 @@ export default class HKBarGraph extends React.PureComponent<IBarGraphProps, IBar
       data: [],
       height: 0,
       width: 0,
+
+      hoverIndex: -1,
       xScale: null,
       yScale : null,
-      hoverIndex: -1,
     }
   }
 

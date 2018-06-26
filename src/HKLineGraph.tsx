@@ -6,7 +6,6 @@ import * as d3shape from 'd3-shape'
 import * as _ from 'lodash'
 import * as moment from 'moment'
 
-import { default as HKGrid } from './HKGrid'
 import { default as HKLine } from './HKLine'
 
 interface ILineGraphProps {
@@ -23,8 +22,10 @@ interface ILineGraphState {
   measurements: any, // Cleansed data
   height: number,
   width: number,
+
   hoverIndex: number,
   idx: number,
+
   area: any,
   line: any,
   xScale: any,
