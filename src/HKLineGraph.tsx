@@ -9,11 +9,11 @@ import * as moment from 'moment'
 import { default as HKLine } from './HKLine'
 
 interface ILineGraphProps {
-  data: any, // Assumes the data comes in the format [{time, value},...]
+  data: object, // Assumes the data comes in the format [{time, value},...]
   height: number,
   width: number,
   labels: string[],
-  onHover: any,
+  onHover: (value: number) => void,
   toggleInfo: object,
 }
 
@@ -58,23 +58,12 @@ export default class HKLineGraph extends React.PureComponent<ILineGraphProps, IL
 
   // setState based on new props passed
   public static getDerivedStateFromProps (newProps, prevState) {
-
     if (['data', 'width', 'height'].every((o) => newProps[o] === prevState[o])) {
       return null
     }
 
     const { width, height, data } = newProps
     const values = _.flatMap(data.map((d) => d[1]))
-
-    const formatData = (dataSet) => {
-      if (!dataSet) {
-        return null
-      }
-      return dataSet.map((d) => ({
-        x: moment.utc(d[0]).toDate(),
-        y: d[1].map((v) => _.isFinite(v) ? v : 0),
-      }))
-    }
 
     // Cleanse data into valid format(date and values)
     // Make sure our coordinates are sorted by date asscending
@@ -94,9 +83,9 @@ export default class HKLineGraph extends React.PureComponent<ILineGraphProps, IL
                     .domain(timeExtent)
                     .range([0, width])
 
+    // Multily by 5% so we can have some spacing b/w the last point and the top of the graph
     const yScale = d3scale.scaleLinear()
-     // multily by 5% so we can have some spacing b/w the last point and the top of the graph
-                    .domain([valueExtent[0] < 0 ? valueExtent[0] : 0, valueExtent[1] * 1.05])
+                    .domain([Math.min(valueExtent[0], 0), valueExtent[1] * 1.05])
                     .range([height, 0])
 
     const line = d3shape.line()
@@ -151,7 +140,7 @@ export default class HKLineGraph extends React.PureComponent<ILineGraphProps, IL
 
     const valueIndexes: number[] = []
     labels.forEach((label, i) => {
-      if (toggleInfo[`${label}`]) {
+      if (toggleInfo[label]) {
         valueIndexes.push(i)
       }
     })
@@ -168,10 +157,10 @@ export default class HKLineGraph extends React.PureComponent<ILineGraphProps, IL
       return <HKLine key={i} {...lineProps} />
     })
 
-    const indicatorPoint = valueIndexes.map((v,i) => measurements[idx] ? (
+    const indicatorPoints = valueIndexes.map((v,i) => measurements[idx] ? (
       <circle
         key={i}
-        className='indicatorPoint'
+        className='indicatorPoints'
         cx={hoverIndex}
         cy={yScale(measurements[idx].y[i])}
         r={2}
@@ -180,7 +169,7 @@ export default class HKLineGraph extends React.PureComponent<ILineGraphProps, IL
     const indicator = isHovering && (
       <g>
         <line x1={hoverIndex} y1='0' x2={hoverIndex} y2={height} stroke='#79589f' strokeWidth='1' />
-        {indicatorPoint}
+        {indicatorPoints}
       </g>)
 
     return (
@@ -199,4 +188,14 @@ export default class HKLineGraph extends React.PureComponent<ILineGraphProps, IL
         </svg>
     )
   }
+}
+
+function formatData (dataSet) {
+  if (!dataSet) {
+    return null
+  }
+  return dataSet.map((d) => ({
+    x: moment.utc(d[0]).toDate(),
+    y: d[1].map((v) => _.isFinite(v) ? v : 0),
+  }))
 }

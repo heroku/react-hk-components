@@ -9,6 +9,7 @@
   "dependencies": {
     "@heroku/react-malibu": "3.2.0",
     "@types/storybook__addon-actions": "^3.0.1",
+    "classnames": "2.2.5",
     "d3": "^5.4.0",
     "lodash": "4.17.5",
     "moment": "2.21.0",

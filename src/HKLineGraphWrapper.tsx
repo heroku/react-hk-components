@@ -5,19 +5,19 @@ import { default as HKLineGraph } from './HKLineGraph'
 
 import * as _ from 'lodash'
 
-interface IUpperLineGraphProps {
-  data: object, // Assumes the data comes in the format [{time, value =[1,2,] },...]
+interface ILineGraphWrapperProps {
+  data: any, // Assumes the data comes in the format [{time, value =[1,2,] },...]
   height: number,
   labels: string[],
   width: number,
 }
 
-interface IUpperLineGraphState {
+interface ILineGraphWrapperState {
   hoverInfo: object,
   toggleInfo: object,
 }
 
-export default class HKLineGraphWrapper extends React.Component<IUpperLineGraphProps, IUpperLineGraphState> {
+export default class HKLineGraphWrapper extends React.Component<ILineGraphWrapperProps, ILineGraphWrapperState> {
 
   constructor (props) {
     super(props)
@@ -30,8 +30,8 @@ export default class HKLineGraphWrapper extends React.Component<IUpperLineGraphP
     })
 
     this.state = {
-      hoverInfo: { ...hoverInfo },
-      toggleInfo: { ...toggleInfo },
+      hoverInfo,
+      toggleInfo,
     }
   }
 

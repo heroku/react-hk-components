@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 interface ILineProps {
-  data: object, // [[time, value]]
+  data: Array<[Date, number]>, // [[time, value]]
   line: (...args: any[]) => any,
   area: (...args: any[]) => any,
 }

@@ -1,13 +1,12 @@
 import * as React from 'react'
 
 import * as d3array from 'd3-array'
-import * as d3format from 'd3-format'
 import * as d3scale from 'd3-scale'
 
 interface IBarGraphProps {
   data: number[],
   height: number,
-  onHover: any,
+  onHover: (value: number) => void,
   width: number,
 }
 
@@ -61,45 +60,39 @@ export default class HKBarGraph extends React.PureComponent<IBarGraphProps, IBar
   }
 
   public handleMouseMove = (e) => {
-    if (!this.ref) {
+    if (!this.ref || !this.props.onHover) {
       return null
     }
 
     const { data, width } = this.state
     const hoverIndex = e.clientX - this.ref.getBoundingClientRect().left
     const interpolateIndex = hoverIndex * data.length / width
-    const index = interpolateIndex > (data.length - 1) ? data.length - 1 : interpolateIndex
-    const value = data[d3format.format('.0f')(index)]
+    const index = Math.min(interpolateIndex, data.length - 1)
+    const value = data[Math.floor(index)]
 
-    if (this.props.onHover) {
-      this.props.onHover(value)
-    }
+    this.props.onHover(value)
   }
 
   public handleMouseLeave = (e) => {
-    if (this.props.onHover) {
-      this.props.onHover(d3array.max(this.props.data))
+    const { onHover, data } = this.props
+    if (onHover) {
+      onHover(d3array.max(data))
     }
   }
 
   public render () {
     const { data, height, width, yScale, xScale } = this.state
 
-    if (xScale == null || yScale == null) {
-      return null
-    }
-
     const bars = data.map((d, i) => (
-      <g key={i}>
-        <rect
-          x={xScale(i)} // x-axis top-left corner
-          y={height - yScale(d)} // y-axis top-left corner
-          height={yScale(d)}
-          width={xScale.bandwidth()}
-          fill='#cfd7e6'
-          className='dim cursor-hand'
-        />
-      </g>
+      <rect
+        key={i}
+        x={xScale(i)} // x-axis top-left corner
+        y={height - yScale(d)} // y-axis top-left corner
+        height={yScale(d)}
+        width={xScale.bandwidth()}
+        fill='#cfd7e6'
+        className='dim cursor-hand'
+      />
     ))
 
     return (

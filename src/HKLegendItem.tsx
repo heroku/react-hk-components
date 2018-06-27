@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { MalibuIcon } from '@heroku/react-malibu'
+import * as classnames from 'classnames'
 
 interface IHKLegendItemProps {
   zIndex: number,
@@ -18,18 +19,7 @@ export default class HKLegendItem extends React.PureComponent<IHKLegendItemProps
   }
 
   public render () {
-    const { className, disableToggle, label, show, onToggle, value, zIndex } = this.props
-    const hoverProps = show ? 'bg-lightest-silver' : ''
-
-    const handleOnClick = () => {
-      if (disableToggle) {
-        return null
-      }
-
-      if (onToggle) {
-        onToggle(label)
-      }
-    }
+    const { className, disableToggle, label, show, value, zIndex } = this.props
 
     const legendIcon = show && (
       <div className='flex items-center'>
@@ -41,8 +31,8 @@ export default class HKLegendItem extends React.PureComponent<IHKLegendItemProps
     )
 
     return (
-      <a className='cursor-hand' onClick={handleOnClick}>
-        <div className={`hk-label ${className} flex flex-row br2 pa2 mh2 items-center ${hoverProps}`}>
+      <a className='cursor-hand' onClick={disableToggle ? undefined : this.handleOnClick}>
+        <div className={classnames('hk-label', className, 'flex flex-row br2 pa2 mh2 items-center', { 'bg-lightest-silver': show })}>
             {legendIcon}
             <div className='items-center'>
               <span className='db ma1 ttu f7 tracked'>{label}</span>
@@ -51,5 +41,14 @@ export default class HKLegendItem extends React.PureComponent<IHKLegendItemProps
         </div>
       </a>
     )
+  }
+
+  public handleOnClick = () => {
+    const { onToggle, label } = this.props
+    if (!onToggle) {
+      return null
+    }
+
+    onToggle(label)
   }
 }
