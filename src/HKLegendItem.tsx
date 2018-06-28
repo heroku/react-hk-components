@@ -44,11 +44,11 @@ export default class HKLegendItem extends React.PureComponent<IHKLegendItemProps
   }
 
   public handleOnClick = () => {
-    const { onToggle, label } = this.props
+    const { onToggle, label, zIndex } = this.props
     if (!onToggle) {
       return null
     }
 
-    onToggle(label)
+    onToggle(label, zIndex)
   }
 }

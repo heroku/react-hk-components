@@ -4,6 +4,8 @@ import { default as HKLegendItem } from './HKLegendItem'
 import { default as HKLineGraph } from './HKLineGraph'
 
 import * as _ from 'lodash'
+import { default as ContainerDimensions } from 'react-container-dimensions'
+import { getMaxValues } from './helpers'
 
 interface ILineGraphWrapperProps {
   data: any, // Assumes the data comes in the format [{time, value =[1,2,] },...]
@@ -24,9 +26,11 @@ export default class HKLineGraphWrapper extends React.Component<ILineGraphWrappe
     const hoverInfo = {}
     const toggleInfo = {}
 
-    props.labels.forEach((label) => {
-      hoverInfo[label] = 0 // FIX THIS
-      toggleInfo[label] = true
+    const maxValues = getMaxValues(props.data)
+
+    props.labels.forEach((label, i) => {
+      hoverInfo[`${label}-${i}`] = maxValues[i]
+      toggleInfo[`${label}-${i}`] = true
     })
 
     this.state = {
@@ -44,22 +48,22 @@ export default class HKLineGraphWrapper extends React.Component<ILineGraphWrappe
         key={i}
         zIndex={i}
         label={label}
-        show={toggleInfo[`${label}`]}
+        show={toggleInfo[`${label}-${i}`]}
         onToggle={this.handleToggle}
-        value={hoverInfo[`${label}`]}
+        value={hoverInfo[`${label}-${i}`]}
       />
     ))
 
     return (
-      <div className='flex flex-row'>
-         <HKLineGraph
-           {...this.props}
-           onHover={this.handleHover}
-           toggleInfo={toggleInfo}
-         />
-          <div className='flex flex-column'>
-            {legend}
-          </div>
+      <div className='flex'>
+        <div className='flex-auto'>
+          <ContainerDimensions>
+            {({ width }) => { try  { return (<HKLineGraph {...this.props} width={width} onHover={this.handleHover} toggleInfo={toggleInfo}/>) } catch (e) { return e.message }}}
+          </ContainerDimensions>
+        </div>
+        <div className='w6'>
+          {legend}
+        </div>
       </div>
     )
   }
@@ -67,15 +71,15 @@ export default class HKLineGraphWrapper extends React.Component<ILineGraphWrappe
   private handleHover = (values) => {
     const hoverInfo = {}
 
-    this.props.labels.forEach((label, index) => hoverInfo[`${label}`] = values[index])
+    this.props.labels.forEach((label, index) => hoverInfo[`${label}-${index}`] = values[index])
     this.setState({ hoverInfo })
   }
 
-  private handleToggle = (label) =>
+  private handleToggle = (label, i) =>
     this.setState({
       toggleInfo : {
         ...this.state.toggleInfo,
-        [label] : !this.state.toggleInfo[label],
+        [`${label}-${i}`] : !this.state.toggleInfo[`${label}-${i}`],
       },
     })
 }

@@ -14,7 +14,7 @@ const data = [['2015-04-23 17:18:06.074707+00',
   [95056, 899412, 10000]]]
 const labels = ['dragonfruit', 'mango', 'nectarines']
 
-storiesOf('HKLineGraph', module)
+storiesOf('HKLineGraphWrapper', module)
   .add('default', () => (
     <HKLineGraphWrapper
       data={data}

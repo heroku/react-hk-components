@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 
 import { default as HKBarGraphWrapper } from '../src/HKBarGraphWrapper'
 
-storiesOf('HKBarGraph', module)
+storiesOf('HKBarGraphWrapper', module)
   .add('default', () => (
-    <HKBarGraphWrapper data={[5,12,3,8]} height={300} width={300} label='label' />
+    <HKBarGraphWrapper data={[5,12,3,8]} height={300} width={300} labels={['oranges']} />
   ))

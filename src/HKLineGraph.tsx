@@ -5,11 +5,12 @@ import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
 import * as _ from 'lodash'
 import * as moment from 'moment'
+import { getMaxValues } from './helpers'
 
 import { default as HKLine } from './HKLine'
 
 interface ILineGraphProps {
-  data: object, // Assumes the data comes in the format [{time, value},...]
+  data: any, // Assumes the data comes in the format [{time, value},...]
   height: number,
   width: number,
   labels: string[],
@@ -112,6 +113,16 @@ export default class HKLineGraph extends React.PureComponent<ILineGraphProps, IL
     }
   }
 
+  // WIP:
+  // public componentDidMount () {
+  //   const { data, onHover } = this.props
+  //   const maxValues = getMaxValues(data)
+  //
+  //   if (onHover) {
+  //     onHover(maxValues)
+  //   }
+  // }
+
   public handleMouseMove = (e) => {
     const { measurements, xScale } = this.state
 
@@ -131,7 +142,14 @@ export default class HKLineGraph extends React.PureComponent<ILineGraphProps, IL
     }
   }
 
-  public handleMouseLeave = (e) => this.setState({ hoverIndex: -1, idx: -1 })
+  public handleMouseLeave = (e) => {
+    const { onHover, data } = this.props
+
+    this.setState({ hoverIndex: -1, idx: -1 })
+    if (onHover) {
+      onHover(getMaxValues(data))
+    }
+  }
 
   public render () {
     const { height, width, yScale, line, area, measurements, idx, hoverIndex } = this.state
@@ -140,7 +158,7 @@ export default class HKLineGraph extends React.PureComponent<ILineGraphProps, IL
 
     const valueIndexes: number[] = []
     labels.forEach((label, i) => {
-      if (toggleInfo[label]) {
+      if (toggleInfo[`${label}-${i}`]) {
         valueIndexes.push(i)
       }
     })
