@@ -113,16 +113,6 @@ export default class HKLineGraph extends React.PureComponent<ILineGraphProps, IL
     }
   }
 
-  // WIP:
-  // public componentDidMount () {
-  //   const { data, onHover } = this.props
-  //   const maxValues = getMaxValues(data)
-  //
-  //   if (onHover) {
-  //     onHover(maxValues)
-  //   }
-  // }
-
   public handleMouseMove = (e) => {
     const { measurements, xScale } = this.state
 

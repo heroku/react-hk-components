@@ -480,18 +480,6 @@ exports[`Storyshots HKButton/warning small-enabled-normal 1`] = `
 </button>
 `;
 
-exports[`Storyshots HKLineGraph default 1`] = `
-<svg
-  className="br0 ba b--silver overflow-hidden"
-  height={300}
-  onMouseLeave={[Function]}
-  onMouseMove={[Function]}
-  preserveAspectRatio="none"
-  viewBox="0 0 800 300"
-  width={800}
-/>
-`;
-
 exports[`Storyshots HKModal default 1`] = `
 <div>
   <button
