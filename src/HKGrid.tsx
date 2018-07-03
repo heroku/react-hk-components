@@ -28,7 +28,6 @@ export default class HKGrid extends React.Component<IGridProps, {}> {
     const { width, xInterval, showYAxis, yScale } = this.props
 
     const xTicks = 5 // TODO: make this dynamic
-    // const yTicks = data.length / 2
 
     const gridProps = {
       stroke: '#96a3b6',
@@ -42,8 +41,6 @@ export default class HKGrid extends React.Component<IGridProps, {}> {
         {showYAxis && <text x={40} y={yScale(d)} textAnchor='end' className='f7 fill-gray'> {d} </text>}
       </g>
     ))
-
-    // TOOD: create gridY and labels
 
     return (
         <g>

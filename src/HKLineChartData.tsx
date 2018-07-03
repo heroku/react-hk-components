@@ -9,7 +9,7 @@ import { getMaxValues } from './helpers'
 
 import { default as HKLine } from './HKLine'
 
-interface ILineGraphProps {
+interface ILineChartDataProps {
   data: any, // Assumes the data comes in the format [{time, value},...]
   height: number,
   width: number,
@@ -18,7 +18,7 @@ interface ILineGraphProps {
   toggleInfo: object,
 }
 
-interface ILineGraphState {
+interface ILineChartDataState {
   data: any, // Points for graph
   measurements: any, // Cleansed data
   height: number,
@@ -33,7 +33,7 @@ interface ILineGraphState {
   yScale: any,
 }
 
-export default class HKLineGraph extends React.PureComponent<ILineGraphProps, ILineGraphState> {
+export default class HKLineChartData extends React.PureComponent<ILineChartDataProps, ILineChartDataState> {
   private ref: SVGSVGElement | null
 
   constructor (props) {

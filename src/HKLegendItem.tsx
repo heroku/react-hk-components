@@ -2,9 +2,11 @@ import * as React from 'react'
 
 import { MalibuIcon } from '@heroku/react-malibu'
 import * as classnames from 'classnames'
+import { colours } from './constants'
 
 interface IHKLegendItemProps {
   zIndex: number,
+  type: string,
   onToggle?: (...args: any[]) => any,
   show: boolean,
   value: number,
@@ -19,13 +21,20 @@ export default class HKLegendItem extends React.PureComponent<IHKLegendItemProps
   }
 
   public render () {
-    const { className, disableToggle, label, show, value, zIndex } = this.props
+    const { className, disableToggle, label, show, value, zIndex, type } = this.props
 
     const legendIcon = show && (
       <div className='flex items-center'>
         <MalibuIcon name='confirm-16' fillClass='dark-gray' extraClasses='icon malibu-icon h1 w1 mr1 fill-dark-gray di'/>
         <svg width='7' height='31' viewBox={`0 0 7 31`} className='mr1'>
-          <rect x='0' y='0' height='100%' width='7' fill='#79589f' fillOpacity={0.2 * (zIndex + 1)}/>
+          <rect
+            x='0'
+            y='0'
+            height='100%'
+            width='7'
+            fill={type === 'line' ? '#79589f' : colours[zIndex]}
+            fillOpacity={type === 'line' ? (0.2 * (zIndex + 1)) : 1}
+          />
         </svg>
       </div>
     )

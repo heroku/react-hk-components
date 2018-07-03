@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import { default as HKLineGraphWrapper } from '../src/HKLineGraphWrapper'
+import { default as HKLineChart } from '../src/HKLineChart'
 
 const data = [['2015-04-23 17:18:06.074707+00',
   [92048, 493280, 34934]],
@@ -14,9 +14,9 @@ const data = [['2015-04-23 17:18:06.074707+00',
   [95056, 899412, 10000]]]
 const labels = ['dragonfruit', 'mango', 'nectarines']
 
-storiesOf('HKLineGraphWrapper', module)
+storiesOf('HKLineChart', module)
   .add('default', () => (
-    <HKLineGraphWrapper
+    <HKLineChart
       data={data}
       labels={labels}
       height={300}

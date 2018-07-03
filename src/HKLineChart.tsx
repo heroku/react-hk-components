@@ -1,25 +1,25 @@
 import * as React from 'react'
 
 import { default as HKLegendItem } from './HKLegendItem'
-import { default as HKLineGraph } from './HKLineGraph'
+import { default as HKLineChartData } from './HKLineChartData'
 
 import * as _ from 'lodash'
 import { default as ContainerDimensions } from 'react-container-dimensions'
 import { getMaxValues } from './helpers'
 
-interface ILineGraphWrapperProps {
+interface ILineChartProps {
   data: any, // Assumes the data comes in the format [{time, value =[1,2,] },...]
   height: number,
   labels: string[],
   width: number,
 }
 
-interface ILineGraphWrapperState {
+interface ILineChartState {
   hoverInfo: object,
   toggleInfo: object,
 }
 
-export default class HKLineGraphWrapper extends React.Component<ILineGraphWrapperProps, ILineGraphWrapperState> {
+export default class HKLineChart extends React.Component<ILineChartProps, ILineChartState> {
 
   constructor (props) {
     super(props)
@@ -46,6 +46,7 @@ export default class HKLineGraphWrapper extends React.Component<ILineGraphWrappe
     const legend = this.props.labels.map((label, i) => (
       <HKLegendItem
         key={i}
+        type='line'
         zIndex={i}
         label={label}
         show={toggleInfo[`${label}-${i}`]}
@@ -58,7 +59,7 @@ export default class HKLineGraphWrapper extends React.Component<ILineGraphWrappe
       <div className='flex'>
         <div className='flex-auto'>
           <ContainerDimensions>
-            {({ width }) => { try  { return (<HKLineGraph {...this.props} width={width} onHover={this.handleHover} toggleInfo={toggleInfo}/>) } catch (e) { return e.message }}}
+            {({ width }) => (<HKLineChartData {...this.props} width={width} onHover={this.handleHover} toggleInfo={toggleInfo}/>)}
           </ContainerDimensions>
         </div>
         <div className='w6'>
