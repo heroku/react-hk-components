@@ -2,9 +2,10 @@ import * as React from 'react'
 
 import { default as HKLegendItem } from './HKLegendItem'
 import { default as HKLineChartData } from './HKLineChartData'
+import { default as HKResizeContainer } from './HKResizeContainer'
 
 import * as _ from 'lodash'
-import { default as ContainerDimensions } from 'react-container-dimensions'
+
 import { getMaxValues } from './helpers'
 
 interface ILineChartProps {
@@ -40,7 +41,6 @@ export default class HKLineChart extends React.Component<ILineChartProps, ILineC
   }
 
   public render () {
-
     const { hoverInfo, toggleInfo } = this.state
 
     const legend = this.props.labels.map((label, i) => (
@@ -57,11 +57,9 @@ export default class HKLineChart extends React.Component<ILineChartProps, ILineC
 
     return (
       <div className='flex'>
-        <div className='flex-auto'>
-          <ContainerDimensions>
-            {({ width }) => (<HKLineChartData {...this.props} width={width} onHover={this.handleHover} toggleInfo={toggleInfo}/>)}
-          </ContainerDimensions>
-        </div>
+        <HKResizeContainer>
+          <HKLineChartData {...this.props} onHover={this.handleHover} toggleInfo={toggleInfo}/>
+        </HKResizeContainer>
         <div className='w6'>
           {legend}
         </div>

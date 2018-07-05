@@ -3,9 +3,9 @@ import * as React from 'react'
 import { getMaxValues } from './helpers'
 import { default as HKBarChartData } from './HKBarChartData'
 import { default as HKLegendItem } from './HKLegendItem'
+import { default as HKResizeContainer } from './HKResizeContainer'
 
 import * as _ from 'lodash'
-import { default as ContainerDimensions } from 'react-container-dimensions'
 
 interface IBarChartProps {
   data: any,
@@ -58,11 +58,9 @@ export default class HKBarChart extends React.Component<IBarChartProps, IBarChar
 
     return (
       <div className='flex'>
-        <div className='flex-auto'>
-          <ContainerDimensions>
-            {({ width }) => (<HKBarChartData {...this.props} width={width} onHover={this.handleHover} toggleInfo={toggleInfo} />)}
-          </ContainerDimensions>
-        </div>
+        <HKResizeContainer>
+          <HKBarChartData {...this.props} onHover={this.handleHover} toggleInfo={toggleInfo} />
+        </HKResizeContainer>
         <div className='w6'>
           {legend}
         </div>

@@ -1,3 +1,10 @@
-import initStoryshots from '@storybook/addon-storyshots'
+import initStoryshots, { snapshotWithOptions } from '@storybook/addon-storyshots'
 
-initStoryshots()
+initStoryshots({
+  test: snapshotWithOptions({
+    createNodeMock: (element) => {
+        if (element === undefined) {
+        }
+      }
+  }),
+})
