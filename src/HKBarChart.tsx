@@ -30,8 +30,8 @@ export default class HKBarChart extends React.Component<IBarChartProps, IBarChar
     const maxValues = getMaxValues(props.data, 'bar')
 
     props.labels.forEach((label, i) => {
-      hoverInfo[`${label}-${i}`] = maxValues[i]
-      toggleInfo[`${label}-${i}`] = true
+      hoverInfo[i] = maxValues[i]
+      toggleInfo[i] = true
     })
 
     this.state = {
@@ -50,9 +50,9 @@ export default class HKBarChart extends React.Component<IBarChartProps, IBarChar
         type='bar'
         zIndex={i}
         label={label}
-        show={toggleInfo[`${label}-${i}`]}
+        show={toggleInfo[i]}
         onToggle={this.handleToggle}
-        value={hoverInfo[`${label}-${i}`]}
+        value={hoverInfo[i]}
       />
     ))
 
@@ -74,13 +74,13 @@ export default class HKBarChart extends React.Component<IBarChartProps, IBarChar
     this.setState({
       toggleInfo : {
         ...this.state.toggleInfo,
-        [`${label}-${i}`] : !this.state.toggleInfo[`${label}-${i}`],
+        [i] : !this.state.toggleInfo[i],
       },
     })
 
   private handleHover = (values) => {
     const hoverInfo = {}
-    this.props.labels.forEach((label, index) => hoverInfo[`${label}-${index}`] = values[index])
+    this.props.labels.forEach((label, index) => hoverInfo[index] = values[index])
     this.setState({ hoverInfo })
   }
 }

@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import * as d3array from 'd3-array'
 import * as d3scale from 'd3-scale'
+import * as _ from 'lodash'
 
 import { colours } from './constants'
 import { getMaxValues } from './helpers'
@@ -45,23 +46,27 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
   }
 
   public static getDerivedStateFromProps (newProps, prevState) {
-    if (['data', 'width', 'height'].every((o) => newProps[o] === prevState[o])) {
+    if (['data', 'width', 'height', 'toggleInfo'].every((o) => newProps[o] === prevState[o])) {
       return null
     }
 
-    const { data, height, width } = newProps
+    const { data, height, width, toggleInfo } = newProps
 
-    const minValues = d3array.min(data, ((arr) => d3array.min(arr)))
-    const maxValues = d3array.max(data, ((arr) => d3array.max(arr)))
+    const keys = Object.keys(toggleInfo).filter((k) => toggleInfo[k]).map(Number)
+
+    const shownData = data.map((rowData) => rowData.filter((colData, i) => _.includes(keys, i)))
+
+    const minValues = d3array.min(shownData, ((arr) => d3array.min(arr)))
+    const maxValues = d3array.max(shownData, ((arr) => d3array.max(arr)))
 
     const x0Scale = d3scale.scaleBand()
-                      .rangeRound([0, width])
-                      .domain(data.map((d,i) => i))
+                      .range([0, width])
+                      .domain(shownData.map((d,i) => i))
                       .paddingInner(0.1)
 
     const x1Scale = d3scale.scaleBand()
-                      .rangeRound([0, x0Scale.bandwidth()])
-                      .domain(data[0].map((d,i) => i))
+                      .range([0, x0Scale.bandwidth()])
+                      .domain(shownData[0].map((d,i) => i))
                       .padding(0.08)
 
     const yScale = d3scale.scaleLinear()
@@ -69,7 +74,7 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
                     .domain([Math.min(0, minValues), maxValues * 1.05])
 
     return {
-      data,
+      data: shownData,
       height,
       width,
 
@@ -89,13 +94,15 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
     const hoverIndex = e.clientX - this.ref.getBoundingClientRect().left
     const interpolateIndex = hoverIndex * data.length / width
     const index = Math.min(interpolateIndex, data.length - 1)
-    const value = data[Math.floor(index)]
+    const values = data[Math.floor(index)]
 
-    this.props.onHover(value)
+    this.props.onHover(values)
   }
 
   public handleMouseLeave = (e) => {
-    const { onHover, data } = this.props
+    const { onHover } = this.props
+    const { data } = this.state
+
     if (onHover) {
       onHover(getMaxValues(data, 'bar'))
     }
@@ -104,7 +111,9 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
   public render () {
 
     const { data, height, width, x0Scale, x1Scale, yScale } = this.state
-    const { toggleInfo, labels } = this.props
+    const { toggleInfo } = this.props
+
+    const keys = Object.keys(toggleInfo).filter((k) => toggleInfo[k]).map(Number)
 
     const createBar = (rowIdx, colVal, colIdx) => (
       <rect
@@ -113,7 +122,7 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
         y={height - yScale(colVal)} // y-axis top-left corner
         height={yScale(colVal)}
         width={x1Scale.bandwidth()}
-        fill={toggleInfo[`${labels[colIdx]}-${colIdx}`] ? colours[colIdx] : '#fff'}
+        fill={colours[keys[colIdx]]}
         className='dim cursor-hand'
       />
     )
