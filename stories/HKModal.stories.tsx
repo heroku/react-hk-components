@@ -55,7 +55,10 @@ class ModalWrapper extends React.Component<
 
 storiesOf('HKModal', module)
   .add('default', () => <ModalWrapper />)
-  .add('initially open', () => <ModalWrapper initialShowModal={true} />)
-  .add('is flyout', () => (
+  .add('default initially open', () => <ModalWrapper initialShowModal={true} />)
+  .add('flyout', () => (
+    <ModalWrapper isFlyout={true} initialShowModal={false} />
+  ))
+  .add('flyout initially open', () => (
     <ModalWrapper isFlyout={true} initialShowModal={true} />
   ))
