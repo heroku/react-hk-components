@@ -4,19 +4,6 @@ import * as React from 'react'
 import { Transition } from 'react-transition-group'
 import SRMModal from 'simple-react-modal'
 
-const duration = 250
-
-const defaultStyle = {
-  transition: `background ${duration}ms ease-in-out, opacity ${duration}ms ease-in-out`
-}
-
-const transitionStyles = {
-  entered: { background: 'rgba(0, 0, 0, .2)', opacity: 1 },
-  entering: { background: 'rgba(0, 0, 0, 0)', opacity: 0 },
-  exited: { background: 'rgba(0, 0, 0, 0)', opacity: 0 },
-  exiting: { background: 'rgba(0, 0, 0, .2)', opacity: 1 },
-}
-
 interface IModalProps {
   children: React.ReactNode,
   header: React.ReactNode,
@@ -52,9 +39,34 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
   public handleExited = (node) => {
     node.addEventListener('transitionend', this.props.onDismiss, false)
   }
-
+  
   public render () {
+    const duration = 250
     const { show, children, onDismiss, header, footer, isFlyout } = this.props
+
+    const fadeTransition = {
+      transition: `background ${duration}ms ease-in-out, opacity ${duration}ms ease-in-out`,
+    }
+
+    const fadeStyles = {
+      entered: { background: 'rgba(0, 0, 0, .2)', opacity: 1 },
+      entering: { background: 'rgba(0, 0, 0, 0)', opacity: 0 },
+      exited: { background: 'rgba(0, 0, 0, 0)', opacity: 0 },
+      exiting: { background: 'rgba(0, 0, 0, .2)', opacity: 1 },
+    }
+
+    let innerTransition = isFlyout ? {
+      transform: 'translateX(100%)',
+      transition: `transform ${duration}ms ease-in-out`,
+    } : {}
+
+    const innerStyles = isFlyout ? {
+      entered: { transform: 'translateX(0)' },
+      entering: { transform: 'translateX(100%)' },
+      exited: { transform: 'translateX(100%)' },
+      exiting: { transform: 'translateX(0)' },
+    } : {}
+
     const headerElem = header && (
       <div className='hk-modal-header pa4 bg-near-white'>{header}</div>
     )
@@ -82,10 +94,13 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
     }
     
     return (
-      <Transition in={this.state.isShowing} timeout={100} onExited={this.handleExited}>
+      <Transition in={this.state.isShowing} timeout={0} onExited={this.handleExited}>
         {(state) => (
           <SRMModal
-            containerStyle={{}}
+            containerStyle={{
+              ...innerTransition,
+              ...innerStyles[state],
+            }}
             containerClassName={classNames(
               'bg-white shadow-outer-1 relative',
               modalClass,
@@ -97,8 +112,8 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
               left: 0,
               right: 0,
               zIndex: 9999,
-              ...defaultStyle,
-              ...transitionStyles[state],
+              ...fadeTransition,
+              ...fadeStyles[state],
             }}
             className={classNames('flex flex-column', modalParentClass)}
             closeOnOuterClick={true}
