@@ -19,15 +19,15 @@ class ModalWrapper extends React.Component<
   IModalWrapperProps,
   IModalWrapperState
 > {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
+      isFlyout: props.isFlyout,
       showModal: props.initialShowModal,
-      isFlyout: props.isFlyout
     }
   }
 
-  public render() {
+  public render () {
     return (
       <div>
         <button onClick={this.showModal}>show it</button>

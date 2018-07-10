@@ -26,7 +26,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
     isShowing: false,
   }
 
-  public static getDerivedStateFromProps(props, state) {
+  public static getDerivedStateFromProps (props, state) {
     return { isShowing: props.show }
   }
 
@@ -39,7 +39,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
   public handleExited = (node) => {
     node.addEventListener('transitionend', this.props.onDismiss, false)
   }
-  
+
   public render () {
     const duration = 250
     const { show, children, onDismiss, header, footer, isFlyout } = this.props
@@ -55,7 +55,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
       exiting: { background: 'rgba(0, 0, 0, .2)', opacity: 1 },
     }
 
-    let innerTransition = isFlyout ? {
+    const innerTransition = isFlyout ? {
       transform: 'translateX(100%)',
       transition: `transform ${duration}ms ease-in-out`,
     } : {}
@@ -85,14 +85,14 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
     }
 
     const modalClass = {
-      'w-100 mw7 center br1': !isFlyout,
       'fixed right-0 w7 h-100 flex flex-column': isFlyout,
+      'w-100 mw7 center br1': !isFlyout,
     }
 
     const modalChildrenClass = {
       'flex-auto': isFlyout,
     }
-    
+
     return (
       <Transition in={this.state.isShowing} timeout={0} onExited={this.handleExited}>
         {(state) => (
@@ -101,16 +101,13 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
               ...innerTransition,
               ...innerStyles[state],
             }}
-            containerClassName={classNames(
-              'bg-white shadow-outer-1 relative',
-              modalClass,
-            )}
+            containerClassName={classNames('bg-white shadow-outer-1 relative', modalClass)}
             style={{
-              position: 'fixed',
-              top: 0,
               bottom: 0,
               left: 0,
+              position: 'fixed',
               right: 0,
+              top: 0,
               zIndex: 9999,
               ...fadeTransition,
               ...fadeStyles[state],
