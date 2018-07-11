@@ -74,10 +74,10 @@ export default class HKLineChart extends React.Component<ILineChartProps, ILineC
   }
 
   private handleToggle = (label, i) =>
-    this.setState({
-      toggleInfo : {
-        ...this.state.toggleInfo,
-        [`${label}-${i}`] : !this.state.toggleInfo[`${label}-${i}`],
+    this.setState((prevState) => ({
+      toggleInfo: {
+        ...prevState.toggleInfo,
+        [`${label}-${i}`] : !prevState.toggleInfo[`${label}-${i}`],
       },
-    })
+    }))
 }

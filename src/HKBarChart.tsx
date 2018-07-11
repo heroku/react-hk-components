@@ -68,12 +68,12 @@ export default class HKBarChart extends React.Component<IBarChartProps, IBarChar
   }
 
   private handleToggle = (label, i) =>
-    this.setState({
-      toggleInfo : {
-        ...this.state.toggleInfo,
-        [i] : !this.state.toggleInfo[i],
+    this.setState((prevState) => ({
+      toggleInfo: {
+        ...prevState.toggleInfo,
+        [i] : !prevState.toggleInfo[i],
       },
-    })
+    }))
 
   private handleHover = (values) => {
     const hoverInfo = {}

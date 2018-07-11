@@ -136,9 +136,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
     const { onHover, data } = this.props
 
     this.setState({ hoverIndex: -1, idx: -1 })
-    if (onHover) {
-      onHover(getMaxValues(data))
-    }
+    onHover(getMaxValues(data))
   }
 
   public render () {

@@ -52,7 +52,7 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
 
     const { data, height, width, toggleInfo } = newProps
 
-    const keys = Object.keys(toggleInfo).filter((k) => toggleInfo[k]).map(Number)
+    const keys = getKeys(toggleInfo)
 
     const shownData = data.map((rowData) => rowData.filter((colData, i) => _.includes(keys, i)))
 
@@ -108,14 +108,12 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
     }
   }
 
-  public render () {
-
-    const { data, height, width, x0Scale, x1Scale, yScale } = this.state
+  public createBar = (rowIdx, colVal, colIdx) => {
+    const { height, x0Scale, x1Scale, yScale } = this.state
     const { toggleInfo } = this.props
+    const keys = getKeys(toggleInfo)
 
-    const keys = Object.keys(toggleInfo).filter((k) => toggleInfo[k]).map(Number)
-
-    const createBar = (rowIdx, colVal, colIdx) => (
+    return (
       <rect
         key={`row${rowIdx}-column${colIdx}`}
         x={x0Scale(rowIdx) + x1Scale(colIdx)} // x-axis top-left corner
@@ -124,12 +122,15 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
         width={x1Scale.bandwidth()}
         fill={colours[keys[colIdx]]}
         className='dim cursor-hand'
-      />
-    )
+      />)
+  }
 
+  public render () {
+
+    const { data, height, width } = this.state
     const bars = data.map((rowData, rowIdx) => (
       <g key={`row-${rowIdx}`} className='dim cursor-hand'>
-        {rowData.map((colVal, colIdx) => createBar(rowIdx, colVal, colIdx))}
+        {rowData.map((colVal, colIdx) => this.createBar(rowIdx, colVal, colIdx))}
       </g>
     ))
 
@@ -148,4 +149,8 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
       </svg>
     )
   }
+}
+
+function getKeys (toggleInfo) {
+  return Object.keys(toggleInfo).filter((k) => toggleInfo[k]).map(Number)
 }
