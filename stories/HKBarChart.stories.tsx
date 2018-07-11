@@ -17,5 +17,5 @@ const data = [
 
 storiesOf('HKBarChart', module)
   .add('default', () => (
-    <HKBarChart data={data} height={300} width={300} labels={['apples', 'oranges']} />
+    <HKBarChart data={data} height={300} labels={['apples', 'oranges']} />
   ))

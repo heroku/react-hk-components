@@ -10,9 +10,9 @@ import { getMaxValues } from './helpers'
 interface IBarChartDataProps {
   data: any,
   height: number,
+  labels: any,
   onHover: (value: number) => void,
   toggleInfo: object,
-  labels: any,
   width: number,
 }
 

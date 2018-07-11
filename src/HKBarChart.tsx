@@ -10,7 +10,6 @@ import * as _ from 'lodash'
 interface IBarChartProps {
   data: any,
   height: number,
-  width: number,
   labels: string[],
 }
 
@@ -59,7 +58,7 @@ export default class HKBarChart extends React.Component<IBarChartProps, IBarChar
     return (
       <div className='flex'>
         <HKResizeContainer>
-          <HKBarChartData {...this.props} onHover={this.handleHover} toggleInfo={toggleInfo} />
+          {(width) => (<HKBarChartData {...this.props} width={width} onHover={this.handleHover} toggleInfo={toggleInfo} />)}
         </HKResizeContainer>
         <div className='w6'>
           {legend}

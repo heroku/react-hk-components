@@ -30,7 +30,7 @@ export default class HKResizeContainer extends React.PureComponent<IResizeContai
         bounds={true}
         onResize={this.handleOnResize}
       >
-        {({ measureRef }) => (<div className='flex-auto' ref={measureRef}>{React.cloneElement(children, { width })}</div>)}
+        {({ measureRef }) => (<div className='flex-auto' ref={measureRef}>{children(width)}</div>)}
       </Measure>
     )
   }

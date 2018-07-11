@@ -20,6 +20,5 @@ storiesOf('HKLineChart', module)
       data={data}
       labels={labels}
       height={300}
-      width={800}
     />
   ))

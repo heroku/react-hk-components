@@ -12,7 +12,6 @@ interface ILineChartProps {
   data: any, // Assumes the data comes in the format [{time, value =[1,2,] },...]
   height: number,
   labels: string[],
-  width: number,
 }
 
 interface ILineChartState {
@@ -58,7 +57,7 @@ export default class HKLineChart extends React.Component<ILineChartProps, ILineC
     return (
       <div className='flex'>
         <HKResizeContainer>
-          <HKLineChartData {...this.props} onHover={this.handleHover} toggleInfo={toggleInfo}/>
+          {(width) => (<HKLineChartData {...this.props} width={width} onHover={this.handleHover} toggleInfo={toggleInfo}/>)}
         </HKResizeContainer>
         <div className='w6'>
           {legend}

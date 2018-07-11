@@ -12,10 +12,10 @@ import { default as HKLine } from './HKLine'
 interface ILineChartDataProps {
   data: any, // Assumes the data comes in the format [{time, value},...]
   height: number,
-  width: number,
   labels: string[],
   onHover: (value: number) => void,
   toggleInfo: object,
+  width: number,
 }
 
 interface ILineChartDataState {
