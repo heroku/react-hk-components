@@ -1,5 +1,310 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots HKBarChart default 1`] = `
+<div
+  className="flex"
+>
+  <div
+    className="flex-auto"
+  >
+    <svg
+      className="br0 ba b--silver"
+      height={300}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      preserveAspectRatio="none"
+      viewBox="0 0 100 300"
+      width={100}
+    >
+      <g
+        className="dim cursor-hand"
+      >
+        <rect
+          className="dim cursor-hand"
+          fill="#CFD7E6"
+          height={45}
+          width={4.472774416594641}
+          x={0.38893690579083895}
+          y={255}
+        />
+        <rect
+          className="dim cursor-hand"
+          fill="#CCC2DC"
+          height={285}
+          width={4.472774416594641}
+          x={5.250648228176318}
+          y={15}
+        />
+      </g>
+      <g
+        className="dim cursor-hand"
+      >
+        <rect
+          className="dim cursor-hand"
+          fill="#CFD7E6"
+          height={48}
+          width={4.472774416594641}
+          x={11.624891961970613}
+          y={252}
+        />
+        <rect
+          className="dim cursor-hand"
+          fill="#CCC2DC"
+          height={286}
+          width={4.472774416594641}
+          x={16.486603284356093}
+          y={14}
+        />
+      </g>
+      <g
+        className="dim cursor-hand"
+      >
+        <rect
+          className="dim cursor-hand"
+          fill="#CFD7E6"
+          height={50}
+          width={4.472774416594641}
+          x={22.860847018150388}
+          y={250}
+        />
+        <rect
+          className="dim cursor-hand"
+          fill="#CCC2DC"
+          height={285}
+          width={4.472774416594641}
+          x={27.722558340535866}
+          y={15}
+        />
+      </g>
+      <g
+        className="dim cursor-hand"
+      >
+        <rect
+          className="dim cursor-hand"
+          fill="#CFD7E6"
+          height={52}
+          width={4.472774416594641}
+          x={34.09680207433016}
+          y={248}
+        />
+        <rect
+          className="dim cursor-hand"
+          fill="#CCC2DC"
+          height={285}
+          width={4.472774416594641}
+          x={38.95851339671564}
+          y={15}
+        />
+      </g>
+      <g
+        className="dim cursor-hand"
+      >
+        <rect
+          className="dim cursor-hand"
+          fill="#CFD7E6"
+          height={52}
+          width={4.472774416594641}
+          x={45.33275713050993}
+          y={248}
+        />
+        <rect
+          className="dim cursor-hand"
+          fill="#CCC2DC"
+          height={285}
+          width={4.472774416594641}
+          x={50.194468452895414}
+          y={15}
+        />
+      </g>
+      <g
+        className="dim cursor-hand"
+      >
+        <rect
+          className="dim cursor-hand"
+          fill="#CFD7E6"
+          height={52}
+          width={4.472774416594641}
+          x={56.56871218668971}
+          y={248}
+        />
+        <rect
+          className="dim cursor-hand"
+          fill="#CCC2DC"
+          height={216}
+          width={4.472774416594641}
+          x={61.43042350907519}
+          y={84}
+        />
+      </g>
+      <g
+        className="dim cursor-hand"
+      >
+        <rect
+          className="dim cursor-hand"
+          fill="#CFD7E6"
+          height={52}
+          width={4.472774416594641}
+          x={67.80466724286948}
+          y={248}
+        />
+        <rect
+          className="dim cursor-hand"
+          fill="#CCC2DC"
+          height={285}
+          width={4.472774416594641}
+          x={72.66637856525496}
+          y={15}
+        />
+      </g>
+      <g
+        className="dim cursor-hand"
+      >
+        <rect
+          className="dim cursor-hand"
+          fill="#CFD7E6"
+          height={54}
+          width={4.472774416594641}
+          x={79.04062229904926}
+          y={246}
+        />
+        <rect
+          className="dim cursor-hand"
+          fill="#CCC2DC"
+          height={285}
+          width={4.472774416594641}
+          x={83.90233362143474}
+          y={15}
+        />
+      </g>
+      <g
+        className="dim cursor-hand"
+      >
+        <rect
+          className="dim cursor-hand"
+          fill="#CFD7E6"
+          height={56}
+          width={4.472774416594641}
+          x={90.27657735522904}
+          y={244}
+        />
+        <rect
+          className="dim cursor-hand"
+          fill="#CCC2DC"
+          height={255}
+          width={4.472774416594641}
+          x={95.13828867761451}
+          y={45}
+        />
+      </g>
+    </svg>
+  </div>
+  <div
+    className="w6"
+  >
+    <a
+      className="cursor-hand"
+      onClick={[Function]}
+    >
+      <div
+        className="hk-label flex flex-row br2 pa2 mh2 items-center bg-lightest-silver"
+      >
+        <div
+          className="flex items-center"
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
+            style={undefined}
+          >
+            <use
+              xlinkHref="#confirm-16"
+            />
+          </svg>
+          <svg
+            className="mr1"
+            height="31"
+            viewBox="0 0 7 31"
+            width="7"
+          >
+            <rect
+              fill="#CFD7E6"
+              fillOpacity={1}
+              height="100%"
+              width="7"
+              x="0"
+              y="0"
+            />
+          </svg>
+        </div>
+        <div
+          className="items-center"
+        >
+          <span
+            className="db ma1 ttu f7 tracked"
+          >
+            apples
+          </span>
+          <span
+            className="db ma1 ttu b f6"
+          >
+            242152
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      className="cursor-hand"
+      onClick={[Function]}
+    >
+      <div
+        className="hk-label flex flex-row br2 pa2 mh2 items-center bg-lightest-silver"
+      >
+        <div
+          className="flex items-center"
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
+            style={undefined}
+          >
+            <use
+              xlinkHref="#confirm-16"
+            />
+          </svg>
+          <svg
+            className="mr1"
+            height="31"
+            viewBox="0 0 7 31"
+            width="7"
+          >
+            <rect
+              fill="#CCC2DC"
+              fillOpacity={1}
+              height="100%"
+              width="7"
+              x="0"
+              y="0"
+            />
+          </svg>
+        </div>
+        <div
+          className="items-center"
+        >
+          <span
+            className="db ma1 ttu f7 tracked"
+          >
+            oranges
+          </span>
+          <span
+            className="db ma1 ttu b f6"
+          >
+            1245496
+          </span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;
+
 exports[`Storyshots HKButton with custom title 1`] = `
 <button
   className="hk-button--secondary"
@@ -478,6 +783,220 @@ exports[`Storyshots HKButton/warning small-enabled-normal 1`] = `
   Click Me
    
 </button>
+`;
+
+exports[`Storyshots HKLineChart default 1`] = `
+<div
+  className="flex"
+>
+  <div
+    className="flex-auto"
+  >
+    <svg
+      className="br0 ba b--silver overflow-hidden"
+      height={300}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      preserveAspectRatio="none"
+      viewBox="0 0 100 300"
+      width={100}
+    >
+      <g>
+        <path
+          d="M0,270.18369461699103L0,270.3577766045245L2.3759899805875913,270.3577766045245L2.3759899805875913,270.75930878014907L99.9657101368713,270.75930878014907L99.9657101368713,269.8037638558779L100,269.8037638558779"
+          fill="none"
+          stroke="#79589f"
+          strokeWidth="1"
+        />
+        <path
+          d="M0,270.18369461699103L0,270.3577766045245L2.3759899805875913,270.3577766045245L2.3759899805875913,270.75930878014907L99.9657101368713,270.75930878014907L99.9657101368713,269.8037638558779L100,269.8037638558779L100,300L99.9657101368713,300L99.9657101368713,300L2.3759899805875913,300L2.3759899805875913,300L0,300L0,300Z"
+          fill="#79589f"
+          fillOpacity="0.2"
+        />
+      </g>
+      <g>
+        <path
+          d="M0,147.9018990820034L0,142.91324300130054L2.3759899805875913,142.91324300130054L2.3759899805875913,143.30079779106478L99.9657101368713,143.30079779106478L99.9657101368713,14.285714285714278L100,14.285714285714278"
+          fill="none"
+          stroke="#79589f"
+          strokeWidth="1"
+        />
+        <path
+          d="M0,147.9018990820034L0,142.91324300130054L2.3759899805875913,142.91324300130054L2.3759899805875913,143.30079779106478L99.9657101368713,143.30079779106478L99.9657101368713,14.285714285714278L100,14.285714285714278L100,300L99.9657101368713,300L99.9657101368713,300L2.3759899805875913,300L2.3759899805875913,300L0,300L0,300Z"
+          fill="#79589f"
+          fillOpacity="0.2"
+        />
+      </g>
+      <g>
+        <path
+          d="M0,268.1236185418918L0,225.5567605756396L2.3759899805875913,225.5567605756396L2.3759899805875913,288.9025909626035L99.9657101368713,288.9025909626035L99.9657101368713,296.82332139537516L100,296.82332139537516"
+          fill="none"
+          stroke="#79589f"
+          strokeWidth="1"
+        />
+        <path
+          d="M0,268.1236185418918L0,225.5567605756396L2.3759899805875913,225.5567605756396L2.3759899805875913,288.9025909626035L99.9657101368713,288.9025909626035L99.9657101368713,296.82332139537516L100,296.82332139537516L100,300L99.9657101368713,300L99.9657101368713,300L2.3759899805875913,300L2.3759899805875913,300L0,300L0,300Z"
+          fill="#79589f"
+          fillOpacity="0.2"
+        />
+      </g>
+    </svg>
+  </div>
+  <div
+    className="w6"
+  >
+    <a
+      className="cursor-hand"
+      onClick={[Function]}
+    >
+      <div
+        className="hk-label flex flex-row br2 pa2 mh2 items-center bg-lightest-silver"
+      >
+        <div
+          className="flex items-center"
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
+            style={undefined}
+          >
+            <use
+              xlinkHref="#confirm-16"
+            />
+          </svg>
+          <svg
+            className="mr1"
+            height="31"
+            viewBox="0 0 7 31"
+            width="7"
+          >
+            <rect
+              fill="#79589f"
+              fillOpacity={0.2}
+              height="100%"
+              width="7"
+              x="0"
+              y="0"
+            />
+          </svg>
+        </div>
+        <div
+          className="items-center"
+        >
+          <span
+            className="db ma1 ttu f7 tracked"
+          >
+            dragonfruit
+          </span>
+          <span
+            className="db ma1 ttu b f6"
+          >
+            95056
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      className="cursor-hand"
+      onClick={[Function]}
+    >
+      <div
+        className="hk-label flex flex-row br2 pa2 mh2 items-center bg-lightest-silver"
+      >
+        <div
+          className="flex items-center"
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
+            style={undefined}
+          >
+            <use
+              xlinkHref="#confirm-16"
+            />
+          </svg>
+          <svg
+            className="mr1"
+            height="31"
+            viewBox="0 0 7 31"
+            width="7"
+          >
+            <rect
+              fill="#79589f"
+              fillOpacity={0.4}
+              height="100%"
+              width="7"
+              x="0"
+              y="0"
+            />
+          </svg>
+        </div>
+        <div
+          className="items-center"
+        >
+          <span
+            className="db ma1 ttu f7 tracked"
+          >
+            mango
+          </span>
+          <span
+            className="db ma1 ttu b f6"
+          >
+            899412
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      className="cursor-hand"
+      onClick={[Function]}
+    >
+      <div
+        className="hk-label flex flex-row br2 pa2 mh2 items-center bg-lightest-silver"
+      >
+        <div
+          className="flex items-center"
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
+            style={undefined}
+          >
+            <use
+              xlinkHref="#confirm-16"
+            />
+          </svg>
+          <svg
+            className="mr1"
+            height="31"
+            viewBox="0 0 7 31"
+            width="7"
+          >
+            <rect
+              fill="#79589f"
+              fillOpacity={0.6000000000000001}
+              height="100%"
+              width="7"
+              x="0"
+              y="0"
+            />
+          </svg>
+        </div>
+        <div
+          className="items-center"
+        >
+          <span
+            className="db ma1 ttu f7 tracked"
+          >
+            nectarines
+          </span>
+          <span
+            className="db ma1 ttu b f6"
+          >
+            234343
+          </span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
 `;
 
 exports[`Storyshots HKModal default 1`] = `

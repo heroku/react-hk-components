@@ -9,9 +9,14 @@
   "dependencies": {
     "@heroku/react-malibu": "3.2.0",
     "@types/storybook__addon-actions": "^3.0.1",
+    "classnames": "2.2.5",
+    "d3": "^5.4.0",
+    "lodash": "4.17.5",
+    "moment": "2.21.0",
     "prop-types": "15.x",
     "react": "^16.4.0",
     "react-dom": "16.x",
+    "react-measure": "^2.0.0",
     "simple-react-modal": "0.5.1"
   },
   "devDependencies": {
@@ -27,6 +32,7 @@
     "@types/storybook__react": "^3.0.6",
     "awesome-typescript-loader": "^3.4.1",
     "babel-core": "^6.26.0",
+    "babel-plugin-react-hot-loader": "^3.0.0-beta.6",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.0",
@@ -39,6 +45,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "jest": "^22.1.4",
     "np": "^2.19.0",
+    "react-hot-loader": "^4.3.1",
     "react-test-renderer": "16",
     "ts-jest": "^22.0.1",
     "tslint": "^5.9.1",
