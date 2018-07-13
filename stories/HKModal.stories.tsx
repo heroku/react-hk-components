@@ -3,7 +3,7 @@ import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import { default as HKButton } from '../src/HKButton'
-import { default as HKModal } from '../src/HKModal'
+import { default as HKModal, Type } from '../src/HKModal'
 
 interface IModalWrapperProps {
   initialShowModal?: boolean,
@@ -27,6 +27,7 @@ class ModalWrapper extends React.Component<IModalWrapperProps, IModalWrapperStat
       <div>
         <button onClick={this.showModal}>show it</button>
         <HKModal
+          type={Type.Destructive}
           show={this.state.showModal}
           onDismiss={this.handleModalDismiss}
           header={<div>header text</div>}
