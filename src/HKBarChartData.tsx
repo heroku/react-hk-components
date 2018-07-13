@@ -28,23 +28,6 @@ interface IBarChartDataState {
 }
 
 export default class HKBarChartData extends React.PureComponent<IBarChartDataProps, IBarChartDataState> {
-  private ref: SVGSVGElement | null
-
-  constructor (props) {
-    super(props)
-
-    this.state = {
-      data: null,
-      height: 0,
-      width: 0,
-
-      hoverIndex: -1,
-      x0Scale: null,
-      x1Scale: null,
-      yScale : null,
-    }
-  }
-
   public static getDerivedStateFromProps (newProps, prevState) {
     if (['data', 'width', 'height', 'toggleInfo'].every((o) => newProps[o] === prevState[o])) {
       return null
@@ -83,6 +66,23 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
       yScale,
     }
 
+  }
+
+  private ref: SVGSVGElement | null
+
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      data: null,
+      height: 0,
+      width: 0,
+
+      hoverIndex: -1,
+      x0Scale: null,
+      x1Scale: null,
+      yScale : null,
+    }
   }
 
   public handleMouseMove = (e) => {
