@@ -7,6 +7,7 @@ import { default as HKModal, Type } from '../src/HKModal'
 
 interface IModalWrapperProps {
   initialShowModal?: boolean,
+  type?: Type,
 }
 
 interface IModalWrapperState {
@@ -27,7 +28,7 @@ class ModalWrapper extends React.Component<IModalWrapperProps, IModalWrapperStat
       <div>
         <button onClick={this.showModal}>show it</button>
         <HKModal
-          type={Type.Destructive}
+          type={this.props.type && this.props.type}
           show={this.state.showModal}
           onDismiss={this.handleModalDismiss}
           header={<div>header text</div>}
@@ -53,6 +54,9 @@ class ModalWrapper extends React.Component<IModalWrapperProps, IModalWrapperStat
 storiesOf('HKModal', module)
   .add('default', () => (
     <ModalWrapper />
+  ))
+  .add('destructive', () => (
+    <ModalWrapper type={Type.Destructive} />
   ))
   .add('initially open', () => (
     <ModalWrapper initialShowModal={true} />
