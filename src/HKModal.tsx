@@ -22,12 +22,12 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
     isFlyout: false,
   }
 
-  public state = {
-    isShowing: false,
-  }
-
   public static getDerivedStateFromProps (props, state) {
     return { isShowing: props.show }
+  }
+
+  public state = {
+    isShowing: false,
   }
 
   public handleClose = () => {
