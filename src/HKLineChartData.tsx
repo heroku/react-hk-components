@@ -8,6 +8,7 @@ import * as moment from 'moment'
 import { getMaxValues } from './helpers'
 
 import { default as HKLine } from './HKLine'
+import { default as HKTooltip } from './HKTooltip'
 
 interface ILineChartDataProps {
   data: any, // Assumes the data comes in the format [{time, value},...]
@@ -140,7 +141,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
   }
 
   public render () {
-    const { height, width, yScale, line, area, measurements, idx, hoverIndex } = this.state
+    const { height, width, xScale, yScale, line, area, measurements, idx, hoverIndex } = this.state
     const { toggleInfo, labels } = this.props
     const isHovering = hoverIndex !== -1
 
@@ -172,6 +173,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
         r={2}
       />) : null)
 
+    const timeStamp = moment(xScale.invert(hoverIndex)).format('llll')
     const indicator = isHovering && (
       <g>
         <line x1={hoverIndex} y1='0' x2={hoverIndex} y2={height} stroke='#79589f' strokeWidth='1' />
@@ -179,19 +181,22 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
       </g>)
 
     return (
-        <svg
-          preserveAspectRatio='none'
-          width={width}
-          height={height}
-          viewBox={`0 0 ${width} ${height}`}
-          onMouseMove={this.handleMouseMove}
-          onMouseLeave={this.handleMouseLeave}
-          ref={(ref) => this.ref = ref}
-          className='br0 ba b--silver overflow-hidden'
-        >
-          {indicator}
-          {timeseries}
-        </svg>
+        <div>
+          {isHovering && (<HKTooltip xPos={hoverIndex} yPos={height / 3} content={`${timeStamp}`} />)}
+          <svg
+            preserveAspectRatio='none'
+            width={width}
+            height={height}
+            viewBox={`0 0 ${width} ${height}`}
+            onMouseMove={this.handleMouseMove}
+            onMouseLeave={this.handleMouseLeave}
+            ref={(ref) => this.ref = ref}
+            className='br0 ba b--silver overflow-hidden'
+          >
+            {indicator}
+            {timeseries}
+          </svg>
+        </div>
     )
   }
 }
