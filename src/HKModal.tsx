@@ -1,6 +1,13 @@
 import { MalibuIcon } from '@heroku/react-malibu'
+import * as classnames from 'classnames'
 import * as React from 'react'
 import SRMModal from 'simple-react-modal'
+
+export enum Type {
+  Actionable = 'actionable',
+  Destructive = 'destructive',
+  Presentation = 'presentation',
+}
 
 interface IModalProps {
   children: React.ReactNode,
@@ -8,13 +15,14 @@ interface IModalProps {
   footer: React.ReactNode,
   onDismiss: (...args: any[]) => any,
   show: boolean,
+  type?: Type,
 }
 
 export default class HKModal extends React.Component<IModalProps, {}> {
   public render () {
-    const { show, children, onDismiss, header, footer } = this.props
+    const { show, children, onDismiss, header, footer, type } = this.props
     const headerElem = header && (
-      <div className='hk-modal-header pa4 bg-near-white'>
+      <div className={classnames('hk-modal-header pa4 bg-near-white', { red : type === 'destructive' })}>
         {header}
       </div>
     )
