@@ -2,7 +2,7 @@ import * as classnames from 'classnames'
 import * as React from 'react'
 
 interface IHKTooltipProps {
-  content?: string | React.ReactNode,
+  children: string | React.ReactNode,
   height?: number,
   width?: number,
   xPos: number,
@@ -11,7 +11,7 @@ interface IHKTooltipProps {
 
 export default class HKTooltip extends React.PureComponent<IHKTooltipProps, {}> {
   public render () {
-    const { content, height, width, xPos, yPos } = this.props
+    const { children, height, width, xPos, yPos } = this.props
     const style = {
       backgroundColor: 'rgba(254,255,228,.75)',
       height: height && height,
@@ -24,7 +24,7 @@ export default class HKTooltip extends React.PureComponent<IHKTooltipProps, {}> 
         className={classnames('absolute z-1 f7 b', { mw4: !width })}
         style={style}
       >
-        <p>{content}</p>
+        <p>{children}</p>
       </div>
     )
   }
