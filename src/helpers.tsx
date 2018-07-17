@@ -14,3 +14,9 @@ export function getMaxValues (data, type = 'line') {
   const maxValues = values.map((value) => d3array.max(value))
   return maxValues
 }
+
+export function getNumVisibleCharts (toggleInfo) {
+  return Object.keys(toggleInfo)
+    .map((key) => toggleInfo[key])
+    .reduce((a, c) => c ? ++a : a, 0)
+}

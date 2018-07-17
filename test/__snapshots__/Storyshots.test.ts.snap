@@ -17,10 +17,10 @@ exports[`Storyshots HKBarChart default 1`] = `
       width={100}
     >
       <g
-        className="dim cursor-hand"
+        className="dim"
       >
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CFD7E6"
           height={45}
           width={4.472774416594641}
@@ -28,7 +28,7 @@ exports[`Storyshots HKBarChart default 1`] = `
           y={255}
         />
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CCC2DC"
           height={285}
           width={4.472774416594641}
@@ -37,10 +37,10 @@ exports[`Storyshots HKBarChart default 1`] = `
         />
       </g>
       <g
-        className="dim cursor-hand"
+        className="dim"
       >
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CFD7E6"
           height={48}
           width={4.472774416594641}
@@ -48,7 +48,7 @@ exports[`Storyshots HKBarChart default 1`] = `
           y={252}
         />
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CCC2DC"
           height={286}
           width={4.472774416594641}
@@ -57,10 +57,10 @@ exports[`Storyshots HKBarChart default 1`] = `
         />
       </g>
       <g
-        className="dim cursor-hand"
+        className="dim"
       >
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CFD7E6"
           height={50}
           width={4.472774416594641}
@@ -68,7 +68,7 @@ exports[`Storyshots HKBarChart default 1`] = `
           y={250}
         />
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CCC2DC"
           height={285}
           width={4.472774416594641}
@@ -77,10 +77,10 @@ exports[`Storyshots HKBarChart default 1`] = `
         />
       </g>
       <g
-        className="dim cursor-hand"
+        className="dim"
       >
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CFD7E6"
           height={52}
           width={4.472774416594641}
@@ -88,7 +88,7 @@ exports[`Storyshots HKBarChart default 1`] = `
           y={248}
         />
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CCC2DC"
           height={285}
           width={4.472774416594641}
@@ -97,10 +97,10 @@ exports[`Storyshots HKBarChart default 1`] = `
         />
       </g>
       <g
-        className="dim cursor-hand"
+        className="dim"
       >
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CFD7E6"
           height={52}
           width={4.472774416594641}
@@ -108,7 +108,7 @@ exports[`Storyshots HKBarChart default 1`] = `
           y={248}
         />
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CCC2DC"
           height={285}
           width={4.472774416594641}
@@ -117,10 +117,10 @@ exports[`Storyshots HKBarChart default 1`] = `
         />
       </g>
       <g
-        className="dim cursor-hand"
+        className="dim"
       >
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CFD7E6"
           height={52}
           width={4.472774416594641}
@@ -128,7 +128,7 @@ exports[`Storyshots HKBarChart default 1`] = `
           y={248}
         />
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CCC2DC"
           height={216}
           width={4.472774416594641}
@@ -137,10 +137,10 @@ exports[`Storyshots HKBarChart default 1`] = `
         />
       </g>
       <g
-        className="dim cursor-hand"
+        className="dim"
       >
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CFD7E6"
           height={52}
           width={4.472774416594641}
@@ -148,7 +148,7 @@ exports[`Storyshots HKBarChart default 1`] = `
           y={248}
         />
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CCC2DC"
           height={285}
           width={4.472774416594641}
@@ -157,10 +157,10 @@ exports[`Storyshots HKBarChart default 1`] = `
         />
       </g>
       <g
-        className="dim cursor-hand"
+        className="dim"
       >
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CFD7E6"
           height={54}
           width={4.472774416594641}
@@ -168,7 +168,7 @@ exports[`Storyshots HKBarChart default 1`] = `
           y={246}
         />
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CCC2DC"
           height={285}
           width={4.472774416594641}
@@ -177,10 +177,10 @@ exports[`Storyshots HKBarChart default 1`] = `
         />
       </g>
       <g
-        className="dim cursor-hand"
+        className="dim"
       >
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CFD7E6"
           height={56}
           width={4.472774416594641}
@@ -188,7 +188,7 @@ exports[`Storyshots HKBarChart default 1`] = `
           y={244}
         />
         <rect
-          className="dim cursor-hand"
+          className="dim"
           fill="#CCC2DC"
           height={255}
           width={4.472774416594641}
