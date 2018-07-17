@@ -3,3 +3,8 @@ export const colours = [
   '#CCC2DC',
   '#8ECDEA',
 ]
+
+export enum Chart {
+  PaddingVertical = 15,
+  PaddingHorizontal = 0,
+}
