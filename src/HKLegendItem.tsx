@@ -40,7 +40,7 @@ export default class HKLegendItem extends React.PureComponent<IHKLegendItemProps
     )
 
     return (
-      <a className='cursor-hand' onClick={!disableToggle ? this.handleOnClick : undefined}>
+      <a className={classnames({ 'cursor-hand': !disableToggle })} onClick={!disableToggle ? this.handleOnClick : undefined}>
         <div className={classnames('hk-label', className, 'flex flex-row br2 pa2 mh2 items-center', { 'bg-lightest-silver': show })}>
             {legendIcon}
             <div className='items-center'>
