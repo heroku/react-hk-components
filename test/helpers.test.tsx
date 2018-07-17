@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { shallow } from 'enzyme'
 
-import { getMaxValues } from '../src/helpers'
+import { getMaxValues, getNumVisibleCharts } from '../src/helpers'
 
 describe('getMaxValues', () => {
   it('get max values for bar chart data', () => {
@@ -32,5 +32,18 @@ describe('getMaxValues', () => {
     [242152, 1113700]]
     const maxValues = getMaxValues(barChartData, 'bar')
     expect(maxValues).toEqual([ 242152, 1245496 ])
+  })
+})
+
+describe('getNumVisibleCharts', () => {
+  it.only('returns the number of charts that are toggled on', () => {
+    const toggleInfo = {
+      '0': true,
+      '1': true,
+      '2': false,
+    }
+
+    const numVisibleCharts = getNumVisibleCharts(toggleInfo)
+    expect(numVisibleCharts).toEqual(2)
   })
 })
