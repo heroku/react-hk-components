@@ -14,8 +14,8 @@
     "moment": "2.21.0",
     "classnames": "^2.2.6",
     "prop-types": "15.x",
-    "react": "^16.4.0",
-    "react-dom": "16.x",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
     "react-measure": "^2.0.0",
     "react-transition-group": "^2.4.0",
     "simple-react-modal": "0.5.1"
