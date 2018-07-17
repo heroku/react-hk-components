@@ -182,7 +182,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
 
     return (
         <div>
-          {isHovering && (<HKTooltip xPos={hoverIndex} yPos={height / 3} content={`${timeStamp}`} />)}
+          {isHovering && (<HKTooltip xPos={hoverIndex} yPos={height / 3} children={`${timeStamp}`} />)}
           <svg
             preserveAspectRatio='none'
             width={width}
