@@ -124,7 +124,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
 
             <div className={classNames(modalChildrenClass)}>{children}</div>
 
-            <div className='bt b--light-silver w-100 pa3 tr'>{footer}</div>
+            {footer && <div className='bt b--light-silver w-100 pa3 tr'>{footer}</div>}
           </SRMModal>
         )}
       </Transition>
