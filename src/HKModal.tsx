@@ -114,7 +114,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
             }}
             className={classNames('flex flex-column', modalParentClass)}
             closeOnOuterClick={true}
-            show={this.state.isShowing}
+            show={show}
             onClose={this.handleClose}
           >
             <div className='bg-near-white dark-gray bb b--light-silver f4 flex items-center justify-center br--top br2'>
