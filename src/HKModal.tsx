@@ -14,7 +14,7 @@ interface IModalProps {
 }
 
 interface IModalState {
-  isShowing: boolean
+  isClosing: boolean
 }
 
 export default class HKModal extends React.Component<IModalProps, IModalState> {
@@ -23,16 +23,20 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
   }
 
   public static getDerivedStateFromProps (props, state) {
-    return { isShowing: props.show }
+    if (!props.show && state.isClosing) {
+      return { isClosing: false }
+    } else {
+      return state
+    }
   }
 
   public state = {
-    isShowing: false,
+    isClosing: false,
   }
 
   public handleClose = () => {
     this.setState({
-      isShowing: false,
+      isClosing: true,
     })
   }
 
@@ -93,8 +97,10 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
       'flex-auto': isFlyout,
     }
 
+    const transitionIn = this.state.isClosing ? false : show
+
     return (
-      <Transition in={this.state.isShowing} timeout={0} onExited={this.handleExited}>
+      <Transition in={transitionIn} timeout={0} onExited={this.handleExited}>
         {(state) => (
           <SRMModal
             containerStyle={{
