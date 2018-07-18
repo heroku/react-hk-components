@@ -5,6 +5,6 @@ export const colours = [
 ]
 
 export const ChartPadding = {
-  Vertical: 15,
   Horizontal: 0,
+  Vertical: 15,
 }

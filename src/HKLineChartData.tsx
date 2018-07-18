@@ -194,7 +194,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
           className='br0 ba b--silver overflow-hidden'
         >
           {indicator}
-          <g transform={`translate(${Chart.PaddingHorizontal}, ${Chart.PaddingVertical})`}>
+          <g transform={`translate(${ChartPadding.Horizontal}, ${ChartPadding.Vertical})`}>
             {timeseries}
           </g>
         </svg>
