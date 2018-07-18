@@ -18,5 +18,5 @@ export function getMaxValues (data, type = 'line') {
 export function getNumVisibleCharts (toggleInfo) {
   return Object.keys(toggleInfo)
     .map((key) => toggleInfo[key])
-    .reduce((a, c) => c ? ++a : a, 0)
+    .reduce((count, toggled) => toggled ? ++count : count, 0)
 }
