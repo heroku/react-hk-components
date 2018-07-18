@@ -6,7 +6,7 @@ import { default as HKResizeContainer } from './HKResizeContainer'
 
 import * as _ from 'lodash'
 
-import { getMaxValues } from './helpers'
+import { getMaxValues, getNumVisibleCharts } from './helpers'
 
 interface ILineChartProps {
   data: any, // Assumes the data comes in the format [{time, value =[1,2,] },...]
@@ -41,7 +41,6 @@ export default class HKLineChart extends React.Component<ILineChartProps, ILineC
 
   public render () {
     const { hoverInfo, toggleInfo } = this.state
-
     const legend = this.props.labels.map((label, i) => (
       <HKLegendItem
         key={i}
@@ -51,6 +50,7 @@ export default class HKLineChart extends React.Component<ILineChartProps, ILineC
         show={toggleInfo[`${label}-${i}`]}
         onToggle={this.handleToggle}
         value={hoverInfo[`${label}-${i}`]}
+        disableToggle={toggleInfo[`${label}-${i}`] && getNumVisibleCharts(toggleInfo) === 1}
       />
     ))
 

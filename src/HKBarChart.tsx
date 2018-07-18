@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { getMaxValues } from './helpers'
+import { getMaxValues, getNumVisibleCharts } from './helpers'
 import { default as HKBarChartData } from './HKBarChartData'
 import { default as HKLegendItem } from './HKLegendItem'
 import { default as HKResizeContainer } from './HKResizeContainer'
@@ -52,6 +52,7 @@ export default class HKBarChart extends React.Component<IBarChartProps, IBarChar
         show={toggleInfo[i]}
         onToggle={this.handleToggle}
         value={hoverInfo[i]}
+        disableToggle={toggleInfo[i] && getNumVisibleCharts(toggleInfo) === 1}
       />
     ))
 
@@ -67,17 +68,24 @@ export default class HKBarChart extends React.Component<IBarChartProps, IBarChar
     )
   }
 
-  private handleToggle = (label, i) =>
+  private handleToggle = (label, i) => {
+    const maxValues = getMaxValues(this.props.data, 'bar')
+
     this.setState((prevState) => ({
+      hoverInfo : {
+        ...prevState.hoverInfo,
+        [i] : !prevState.toggleInfo[i] ? maxValues[i] : null,
+      },
       toggleInfo: {
         ...prevState.toggleInfo,
         [i] : !prevState.toggleInfo[i],
       },
     }))
+  }
 
-  private handleHover = (values) => {
+  private handleHover = (values, keys) => {
     const hoverInfo = {}
-    this.props.labels.forEach((label, index) => hoverInfo[index] = values[index])
+    keys.forEach((key, index) => hoverInfo[key] = values[index])
     this.setState({ hoverInfo })
   }
 }
