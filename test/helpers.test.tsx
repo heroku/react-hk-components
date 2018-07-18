@@ -36,7 +36,7 @@ describe('getMaxValues', () => {
 })
 
 describe('getNumVisibleCharts', () => {
-  it.only('returns the number of charts that are toggled on', () => {
+  it('returns the number of charts that are toggled on', () => {
     const toggleInfo = {
       '0': true,
       '1': true,
