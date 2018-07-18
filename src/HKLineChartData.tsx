@@ -5,7 +5,7 @@ import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
 import * as _ from 'lodash'
 import * as moment from 'moment'
-import { Chart } from './constants'
+import { ChartPadding } from './constants'
 import { getMaxValues } from './helpers'
 
 import { default as HKLine } from './HKLine'
@@ -66,7 +66,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
     }
 
     const { width, height, data } = newProps
-    const chartHeight = height - Chart.PaddingVertical
+    const chartHeight = height - ChartPadding.Vertical
     const values = _.flatMap(data.map((d) => d[1]))
 
     // Cleanse data into valid format(date and values)
@@ -169,7 +169,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
         key={i}
         className='indicatorPoints'
         cx={hoverIndex}
-        cy={yScale(measurements[idx].y[i]) + Chart.PaddingVertical}
+        cy={yScale(measurements[idx].y[i]) + ChartPadding.Vertical}
         r={2}
       />) : null)
 
@@ -181,24 +181,24 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
       </g>)
 
     return (
-        <div>
-          {isHovering && (<HKTooltip xPos={hoverIndex} yPos={height / 3} children={`${timeStamp}`} />)}
-          <svg
-            preserveAspectRatio='none'
-            width={width}
-            height={height}
-            viewBox={`0 0 ${width} ${height}`}
-            onMouseMove={this.handleMouseMove}
-            onMouseLeave={this.handleMouseLeave}
-            ref={(ref) => this.ref = ref}
-            className='br0 ba b--silver overflow-hidden'
-          >
-            {indicator}
-            <g transform={`translate(${Chart.PaddingHorizontal}, ${Chart.PaddingVertical})`}>
-              {timeseries}
-            </g>
-          </svg>
-        </div>
+      <div>
+        {isHovering && (<HKTooltip xPos={hoverIndex} yPos={height / 3} children={`${timeStamp}`} />)}
+        <svg
+          preserveAspectRatio='none'
+          width={width}
+          height={height}
+          viewBox={`0 0 ${width} ${height}`}
+          onMouseMove={this.handleMouseMove}
+          onMouseLeave={this.handleMouseLeave}
+          ref={(ref) => this.ref = ref}
+          className='br0 ba b--silver overflow-hidden'
+        >
+          {indicator}
+          <g transform={`translate(${Chart.PaddingHorizontal}, ${Chart.PaddingVertical})`}>
+            {timeseries}
+          </g>
+        </svg>
+      </div>
     )
   }
 }
