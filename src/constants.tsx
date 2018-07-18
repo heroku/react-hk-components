@@ -4,7 +4,7 @@ export const colours = [
   '#8ECDEA',
 ]
 
-export enum Chart {
-  PaddingVertical = 15,
-  PaddingHorizontal = 0,
+export const ChartPadding = {
+  Vertical: 15,
+  Horizontal: 0,
 }
