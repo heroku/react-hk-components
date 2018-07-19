@@ -7,18 +7,23 @@ import { default as HKModal, Type } from '../src/HKModal'
 
 interface IModalWrapperProps {
   initialShowModal?: boolean,
+  isFlyout?: boolean
   type?: Type,
 }
 
 interface IModalWrapperState {
   showModal: boolean,
+  isFlyout?: boolean
 }
 
-class ModalWrapper extends React.Component<IModalWrapperProps, IModalWrapperState> {
-
+class ModalWrapper extends React.Component<
+  IModalWrapperProps,
+  IModalWrapperState
+> {
   constructor (props) {
     super(props)
     this.state = {
+      isFlyout: props.isFlyout,
       showModal: props.initialShowModal,
     }
   }
@@ -28,15 +33,14 @@ class ModalWrapper extends React.Component<IModalWrapperProps, IModalWrapperStat
       <div>
         <button onClick={this.showModal}>show it</button>
         <HKModal
+          isFlyout={this.state.isFlyout}
           type={this.props.type && this.props.type}
           show={this.state.showModal}
           onDismiss={this.handleModalDismiss}
           header={<div>header text</div>}
           footer={<HKButton>Submit</HKButton>}
         >
-          <div className='pa6'>
-            with some important details here below
-          </div>
+          <div className='pa6'>with some important details here below</div>
         </HKModal>
       </div>
     )
@@ -52,12 +56,14 @@ class ModalWrapper extends React.Component<IModalWrapperProps, IModalWrapperStat
 }
 
 storiesOf('HKModal', module)
-  .add('default', () => (
-    <ModalWrapper />
+  .add('default', () => <ModalWrapper />)
+  .add('default initially open', () => <ModalWrapper initialShowModal={true} />)
+  .add('flyout', () => (
+    <ModalWrapper isFlyout={true} initialShowModal={false} />
   ))
+  .add('flyout initially open', () => (
+    <ModalWrapper isFlyout={true} initialShowModal={true} />
+   ))
   .add('destructive', () => (
     <ModalWrapper type={Type.Destructive} />
-  ))
-  .add('initially open', () => (
-    <ModalWrapper initialShowModal={true} />
   ))

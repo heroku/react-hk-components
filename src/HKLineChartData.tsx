@@ -36,29 +36,6 @@ interface ILineChartDataState {
 }
 
 export default class HKLineChartData extends React.PureComponent<ILineChartDataProps, ILineChartDataState> {
-  private ref: SVGSVGElement | null
-
-  constructor (props) {
-    super(props)
-
-    this.state = {
-      height: props.height,
-      width: props.width,
-
-      hoverIndex: -1,
-      idx: -1, // For hovering animations, will re-render everytime any hover related state changes
-      /* Initializes in getDerivedStateFromProps**/
-
-      data: null,
-      measurements: null,
-
-      area: null,
-      line: null,
-      xScale: null,
-      yScale: null,
-    }
-  }
-
   // setState based on new props passed
   public static getDerivedStateFromProps (newProps, prevState) {
     if (['data', 'width', 'height'].every((o) => newProps[o] === prevState[o])) {
@@ -112,6 +89,29 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
       line,
       xScale,
       yScale,
+    }
+  }
+
+  private ref: SVGSVGElement | null
+
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      height: props.height,
+      width: props.width,
+
+      hoverIndex: -1,
+      idx: -1, // For hovering animations, will re-render everytime any hover related state changes
+      /* Initializes in getDerivedStateFromProps**/
+
+      data: null,
+      measurements: null,
+
+      area: null,
+      line: null,
+      xScale: null,
+      yScale: null,
     }
   }
 

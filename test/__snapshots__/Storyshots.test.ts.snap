@@ -1015,17 +1015,7 @@ exports[`Storyshots HKModal default 1`] = `
 </div>
 `;
 
-exports[`Storyshots HKModal destructive 1`] = `
-<div>
-  <button
-    onClick={[Function]}
-  >
-    show it
-  </button>
-</div>
-`;
-
-exports[`Storyshots HKModal initially open 1`] = `
+exports[`Storyshots HKModal default initially open 1`] = `
 <div>
   <button
     onClick={[Function]}
@@ -1038,18 +1028,20 @@ exports[`Storyshots HKModal initially open 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "rgba(0,0,0,.2)",
+        "background": "rgba(0, 0, 0, .2)",
         "bottom": 0,
         "left": 0,
+        "opacity": 1,
         "position": "fixed",
         "right": 0,
         "top": 0,
+        "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
         "zIndex": 9999,
       }
     }
   >
     <div
-      className="w-100 mw7 center bg-white shadow-outer-1 br1 relative"
+      className="bg-white shadow-outer-1 relative w-100 mw7 center br1"
       style={Object {}}
     >
       <div
@@ -1077,9 +1069,121 @@ exports[`Storyshots HKModal initially open 1`] = `
         </div>
       </div>
       <div
-        className="pa6"
+        className=""
       >
-        with some important details here below
+        <div
+          className="pa6"
+        >
+          with some important details here below
+        </div>
+      </div>
+      <div
+        className="bt b--light-silver w-100 pa3 tr"
+      >
+        <button
+          className="hk-button--secondary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          Submit
+           
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal destructive 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    show it
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKModal flyout 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    show it
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKModal flyout initially open 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    show it
+  </button>
+  <div
+    className="flex flex-column"
+    data-modal="true"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(0, 0, 0, .2)",
+        "bottom": 0,
+        "left": 0,
+        "opacity": 1,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+        "zIndex": 9999,
+      }
+    }
+  >
+    <div
+      className="bg-white shadow-outer-1 relative fixed right-0 w7 h-100 flex flex-column"
+      style={
+        Object {
+          "transform": "translateX(0)",
+          "transition": "transform 250ms ease-in-out",
+        }
+      }
+    >
+      <div
+        className="bg-near-white dark-gray bb b--light-silver f4 flex items-center justify-center br--top br2"
+      >
+        <div
+          className="hk-modal-header pa4 bg-near-white"
+        >
+          <div>
+            header text
+          </div>
+        </div>
+        <div
+          className="right-1 h-100 absolute pointer"
+          onClick={[Function]}
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+            style={undefined}
+          >
+            <use
+              xlinkHref="#delete-16"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="flex-auto"
+      >
+        <div
+          className="pa6"
+        >
+          with some important details here below
+        </div>
       </div>
       <div
         className="bt b--light-silver w-100 pa3 tr"
