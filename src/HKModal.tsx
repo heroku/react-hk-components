@@ -1,8 +1,14 @@
 import { MalibuIcon } from '@heroku/react-malibu'
-import * as classNames from 'classnames'
+import * as classnames from 'classnames'
 import * as React from 'react'
 import { Transition } from 'react-transition-group'
 import SRMModal from 'simple-react-modal'
+
+export enum Type {
+  Actionable = 'actionable',
+  Destructive = 'destructive',
+  Presentation = 'presentation',
+}
 
 interface IModalProps {
   children: React.ReactNode,
@@ -11,6 +17,7 @@ interface IModalProps {
   isFlyout?: boolean,
   onDismiss: (...args: any[]) => any,
   show: boolean,
+  type?: Type,
 }
 
 interface IModalState {
@@ -46,7 +53,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
 
   public render () {
     const duration = 250
-    const { show, children, onDismiss, header, footer, isFlyout } = this.props
+    const { show, children, onDismiss, header, footer, isFlyout, type } = this.props
 
     const fadeTransition = {
       transition: `background ${duration}ms ease-in-out, opacity ${duration}ms ease-in-out`,
@@ -72,7 +79,9 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
     } : {}
 
     const headerElem = header && (
-      <div className='hk-modal-header pa4 bg-near-white'>{header}</div>
+      <div className={classnames('hk-modal-header pa4 bg-near-white', { red : type === 'destructive' })}>
+        {header}
+      </div>
     )
     const dismissElem = onDismiss && (
       <div className='right-1 h-100 absolute pointer' onClick={this.handleClose}>

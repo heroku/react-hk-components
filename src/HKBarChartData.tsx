@@ -4,14 +4,14 @@ import * as d3array from 'd3-array'
 import * as d3scale from 'd3-scale'
 import * as _ from 'lodash'
 
-import { colours } from './constants'
+import { ChartPadding, colours } from './constants'
 import { getMaxValues } from './helpers'
 
 interface IBarChartDataProps {
   data: any,
   height: number,
   labels: any,
-  onHover: (value: number) => void,
+  onHover: (values: number[], keys: number[]) => void,
   toggleInfo: object,
   width: number,
 }
@@ -19,6 +19,7 @@ interface IBarChartDataProps {
 interface IBarChartDataState {
   data: any,
   height: number,
+  keys: number[],
   width: number,
 
   hoverIndex: number,
@@ -28,6 +29,24 @@ interface IBarChartDataState {
 }
 
 export default class HKBarChartData extends React.PureComponent<IBarChartDataProps, IBarChartDataState> {
+  private ref: SVGSVGElement | null
+
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      data: null,
+      height: 0,
+      keys: [],
+      width: 0,
+
+      hoverIndex: -1,
+      x0Scale: null,
+      x1Scale: null,
+      yScale : null,
+    }
+  }
+
   public static getDerivedStateFromProps (newProps, prevState) {
     if (['data', 'width', 'height', 'toggleInfo'].every((o) => newProps[o] === prevState[o])) {
       return null
@@ -35,8 +54,9 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
 
     const { data, height, width, toggleInfo } = newProps
 
-    const keys = getKeys(toggleInfo)
-
+    const chartHeight = height - ChartPadding.Vertical
+    // keys: an array of the indexes from bar chart data that are toggled on
+    const keys = Object.keys(toggleInfo).filter((k) => toggleInfo[k]).map(Number)
     const shownData = data.map((rowData) => rowData.filter((colData, i) => _.includes(keys, i)))
 
     const minValues = d3array.min(shownData, ((arr) => d3array.min(arr)))
@@ -53,12 +73,13 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
                       .padding(0.08)
 
     const yScale = d3scale.scaleLinear()
-                    .rangeRound([0, height])
-                    .domain([Math.min(0, minValues), maxValues * 1.05])
+                    .rangeRound([0, chartHeight])
+                    .domain([Math.min(0, minValues), maxValues])
 
     return {
       data: shownData,
       height,
+      keys,
       width,
 
       x0Scale,
@@ -90,29 +111,25 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
       return null
     }
 
-    const { data, width } = this.state
+    const { data, keys, width } = this.state
     const hoverIndex = e.clientX - this.ref.getBoundingClientRect().left
     const interpolateIndex = hoverIndex * data.length / width
     const index = Math.min(interpolateIndex, data.length - 1)
     const values = data[Math.floor(index)]
-
-    this.props.onHover(values)
+    this.props.onHover(values, keys)
   }
 
   public handleMouseLeave = (e) => {
     const { onHover } = this.props
-    const { data } = this.state
+    const { data, keys } = this.state
 
     if (onHover) {
-      onHover(getMaxValues(data, 'bar'))
+      onHover(getMaxValues(data, 'bar'), keys)
     }
   }
 
   public createBar = (rowIdx, colVal, colIdx) => {
-    const { height, x0Scale, x1Scale, yScale } = this.state
-    const { toggleInfo } = this.props
-    const keys = getKeys(toggleInfo)
-
+    const { height, keys, x0Scale, x1Scale, yScale } = this.state
     return (
       <rect
         key={`row${rowIdx}-column${colIdx}`}
@@ -121,7 +138,7 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
         height={yScale(colVal)}
         width={x1Scale.bandwidth()}
         fill={colours[keys[colIdx]]}
-        className='dim cursor-hand'
+        className='dim'
       />)
   }
 
@@ -129,7 +146,7 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
 
     const { data, height, width } = this.state
     const bars = data.map((rowData, rowIdx) => (
-      <g key={`row-${rowIdx}`} className='dim cursor-hand'>
+      <g key={`row-${rowIdx}`} className='dim'>
         {rowData.map((colVal, colIdx) => this.createBar(rowIdx, colVal, colIdx))}
       </g>
     ))
@@ -149,8 +166,4 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
       </svg>
     )
   }
-}
-
-function getKeys (toggleInfo) {
-  return Object.keys(toggleInfo).filter((k) => toggleInfo[k]).map(Number)
 }

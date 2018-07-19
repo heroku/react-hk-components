@@ -3,3 +3,8 @@ export const colours = [
   '#CCC2DC',
   '#8ECDEA',
 ]
+
+export const ChartPadding = {
+  Horizontal: 0,
+  Vertical: 15,
+}

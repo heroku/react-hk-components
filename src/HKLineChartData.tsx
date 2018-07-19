@@ -5,9 +5,11 @@ import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
 import * as _ from 'lodash'
 import * as moment from 'moment'
+import { ChartPadding } from './constants'
 import { getMaxValues } from './helpers'
 
 import { default as HKLine } from './HKLine'
+import { default as HKTooltip } from './HKTooltip'
 
 interface ILineChartDataProps {
   data: any, // Assumes the data comes in the format [{time, value},...]
@@ -41,6 +43,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
     }
 
     const { width, height, data } = newProps
+    const chartHeight = height - ChartPadding.Vertical
     const values = _.flatMap(data.map((d) => d[1]))
 
     // Cleanse data into valid format(date and values)
@@ -61,10 +64,9 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
                     .domain(timeExtent)
                     .range([0, width])
 
-    // Multily by 5% so we can have some spacing b/w the last point and the top of the graph
     const yScale = d3scale.scaleLinear()
-                    .domain([Math.min(valueExtent[0], 0), valueExtent[1] * 1.05])
-                    .range([height, 0])
+                    .domain([Math.min(valueExtent[0], 0), valueExtent[1]])
+                    .range([chartHeight, 0])
 
     const line = d3shape.line()
                   .x((d) => xScale(d.x))
@@ -140,7 +142,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
   }
 
   public render () {
-    const { height, width, yScale, line, area, measurements, idx, hoverIndex } = this.state
+    const { height, width, xScale, yScale, line, area, measurements, idx, hoverIndex } = this.state
     const { toggleInfo, labels } = this.props
     const isHovering = hoverIndex !== -1
 
@@ -162,16 +164,16 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
       }
       return <HKLine key={i} {...lineProps} />
     })
-
     const indicatorPoints = valueIndexes.map((v,i) => measurements[idx] ? (
       <circle
         key={i}
         className='indicatorPoints'
         cx={hoverIndex}
-        cy={yScale(measurements[idx].y[i])}
+        cy={yScale(measurements[idx].y[i]) + ChartPadding.Vertical}
         r={2}
       />) : null)
 
+    const timeStamp = moment(xScale.invert(hoverIndex)).format('llll')
     const indicator = isHovering && (
       <g>
         <line x1={hoverIndex} y1='0' x2={hoverIndex} y2={height} stroke='#79589f' strokeWidth='1' />
@@ -179,6 +181,8 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
       </g>)
 
     return (
+      <div>
+        {isHovering && (<HKTooltip xPos={hoverIndex} yPos={height / 3} children={`${timeStamp}`} />)}
         <svg
           preserveAspectRatio='none'
           width={width}
@@ -190,8 +194,11 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
           className='br0 ba b--silver overflow-hidden'
         >
           {indicator}
-          {timeseries}
+          <g transform={`translate(${ChartPadding.Horizontal}, ${ChartPadding.Vertical})`}>
+            {timeseries}
+          </g>
         </svg>
+      </div>
     )
   }
 }

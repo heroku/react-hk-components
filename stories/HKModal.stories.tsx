@@ -3,11 +3,12 @@ import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import { default as HKButton } from '../src/HKButton'
-import { default as HKModal } from '../src/HKModal'
+import { default as HKModal, Type } from '../src/HKModal'
 
 interface IModalWrapperProps {
   initialShowModal?: boolean,
   isFlyout?: boolean
+  type?: Type,
 }
 
 interface IModalWrapperState {
@@ -33,6 +34,7 @@ class ModalWrapper extends React.Component<
         <button onClick={this.showModal}>show it</button>
         <HKModal
           isFlyout={this.state.isFlyout}
+          type={this.props.type && this.props.type}
           show={this.state.showModal}
           onDismiss={this.handleModalDismiss}
           header={<div>header text</div>}
@@ -61,4 +63,7 @@ storiesOf('HKModal', module)
   ))
   .add('flyout initially open', () => (
     <ModalWrapper isFlyout={true} initialShowModal={true} />
+   ))
+  .add('destructive', () => (
+    <ModalWrapper type={Type.Destructive} />
   ))
