@@ -5,6 +5,7 @@ import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
 import * as _ from 'lodash'
 import * as moment from 'moment'
+import { ChartPadding } from './constants'
 import { getMaxValues } from './helpers'
 
 import { default as HKLine } from './HKLine'
@@ -65,6 +66,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
     }
 
     const { width, height, data } = newProps
+    const chartHeight = height - ChartPadding.Vertical
     const values = _.flatMap(data.map((d) => d[1]))
 
     // Cleanse data into valid format(date and values)
@@ -85,10 +87,9 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
                     .domain(timeExtent)
                     .range([0, width])
 
-    // Multily by 5% so we can have some spacing b/w the last point and the top of the graph
     const yScale = d3scale.scaleLinear()
-                    .domain([Math.min(valueExtent[0], 0), valueExtent[1] * 1.05])
-                    .range([height, 0])
+                    .domain([Math.min(valueExtent[0], 0), valueExtent[1]])
+                    .range([chartHeight, 0])
 
     const line = d3shape.line()
                   .x((d) => xScale(d.x))
@@ -163,13 +164,12 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
       }
       return <HKLine key={i} {...lineProps} />
     })
-
     const indicatorPoints = valueIndexes.map((v,i) => measurements[idx] ? (
       <circle
         key={i}
         className='indicatorPoints'
         cx={hoverIndex}
-        cy={yScale(measurements[idx].y[i])}
+        cy={yScale(measurements[idx].y[i]) + ChartPadding.Vertical}
         r={2}
       />) : null)
 
@@ -181,22 +181,24 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
       </g>)
 
     return (
-        <div>
-          {isHovering && (<HKTooltip xPos={hoverIndex} yPos={height / 3} children={`${timeStamp}`} />)}
-          <svg
-            preserveAspectRatio='none'
-            width={width}
-            height={height}
-            viewBox={`0 0 ${width} ${height}`}
-            onMouseMove={this.handleMouseMove}
-            onMouseLeave={this.handleMouseLeave}
-            ref={(ref) => this.ref = ref}
-            className='br0 ba b--silver overflow-hidden'
-          >
-            {indicator}
+      <div>
+        {isHovering && (<HKTooltip xPos={hoverIndex} yPos={height / 3} children={`${timeStamp}`} />)}
+        <svg
+          preserveAspectRatio='none'
+          width={width}
+          height={height}
+          viewBox={`0 0 ${width} ${height}`}
+          onMouseMove={this.handleMouseMove}
+          onMouseLeave={this.handleMouseLeave}
+          ref={(ref) => this.ref = ref}
+          className='br0 ba b--silver overflow-hidden'
+        >
+          {indicator}
+          <g transform={`translate(${ChartPadding.Horizontal}, ${ChartPadding.Vertical})`}>
             {timeseries}
-          </svg>
-        </div>
+          </g>
+        </svg>
+      </div>
     )
   }
 }

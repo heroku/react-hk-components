@@ -4,7 +4,7 @@ import * as d3array from 'd3-array'
 import * as d3scale from 'd3-scale'
 import * as _ from 'lodash'
 
-import { colours } from './constants'
+import { ChartPadding, colours } from './constants'
 import { getMaxValues } from './helpers'
 
 interface IBarChartDataProps {
@@ -54,6 +54,7 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
 
     const { data, height, width, toggleInfo } = newProps
 
+    const chartHeight = height - ChartPadding.Vertical
     // keys: an array of the indexes from bar chart data that are toggled on
     const keys = Object.keys(toggleInfo).filter((k) => toggleInfo[k]).map(Number)
     const shownData = data.map((rowData) => rowData.filter((colData, i) => _.includes(keys, i)))
@@ -72,8 +73,8 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
                       .padding(0.08)
 
     const yScale = d3scale.scaleLinear()
-                    .rangeRound([0, height])
-                    .domain([Math.min(0, minValues), maxValues * 1.05])
+                    .rangeRound([0, chartHeight])
+                    .domain([Math.min(0, minValues), maxValues])
 
     return {
       data: shownData,
