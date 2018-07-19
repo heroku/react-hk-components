@@ -116,7 +116,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
               ...innerTransition,
               ...innerStyles[state],
             }}
-            containerClassName={classNames('bg-white shadow-outer-1 relative', modalClass)}
+            containerClassName={classnames('bg-white shadow-outer-1 relative', modalClass)}
             style={{
               bottom: 0,
               left: 0,
@@ -127,7 +127,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
               ...fadeTransition,
               ...fadeStyles[state],
             }}
-            className={classNames('flex flex-column', modalParentClass)}
+            className={classnames('flex flex-column', modalParentClass)}
             closeOnOuterClick={true}
             show={show}
             onClose={this.handleClose}
@@ -137,7 +137,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
               {dismissElem}
             </div>
 
-            <div className={classNames(modalChildrenClass)}>{children}</div>
+            <div className={classnames(modalChildrenClass)}>{children}</div>
 
             {footer && <div className='bt b--light-silver w-100 pa3 tr'>{footer}</div>}
           </SRMModal>

@@ -1098,6 +1098,16 @@ exports[`Storyshots HKModal default initially open 1`] = `
 </div>
 `;
 
+exports[`Storyshots HKModal destructive 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    show it
+  </button>
+</div>
+`;
+
 exports[`Storyshots HKModal flyout 1`] = `
 <div>
   <button
