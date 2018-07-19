@@ -90,7 +90,6 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
     }
   }
 
-
   public handleMouseMove = (e) => {
     if (!this.ref || !this.props.onHover) {
       return null
