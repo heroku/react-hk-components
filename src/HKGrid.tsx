@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+import { prettier } from './helpers'
+
 interface IGridProps {
   data: any,
   height: number,
@@ -12,7 +14,7 @@ interface IGridProps {
   yScale: any,
 }
 
-export default class HKGrid extends React.Component<IGridProps, {}> {
+export default class HKGrid extends React.PureComponent<IGridProps, {}> {
   public static defaultProps = {
     showXAxis: true,
     showYAxis: true,
@@ -20,32 +22,27 @@ export default class HKGrid extends React.Component<IGridProps, {}> {
     yInterval: false,
   }
 
-  public shouldComponentUpdate (nextProps, nextState) {
-    return Object.keys(['width', 'height']).some((o) => this.props[o] !== nextProps[o])
-  }
-
   public render () {
     const { width, xInterval, showYAxis, yScale } = this.props
 
-    const xTicks = 5 // TODO: make this dynamic
-
+    const yTicks = 5
     const gridProps = {
       stroke: '#96a3b6',
       strokeOpacity: '0.3',
       strokeWidth: '0.5',
     }
 
-    const gridX = !!xInterval && yScale.ticks(xTicks).map((d,i) => (
+    const gridX = !!xInterval && yScale.ticks(yTicks).map((d,i) => (
       <g key={i}>
-        <line x1='0' y1={yScale(d)} x2={width} y2={yScale(d)} {...gridProps} />
-        {showYAxis && <text x={40} y={yScale(d)} textAnchor='end' className='f7 fill-gray'> {d} </text>}
+        <line x1='0' y1={yScale(d) + 15} x2={width} y2={yScale(d) + 15} {...gridProps} />
+        {showYAxis && <text x={-3} y={yScale(d) + 15} textAnchor='end' className='f7 fill-gray'> {prettier(d)} </text>}
       </g>
     ))
 
     return (
-        <g>
-          {gridX}
-        </g>
+      <g>
+        {gridX}
+      </g>
     )
   }
 }

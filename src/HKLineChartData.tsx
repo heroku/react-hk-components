@@ -10,6 +10,7 @@ import { getMaxValues } from './helpers'
 
 import { default as HKLine } from './HKLine'
 import { default as HKTooltip } from './HKTooltip'
+import { default as HKGrid } from './HKGrid'
 
 interface ILineChartDataProps {
   data: any, // Assumes the data comes in the format [{time, value},...]
@@ -44,6 +45,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
 
     const { width, height, data } = newProps
     const chartHeight = height - ChartPadding.Vertical
+    const chartWidth = width - ChartPadding.Horizontal
     const values = _.flatMap(data.map((d) => d[1]))
 
     // Cleanse data into valid format(date and values)
@@ -62,7 +64,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
 
     const xScale = d3scale.scaleTime()
                     .domain(timeExtent)
-                    .range([0, width])
+                    .range([0, chartWidth])
 
     const yScale = d3scale.scaleLinear()
                     .domain([Math.min(valueExtent[0], 0), valueExtent[1]])
@@ -123,7 +125,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
     }
 
     // TODO: Optimize rendering performance here
-    const hoverIndex = e.clientX - this.ref.getBoundingClientRect().left
+    const hoverIndex = e.clientX - this.ref.getBoundingClientRect().left - ChartPadding.Horizontal
     const bisectX = d3array.bisector((d) => d.x).left
     const newIdx = bisectX(measurements, xScale.invert(hoverIndex))
     this.setState({ idx: newIdx, hoverIndex })
@@ -144,7 +146,8 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
   public render () {
     const { height, width, xScale, yScale, line, area, measurements, idx, hoverIndex } = this.state
     const { toggleInfo, labels } = this.props
-    const isHovering = hoverIndex !== -1
+    const isHovering = hoverIndex > 0 // we only want to hover if onMouseMove is on the chart (exclude axis)
+    const hoverPos = hoverIndex + ChartPadding.Horizontal // hover positioning taking into account padding from axis
 
     const valueIndexes: number[] = []
     labels.forEach((label, i) => {
@@ -164,11 +167,12 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
       }
       return <HKLine key={i} {...lineProps} />
     })
+
     const indicatorPoints = valueIndexes.map((v,i) => measurements[idx] ? (
       <circle
         key={i}
         className='indicatorPoints'
-        cx={hoverIndex}
+        cx={hoverPos}
         cy={yScale(measurements[idx].y[i]) + ChartPadding.Vertical}
         r={2}
       />) : null)
@@ -176,13 +180,13 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
     const timeStamp = moment(xScale.invert(hoverIndex)).format('llll')
     const indicator = isHovering && (
       <g>
-        <line x1={hoverIndex} y1='0' x2={hoverIndex} y2={height} stroke='#79589f' strokeWidth='1' />
+        <line x1={hoverPos} y1='0' x2={hoverPos} y2={height} stroke='#79589f' strokeWidth='1' />
         {indicatorPoints}
       </g>)
 
     return (
       <div>
-        {isHovering && (<HKTooltip xPos={hoverIndex} yPos={height / 3} children={`${timeStamp}`} />)}
+        {isHovering && (<HKTooltip xPos={hoverPos} yPos={height / 3} children={`${timeStamp}`} />)}
         <svg
           preserveAspectRatio='none'
           width={width}
@@ -191,11 +195,14 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
           onMouseMove={this.handleMouseMove}
           onMouseLeave={this.handleMouseLeave}
           ref={(ref) => this.ref = ref}
-          className='br0 ba b--silver overflow-hidden'
         >
           {indicator}
-          <g transform={`translate(${ChartPadding.Horizontal}, ${ChartPadding.Vertical})`}>
-            {timeseries}
+          <g transform={`translate(${ChartPadding.Horizontal}, 0)`}>
+            <HKGrid data={measurements} height={height} width={width} xScale={xScale} yScale={yScale} xInterval={true} />
+            <rect x='0' y ='0' width={width - ChartPadding.Horizontal} height={height} className='br0 ba b--silver z-1' fill='none' stroke='silver'/>
+            <g transform={`translate(0, ${ChartPadding.Vertical})`}>
+              {timeseries}
+            </g>
           </g>
         </svg>
       </div>
