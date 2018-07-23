@@ -8,9 +8,9 @@ import * as moment from 'moment'
 import { ChartPadding } from './constants'
 import { getMaxValues } from './helpers'
 
+import { default as HKGrid } from './HKGrid'
 import { default as HKLine } from './HKLine'
 import { default as HKTooltip } from './HKTooltip'
-import { default as HKGrid } from './HKGrid'
 
 interface ILineChartDataProps {
   data: any, // Assumes the data comes in the format [{time, value},...]
@@ -198,8 +198,8 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
         >
           {indicator}
           <g transform={`translate(${ChartPadding.Horizontal}, 0)`}>
-            <HKGrid data={measurements} height={height} width={width} xScale={xScale} yScale={yScale} xInterval={true} />
-            <rect x='0' y ='0' width={width - ChartPadding.Horizontal} height={height} className='br0 ba b--silver z-1' fill='none' stroke='silver'/>
+            <HKGrid type='line' height={height} width={width} xScale={xScale} yScale={yScale} />
+            <rect x='0' y='0' width={width - ChartPadding.Horizontal} height={height} className='br0 ba b--silver z-1' fill='none' stroke='silver'/>
             <g transform={`translate(0, ${ChartPadding.Vertical})`}>
               {timeseries}
             </g>

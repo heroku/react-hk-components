@@ -5,7 +5,7 @@ interface IHKTooltipProps {
   children: string | React.ReactNode,
   height?: number,
   width?: number,
-  style? : any,
+  style?: any,
   xPos: number,
   yPos: number,
 }

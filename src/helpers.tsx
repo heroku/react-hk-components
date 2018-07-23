@@ -22,15 +22,15 @@ export function getNumVisibleCharts (toggleInfo) {
 }
 
 export function prettier (size) {
-   if (size === 0) {
-     return '0'
-   }
-   let units = ['K', 'M', 'B', 'T', 'q', 'Q']
-   let unit
-   while (size >= 1000 && units.length > 0) {
-     size /= 1000
-     unit = units.shift()
-   }
-   size = size.toFixed(1).replace(/\.0$/, '')
-   return `${size}${unit}`
- }
+  if (size === 0) {
+    return '0'
+  }
+  const units = ['K', 'M', 'B', 'T', 'q', 'Q']
+  let unit
+  while (size >= 1000 && units.length > 0) {
+    size /= 1000
+    unit = units.shift()
+  }
+  size = size.toFixed(1).replace(/\.0$/, '')
+  return `${size}${unit}`
+}
