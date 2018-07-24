@@ -72,10 +72,10 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
     } : {}
 
     const innerStyles = isFlyout ? {
-      entered: { transform: 'translateX(0)' },
-      entering: { transform: 'translateX(100%)' },
-      exited: { transform: 'translateX(100%)' },
-      exiting: { transform: 'translateX(0)' },
+      entered: { transform: 'translateX(0)', width: '350px' },
+      entering: { transform: 'translateX(100%)', width: '350px' },
+      exited: { transform: 'translateX(100%)', width: '350px' },
+      exiting: { transform: 'translateX(0)', width: '350px' },
     } : {}
 
     const headerElem = header && (
