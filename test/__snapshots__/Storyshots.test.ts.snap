@@ -946,6 +946,492 @@ exports[`Storyshots HKButton/warning small-enabled-normal 1`] = `
 </button>
 `;
 
+exports[`Storyshots HKHisotgram default 1`] = `
+<div
+  className="flex"
+>
+  <div
+    className="flex-auto"
+  >
+    <svg
+      height={300}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      preserveAspectRatio="none"
+      viewBox="0 0 100 300"
+      width={100}
+    >
+      <g
+        transform="translate(35, 0)"
+      >
+        <rect
+          className="br0 ba b--silver z-1"
+          fill="none"
+          height={300}
+          stroke="silver"
+          width={65}
+          x="0"
+          y="0"
+        />
+        <g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={300}
+              y2={300}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={300}
+            >
+               
+              0
+               
+            </text>
+          </g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={253}
+              y2={253}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={253}
+            >
+               
+              1K
+               
+            </text>
+          </g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={207}
+              y2={207}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={207}
+            >
+               
+              2K
+               
+            </text>
+          </g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={160}
+              y2={160}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={160}
+            >
+               
+              3K
+               
+            </text>
+          </g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={113}
+              y2={113}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={113}
+            >
+               
+              4K
+               
+            </text>
+          </g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={67}
+              y2={67}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={67}
+            >
+               
+              5K
+               
+            </text>
+          </g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={20}
+              y2={20}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={20}
+            >
+               
+              6K
+               
+            </text>
+          </g>
+        </g>
+        <g
+          className="dim"
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={0}
+            width={2.6136363636363638}
+            x={0.22727272727272751}
+            y={300}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={88}
+            width={2.6136363636363638}
+            x={3.0681818181818183}
+            y={212}
+          />
+        </g>
+        <g
+          className="dim"
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={0}
+            width={2.6136363636363638}
+            x={6.792929292929293}
+            y={300}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={270}
+            width={2.6136363636363638}
+            x={9.633838383838384}
+            y={30}
+          />
+        </g>
+        <g
+          className="dim"
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={0}
+            width={2.6136363636363638}
+            x={13.358585858585858}
+            y={300}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={285}
+            width={2.6136363636363638}
+            x={16.199494949494948}
+            y={15}
+          />
+        </g>
+        <g
+          className="dim"
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={0}
+            width={2.6136363636363638}
+            x={19.924242424242422}
+            y={300}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={158}
+            width={2.6136363636363638}
+            x={22.765151515151516}
+            y={142}
+          />
+        </g>
+        <g
+          className="dim"
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={0}
+            width={2.6136363636363638}
+            x={26.48989898989899}
+            y={300}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={198}
+            width={2.6136363636363638}
+            x={29.330808080808083}
+            y={102}
+          />
+        </g>
+        <g
+          className="dim"
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={0}
+            width={2.6136363636363638}
+            x={33.05555555555556}
+            y={300}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={244}
+            width={2.6136363636363638}
+            x={35.89646464646465}
+            y={56}
+          />
+        </g>
+        <g
+          className="dim"
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={0}
+            width={2.6136363636363638}
+            x={39.62121212121212}
+            y={300}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={247}
+            width={2.6136363636363638}
+            x={42.46212121212121}
+            y={53}
+          />
+        </g>
+        <g
+          className="dim"
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={0}
+            width={2.6136363636363638}
+            x={46.186868686868685}
+            y={300}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={177}
+            width={2.6136363636363638}
+            x={49.02777777777778}
+            y={123}
+          />
+        </g>
+        <g
+          className="dim"
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={0}
+            width={2.6136363636363638}
+            x={52.75252525252525}
+            y={300}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={105}
+            width={2.6136363636363638}
+            x={55.593434343434346}
+            y={195}
+          />
+        </g>
+        <g
+          className="dim"
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={0}
+            width={2.6136363636363638}
+            x={59.31818181818182}
+            y={300}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={71}
+            width={2.6136363636363638}
+            x={62.159090909090914}
+            y={229}
+          />
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div
+    className="w6"
+  >
+    <a
+      className="cursor-hand"
+      onClick={[Function]}
+    >
+      <div
+        className="hk-label flex flex-row br2 pa2 mh2 items-center bg-lightest-silver"
+      >
+        <div
+          className="flex items-center"
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
+            style={undefined}
+          >
+            <use
+              xlinkHref="#confirm-16"
+            />
+          </svg>
+          <svg
+            className="mr1"
+            height="31"
+            viewBox="0 0 7 31"
+            width="7"
+          >
+            <rect
+              fill="#CFD7E6"
+              fillOpacity={1}
+              height="100%"
+              width="7"
+              x="0"
+              y="0"
+            />
+          </svg>
+        </div>
+        <div
+          className="items-center"
+        >
+          <span
+            className="db ma1 ttu f7 tracked"
+          >
+            apples
+          </span>
+          <span
+            className="db ma1 ttu b f6"
+          >
+            9
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      className="cursor-hand"
+      onClick={[Function]}
+    >
+      <div
+        className="hk-label flex flex-row br2 pa2 mh2 items-center bg-lightest-silver"
+      >
+        <div
+          className="flex items-center"
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
+            style={undefined}
+          >
+            <use
+              xlinkHref="#confirm-16"
+            />
+          </svg>
+          <svg
+            className="mr1"
+            height="31"
+            viewBox="0 0 7 31"
+            width="7"
+          >
+            <rect
+              fill="#CCC2DC"
+              fillOpacity={1}
+              height="100%"
+              width="7"
+              x="0"
+              y="0"
+            />
+          </svg>
+        </div>
+        <div
+          className="items-center"
+        >
+          <span
+            className="db ma1 ttu f7 tracked"
+          >
+            oranges
+          </span>
+          <span
+            className="db ma1 ttu b f6"
+          >
+            6104
+          </span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;
+
 exports[`Storyshots HKLineChart default 1`] = `
 <div
   className="flex"

@@ -1,5 +1,6 @@
 import * as React from 'react'
 
+import { ChartPadding } from './constants'
 import { prettier } from './helpers'
 
 interface IGridProps {
@@ -22,7 +23,10 @@ export default class HKGrid extends React.PureComponent<IGridProps, {}> {
     }
 
     const horizontalGrid = yScale.ticks(yTicks).map((d,i) => {
-      const yPos = type === 'line' ? (yScale(d) + 15) : height - yScale(d)
+      /* For line chart, yPos needs to be offset by the vertical chart padding.
+      For bar charts, yScale(d) is measured relative to the top left corner, so height - yScale(d)
+      will give us the yPos relative to the bottom left corner (0,0) */
+      const yPos = type === 'line' ? (yScale(d) + ChartPadding.Vertical) : height - yScale(d)
       return (
         <g key={i}>
           {/* horizontal grid lines */}

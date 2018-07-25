@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { shallow } from 'enzyme'
 
-import { getMaxValues, getNumVisibleCharts } from '../src/helpers'
+import { getMaxValues, getNumVisibleCharts, prettier } from '../src/helpers'
 
 describe('getMaxValues', () => {
   it('get max values for bar chart data', () => {
@@ -45,5 +45,30 @@ describe('getNumVisibleCharts', () => {
 
     const numVisibleCharts = getNumVisibleCharts(toggleInfo)
     expect(numVisibleCharts).toEqual(2)
+  })
+
+describe.only('prettier', () => {
+  it('returns the condensed version of a specific value', () => {
+    const values = [
+      0,
+      999,
+      1000
+      10000,
+      100000,
+      1000000
+    ]
+
+    const condensedValues = [
+      '0',
+      '999',
+      '1K',
+      '10K',
+      '100K',
+      '1M',
+    ]
+
+    values.forEach((v,i) => {
+      expect(prettier(v)).toEqual(condensedValues[i])
+    })
   })
 })

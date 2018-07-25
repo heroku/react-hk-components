@@ -26,7 +26,7 @@ export function prettier (size) {
     return '0'
   }
   const units = ['K', 'M', 'B', 'T', 'q', 'Q']
-  let unit
+  let unit = ''
   while (size >= 1000 && units.length > 0) {
     size /= 1000
     unit = units.shift()
