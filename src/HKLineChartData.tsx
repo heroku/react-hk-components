@@ -168,12 +168,15 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
       return <HKLine key={i} {...lineProps} />
     })
 
-    const indicatorPoints = valueIndexes.map((v,i) => measurements[idx] ? (
+    const indicatorPoints = valueIndexes.map((v) =>
+    // check if y-values exist and check if specific line is toggled on
+    measurements[idx] && Object.keys(toggleInfo).map((key) => toggleInfo[key])[v]
+    ? (
       <circle
-        key={i}
+        key={v}
         className='indicatorPoints'
-        cx={hoverPos}
-        cy={yScale(measurements[idx].y[i]) + ChartPadding.Vertical}
+        cx={hoverIndex}
+        cy={yScale(measurements[idx].y[v]) + ChartPadding.Vertical}
         r={2}
       />) : null)
 

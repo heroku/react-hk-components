@@ -1429,6 +1429,7 @@ exports[`Storyshots HKModal flyout initially open 1`] = `
         Object {
           "transform": "translateX(0)",
           "transition": "transform 250ms ease-in-out",
+          "width": "350px",
         }
       }
     >
