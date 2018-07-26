@@ -175,7 +175,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
       <circle
         key={v}
         className='indicatorPoints'
-        cx={hoverIndex}
+        cx={hoverIndex + ChartPadding.Horizontal}
         cy={yScale(measurements[idx].y[v]) + ChartPadding.Vertical}
         r={2}
       />) : null)
