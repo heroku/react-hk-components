@@ -29,7 +29,7 @@ export function prettier (size) {
   let unit = ''
   while (size >= 1000 && units.length > 0) {
     size /= 1000
-    unit = units.shift()
+    unit = units.shift() || ''
   }
   size = size.toFixed(1).replace(/\.0$/, '')
   return `${size}${unit}`
