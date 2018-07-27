@@ -8,7 +8,6 @@ exports[`Storyshots HKBarChart default 1`] = `
     className="flex-auto"
   >
     <svg
-      className="br0 ba b--silver"
       height={300}
       onMouseLeave={[Function]}
       onMouseMove={[Function]}
@@ -17,184 +16,346 @@ exports[`Storyshots HKBarChart default 1`] = `
       width={100}
     >
       <g
-        className="dim"
+        transform="translate(35, 0)"
       >
         <rect
-          className="dim"
-          fill="#CFD7E6"
-          height={45}
-          width={4.472774416594641}
-          x={0.38893690579083895}
-          y={255}
+          className="br0 ba b--silver z-1"
+          fill="none"
+          height={300}
+          stroke="silver"
+          width={65}
+          x="0"
+          y="0"
         />
-        <rect
+        <g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={300}
+              y2={300}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={300}
+            >
+               
+              0
+               
+            </text>
+          </g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={254}
+              y2={254}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={254}
+            >
+               
+              200K
+               
+            </text>
+          </g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={208}
+              y2={208}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={208}
+            >
+               
+              400K
+               
+            </text>
+          </g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={163}
+              y2={163}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={163}
+            >
+               
+              600K
+               
+            </text>
+          </g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={117}
+              y2={117}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={117}
+            >
+               
+              800K
+               
+            </text>
+          </g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={71}
+              y2={71}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={71}
+            >
+               
+              1M
+               
+            </text>
+          </g>
+          <g>
+            <line
+              stroke="#96a3b6"
+              strokeOpacity="0.3"
+              strokeWidth="0.5"
+              x1="0"
+              x2={100}
+              y1={25}
+              y2={25}
+            />
+            <text
+              className="f7 fill-gray"
+              textAnchor="end"
+              x={-3}
+              y={25}
+            >
+               
+              1.2M
+               
+            </text>
+          </g>
+        </g>
+        <g
           className="dim"
-          fill="#CCC2DC"
-          height={285}
-          width={4.472774416594641}
-          x={5.250648228176318}
-          y={15}
-        />
-      </g>
-      <g
-        className="dim"
-      >
-        <rect
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={45}
+            width={2.907303370786517}
+            x={0.2528089887640448}
+            y={255}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={285}
+            width={2.907303370786517}
+            x={3.4129213483146064}
+            y={15}
+          />
+        </g>
+        <g
           className="dim"
-          fill="#CFD7E6"
-          height={48}
-          width={4.472774416594641}
-          x={11.624891961970613}
-          y={252}
-        />
-        <rect
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={48}
+            width={2.907303370786517}
+            x={7.556179775280898}
+            y={252}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={285}
+            width={2.907303370786517}
+            x={10.716292134831459}
+            y={15}
+          />
+        </g>
+        <g
           className="dim"
-          fill="#CCC2DC"
-          height={285}
-          width={4.472774416594641}
-          x={16.486603284356093}
-          y={15}
-        />
-      </g>
-      <g
-        className="dim"
-      >
-        <rect
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={50}
+            width={2.907303370786517}
+            x={14.859550561797752}
+            y={250}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={285}
+            width={2.907303370786517}
+            x={18.019662921348313}
+            y={15}
+          />
+        </g>
+        <g
           className="dim"
-          fill="#CFD7E6"
-          height={50}
-          width={4.472774416594641}
-          x={22.860847018150388}
-          y={250}
-        />
-        <rect
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={52}
+            width={2.907303370786517}
+            x={22.162921348314605}
+            y={248}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={285}
+            width={2.907303370786517}
+            x={25.323033707865164}
+            y={15}
+          />
+        </g>
+        <g
           className="dim"
-          fill="#CCC2DC"
-          height={285}
-          width={4.472774416594641}
-          x={27.722558340535866}
-          y={15}
-        />
-      </g>
-      <g
-        className="dim"
-      >
-        <rect
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={52}
+            width={2.907303370786517}
+            x={29.46629213483146}
+            y={248}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={285}
+            width={2.907303370786517}
+            x={32.62640449438202}
+            y={15}
+          />
+        </g>
+        <g
           className="dim"
-          fill="#CFD7E6"
-          height={52}
-          width={4.472774416594641}
-          x={34.09680207433016}
-          y={248}
-        />
-        <rect
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={52}
+            width={2.907303370786517}
+            x={36.76966292134831}
+            y={248}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={216}
+            width={2.907303370786517}
+            x={39.92977528089887}
+            y={84}
+          />
+        </g>
+        <g
           className="dim"
-          fill="#CCC2DC"
-          height={285}
-          width={4.472774416594641}
-          x={38.95851339671564}
-          y={15}
-        />
-      </g>
-      <g
-        className="dim"
-      >
-        <rect
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={52}
+            width={2.907303370786517}
+            x={44.073033707865164}
+            y={248}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={285}
+            width={2.907303370786517}
+            x={47.233146067415724}
+            y={15}
+          />
+        </g>
+        <g
           className="dim"
-          fill="#CFD7E6"
-          height={52}
-          width={4.472774416594641}
-          x={45.33275713050993}
-          y={248}
-        />
-        <rect
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={54}
+            width={2.907303370786517}
+            x={51.37640449438202}
+            y={246}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={285}
+            width={2.907303370786517}
+            x={54.53651685393258}
+            y={15}
+          />
+        </g>
+        <g
           className="dim"
-          fill="#CCC2DC"
-          height={285}
-          width={4.472774416594641}
-          x={50.194468452895414}
-          y={15}
-        />
-      </g>
-      <g
-        className="dim"
-      >
-        <rect
-          className="dim"
-          fill="#CFD7E6"
-          height={52}
-          width={4.472774416594641}
-          x={56.56871218668971}
-          y={248}
-        />
-        <rect
-          className="dim"
-          fill="#CCC2DC"
-          height={216}
-          width={4.472774416594641}
-          x={61.43042350907519}
-          y={84}
-        />
-      </g>
-      <g
-        className="dim"
-      >
-        <rect
-          className="dim"
-          fill="#CFD7E6"
-          height={52}
-          width={4.472774416594641}
-          x={67.80466724286948}
-          y={248}
-        />
-        <rect
-          className="dim"
-          fill="#CCC2DC"
-          height={285}
-          width={4.472774416594641}
-          x={72.66637856525496}
-          y={15}
-        />
-      </g>
-      <g
-        className="dim"
-      >
-        <rect
-          className="dim"
-          fill="#CFD7E6"
-          height={54}
-          width={4.472774416594641}
-          x={79.04062229904926}
-          y={246}
-        />
-        <rect
-          className="dim"
-          fill="#CCC2DC"
-          height={285}
-          width={4.472774416594641}
-          x={83.90233362143474}
-          y={15}
-        />
-      </g>
-      <g
-        className="dim"
-      >
-        <rect
-          className="dim"
-          fill="#CFD7E6"
-          height={55}
-          width={4.472774416594641}
-          x={90.27657735522904}
-          y={245}
-        />
-        <rect
-          className="dim"
-          fill="#CCC2DC"
-          height={255}
-          width={4.472774416594641}
-          x={95.13828867761451}
-          y={45}
-        />
+        >
+          <rect
+            className="dim"
+            fill="#CFD7E6"
+            height={55}
+            width={2.907303370786517}
+            x={58.67977528089887}
+            y={245}
+          />
+          <rect
+            className="dim"
+            fill="#CCC2DC"
+            height={255}
+            width={2.907303370786517}
+            x={61.83988764044943}
+            y={45}
+          />
+        </g>
       </g>
     </svg>
   </div>
@@ -794,7 +955,6 @@ exports[`Storyshots HKLineChart default 1`] = `
   >
     <div>
       <svg
-        className="br0 ba b--silver overflow-hidden"
         height={300}
         onMouseLeave={[Function]}
         onMouseMove={[Function]}
@@ -803,46 +963,166 @@ exports[`Storyshots HKLineChart default 1`] = `
         width={100}
       >
         <g
-          transform="translate(0, 15)"
+          transform="translate(35, 0)"
         >
           <g>
-            <path
-              d="M0,255.25823538044855L0,255.43188216301317L2.3759899805875913,255.43188216301317L2.3759899805875913,255.83241050819868L99.9657101368713,255.83241050819868L99.9657101368713,254.8792544462382L100,254.8792544462382"
-              fill="none"
-              stroke="#79589f"
-              strokeWidth="1"
-            />
-            <path
-              d="M0,255.25823538044855L0,255.43188216301317L2.3759899805875913,255.43188216301317L2.3759899805875913,255.83241050819868L99.9657101368713,255.83241050819868L99.9657101368713,254.8792544462382L100,254.8792544462382L100,285L99.9657101368713,285L99.9657101368713,285L2.3759899805875913,285L2.3759899805875913,285L0,285L0,285Z"
-              fill="#79589f"
-              fillOpacity="0.2"
-            />
+            <g>
+              <line
+                stroke="#96a3b6"
+                strokeOpacity="0.3"
+                strokeWidth="0.5"
+                x1="0"
+                x2={100}
+                y1={300}
+                y2={300}
+              />
+              <text
+                className="f7 fill-gray"
+                textAnchor="end"
+                x={-3}
+                y={300}
+              >
+                 
+                0
+                 
+              </text>
+            </g>
+            <g>
+              <line
+                stroke="#96a3b6"
+                strokeOpacity="0.3"
+                strokeWidth="0.5"
+                x1="0"
+                x2={100}
+                y1={236.625261837734}
+                y2={236.625261837734}
+              />
+              <text
+                className="f7 fill-gray"
+                textAnchor="end"
+                x={-3}
+                y={236.625261837734}
+              >
+                 
+                200K
+                 
+              </text>
+            </g>
+            <g>
+              <line
+                stroke="#96a3b6"
+                strokeOpacity="0.3"
+                strokeWidth="0.5"
+                x1="0"
+                x2={100}
+                y1={173.25052367546797}
+                y2={173.25052367546797}
+              />
+              <text
+                className="f7 fill-gray"
+                textAnchor="end"
+                x={-3}
+                y={173.25052367546797}
+              >
+                 
+                400K
+                 
+              </text>
+            </g>
+            <g>
+              <line
+                stroke="#96a3b6"
+                strokeOpacity="0.3"
+                strokeWidth="0.5"
+                x1="0"
+                x2={100}
+                y1={109.87578551320195}
+                y2={109.87578551320195}
+              />
+              <text
+                className="f7 fill-gray"
+                textAnchor="end"
+                x={-3}
+                y={109.87578551320195}
+              >
+                 
+                600K
+                 
+              </text>
+            </g>
+            <g>
+              <line
+                stroke="#96a3b6"
+                strokeOpacity="0.3"
+                strokeWidth="0.5"
+                x1="0"
+                x2={100}
+                y1={46.50104735093595}
+                y2={46.50104735093595}
+              />
+              <text
+                className="f7 fill-gray"
+                textAnchor="end"
+                x={-3}
+                y={46.50104735093595}
+              >
+                 
+                800K
+                 
+              </text>
+            </g>
           </g>
-          <g>
-            <path
-              d="M0,133.2821443342984L0,128.30595989379728L2.3759899805875913,128.30595989379728L2.3759899805875913,128.6925457965871L99.9657101368713,128.6925457965871L99.9657101368713,0L100,0"
-              fill="none"
-              stroke="#79589f"
-              strokeWidth="1"
-            />
-            <path
-              d="M0,133.2821443342984L0,128.30595989379728L2.3759899805875913,128.30595989379728L2.3759899805875913,128.6925457965871L99.9657101368713,128.6925457965871L99.9657101368713,0L100,0L100,285L99.9657101368713,285L99.9657101368713,285L2.3759899805875913,285L2.3759899805875913,285L0,285L0,285Z"
-              fill="#79589f"
-              fillOpacity="0.2"
-            />
-          </g>
-          <g>
-            <path
-              d="M0,253.2033094955371L0,210.74286867420048L2.3759899805875913,210.74286867420048L2.3759899805875913,273.930334485197L99.9657101368713,273.930334485197L99.9657101368713,281.8312630918867L100,281.8312630918867"
-              fill="none"
-              stroke="#79589f"
-              strokeWidth="1"
-            />
-            <path
-              d="M0,253.2033094955371L0,210.74286867420048L2.3759899805875913,210.74286867420048L2.3759899805875913,273.930334485197L99.9657101368713,273.930334485197L99.9657101368713,281.8312630918867L100,281.8312630918867L100,285L99.9657101368713,285L99.9657101368713,285L2.3759899805875913,285L2.3759899805875913,285L0,285L0,285Z"
-              fill="#79589f"
-              fillOpacity="0.2"
-            />
+          <rect
+            className="br0 ba b--silver z-1"
+            fill="none"
+            height={300}
+            stroke="silver"
+            width={65}
+            x="0"
+            y="0"
+          />
+          <g
+            transform="translate(0, 15)"
+          >
+            <g>
+              <path
+                d="M0,255.25823538044855L0,255.43188216301317L1.5443934873819343,255.43188216301317L1.5443934873819343,255.83241050819868L64.97771158896634,255.83241050819868L64.97771158896634,254.8792544462382L65,254.8792544462382"
+                fill="none"
+                stroke="#79589f"
+                strokeWidth="1"
+              />
+              <path
+                d="M0,255.25823538044855L0,255.43188216301317L1.5443934873819343,255.43188216301317L1.5443934873819343,255.83241050819868L64.97771158896634,255.83241050819868L64.97771158896634,254.8792544462382L65,254.8792544462382L65,285L64.97771158896634,285L64.97771158896634,285L1.5443934873819343,285L1.5443934873819343,285L0,285L0,285Z"
+                fill="#79589f"
+                fillOpacity="0.2"
+              />
+            </g>
+            <g>
+              <path
+                d="M0,133.2821443342984L0,128.30595989379728L1.5443934873819343,128.30595989379728L1.5443934873819343,128.6925457965871L64.97771158896634,128.6925457965871L64.97771158896634,0L65,0"
+                fill="none"
+                stroke="#79589f"
+                strokeWidth="1"
+              />
+              <path
+                d="M0,133.2821443342984L0,128.30595989379728L1.5443934873819343,128.30595989379728L1.5443934873819343,128.6925457965871L64.97771158896634,128.6925457965871L64.97771158896634,0L65,0L65,285L64.97771158896634,285L64.97771158896634,285L1.5443934873819343,285L1.5443934873819343,285L0,285L0,285Z"
+                fill="#79589f"
+                fillOpacity="0.2"
+              />
+            </g>
+            <g>
+              <path
+                d="M0,253.2033094955371L0,210.74286867420048L1.5443934873819343,210.74286867420048L1.5443934873819343,273.930334485197L64.97771158896634,273.930334485197L64.97771158896634,281.8312630918867L65,281.8312630918867"
+                fill="none"
+                stroke="#79589f"
+                strokeWidth="1"
+              />
+              <path
+                d="M0,253.2033094955371L0,210.74286867420048L1.5443934873819343,210.74286867420048L1.5443934873819343,273.930334485197L64.97771158896634,273.930334485197L64.97771158896634,281.8312630918867L65,281.8312630918867L65,285L64.97771158896634,285L64.97771158896634,285L1.5443934873819343,285L1.5443934873819343,285L0,285L0,285Z"
+                fill="#79589f"
+                fillOpacity="0.2"
+              />
+            </g>
           </g>
         </g>
       </svg>

@@ -6,6 +6,7 @@ import * as _ from 'lodash'
 
 import { ChartPadding, colours } from './constants'
 import { getMaxValues } from './helpers'
+import { default as HKGrid } from './HKGrid'
 
 interface IBarChartDataProps {
   data: any,
@@ -38,6 +39,7 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
     const { data, height, width, toggleInfo } = newProps
 
     const chartHeight = height - ChartPadding.Vertical
+    const chartWidth = width - ChartPadding.Horizontal
     // keys: an array of the indexes from bar chart data that are toggled on
     const keys = Object.keys(toggleInfo).filter((k) => toggleInfo[k]).map(Number)
     const shownData = data.map((rowData) => rowData.filter((colData, i) => _.includes(keys, i)))
@@ -46,7 +48,7 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
     const maxValues = d3array.max(shownData, ((arr) => d3array.max(arr)))
 
     const x0Scale = d3scale.scaleBand()
-                      .range([0, width])
+                      .range([0, chartWidth])
                       .domain(shownData.map((d,i) => i))
                       .paddingInner(0.1)
 
@@ -128,7 +130,7 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
 
   public render () {
 
-    const { data, height, width } = this.state
+    const { data, height, width, x0Scale, yScale } = this.state
     const bars = data.map((rowData, rowIdx) => (
       <g key={`row-${rowIdx}`} className='dim'>
         {rowData.map((colVal, colIdx) => this.createBar(rowIdx, colVal, colIdx))}
@@ -144,9 +146,12 @@ export default class HKBarChartData extends React.PureComponent<IBarChartDataPro
         height={height}
         viewBox={`0 0 ${width} ${height}`}
         ref={(ref) => this.ref = ref}
-        className='br0 ba b--silver'
       >
-        {bars}
+        <g transform={`translate(${ChartPadding.Horizontal}, 0)`}>
+          <rect x='0' y='0' width={width - ChartPadding.Horizontal} height={height} className='br0 ba b--silver z-1' fill='none' stroke='silver'/>
+          <HKGrid type='bar' height={height} width={width} xScale={x0Scale} yScale={yScale} />
+          {bars}
+        </g>
       </svg>
     )
   }
