@@ -796,6 +796,81 @@ exports[`Storyshots HKButton/secondary small-enabled-normal 1`] = `
 </button>
 `;
 
+exports[`Storyshots HKButton/success regular-disabled-async 1`] = `
+<button
+  className="hk-button--async"
+  disabled={true}
+  onClick={[Function]}
+  title={undefined}
+  type="button"
+  value={undefined}
+>
+   
+  Click Me
+   
+</button>
+`;
+
+exports[`Storyshots HKButton/success regular-disabled-normal 1`] = `
+<button
+  className="hk-button--disabled-success"
+  disabled={true}
+  onClick={[Function]}
+  title={undefined}
+  type="button"
+  value={undefined}
+>
+   
+  Click Me
+   
+</button>
+`;
+
+exports[`Storyshots HKButton/success regular-enabled-normal 1`] = `
+<button
+  className="hk-button--success"
+  disabled={false}
+  onClick={[Function]}
+  title={undefined}
+  type="button"
+  value={undefined}
+>
+   
+  Click Me
+   
+</button>
+`;
+
+exports[`Storyshots HKButton/success small-disabled-normal 1`] = `
+<button
+  className="hk-button-sm--disabled-success"
+  disabled={true}
+  onClick={[Function]}
+  title={undefined}
+  type="button"
+  value={undefined}
+>
+   
+  Click Me
+   
+</button>
+`;
+
+exports[`Storyshots HKButton/success small-enabled-normal 1`] = `
+<button
+  className="hk-button-sm--success"
+  disabled={false}
+  onClick={[Function]}
+  title={undefined}
+  type="button"
+  value={undefined}
+>
+   
+  Click Me
+   
+</button>
+`;
+
 exports[`Storyshots HKButton/tertiary regular-disabled-async 1`] = `
 <button
   className="hk-button--async"
