@@ -7,6 +7,7 @@ export enum Type {
   Danger = 'danger',
   Warning = 'warning',
   Info = 'info',
+  Success = 'success',
 }
 
 interface IButtonProps {
