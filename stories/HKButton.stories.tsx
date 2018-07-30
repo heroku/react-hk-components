@@ -7,7 +7,7 @@ import { action } from '@storybook/addon-actions'
 import { default as HKButton, Type } from '../src/HKButton'
 
 const types = [
-  Type.Primary, Type.Secondary, Type.Tertiary, Type.Danger, Type.Warning, Type.Info,
+  Type.Primary, Type.Secondary, Type.Tertiary, Type.Danger, Type.Warning, Type.Info, Type.Success,
 ]
 const smallProp = [true, false]
 const disabledProps = [true, false]
