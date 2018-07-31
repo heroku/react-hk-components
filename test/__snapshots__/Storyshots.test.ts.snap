@@ -1,5 +1,675 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots HKBanner/danger default 1`] = `
+<div
+  className="hk-banner--danger flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-red mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#warning-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    Lorem ipsum dolor sit amet.
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/danger with button 1`] = `
+<div
+  className="hk-banner--danger flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-red mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#warning-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    Lorem ipsum dolor sit amet.
+  </div>
+  <button
+    className="hk-button--danger flex-none"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKBanner/danger with title 1`] = `
+<div
+  className="hk-banner--danger flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-red mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#warning-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    <div
+      className="b"
+    >
+      This is the title line
+    </div>
+    Lorem ipsum dolor sit amet.
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/danger with title and button 1`] = `
+<div
+  className="hk-banner--danger flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-red mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#warning-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    <div
+      className="b"
+    >
+      This is the title line
+    </div>
+    Lorem ipsum dolor sit amet.
+  </div>
+  <button
+    className="hk-button--danger flex-none"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKBanner/generic default 1`] = `
+<div
+  className="hk-banner--generic flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-dark-gray mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#logo-block-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    Lorem ipsum dolor sit amet.
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/generic with button 1`] = `
+<div
+  className="hk-banner--generic flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-dark-gray mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#logo-block-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    Lorem ipsum dolor sit amet.
+  </div>
+  <button
+    className="hk-button--secondary flex-none"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKBanner/generic with title 1`] = `
+<div
+  className="hk-banner--generic flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-dark-gray mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#logo-block-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    <div
+      className="b"
+    >
+      This is the title line
+    </div>
+    Lorem ipsum dolor sit amet.
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/generic with title and button 1`] = `
+<div
+  className="hk-banner--generic flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-dark-gray mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#logo-block-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    <div
+      className="b"
+    >
+      This is the title line
+    </div>
+    Lorem ipsum dolor sit amet.
+  </div>
+  <button
+    className="hk-button--secondary flex-none"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKBanner/info default 1`] = `
+<div
+  className="hk-banner--info flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-blue mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#info-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    Lorem ipsum dolor sit amet.
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/info with button 1`] = `
+<div
+  className="hk-banner--info flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-blue mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#info-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    Lorem ipsum dolor sit amet.
+  </div>
+  <button
+    className="hk-button--info flex-none"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKBanner/info with title 1`] = `
+<div
+  className="hk-banner--info flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-blue mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#info-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    <div
+      className="b"
+    >
+      This is the title line
+    </div>
+    Lorem ipsum dolor sit amet.
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/info with title and button 1`] = `
+<div
+  className="hk-banner--info flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-blue mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#info-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    <div
+      className="b"
+    >
+      This is the title line
+    </div>
+    Lorem ipsum dolor sit amet.
+  </div>
+  <button
+    className="hk-button--info flex-none"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKBanner/success default 1`] = `
+<div
+  className="hk-banner--success flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-green mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#success-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    Lorem ipsum dolor sit amet.
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/success with button 1`] = `
+<div
+  className="hk-banner--success flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-green mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#success-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    Lorem ipsum dolor sit amet.
+  </div>
+  <button
+    className="hk-button--success flex-none"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKBanner/success with title 1`] = `
+<div
+  className="hk-banner--success flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-green mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#success-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    <div
+      className="b"
+    >
+      This is the title line
+    </div>
+    Lorem ipsum dolor sit amet.
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/success with title and button 1`] = `
+<div
+  className="hk-banner--success flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-green mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#success-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    <div
+      className="b"
+    >
+      This is the title line
+    </div>
+    Lorem ipsum dolor sit amet.
+  </div>
+  <button
+    className="hk-button--success flex-none"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKBanner/warning default 1`] = `
+<div
+  className="hk-banner--warning flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-orange mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#warning-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    Lorem ipsum dolor sit amet.
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/warning with button 1`] = `
+<div
+  className="hk-banner--warning flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-orange mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#warning-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    Lorem ipsum dolor sit amet.
+  </div>
+  <button
+    className="hk-button--warning flex-none"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKBanner/warning with title 1`] = `
+<div
+  className="hk-banner--warning flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-orange mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#warning-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    <div
+      className="b"
+    >
+      This is the title line
+    </div>
+    Lorem ipsum dolor sit amet.
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/warning with title and button 1`] = `
+<div
+  className="hk-banner--warning flex items-center"
+>
+  <svg
+    className="malibu-fill-gradient-orange mr2 flex-none"
+    style={
+      Object {
+        "height": "24px",
+        "width": "24px",
+      }
+    }
+  >
+    <use
+      xlinkHref="#warning-ring-28"
+    />
+  </svg>
+  <div
+    className="flex-auto"
+  >
+    <div
+      className="b"
+    >
+      This is the title line
+    </div>
+    Lorem ipsum dolor sit amet.
+  </div>
+  <button
+    className="hk-button--warning flex-none"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
 exports[`Storyshots HKBarChart default 1`] = `
 <div
   className="flex"
