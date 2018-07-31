@@ -54,7 +54,7 @@
     "tslint": "^5.9.1",
     "tslint-config-standard": "^7.0.0",
     "tslint-react": "^3.4.0",
-    "typescript": "^3.0.1"
+    "typescript": "2.x"
   },
   "scripts": {
     "eslint": "eslint ./src",
