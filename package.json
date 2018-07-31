@@ -79,6 +79,7 @@
       "/node_modules/"
     ],
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$",
+    "testURL": "http://localhost/",
     "moduleFileExtensions": [
       "ts",
       "tsx",
