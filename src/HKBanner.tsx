@@ -23,13 +23,13 @@ interface IBannerProps {
 }
 
 export default class HKBanner extends React.Component<IBannerProps> {
-  private typeMap = new Map<BannerType, ButtonType>([
-    [BannerType.generic, ButtonType.Secondary],
-    [BannerType.info, ButtonType.Info],
-    [BannerType.success, ButtonType.Success],
-    [BannerType.warning, ButtonType.Warning],
-    [BannerType.danger, ButtonType.Danger],
-  ])
+  private typeMap = {
+    [BannerType.generic]: ButtonType.Secondary,
+    [BannerType.info]: ButtonType.Info,
+    [BannerType.success]: ButtonType.Success,
+    [BannerType.warning]: ButtonType.Warning,
+    [BannerType.danger]: ButtonType.Danger,
+  }
 
   private colorMap = {
     danger: 'red',
@@ -43,7 +43,7 @@ export default class HKBanner extends React.Component<IBannerProps> {
     const { buttonText, children, type, icon, title } = this.props
     let button
     if (buttonText) {
-      button = <HKButton type={this.typeMap.get(type)} onClick={this.handleClick} className='flex-none'>{buttonText}</HKButton>
+      button = <HKButton type={this.typeMap[type]} onClick={this.handleClick} className='flex-none'>{buttonText}</HKButton>
     }
 
     return (
