@@ -65,3 +65,29 @@ heroku create
 heroku config:set NPM_CONFIG_PRODUCTION=false
 git push heroku master
 ```
+
+### Releasing
+
+Unfortunately, releasing is a bit of a mess right now because the different
+pieces don't play together nicely. Specifically, [`yarn publish` doesn't support
+NPM's 2FA yet (yarn/#4904)](https://github.com/yarnpkg/yarn/issues/4904).
+
+#### Setup (one time)
+
+1. Make sure you have a late-model npm installed that supports 2FA:
+   `npm install -g npm`
+2. Install `np` globally using npm: `npm install -g np`
+
+#### Release
+
+Because `yarn publish` doesn't support 2FA, we will have to invoke `np` with the
+`--no-yarn` option. This is a bit unfortunate because `np` is actually doing its
+sanity checks using `npm`, which might result in different behavior compared to
+`yarn`. Because of this, we should manually run the test suite ourselves ahead
+of `np` until such time as yarn gets unbroken.
+
+1. `rm -rf node_modules`
+2. `yarn`
+3. `yarn test`. No errors? Lovely, proceed.
+4. When you're ready to publish, `np --no-yarn`.
+
