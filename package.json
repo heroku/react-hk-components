@@ -96,9 +96,5 @@
   ],
   "publishConfig": {
     "access": "public"
-  },
-  "engines": {
-    "node": "8.11.x",
-    "yarn": "1.9.x"
   }
 }
