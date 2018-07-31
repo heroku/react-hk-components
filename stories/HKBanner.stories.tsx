@@ -1,3 +1,4 @@
+import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import * as React from 'react'
 
@@ -32,9 +33,9 @@ types.forEach((type) => {
     <HKBanner icon={typeMap[type]} type={type} title='This is the title line'>Lorem ipsum dolor sit amet.</HKBanner>
   ))
   stories.add(`with button`, () => (
-    <HKBanner icon={typeMap[type]} type={type} buttonText='Click Me'>Lorem ipsum dolor sit amet.</HKBanner>
+    <HKBanner icon={typeMap[type]} type={type} buttonText='Click Me' onClick={action('clicked')}>Lorem ipsum dolor sit amet.</HKBanner>
   ))
   stories.add(`with title and button`, () => (
-    <HKBanner icon={typeMap[type]} type={type} title='This is the title line' buttonText='Click Me'>Lorem ipsum dolor sit amet.</HKBanner>
+    <HKBanner icon={typeMap[type]} type={type} title='This is the title line' buttonText='Click Me' onClick={action('clicked')}>Lorem ipsum dolor sit amet.</HKBanner>
   ))
 })
