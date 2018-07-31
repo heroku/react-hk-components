@@ -1,5 +1,4 @@
 import { MalibuIcon } from '@heroku/react-malibu'
-import * as classnames from 'classnames'
 import * as React from 'react'
 import {
   default as HKButton,
@@ -41,7 +40,7 @@ export default class HKBanner extends React.Component<IBannerProps> {
   }
 
   public render () {
-    const { buttonText, children, type, icon, onClick, title } = this.props
+    const { buttonText, children, type, icon, title } = this.props
     let button
     if (buttonText) {
       button = <HKButton type={this.typeMap.get(type)} onClick={this.handleClick} className='flex-none'>{buttonText}</HKButton>
@@ -52,7 +51,7 @@ export default class HKBanner extends React.Component<IBannerProps> {
         <MalibuIcon name={icon} size={24} fillClass={this.colorMap[type]} extraClasses='mr2 flex-none' />
         <div className='flex-auto'>
           {title && <div className='b'>{title}</div>}
-          {this.props.children}
+          {children}
         </div>
         {button}
       </div>
