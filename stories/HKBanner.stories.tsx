@@ -25,17 +25,17 @@ const typeMap = {
 }
 
 types.forEach((type) => {
-  const stories = storiesOf(`HKBanner/${type}`, module)
-  stories.add(`default`, () => (
-    <HKBanner icon={typeMap[type]} type={type} >Lorem ipsum dolor sit amet.</HKBanner>
-  ))
-  stories.add(`with title`, () => (
-    <HKBanner icon={typeMap[type]} type={type} title='This is the title line'>Lorem ipsum dolor sit amet.</HKBanner>
-  ))
-  stories.add(`with button`, () => (
-    <HKBanner icon={typeMap[type]} type={type} buttonText='Click Me' onClick={action('clicked')}>Lorem ipsum dolor sit amet.</HKBanner>
-  ))
-  stories.add(`with title and button`, () => (
-    <HKBanner icon={typeMap[type]} type={type} title='This is the title line' buttonText='Click Me' onClick={action('clicked')}>Lorem ipsum dolor sit amet.</HKBanner>
-  ))
+  storiesOf(`HKBanner/${type}`, module)
+    .add(`default`, () => (
+      <HKBanner icon={typeMap[type]} type={type} >Lorem ipsum dolor sit amet.</HKBanner>
+    ))
+    .add(`with title`, () => (
+      <HKBanner icon={typeMap[type]} type={type} title='This is the title line'>Lorem ipsum dolor sit amet.</HKBanner>
+    ))
+    .add(`with button`, () => (
+      <HKBanner icon={typeMap[type]} type={type} buttonText='Click Me' onClick={action('clicked')}>Lorem ipsum dolor sit amet.</HKBanner>
+    ))
+    .add(`with title and button`, () => (
+      <HKBanner icon={typeMap[type]} type={type} title='This is the title line' buttonText='Click Me' onClick={action('clicked')}>Lorem ipsum dolor sit amet.</HKBanner>
+    ))
 })
