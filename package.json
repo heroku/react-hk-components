@@ -54,7 +54,7 @@
     "tslint": "^5.9.1",
     "tslint-config-standard": "^7.0.0",
     "tslint-react": "^3.4.0",
-    "typescript": "^2.6.2"
+    "typescript": "^3.0.1"
   },
   "scripts": {
     "eslint": "eslint ./src",
@@ -99,6 +99,6 @@
   },
   "engines": {
     "node": "8.11.x",
-    "yarn": "1.7.x"
+    "yarn": "1.9.x"
   }
 }
