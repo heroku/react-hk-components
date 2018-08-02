@@ -121,7 +121,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
     } : {}
 
     const dismissElem = onDismiss && (
-      <div className='right-1 absolute pointer' onClick={this.handleClose}>
+      <div className={classnames('right-1 absolute pointer', { 'top-1': !header })} onClick={this.handleClose}>
         <MalibuIcon
           name='delete-16'
           fillClass='dark-gray'
@@ -173,10 +173,18 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
             show={isShowing}
             onClose={this.handleClose}
           >
+<<<<<<< HEAD
             <div className={classnames(
               'hk-modal-header f4 flex items-center justify-center br--top br2 pa4',
               { 'bg-near-white bb b--light-silver': header, 'bg-none': !header, 'red': type === 'destructive' }
             )}> {header}
+=======
+            <div
+              className={classnames('hk-modal-header f4 flex items-center justify-center br--top br2',
+              { 'bg-near-white bb b--light-silver pa4': header, 'bg-none': !header, 'red': type === 'destructive' })}
+            >
+              {header}
+>>>>>>> Fixes lint and updates tests
               {dismissElem}
             </div>
 

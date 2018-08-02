@@ -28,6 +28,12 @@ class ModalWrapper extends React.Component<
   IModalWrapperProps,
   IModalWrapperState
 > {
+
+  public static defaultProps = {
+    showFooter: true,
+    showHeader: true,
+  }
+
   constructor (props) {
     super(props)
     this.state = {
@@ -35,11 +41,6 @@ class ModalWrapper extends React.Component<
       isFlyout: props.isFlyout,
       showModal: props.initialShowModal,
     }
-  }
-
-  public static defaultProps = {
-    showHeader: true,
-    showFooter: true,
   }
 
   public render () {
