@@ -10,6 +10,8 @@ import {
 import { default as HKModal, Type } from '../src/HKModal'
 
 interface IModalWrapperProps {
+  showHeader?: boolean,
+  showFooter?: boolean,
   initialShowModal?: boolean,
   isFlyout?: boolean,
   hasConfirm?: boolean,
@@ -33,6 +35,11 @@ class ModalWrapper extends React.Component<
       isFlyout: props.isFlyout,
       showModal: props.initialShowModal,
     }
+  }
+
+  public static defaultProps = {
+    showHeader: true,
+    showFooter: true,
   }
 
   public render () {
