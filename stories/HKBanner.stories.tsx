@@ -38,4 +38,7 @@ types.forEach((type) => {
     .add(`with title and button`, () => (
       <HKBanner icon={typeMap[type]} type={type} title='This is the title line' buttonText='Click Me' onClick={action('clicked')}>Lorem ipsum dolor sit amet.</HKBanner>
     ))
+    .add(`with className`, () => (
+      <HKBanner className='pv5' icon={typeMap[type]} type={type} title='This is the title line' buttonText='Click Me' onClick={action('clicked')}>Lorem ipsum dolor sit amet.</HKBanner>
+    ))
 })
