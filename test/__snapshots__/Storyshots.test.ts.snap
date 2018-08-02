@@ -1901,6 +1901,86 @@ exports[`Storyshots HKButton/warning small-enabled-normal 1`] = `
 </button>
 `;
 
+exports[`Storyshots HKFlagIcon australia 1`] = `
+<img
+  className=""
+  src="/flags/region-australia.png"
+  srcSet="/flags/region-australia.png 1x, /flags/region-australia@2x.png 2x"
+/>
+`;
+
+exports[`Storyshots HKFlagIcon brazil 1`] = `
+<img
+  className=""
+  src="/flags/region-brazil.png"
+  srcSet="/flags/region-brazil.png 1x, /flags/region-brazil@2x.png 2x"
+/>
+`;
+
+exports[`Storyshots HKFlagIcon default 1`] = `
+<img
+  className=""
+  src="/flags/region-default.png"
+  srcSet="/flags/region-default.png 1x, /flags/region-default@2x.png 2x"
+/>
+`;
+
+exports[`Storyshots HKFlagIcon europe 1`] = `
+<img
+  className=""
+  src="/flags/region-europe.png"
+  srcSet="/flags/region-europe.png 1x, /flags/region-europe@2x.png 2x"
+/>
+`;
+
+exports[`Storyshots HKFlagIcon germany 1`] = `
+<img
+  className=""
+  src="/flags/region-germany.png"
+  srcSet="/flags/region-germany.png 1x, /flags/region-germany@2x.png 2x"
+/>
+`;
+
+exports[`Storyshots HKFlagIcon ireland 1`] = `
+<img
+  className=""
+  src="/flags/region-ireland.png"
+  srcSet="/flags/region-ireland.png 1x, /flags/region-ireland@2x.png 2x"
+/>
+`;
+
+exports[`Storyshots HKFlagIcon japan 1`] = `
+<img
+  className=""
+  src="/flags/region-japan.png"
+  srcSet="/flags/region-japan.png 1x, /flags/region-japan@2x.png 2x"
+/>
+`;
+
+exports[`Storyshots HKFlagIcon private 1`] = `
+<img
+  className=""
+  src="/flags/region-private.png"
+  srcSet="/flags/region-private.png 1x, /flags/region-private@2x.png 2x"
+/>
+`;
+
+exports[`Storyshots HKFlagIcon singapore 1`] = `
+<img
+  className=""
+  src="/flags/region-singapore.png"
+  srcSet="/flags/region-singapore.png 1x, /flags/region-singapore@2x.png 2x"
+/>
+`;
+
+exports[`Storyshots HKFlagIcon united-states 1`] = `
+<img
+  className=""
+  src="/flags/region-united-states.png"
+  srcSet="/flags/region-united-states.png 1x, /flags/region-united-states@2x.png 2x"
+/>
+`;
+
 exports[`Storyshots HKLineChart default 1`] = `
 <div
   className="flex"
