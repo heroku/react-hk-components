@@ -1,5 +1,4 @@
 import * as React from 'react'
-import * as RetinaImage from 'react-retina-image'
 
 export enum Regions {
   australia = 'australia',
@@ -15,15 +14,19 @@ export enum Regions {
 }
 
 interface IFlagIconProps {
-  region: Regions,
   basePath?: string,
+  className?: string,
+  region: Regions,
 }
 
 export default class HKFlagIcon extends React.Component<IFlagIconProps> {
   private static defaultProps = {
     basePath: '/static/dist/flags/',
+    className: '',
   }
   public render () {
-    return (<RetinaImage src={`${this.props.basePath}region-${this.props.region}.png`} />)
+    const { className, basePath, region } = this.props
+    const src = `${basePath}region-${region}`
+    return (<img src={`${src}.png`} srcSet={`${src}.png 1x, ${src}@2x.png 2x`} className={className} />)
   }
 }
