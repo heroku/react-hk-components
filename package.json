@@ -36,6 +36,7 @@
     "awesome-typescript-loader": "^3.4.1",
     "babel-core": "^6.26.0",
     "babel-plugin-react-hot-loader": "^3.0.0-beta.6",
+    "copyfiles": "^2.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.0",
@@ -46,6 +47,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-standard": "^3.0.1",
+    "file-loader": "^1.1.11",
     "jest": "^22.1.4",
     "np": "^2.19.0",
     "react-hot-loader": "^4.3.1",
@@ -60,13 +62,14 @@
     "eslint": "eslint ./src",
     "tslint": "tslint -c tslint.json --project .",
     "lint": "yarn run eslint && yarn run tslint",
-    "storybook": "start-storybook -p ${PORT:-9001} -c .storybook",
-    "build": "rm -rf ./dist; tsc --project tsconfig.build.json",
+    "storybook": "start-storybook -p ${PORT:-9001} -s ./src/static -c .storybook",
+    "build": "rm -rf ./dist; tsc --project tsconfig.build.json; yarn staticfiles",
     "prepublish": "yarn run build",
     "test": "jest --testPathPattern $PWD/test",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "release": "np"
+    "release": "np",
+    "staticfiles": "copyfiles -f src/static/flags/* dist/flags"
   },
   "jest": {
     "transform": {

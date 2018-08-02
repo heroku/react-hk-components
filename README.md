@@ -14,6 +14,23 @@ Usage of these components assumes you are using the [Purple3 CSS framework](http
 
 `yarn add @heroku/react-hk-components`
 
+If you want to use `HKFlagIcon`, you will need to tell Webpack to copy the flag images into a directory that is served up by your app:
+
+```js
+  // somewhere in your webpack config...
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: 'node_modules/@heroku/react-hk-components/dist/flags',
+        to: 'flags', // this is relative to your the outputPath you configured in webpack
+      }
+    ]),
+  ],
+```
+
+`<HKFlagIcon>` defaults to loading the flag images from `/static/dist/flags`, but if you have a different base path to the flag images, you'll need to pass it as a prop like `<HKFlagIcon basePath='/foo/bar/flags' region='europe' />`.
+
+
 ### Components
 
 See [react-hk-components.herokuapp.com](https://react-hk-components.herokuapp.com)
