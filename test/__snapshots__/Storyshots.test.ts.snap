@@ -2396,15 +2396,27 @@ exports[`Storyshots HKModal default initially open 1`] = `
         className="bt b--light-silver w-100 pa3 tr"
       >
         <button
-          className="hk-button--secondary"
+          className="hk-button--tertiary ml1"
           disabled={false}
           onClick={[Function]}
           title={undefined}
           type="button"
-          value={undefined}
+          value="cancel"
         >
            
-          Submit
+          Cancel
+           
+        </button>
+        <button
+          className="hk-button--primary ml1"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value="ok"
+        >
+           
+          OK
            
         </button>
       </div>
@@ -2505,15 +2517,27 @@ exports[`Storyshots HKModal flyout initially open 1`] = `
         className="bt b--light-silver w-100 pa3 tr"
       >
         <button
-          className="hk-button--secondary"
+          className="hk-button--tertiary ml1"
           disabled={false}
           onClick={[Function]}
           title={undefined}
           type="button"
-          value={undefined}
+          value="cancel"
         >
            
-          Submit
+          Cancel
+           
+        </button>
+        <button
+          className="hk-button--primary ml1"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value="ok"
+        >
+           
+          OK
            
         </button>
       </div>
