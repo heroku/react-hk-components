@@ -4,7 +4,6 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
 import {
-  default as HKButton,
   Type as ButtonType,
 } from '../src/HKButton'
 import { default as HKModal, Type } from '../src/HKModal'

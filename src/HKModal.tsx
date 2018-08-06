@@ -93,7 +93,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
 
   public render () {
     const duration = 250
-    const { show, children, onDismiss, header, buttons, isFlyout, type } = this.props
+    const { children, onDismiss, header, buttons, isFlyout, type } = this.props
     const { isShowing, isClosing } = this.state
 
     const fadeTransition = {
