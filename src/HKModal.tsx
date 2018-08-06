@@ -45,7 +45,7 @@ Dramatis personae of the event flow in this component
 * in: What should be passed as a prop to <Transition in={ aBoolean } ... />
 
    Show  iS  iC  in
-1. F     F   F   -   never displayed / displayed and was closed
+1. F     F   F   -   never displayed
 2. T     F   F   -   controlling component wants us to display! gDSFP will derive the state on the following line.
 3. T     T   F   T   Shows the modal. In becomes true so transition in happens.
 4. *** props.onDismiss() is called, resulting in the controlling component setting show to F ***
