@@ -4,6 +4,7 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
 import {
+  default as HKButton,
   Type as ButtonType,
 } from '../src/HKButton'
 import { default as HKModal, Type } from '../src/HKModal'
@@ -56,7 +57,7 @@ class ModalWrapper extends React.Component<
     }
     return (
       <div>
-        <button onClick={this.showModal}>show it</button>
+        <HKButton type={ButtonType.Primary} onClick={this.showModal}>Show the Modal</HKButton>
         <HKModal
           isFlyout={this.state.isFlyout}
           type={this.props.type && this.props.type}
