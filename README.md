@@ -36,7 +36,60 @@ If you want to use `HKFlagIcon`, you will need to tell Webpack to copy the flag 
 See [react-hk-components.herokuapp.com](https://react-hk-components.herokuapp.com)
 for a complete list of components that are available.
 
+#### HKModal
 
+The HKModal component displays modal dialogs of two kinds: normal, which appear in the middle of the browser viewport, and flyout, which slides in from the right. It takes the following props:
+
+* **`isFlyout`**: `boolean?`. Defaults to false.
+* **`show`**: `boolean`. Set it to `true` in order to trigger display of the modal, or `false` to trigger hiding.
+* **`type`**: `string?`. Set to `destructive` if you want the title of the modal to be rendered in red.
+* **`onDismiss`**: `(value?: string) => any`. A handler that is invoked with the close value when the modal is dismissed. Closing the modal by clicking outside the modal or by clicking on the X at the top-right of the modal will result in the handler being invoked with a value of `cancel`.
+* **`header`**: JSX element. What is rendered in the header of the modal.
+* **`buttons`**: `IButtonDefinition[]?`: an optional array of button definitions. These will be rendered left-to-right as buttons in the footer of the modal.
+
+The contents of the modal are the children passed in the body of the react element, e.g. `<HKModal> stuff to render in body of modal </HKModal>`
+
+Buttons are defined as follows:
+
+* **`text`**: `string`. The text on the button
+* **`type`**: `Button.Type`. Primary, secondary, danger, etc.
+* **`disabled`**: `boolean`. Set to `true` if you want the button disabled.
+* **`value`**: `string`. The value associated with the button. This is what will be remitted to the `onDismiss` handler when the user closes the modal by clicking on this button.
+
+So here's a working example:
+
+```tsx
+public class MyModalWrapper extends React.Component {
+  handleDismiss = (value?: string): any => {
+    switch(value) {
+      case 'ok':
+        // handle the OK case
+        break
+      case cancel:
+      default:
+        // handle the cancel case, which is also the default
+    }
+  }
+  public render() {
+    return (<HKModal
+      isFlyout={false}
+      show={true}
+      onDismiss={this.handleDismiss}
+      header={<div>My Modal</div>}
+      buttons={[
+        {text: 'cancel', value: 'cancel', type: 'tertiary'},
+        {text: 'OK', value: 'ok', type: 'primary'},
+      ]}
+    >
+      <div>Look at my shiny modal content!</div>
+      <p>Such shiny. Much wow.</p>
+    </HKModal>)    
+  }
+}
+
+
+
+```
 ## Development
 
 ### Installation
