@@ -53,7 +53,7 @@ Dramatis personae of the event flow in this component
 6. F     T   T   F   Transition to closed. In becomes false, triggers transition state "exiting"
 7. *** Transition out continues until handleExited() fires, setting isShowing to false
 8. F     F   T   F   Modal is hidden. Transition state is 'exited'
-9. T     F   T   F   Conrolling component wants us to display! gDSFP will take us to step 3.
+9. T     F   T   F   Controlling component wants us to display! gDSFP will take us to step 3.
 */
 export default class HKModal extends React.Component<IModalProps, IModalState> {
   public static defaultProps: Partial<IModalProps> = {
@@ -66,9 +66,10 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
       return { isShowing: true, isClosing: false }
     } else {
       // We're somewhere in the process of closing the modal
+      // So set isClosing to true.
       // isShowing will be set to false by handleExited(),
       // which is the handler fired at the end of the transition out.
-      return { ...state, isClosing: true }
+      return { isClosing: true }
     }
   }
 
