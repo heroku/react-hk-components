@@ -10,13 +10,15 @@ import { default as HKModal, Type } from '../src/HKModal'
 
 interface IModalWrapperProps {
   initialShowModal?: boolean,
-  isFlyout?: boolean
+  isFlyout?: boolean,
+  hasConfirm?: boolean,
   type?: Type,
 }
 
 interface IModalWrapperState {
+  confirmValue?: string,
   showModal: boolean,
-  isFlyout?: boolean
+  isFlyout?: boolean,
 }
 
 class ModalWrapper extends React.Component<
@@ -26,12 +28,32 @@ class ModalWrapper extends React.Component<
   constructor (props) {
     super(props)
     this.state = {
+      confirmValue: '',
       isFlyout: props.isFlyout,
       showModal: props.initialShowModal,
     }
   }
 
   public render () {
+    let confirmInput
+    let okDisabled = false
+    if (this.props.hasConfirm) {
+      confirmInput = (
+        <div>
+          <p>Type 'confirm' to enable the OK button</p>
+          <input
+            id='verifyForceRotateCredential'
+            className='hk-input w-100'
+            autoCorrect='off'
+            spellCheck={false}
+            autoFocus={true}
+            onChange={this.handleConfirmChange}
+            value={this.state.confirmValue}
+          />
+        </div>
+      )
+      okDisabled = this.state.confirmValue !== 'confirm'
+    }
     return (
       <div>
         <button onClick={this.showModal}>show it</button>
@@ -49,22 +71,29 @@ class ModalWrapper extends React.Component<
               value: 'cancel',
             },
             {
-              disabled: false,
+              disabled: okDisabled,
               text: 'OK',
               type: this.props.type === Type.Destructive ? ButtonType.Danger : ButtonType.Primary,
               value: 'ok',
             },
           ]}
         >
-          <div className='pa6'>with some important details here below</div>
+          <div className='pa6'>
+            <p>with some important details here below</p>
+            {confirmInput}
+          </div>
         </HKModal>
       </div>
     )
   }
 
   private handleModalDismiss = (value?: string) => {
-    this.setState({ showModal: false })
+    this.setState({ showModal: false, confirmValue: '' })
     action('Modal Dismiss')(value)
+  }
+
+  private handleConfirmChange = (e) => {
+    this.setState({ confirmValue: e.target.value })
   }
 
   private showModal = () => {
@@ -83,4 +112,7 @@ storiesOf('HKModal', module)
    ))
   .add('destructive', () => (
     <ModalWrapper type={Type.Destructive} />
+  ))
+  .add('destructive with confirmation', () => (
+    <ModalWrapper type={Type.Destructive} hasConfirm={true}/>
   ))
