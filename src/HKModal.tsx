@@ -109,7 +109,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
 
     const innerTransition = isFlyout ? {
       transform: 'translateX(100%)',
-      transition: `transform ${duration}ms ease-in-out`,
+      transition: `transform ${duration}ms cubic-bezier(0,1,0.5,1)`,
     } : {}
 
     const innerStyles = isFlyout ? {
