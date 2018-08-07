@@ -102,18 +102,10 @@ class ModalWrapper extends React.Component<
   }
 }
 
-storiesOf('HKModal', module)
-  .add('default', () => <ModalWrapper />)
-  .add('default initially open', () => <ModalWrapper initialShowModal={true} />)
-  .add('flyout', () => (
-    <ModalWrapper isFlyout={true} initialShowModal={false} />
-  ))
-  .add('flyout initially open', () => (
-    <ModalWrapper isFlyout={true} initialShowModal={true} />
-   ))
-  .add('destructive', () => (
-    <ModalWrapper type={Type.Destructive} />
-  ))
-  .add('destructive with confirmation', () => (
-    <ModalWrapper type={Type.Destructive} hasConfirm={true}/>
-  ))
+[true, false].forEach((open) => {
+  storiesOf(`HKModal/${open ? 'initially open' : 'initially closed'}`, module)
+  .add('default', () => <ModalWrapper initialShowModal={open}/>)
+  .add('flyout', () => <ModalWrapper isFlyout={true} initialShowModal={open}/>)
+  .add('destructive', () => <ModalWrapper type={Type.Destructive} initialShowModal={open}/>)
+  .add('with confirmation', () => <ModalWrapper type={Type.Destructive} hasConfirm={true} initialShowModal={open}/>)
+})
