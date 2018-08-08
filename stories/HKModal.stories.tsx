@@ -73,19 +73,19 @@ class ModalWrapper extends React.Component<
           onDismiss={this.handleModalDismiss}
           header={this.props.showHeader && (<div>header text</div>)}
           buttons={this.props.showButtons ? [
-           {
-             disabled: false,
-             text: 'Cancel',
-             type: ButtonType.Tertiary,
-             value: 'cancel',
-           },
-           {
-             disabled: okDisabled,
-             text: 'OK',
-             type: this.props.type === Type.Destructive ? ButtonType.Danger : ButtonType.Primary,
-             value: 'ok',
-           },
-         ] : undefined}
+            {
+              disabled: false,
+              text: 'Cancel',
+              type: ButtonType.Tertiary,
+              value: 'cancel',
+            },
+            {
+              disabled: okDisabled,
+              text: 'OK',
+              type: this.props.type === Type.Destructive ? ButtonType.Danger : ButtonType.Primary,
+              value: 'ok',
+            },
+          ] : undefined}
         >
           <div className='pa6'>
             <p>with some important details here below</p>

@@ -173,10 +173,8 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
             show={isShowing}
             onClose={this.handleClose}
           >
-            <div className={classnames(
-              'hk-modal-header f4 flex items-center justify-center br--top br2',
-              { 'bg-near-white bb b--light-silver pa4': header, 'red': type === 'destructive' }
-            )}> {header}
+            <div className={classnames('hk-modal-header f4 flex items-center justify-center br--top br2', { 'bg-near-white bb b--light-silver pa4': header, 'red': type === 'destructive' })}>
+              {header}
               {dismissElem}
             </div>
 
