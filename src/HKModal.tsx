@@ -24,7 +24,7 @@ interface IButtonDefinition {
 
 interface IModalProps {
   children: React.ReactNode,
-  header: React.ReactNode,
+  header?: React.ReactNode,
   buttons?: IButtonDefinition[],
   isFlyout?: boolean,
   onDismiss: (value?: string) => any,
@@ -173,18 +173,10 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
             show={isShowing}
             onClose={this.handleClose}
           >
-<<<<<<< HEAD
             <div className={classnames(
-              'hk-modal-header f4 flex items-center justify-center br--top br2 pa4',
-              { 'bg-near-white bb b--light-silver': header, 'bg-none': !header, 'red': type === 'destructive' }
+              'hk-modal-header f4 flex items-center justify-center br--top br2',
+              { 'bg-near-white bb b--light-silver pa4': header, 'red': type === 'destructive' }
             )}> {header}
-=======
-            <div
-              className={classnames('hk-modal-header f4 flex items-center justify-center br--top br2',
-              { 'bg-near-white bb b--light-silver pa4': header, 'bg-none': !header, 'red': type === 'destructive' })}
-            >
-              {header}
->>>>>>> Fixes lint and updates tests
               {dismissElem}
             </div>
 
