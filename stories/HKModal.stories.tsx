@@ -10,6 +10,8 @@ import {
 import { default as HKModal, Type } from '../src/HKModal'
 
 interface IModalWrapperProps {
+  showHeader?: boolean,
+  showButtons?: boolean,
   initialShowModal?: boolean,
   isFlyout?: boolean,
   hasConfirm?: boolean,
@@ -26,6 +28,12 @@ class ModalWrapper extends React.Component<
   IModalWrapperProps,
   IModalWrapperState
 > {
+
+  public static defaultProps = {
+    showButtons: true,
+    showHeader: true,
+  }
+
   constructor (props) {
     super(props)
     this.state = {
@@ -63,8 +71,8 @@ class ModalWrapper extends React.Component<
           type={this.props.type && this.props.type}
           show={this.state.showModal}
           onDismiss={this.handleModalDismiss}
-          header={<div>header text</div>}
-          buttons={[
+          header={this.props.showHeader && (<div>header text</div>)}
+          buttons={this.props.showButtons ? [
             {
               disabled: false,
               text: 'Cancel',
@@ -77,7 +85,7 @@ class ModalWrapper extends React.Component<
               type: this.props.type === Type.Destructive ? ButtonType.Danger : ButtonType.Primary,
               value: 'ok',
             },
-          ]}
+          ] : undefined}
         >
           <div className='pa6'>
             <p>with some important details here below</p>
@@ -105,7 +113,13 @@ class ModalWrapper extends React.Component<
 [true, false].forEach((open) => {
   storiesOf(`HKModal/${open ? 'initially open' : 'initially closed'}`, module)
   .add('default', () => <ModalWrapper initialShowModal={open}/>)
+  .add('default without header', () => <ModalWrapper showHeader={false} initialShowModal={open}/>)
+  .add('default without footer', () => <ModalWrapper showButtons={false} initialShowModal={open}/>)
+  .add('default without header and footer', () => <ModalWrapper showHeader={false} showButtons={false} initialShowModal={open}/>)
   .add('flyout', () => <ModalWrapper isFlyout={true} initialShowModal={open}/>)
+  .add('flyout without header', () => <ModalWrapper isFlyout={true} showHeader={false} initialShowModal={open}/>)
+  .add('flyout without footer', () => <ModalWrapper isFlyout={true} showButtons={false} initialShowModal={open}/>)
+  .add('flyout without header and footer', () => <ModalWrapper isFlyout={true} showHeader={false} showButtons={false} initialShowModal={open}/>)
   .add('destructive', () => <ModalWrapper type={Type.Destructive} initialShowModal={open}/>)
   .add('with confirmation', () => <ModalWrapper type={Type.Destructive} hasConfirm={true} initialShowModal={open}/>)
 })

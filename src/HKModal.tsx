@@ -24,7 +24,7 @@ interface IButtonDefinition {
 
 interface IModalProps {
   children: React.ReactNode,
-  header: React.ReactNode,
+  header?: React.ReactNode,
   buttons?: IButtonDefinition[],
   isFlyout?: boolean,
   onDismiss: (value?: string) => any,
@@ -120,16 +120,12 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
       exiting: { transform: 'translateX(0)', width: '350px' },
     } : {}
 
-    const headerElem = header && (
-      <div className={classnames('hk-modal-header pa4 bg-near-white', { red : type === 'destructive' })}>
-        {header}
-      </div>
-    )
     const dismissElem = onDismiss && (
-      <div className='right-1 h-100 absolute pointer' onClick={this.handleClose}>
+      <div className={classnames('right-1 absolute pointer', { 'top-1': !header })} onClick={this.handleClose}>
         <MalibuIcon
           name='delete-16'
           fillClass='dark-gray'
+          size={16}
           extraClasses='icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid'
         />
       </div>
@@ -177,8 +173,8 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
             show={isShowing}
             onClose={this.handleClose}
           >
-            <div className='bg-near-white dark-gray bb b--light-silver f4 flex items-center justify-center br--top br2'>
-              {headerElem}
+            <div className={classnames('hk-modal-header f4 flex items-center justify-center br--top br2', { 'bg-near-white bb b--light-silver pa4': header, 'red': type === 'destructive' })}>
+              {header}
               {dismissElem}
             </div>
 

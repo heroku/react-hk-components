@@ -2337,6 +2337,57 @@ exports[`Storyshots HKModal/initially closed default 1`] = `
 </div>
 `;
 
+exports[`Storyshots HKModal/initially closed default without footer 1`] = `
+<div>
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Show the Modal
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed default without header 1`] = `
+<div>
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Show the Modal
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed default without header and footer 1`] = `
+<div>
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Show the Modal
+     
+  </button>
+</div>
+`;
+
 exports[`Storyshots HKModal/initially closed destructive 1`] = `
 <div>
   <button
@@ -2355,6 +2406,57 @@ exports[`Storyshots HKModal/initially closed destructive 1`] = `
 `;
 
 exports[`Storyshots HKModal/initially closed flyout 1`] = `
+<div>
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Show the Modal
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed flyout without footer 1`] = `
+<div>
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Show the Modal
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed flyout without header 1`] = `
+<div>
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Show the Modal
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed flyout without header and footer 1`] = `
 <div>
   <button
     className="hk-button--primary"
@@ -2425,22 +2527,23 @@ exports[`Storyshots HKModal/initially open default 1`] = `
       style={Object {}}
     >
       <div
-        className="bg-near-white dark-gray bb b--light-silver f4 flex items-center justify-center br--top br2"
+        className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4"
       >
-        <div
-          className="hk-modal-header pa4 bg-near-white"
-        >
-          <div>
-            header text
-          </div>
+        <div>
+          header text
         </div>
         <div
-          className="right-1 h-100 absolute pointer"
+          className="right-1 absolute pointer"
           onClick={[Function]}
         >
           <svg
             className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
-            style={undefined}
+            style={
+              Object {
+                "height": "16px",
+                "width": "16px",
+              }
+            }
           >
             <use
               xlinkHref="#delete-16"
@@ -2492,6 +2595,259 @@ exports[`Storyshots HKModal/initially open default 1`] = `
 </div>
 `;
 
+exports[`Storyshots HKModal/initially open default without footer 1`] = `
+<div>
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Show the Modal
+     
+  </button>
+  <div
+    className="flex flex-column items-center justify-center"
+    data-modal="true"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(0, 0, 0, .2)",
+        "bottom": 0,
+        "left": 0,
+        "opacity": 1,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+        "zIndex": 9999,
+      }
+    }
+  >
+    <div
+      className="bg-white shadow-outer-1 relative w-100 mw7 center br1"
+      style={Object {}}
+    >
+      <div
+        className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4"
+      >
+        <div>
+          header text
+        </div>
+        <div
+          className="right-1 absolute pointer"
+          onClick={[Function]}
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+            style={
+              Object {
+                "height": "16px",
+                "width": "16px",
+              }
+            }
+          >
+            <use
+              xlinkHref="#delete-16"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className=""
+      >
+        <div
+          className="pa6"
+        >
+          <p>
+            with some important details here below
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open default without header 1`] = `
+<div>
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Show the Modal
+     
+  </button>
+  <div
+    className="flex flex-column items-center justify-center"
+    data-modal="true"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(0, 0, 0, .2)",
+        "bottom": 0,
+        "left": 0,
+        "opacity": 1,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+        "zIndex": 9999,
+      }
+    }
+  >
+    <div
+      className="bg-white shadow-outer-1 relative w-100 mw7 center br1"
+      style={Object {}}
+    >
+      <div
+        className="hk-modal-header f4 flex items-center justify-center br--top br2"
+      >
+        <div
+          className="right-1 absolute pointer top-1"
+          onClick={[Function]}
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+            style={
+              Object {
+                "height": "16px",
+                "width": "16px",
+              }
+            }
+          >
+            <use
+              xlinkHref="#delete-16"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className=""
+      >
+        <div
+          className="pa6"
+        >
+          <p>
+            with some important details here below
+          </p>
+        </div>
+      </div>
+      <div
+        className="bt b--light-silver w-100 pa3 tr"
+      >
+        <button
+          className="hk-button--tertiary ml1"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value="cancel"
+        >
+           
+          Cancel
+           
+        </button>
+        <button
+          className="hk-button--primary ml1"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value="ok"
+        >
+           
+          OK
+           
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open default without header and footer 1`] = `
+<div>
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Show the Modal
+     
+  </button>
+  <div
+    className="flex flex-column items-center justify-center"
+    data-modal="true"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(0, 0, 0, .2)",
+        "bottom": 0,
+        "left": 0,
+        "opacity": 1,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+        "zIndex": 9999,
+      }
+    }
+  >
+    <div
+      className="bg-white shadow-outer-1 relative w-100 mw7 center br1"
+      style={Object {}}
+    >
+      <div
+        className="hk-modal-header f4 flex items-center justify-center br--top br2"
+      >
+        <div
+          className="right-1 absolute pointer top-1"
+          onClick={[Function]}
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+            style={
+              Object {
+                "height": "16px",
+                "width": "16px",
+              }
+            }
+          >
+            <use
+              xlinkHref="#delete-16"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className=""
+      >
+        <div
+          className="pa6"
+        >
+          <p>
+            with some important details here below
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots HKModal/initially open destructive 1`] = `
 <div>
   <button
@@ -2529,22 +2885,23 @@ exports[`Storyshots HKModal/initially open destructive 1`] = `
       style={Object {}}
     >
       <div
-        className="bg-near-white dark-gray bb b--light-silver f4 flex items-center justify-center br--top br2"
+        className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4 red"
       >
-        <div
-          className="hk-modal-header pa4 bg-near-white red"
-        >
-          <div>
-            header text
-          </div>
+        <div>
+          header text
         </div>
         <div
-          className="right-1 h-100 absolute pointer"
+          className="right-1 absolute pointer"
           onClick={[Function]}
         >
           <svg
             className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
-            style={undefined}
+            style={
+              Object {
+                "height": "16px",
+                "width": "16px",
+              }
+            }
           >
             <use
               xlinkHref="#delete-16"
@@ -2639,22 +2996,23 @@ exports[`Storyshots HKModal/initially open flyout 1`] = `
       }
     >
       <div
-        className="bg-near-white dark-gray bb b--light-silver f4 flex items-center justify-center br--top br2"
+        className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4"
       >
-        <div
-          className="hk-modal-header pa4 bg-near-white"
-        >
-          <div>
-            header text
-          </div>
+        <div>
+          header text
         </div>
         <div
-          className="right-1 h-100 absolute pointer"
+          className="right-1 absolute pointer"
           onClick={[Function]}
         >
           <svg
             className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
-            style={undefined}
+            style={
+              Object {
+                "height": "16px",
+                "width": "16px",
+              }
+            }
           >
             <use
               xlinkHref="#delete-16"
@@ -2706,6 +3064,277 @@ exports[`Storyshots HKModal/initially open flyout 1`] = `
 </div>
 `;
 
+exports[`Storyshots HKModal/initially open flyout without footer 1`] = `
+<div>
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Show the Modal
+     
+  </button>
+  <div
+    className="flex flex-column"
+    data-modal="true"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(0, 0, 0, .2)",
+        "bottom": 0,
+        "left": 0,
+        "opacity": 1,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+        "zIndex": 9999,
+      }
+    }
+  >
+    <div
+      className="bg-white shadow-outer-1 relative fixed right-0 w7 h-100 flex flex-column"
+      style={
+        Object {
+          "transform": "translateX(0)",
+          "transition": "transform 250ms cubic-bezier(0,1,0.5,1)",
+          "width": "350px",
+        }
+      }
+    >
+      <div
+        className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4"
+      >
+        <div>
+          header text
+        </div>
+        <div
+          className="right-1 absolute pointer"
+          onClick={[Function]}
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+            style={
+              Object {
+                "height": "16px",
+                "width": "16px",
+              }
+            }
+          >
+            <use
+              xlinkHref="#delete-16"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="flex-auto"
+      >
+        <div
+          className="pa6"
+        >
+          <p>
+            with some important details here below
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open flyout without header 1`] = `
+<div>
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Show the Modal
+     
+  </button>
+  <div
+    className="flex flex-column"
+    data-modal="true"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(0, 0, 0, .2)",
+        "bottom": 0,
+        "left": 0,
+        "opacity": 1,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+        "zIndex": 9999,
+      }
+    }
+  >
+    <div
+      className="bg-white shadow-outer-1 relative fixed right-0 w7 h-100 flex flex-column"
+      style={
+        Object {
+          "transform": "translateX(0)",
+          "transition": "transform 250ms cubic-bezier(0,1,0.5,1)",
+          "width": "350px",
+        }
+      }
+    >
+      <div
+        className="hk-modal-header f4 flex items-center justify-center br--top br2"
+      >
+        <div
+          className="right-1 absolute pointer top-1"
+          onClick={[Function]}
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+            style={
+              Object {
+                "height": "16px",
+                "width": "16px",
+              }
+            }
+          >
+            <use
+              xlinkHref="#delete-16"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="flex-auto"
+      >
+        <div
+          className="pa6"
+        >
+          <p>
+            with some important details here below
+          </p>
+        </div>
+      </div>
+      <div
+        className="bt b--light-silver w-100 pa3 tr"
+      >
+        <button
+          className="hk-button--tertiary ml1"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value="cancel"
+        >
+           
+          Cancel
+           
+        </button>
+        <button
+          className="hk-button--primary ml1"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value="ok"
+        >
+           
+          OK
+           
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open flyout without header and footer 1`] = `
+<div>
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Show the Modal
+     
+  </button>
+  <div
+    className="flex flex-column"
+    data-modal="true"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(0, 0, 0, .2)",
+        "bottom": 0,
+        "left": 0,
+        "opacity": 1,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+        "zIndex": 9999,
+      }
+    }
+  >
+    <div
+      className="bg-white shadow-outer-1 relative fixed right-0 w7 h-100 flex flex-column"
+      style={
+        Object {
+          "transform": "translateX(0)",
+          "transition": "transform 250ms cubic-bezier(0,1,0.5,1)",
+          "width": "350px",
+        }
+      }
+    >
+      <div
+        className="hk-modal-header f4 flex items-center justify-center br--top br2"
+      >
+        <div
+          className="right-1 absolute pointer top-1"
+          onClick={[Function]}
+        >
+          <svg
+            className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+            style={
+              Object {
+                "height": "16px",
+                "width": "16px",
+              }
+            }
+          >
+            <use
+              xlinkHref="#delete-16"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="flex-auto"
+      >
+        <div
+          className="pa6"
+        >
+          <p>
+            with some important details here below
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots HKModal/initially open with confirmation 1`] = `
 <div>
   <button
@@ -2743,22 +3372,23 @@ exports[`Storyshots HKModal/initially open with confirmation 1`] = `
       style={Object {}}
     >
       <div
-        className="bg-near-white dark-gray bb b--light-silver f4 flex items-center justify-center br--top br2"
+        className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4 red"
       >
-        <div
-          className="hk-modal-header pa4 bg-near-white red"
-        >
-          <div>
-            header text
-          </div>
+        <div>
+          header text
         </div>
         <div
-          className="right-1 h-100 absolute pointer"
+          className="right-1 absolute pointer"
           onClick={[Function]}
         >
           <svg
             className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
-            style={undefined}
+            style={
+              Object {
+                "height": "16px",
+                "width": "16px",
+              }
+            }
           >
             <use
               xlinkHref="#delete-16"
