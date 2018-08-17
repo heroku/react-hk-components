@@ -1,6 +1,7 @@
 export { default as HKBanner } from './HKBanner'
 export { default as HKBarChart } from './HKBarChart'
 export { default as HKButton } from './HKButton'
+export { default as HKDropdown } from './HKDropdown'
 export { default as HKFlagIcon } from './HKFlagIcon'
 export { default as HKLineChart } from './HKLineChart'
 export { default as HKModal } from './HKModal'
