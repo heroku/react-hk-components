@@ -3,8 +3,8 @@ import classnames from 'classnames'
 import * as React from 'react'
 
 import {
-  Type,
   default as HKButton,
+  Type,
 } from './HKButton'
 
 interface IDropdownProps {
@@ -21,36 +21,29 @@ interface IDropdownState {
   showDropdown: boolean,
 }
 
-export default class HKDropdown extends React.Component<IDropdownProps> {
-
-  public state = {
-    showDropdown: false,
-  }
-
+export default class HKDropdown extends React.Component<IDropdownProps, IDropdownState> {
   public static defaultProps = {
     disabled: false,
     hideContentOnClick: true,
   }
 
-  public handleDropdown = () => this.setState({ showDropdown: !this.state.showDropdown })
-
-  public handleContentClick = () => {
-    console.log('hi')
-    this.props.hideContentOnClick && this.handleDropdown()
+  public state = {
+    showDropdown: false,
   }
 
-  public render () {
-    console.log(this.state.showDropdown)
-    const { align, children, className, contentClassName, disabled, hideContentOnClick, title } = this.props
-    const { showDropdown } = this.state
-    const alignDropdown = align ? `hk-dropdown--right` : `hk-dropdown`
-    const caret = <MalibuIcon name='caret-16' size={16} fillClass='fill-purple' extraClasses={classnames({'pl2': title })} />
-    const dropdownTitle = title ? [`${title}`, caret] : caret
+  public handleDropdown = () => this.setState({ showDropdown: !this.state.showDropdown })
 
+  public handleContentClick = () => this.props.hideContentOnClick && this.handleDropdown()
+
+  public render () {
+    const { align, children, className, contentClassName, disabled, title } = this.props
+    const { showDropdown } = this.state
+    const alignDropdown = align ? `hk-dropdown--${align}` : `hk-dropdown`
     return (
       <div className='relative dib'>
-        <HKButton className={classnames({ 'ph1': !title }, className)} type={Type.Secondary} disabled={disabled} onClick={this.handleDropdown}>
-          {dropdownTitle}
+        <HKButton className={classnames({ ph1: !title }, className)} type={Type.Secondary} disabled={disabled} onClick={this.handleDropdown}>
+          {title}
+          <MalibuIcon key='icon' name='caret-16' size={16} fillClass='fill-purple' extraClasses={classnames({ pl1: title })} />
         </HKButton>
         <span onClick={this.handleContentClick}>
           {

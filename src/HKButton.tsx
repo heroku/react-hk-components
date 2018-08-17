@@ -12,7 +12,7 @@ export enum Type {
 
 interface IButtonProps {
   async?: boolean,
-  children: JSX.Element | JSX.Element[] | string,
+  children: React.ReactNode,
   className?: string,
   disabled?: boolean,
   onClick?: (e: React.MouseEvent<HTMLElement>) => void,

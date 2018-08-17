@@ -1901,6 +1901,239 @@ exports[`Storyshots HKButton/warning small-enabled-normal 1`] = `
 </button>
 `;
 
+exports[`Storyshots HKDropdown align left 1`] = `
+<div
+  className="flex justify-center"
+>
+  <div
+    className="relative dib"
+  >
+    <button
+      className="hk-button--secondary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Dropdown
+      <svg
+        className="fill-purple pl1"
+        style={
+          Object {
+            "height": "16px",
+            "width": "16px",
+          }
+        }
+      >
+        <use
+          xlinkHref="#caret-16"
+        />
+      </svg>
+       
+    </button>
+    <span
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown align right 1`] = `
+<div
+  className="flex justify-center"
+>
+  <div
+    className="relative dib"
+  >
+    <button
+      className="hk-button--secondary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Dropdown
+      <svg
+        className="fill-purple pl1"
+        style={
+          Object {
+            "height": "16px",
+            "width": "16px",
+          }
+        }
+      >
+        <use
+          xlinkHref="#caret-16"
+        />
+      </svg>
+       
+    </button>
+    <span
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown default 1`] = `
+<div
+  className="flex justify-center"
+>
+  <div
+    className="relative dib"
+  >
+    <button
+      className="hk-button--secondary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Dropdown
+      <svg
+        className="fill-purple pl1"
+        style={
+          Object {
+            "height": "16px",
+            "width": "16px",
+          }
+        }
+      >
+        <use
+          xlinkHref="#caret-16"
+        />
+      </svg>
+       
+    </button>
+    <span
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown disabled 1`] = `
+<div
+  className="flex justify-center"
+>
+  <div
+    className="relative dib"
+  >
+    <button
+      className="hk-button--disabled-secondary"
+      disabled={true}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Dropdown
+      <svg
+        className="fill-purple pl1"
+        style={
+          Object {
+            "height": "16px",
+            "width": "16px",
+          }
+        }
+      >
+        <use
+          xlinkHref="#caret-16"
+        />
+      </svg>
+       
+    </button>
+    <span
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
+<div
+  className="flex justify-center"
+>
+  <div
+    className="relative dib"
+  >
+    <button
+      className="hk-button--secondary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Dropdown
+      <svg
+        className="fill-purple pl1"
+        style={
+          Object {
+            "height": "16px",
+            "width": "16px",
+          }
+        }
+      >
+        <use
+          xlinkHref="#caret-16"
+        />
+      </svg>
+       
+    </button>
+    <span
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown no title 1`] = `
+<div
+  className="flex justify-center"
+>
+  <div
+    className="relative dib"
+  >
+    <button
+      className="hk-button--secondary ph1"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      <svg
+        className="fill-purple"
+        style={
+          Object {
+            "height": "16px",
+            "width": "16px",
+          }
+        }
+      >
+        <use
+          xlinkHref="#caret-16"
+        />
+      </svg>
+       
+    </button>
+    <span
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots HKFlagIcon australia 1`] = `
 <img
   className=""
