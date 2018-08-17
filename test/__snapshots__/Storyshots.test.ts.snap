@@ -1933,7 +1933,7 @@ exports[`Storyshots HKDropdown align left 1`] = `
       </svg>
        
     </button>
-    <span
+    <div
       onClick={[Function]}
     />
   </div>
@@ -1972,7 +1972,7 @@ exports[`Storyshots HKDropdown align right 1`] = `
       </svg>
        
     </button>
-    <span
+    <div
       onClick={[Function]}
     />
   </div>
@@ -2011,7 +2011,7 @@ exports[`Storyshots HKDropdown default 1`] = `
       </svg>
        
     </button>
-    <span
+    <div
       onClick={[Function]}
     />
   </div>
@@ -2050,7 +2050,7 @@ exports[`Storyshots HKDropdown disabled 1`] = `
       </svg>
        
     </button>
-    <span
+    <div
       onClick={[Function]}
     />
   </div>
@@ -2089,7 +2089,7 @@ exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
       </svg>
        
     </button>
-    <span
+    <div
       onClick={[Function]}
     />
   </div>
@@ -2127,7 +2127,7 @@ exports[`Storyshots HKDropdown no title 1`] = `
       </svg>
        
     </button>
-    <span
+    <div
       onClick={[Function]}
     />
   </div>

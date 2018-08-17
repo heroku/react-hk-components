@@ -7,11 +7,16 @@ import {
   Type,
 } from './HKButton'
 
+export enum Align {
+  Left = 'left',
+  Right = 'right',
+}
+
 interface IDropdownProps {
-  align?: string, // align dropdown component anchoring button
+  align?: Align, // align dropdown component anchoring button
   children?: JSX.Element | JSX.Element[] | string,
   className?: string, // dropdown button styling
-  hideContentOnClick?: boolean, // hide dropdown content after onClick in dropdown content
+  closeOnClick?: boolean, // hide dropdown content after onClick in dropdown content
   contentClassName?: string, // dropdown content styling
   disabled?: boolean,
   title?: string,
@@ -23,17 +28,17 @@ interface IDropdownState {
 
 export default class HKDropdown extends React.Component<IDropdownProps, IDropdownState> {
   public static defaultProps = {
+    closeOnClick: true,
     disabled: false,
-    hideContentOnClick: true,
   }
 
   public state = {
     showDropdown: false,
   }
 
-  public handleDropdown = () => this.setState({ showDropdown: !this.state.showDropdown })
+  public handleDropdown = () => this.setState((prevState) => ({ showDropdown: !prevState.showDropdown }))
 
-  public handleContentClick = () => this.props.hideContentOnClick && this.handleDropdown()
+  public handleContentClick = () => this.props.closeOnClick && this.setState({ showDropdown: false })
 
   public render () {
     const { align, children, className, contentClassName, disabled, title } = this.props
@@ -45,14 +50,14 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
           {title}
           <MalibuIcon key='icon' name='caret-16' size={16} fillClass='fill-purple' extraClasses={classnames({ pl1: title })} />
         </HKButton>
-        <span onClick={this.handleContentClick}>
+        <div onClick={this.handleContentClick}>
           {
             showDropdown &&
             (<ul className={classnames(alignDropdown, contentClassName)}>
               {children}
             </ul>)
           }
-        </span>
+        </div>
       </div>
     )
   }

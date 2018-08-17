@@ -8,6 +8,7 @@ import {
   Type,
 } from '../src/HKButton'
 import {
+  Align,
   default as HKDropdown,
 } from '../src/HKDropdown'
 
@@ -31,22 +32,22 @@ const dropdownProps = [
   },
   {
     props: {
-      align: 'right',
+      align: Align.Right,
       title: 'Dropdown',
     },
     storyName: 'align right',
   },
   {
     props: {
-      align: 'left',
+      align: Align.Left,
       title: 'Dropdown',
     },
     storyName: 'align left',
   },
   {
     props: {
-      align: 'left',
-      hideContentOnClick: false,
+      align: Align.Left,
+      closeOnClick: false,
       title: 'Dropdown',
     },
     storyName: 'no close dropdown onclick',
