@@ -11,6 +11,7 @@ interface IDropdownProps {
   align?: string, // align dropdown component anchoring button
   children?: JSX.Element | JSX.Element[] | string,
   className?: string, // dropdown button styling
+  hideContentOnClick?: boolean, // hide dropdown content after onClick in dropdown content
   contentClassName?: string, // dropdown content styling
   disabled?: boolean,
   title?: string,
@@ -28,23 +29,30 @@ export default class HKDropdown extends React.Component<IDropdownProps> {
 
   public static defaultProps = {
     disabled: false,
+    hideContentOnClick: true,
   }
 
   public handleDropdown = () => this.setState({ showDropdown: !this.state.showDropdown })
 
+  public handleContentClick = () => {
+    console.log('hi')
+    this.props.hideContentOnClick && this.handleDropdown()
+  }
+
   public render () {
-    const { align, children, disabled, title, className, contentClassName } = this.props
+    console.log(this.state.showDropdown)
+    const { align, children, className, contentClassName, disabled, hideContentOnClick, title } = this.props
     const { showDropdown } = this.state
     const alignDropdown = align ? `hk-dropdown--right` : `hk-dropdown`
-    const caret = <MalibuIcon name='caret-16' size={16} fillClass='fill-purple' />
+    const caret = <MalibuIcon name='caret-16' size={16} fillClass='fill-purple' extraClasses={classnames({'pl2': title })} />
     const dropdownTitle = title ? [`${title}`, caret] : caret
 
     return (
       <div className='relative dib'>
-        <HKButton className={classnames({ 'ph1': !title }, className)} type={Type.Secondary} disabled={!disabled} onClick={this.handleDropdown}>
+        <HKButton className={classnames({ 'ph1': !title }, className)} type={Type.Secondary} disabled={disabled} onClick={this.handleDropdown}>
           {dropdownTitle}
         </HKButton>
-        <span onClick={this.handleDropdown}>
+        <span onClick={this.handleContentClick}>
           {
             showDropdown &&
             (<ul className={classnames(alignDropdown, contentClassName)}>
