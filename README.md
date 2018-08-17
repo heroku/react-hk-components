@@ -90,6 +90,26 @@ public class MyModalWrapper extends React.Component {
 
 
 ```
+
+#### HKDropdown
+
+The HKDropdown component consists of a HKButton that toggles the display of it's dropdown contents. It takes the following props:
+
+* **`align`**: `side?`. Aligns dropdown menu anchoring left or right side of dropdown button. Defaults to left.
+* **`className`**: `string?`. Styling for the dropdown button.
+* **`hideContentOnClick`**: `boolean?`. Specifies whether the dropdown menu should toggle to close after clicking inside the dropdown menu. Defaults to `true`
+* **`contentClassName`**: Styling for the dropdown menu.
+* **`disabled`**: `boolean?`: disables the button from toggling the dropdown menu. Defaults to `false`
+* **`title`**: `string?`: The title of the dropdown button.
+
+The contents of the dropdown menu are the children passed in the body of the react element, e.g. `<HKDropdown> stuff to render in body of modal </HKDropdown>`
+
+Best practices for content in dropdown menu:
+* Each dropdown menu item should have the class `hk-dropdown-item`
+* Thematic breaks between elements (i.e. lines) should be used with `<li className='hk-dropdown-divider' />`
+* Dangerous menu items should have the class `hk-dropdown-item--danger`
+
+
 ## Development
 
 ### Installation
@@ -160,4 +180,3 @@ of `np` until such time as yarn gets unbroken.
 2. `yarn`
 3. `yarn test`. No errors? Lovely, proceed.
 4. When you're ready to publish, `np --no-yarn`.
-
