@@ -140,11 +140,27 @@ $ yarn link
 
 # in your consuming app directory
 $ yarn link @heroku/react-hk-components
+
+# You will need to re-run yarn in your consuming app directory and restart your app
+$ yarn
 ```
+
+You can check the success of linking in your consuming app
+`ls -l node_modules/@heroku/react-hk-components`
+which should return a symlink to your development copy of rhkc
 
 Now, when you make changes in your copy of `react-hk-components` those
 changes will be reflected in the consuming application.
 
+Caveats when linking - you will need to rebuild each time you want to see
+changes in your consuming app directory.
+`yarn build`
+
+To simplify, you can install [watch](https://www.npmjs.com/package/watch#cli) or a similar tool and run `watch 'yarn run build' src` in `react-hk-components`.
+This will rebuild the bundled version that your consuming app directory
+pulls in whenever you make changes in rhkc.
+
+Remember to unlink rhkc once finished.
 
 ### Demo app
 
