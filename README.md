@@ -107,7 +107,7 @@ The contents of the dropdown menu are the children passed in the body of the rea
 Best practices for content in dropdown menu:
 
 * Each dropdown menu item should have the class `hk-dropdown-item`
-* Thematic breaks between elements (i.e. lines) should be used with `<li className='hk-dropdown-divider' />`
+* Thematic breaks between elements (i.e. separators) should be used with `<li className='hk-dropdown-divider' />`
 * Dangerous menu items should have the class `hk-dropdown-item--danger`
 
 Refer to the stories for examples.
