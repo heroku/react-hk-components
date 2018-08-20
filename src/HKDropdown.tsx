@@ -46,11 +46,11 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
     const alignDropdown = align ? `hk-dropdown--${align}` : `hk-dropdown`
     return (
       <div className='relative dib'>
-        <HKButton className={classnames({ ph1: !title }, className)} type={Type.Secondary} disabled={disabled} onClick={this.handleDropdown}>
+        <HKButton data-testid='dropdown-button' className={classnames({ ph1: !title }, className)} type={Type.Secondary} disabled={disabled} onClick={this.handleDropdown}>
           {title}
           <MalibuIcon key='icon' name='caret-16' size={16} fillClass='fill-purple' extraClasses={classnames({ pl1: title })} />
         </HKButton>
-        <div onClick={this.handleContentClick}>
+        <div data-testid='dropdown-content' onClick={this.handleContentClick}>
           {
             showDropdown &&
             (<ul className={classnames(alignDropdown, contentClassName)}>

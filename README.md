@@ -101,6 +101,7 @@ The HKDropdown component consists of a HKButton that toggles the display of it's
 * **`contentClassName`**: `string?`. Styling for the dropdown menu.
 * **`disabled`**: `boolean?`: disables the button from toggling the dropdown menu. Defaults to `false`
 * **`title`**: `string?`: The title of the dropdown button.
+* **`data-testid`**: `string?`: data attribute used for testing.
 
 The contents of the dropdown menu are the children passed in the body of the react element, e.g. `<HKDropdown> stuff to render inside dropdown menu </HKDropdown>`
 
