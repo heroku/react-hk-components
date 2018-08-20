@@ -19,7 +19,6 @@ interface IButtonProps {
   small?: boolean,
   title?: string,
   type?: Type,
-  data-testid?: String,
   value?: string,
 }
 
@@ -33,7 +32,7 @@ export default class HKButton extends React.Component<IButtonProps, {}> {
   }
 
   public render () {
-    const { async, disabled, small, type, children, className, title, data-testid, value } = this.props
+    const { async, disabled, small, type, children, className, title, value } = this.props
     let buttonClass = 'hk-button'
     if (async) {
       buttonClass += '--async'
@@ -46,7 +45,7 @@ export default class HKButton extends React.Component<IButtonProps, {}> {
       buttonClass += ` ${className}`
     }
     return (
-      <button data-testid={data-testid} type='button' className={buttonClass} disabled={disabled} onClick={this.handleClick} title={title} value={value || title}> {children} </button>
+      <button type='button' className={buttonClass} disabled={disabled} onClick={this.handleClick} title={title} value={value || title}> {children} </button>
     )
   }
 

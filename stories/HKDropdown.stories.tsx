@@ -1,12 +1,7 @@
-import { MalibuIcon } from '@heroku/react-malibu'
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import * as React from 'react'
 
-import {
-  default as HKButton,
-  Type,
-} from '../src/HKButton'
 import {
   Align,
   default as HKDropdown,
@@ -58,7 +53,7 @@ const stories = storiesOf(`HKDropdown`, module)
 dropdownProps.forEach((dropdown) => {
   stories.add(dropdown.storyName, () => (
     <div className='flex justify-center'>
-      <HKDropdown {...dropdown.props}>
+      <HKDropdown name='story' {...dropdown.props}>
         <li className='hk-dropdown-item' onClick={action('Dropdown-item called')}>
           Callback executed onClick
         </li>
