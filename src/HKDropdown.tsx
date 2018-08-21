@@ -19,7 +19,7 @@ interface IDropdownProps {
   closeOnClick?: boolean, // hide dropdown content after onClick in dropdown content
   contentClassName?: string, // dropdown content styling
   disabled?: boolean,
-  name: string, // name of the dropdown, used for testing in testID
+  name?: string, // name of the dropdown, used for testing in testID
   title?: string,
 }
 
