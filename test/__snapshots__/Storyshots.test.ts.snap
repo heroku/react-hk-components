@@ -1934,6 +1934,7 @@ exports[`Storyshots HKDropdown align left 1`] = `
        
     </button>
     <div
+      data-testid="story-dropdown-content"
       onClick={[Function]}
     />
   </div>
@@ -1973,6 +1974,7 @@ exports[`Storyshots HKDropdown align right 1`] = `
        
     </button>
     <div
+      data-testid="story-dropdown-content"
       onClick={[Function]}
     />
   </div>
@@ -2012,6 +2014,7 @@ exports[`Storyshots HKDropdown default 1`] = `
        
     </button>
     <div
+      data-testid="story-dropdown-content"
       onClick={[Function]}
     />
   </div>
@@ -2051,6 +2054,7 @@ exports[`Storyshots HKDropdown disabled 1`] = `
        
     </button>
     <div
+      data-testid="story-dropdown-content"
       onClick={[Function]}
     />
   </div>
@@ -2090,6 +2094,7 @@ exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
        
     </button>
     <div
+      data-testid="story-dropdown-content"
       onClick={[Function]}
     />
   </div>
@@ -2128,6 +2133,7 @@ exports[`Storyshots HKDropdown no title 1`] = `
        
     </button>
     <div
+      data-testid="story-dropdown-content"
       onClick={[Function]}
     />
   </div>
