@@ -100,7 +100,7 @@ The HKDropdown component consists of a HKButton that toggles the display of it's
 * **`closeOnClick`**: `boolean?`. Specifies whether the dropdown menu should toggle to close after clicking inside the dropdown menu. Defaults to `true`
 * **`contentClassName`**: `string?`. Styling for the dropdown menu.
 * **`disabled`**: `boolean?`: disables the button from toggling the dropdown menu. Defaults to `false`
-* **`name`**: `string?`: name of the dropdown, used for testing for `data-testid`
+* **`name`**: `string?`: name of the dropdown, used for testing for `data-testid`. Defaults to `hkdropdown`.
 * **`title`**: `string?`: The title of the dropdown button.
 
 The contents of the dropdown menu are the children passed in the body of the react element, e.g. `<HKDropdown> stuff to render inside dropdown menu </HKDropdown>`

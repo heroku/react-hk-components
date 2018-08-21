@@ -31,6 +31,7 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
   public static defaultProps = {
     closeOnClick: true,
     disabled: false,
+    name: 'hkdropdown',
   }
 
   public state = {
