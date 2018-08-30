@@ -4,6 +4,8 @@ import { storiesOf } from '@storybook/react'
 
 import { action } from '@storybook/addon-actions'
 import { withInfo } from '@storybook/addon-info'
+import { withMarkdownNotes } from '@storybook/addon-notes'
+import { markdownPropsTable } from './util'
 
 import { default as HKButton, Type } from '../src/HKButton'
 
@@ -13,6 +15,7 @@ const types = [
 const smallProp = [true, false]
 const disabledProps = [true, false]
 const asyncProps = [true, false]
+const withPropsTable = withMarkdownNotes(markdownPropsTable(HKButton))
 
 types.forEach((type) => {
   const stories = storiesOf(`HKButton/${type}`, module)
@@ -25,18 +28,18 @@ types.forEach((type) => {
         const disabledStr = disabled ? 'disabled' : 'enabled'
         const asyncStr = isAsync ? 'async' : 'normal'
         const storyName = `${sizeStr}-${disabledStr}-${asyncStr}`
-        stories.add(storyName, () => (
+        stories.add(storyName, withInfo({ inline: true, header: false })(() => (
           <HKButton type={type} small={small} disabled={disabled} async={isAsync} onClick={action('clicked')}>
             Click Me
           </HKButton>
-        ))
+        )))
       })
     })
   })
 })
 
 storiesOf('HKButton', module)
-  .add('with custom title', withInfo({ inline: true, header: false })(() => (
+  .add('with custom title', withPropsTable(() => (
     <HKButton title='a custom title' onClick={action('clicked')}>
       Click Me
     </HKButton>
