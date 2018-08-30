@@ -3,6 +3,7 @@ import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import { action } from '@storybook/addon-actions'
+import { withInfo } from '@storybook/addon-info'
 
 import { default as HKButton, Type } from '../src/HKButton'
 
@@ -35,11 +36,11 @@ types.forEach((type) => {
 })
 
 storiesOf('HKButton', module)
-  .add('with custom title', () => (
+  .add('with custom title', withInfo({ inline: true, header: false })(() => (
     <HKButton title='a custom title' onClick={action('clicked')}>
       Click Me
     </HKButton>
-  ))
+  )))
   .add('with custom value', () => (
     <HKButton value='a custom value' onClick={action('clicked')}>
       Click Me
