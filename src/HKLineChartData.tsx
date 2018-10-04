@@ -4,7 +4,7 @@ import * as d3array from 'd3-array'
 import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
 import * as _ from 'lodash'
-import * as moment from 'moment'
+import * as dayjs from 'dayjs'
 import { ChartPadding } from './constants'
 import { getMaxValues } from './helpers'
 
@@ -51,7 +51,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
     // Cleanse data into valid format(date and values)
     // Make sure our coordinates are sorted by date asscending
     const measurements = formatData(data)
-                  .sort((a, b) => moment(a.x).diff(moment(b.x)))
+                  .sort((a, b) => dayjs(a.x).diff(dayjs(b.x), 'millisecond'))
 
     // Domain of x coordinates (date)
     const timeExtent = [
@@ -180,8 +180,8 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
         r={2}
       />) : null)
 
-    const timeStamp = moment(xScale.invert(hoverIndex)).format('llll')
-    const indicator = isHovering && (
+    const timeStamp = dayjs(xScale.invert(hoverIndex)).format('ddd, MMM D, YYYY h:m A')
+     const indicator = isHovering && (
       <g>
         <line x1={hoverPos} y1='0' x2={hoverPos} y2={height} stroke='#79589f' strokeWidth='1' />
         {indicatorPoints}
@@ -218,7 +218,7 @@ function formatData (dataSet) {
     return null
   }
   return dataSet.map((d) => ({
-    x: moment.utc(d[0]).toDate(),
+    x: dayjs(d[0]).toDate(),
     y: d[1].map((v) => _.isFinite(v) ? v : 0),
   }))
 }
