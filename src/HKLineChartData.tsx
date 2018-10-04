@@ -3,10 +3,7 @@ import * as React from 'react'
 import * as d3array from 'd3-array'
 import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
-import flatMap from 'lodash/flatMap';
-import head from 'lodash/head';
-import last from 'lodash/last';
-import isFinite from 'lodash/isFinite';
+import {flatMap, head, last, isFinite} from 'lodash';
 import dayjs from 'dayjs'
 import { ChartPadding } from './constants'
 import { getMaxValues } from './helpers'
@@ -58,8 +55,8 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
 
     // Domain of x coordinates (date)
     const timeExtent = [
-      head(measurements)!['x'],
-      last(measurements)!['x'],
+      head(measurements).x,
+      last(measurements).x,
     ]
 
     // Domain of y coordinates (value)
