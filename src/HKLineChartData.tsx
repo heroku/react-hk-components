@@ -3,8 +3,11 @@ import * as React from 'react'
 import * as d3array from 'd3-array'
 import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
-import * as _ from 'lodash'
-import * as dayjs from 'dayjs'
+import flatMap from 'lodash/flatMap';
+import head from 'lodash/head';
+import last from 'lodash/last';
+import isFinite from 'lodash/isFinite';
+import dayjs from 'dayjs'
 import { ChartPadding } from './constants'
 import { getMaxValues } from './helpers'
 
@@ -46,7 +49,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
     const { width, height, data } = newProps
     const chartHeight = height - ChartPadding.Vertical
     const chartWidth = width - ChartPadding.Horizontal
-    const values = _.flatMap(data.map((d) => d[1]))
+    const values = flatMap(data.map((d) => d[1]))
 
     // Cleanse data into valid format(date and values)
     // Make sure our coordinates are sorted by date asscending
@@ -55,8 +58,8 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
 
     // Domain of x coordinates (date)
     const timeExtent = [
-      _.head(measurements).x,
-      _.last(measurements).x,
+      head(measurements)!['x'],
+      last(measurements)!['x'],
     ]
 
     // Domain of y coordinates (value)
@@ -219,6 +222,6 @@ function formatData (dataSet) {
   }
   return dataSet.map((d) => ({
     x: dayjs(d[0]).toDate(),
-    y: d[1].map((v) => _.isFinite(v) ? v : 0),
+    y: d[1].map((v) => isFinite(v) ? v : 0),
   }))
 }

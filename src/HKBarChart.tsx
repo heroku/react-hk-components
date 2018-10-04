@@ -5,8 +5,6 @@ import { default as HKBarChartData } from './HKBarChartData'
 import { default as HKLegendItem } from './HKLegendItem'
 import { default as HKResizeContainer } from './HKResizeContainer'
 
-import * as _ from 'lodash'
-
 interface IBarChartProps {
   data: any,
   height: number,
