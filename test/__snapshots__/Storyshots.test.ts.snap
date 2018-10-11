@@ -1903,7 +1903,7 @@ exports[`Storyshots HKButton/warning small-enabled-normal 1`] = `
 
 exports[`Storyshots HKDropdown align left 1`] = `
 <div
-  className="flex justify-center"
+  className=""
 >
   <div
     className="relative dib"
@@ -1933,17 +1933,13 @@ exports[`Storyshots HKDropdown align left 1`] = `
       </svg>
        
     </button>
-    <div
-      data-testid="story-dropdown-content"
-      onClick={[Function]}
-    />
   </div>
 </div>
 `;
 
 exports[`Storyshots HKDropdown align right 1`] = `
 <div
-  className="flex justify-center"
+  className=""
 >
   <div
     className="relative dib"
@@ -1973,17 +1969,13 @@ exports[`Storyshots HKDropdown align right 1`] = `
       </svg>
        
     </button>
-    <div
-      data-testid="story-dropdown-content"
-      onClick={[Function]}
-    />
   </div>
 </div>
 `;
 
 exports[`Storyshots HKDropdown default 1`] = `
 <div
-  className="flex justify-center"
+  className=""
 >
   <div
     className="relative dib"
@@ -2013,17 +2005,13 @@ exports[`Storyshots HKDropdown default 1`] = `
       </svg>
        
     </button>
-    <div
-      data-testid="story-dropdown-content"
-      onClick={[Function]}
-    />
   </div>
 </div>
 `;
 
 exports[`Storyshots HKDropdown disabled 1`] = `
 <div
-  className="flex justify-center"
+  className=""
 >
   <div
     className="relative dib"
@@ -2053,17 +2041,13 @@ exports[`Storyshots HKDropdown disabled 1`] = `
       </svg>
        
     </button>
-    <div
-      data-testid="story-dropdown-content"
-      onClick={[Function]}
-    />
   </div>
 </div>
 `;
 
 exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
 <div
-  className="flex justify-center"
+  className=""
 >
   <div
     className="relative dib"
@@ -2093,17 +2077,13 @@ exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
       </svg>
        
     </button>
-    <div
-      data-testid="story-dropdown-content"
-      onClick={[Function]}
-    />
   </div>
 </div>
 `;
 
 exports[`Storyshots HKDropdown no title 1`] = `
 <div
-  className="flex justify-center"
+  className=""
 >
   <div
     className="relative dib"
@@ -2132,10 +2112,6 @@ exports[`Storyshots HKDropdown no title 1`] = `
       </svg>
        
     </button>
-    <div
-      data-testid="story-dropdown-content"
-      onClick={[Function]}
-    />
   </div>
 </div>
 `;

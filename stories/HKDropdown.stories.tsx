@@ -52,7 +52,7 @@ const dropdownProps = [
 const stories = storiesOf(`HKDropdown`, module)
 dropdownProps.forEach((dropdown) => {
   stories.add(dropdown.storyName, () => (
-    <div className='flex justify-center'>
+    <div className=''>
       <HKDropdown name='story' {...dropdown.props}>
         <li className='hk-dropdown-item' onClick={action('Dropdown-item called')}>
           Callback executed onClick
