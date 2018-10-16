@@ -1,7 +1,7 @@
 import { MalibuIcon } from '@heroku/react-malibu'
 import classnames from 'classnames'
-import { Manager, Reference, Popper } from 'react-popper'
 import * as React from 'react'
+import { Manager, Popper, Reference } from 'react-popper'
 
 import {
   default as HKButton,
@@ -47,7 +47,6 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
     const { align, children, className, contentClassName, disabled, name, title } = this.props
     const { showDropdown } = this.state
     const popperPlacement = align === Align.Right ? 'bottom-end' : 'bottom-start'
-    
     return (
       <Manager>
         <Reference>
