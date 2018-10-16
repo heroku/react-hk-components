@@ -1902,9 +1902,7 @@ exports[`Storyshots HKButton/warning small-enabled-normal 1`] = `
 `;
 
 exports[`Storyshots HKDropdown align left 1`] = `
-<div
-  className=""
->
+<div>
   <div
     className="relative dib"
   >
@@ -1938,9 +1936,7 @@ exports[`Storyshots HKDropdown align left 1`] = `
 `;
 
 exports[`Storyshots HKDropdown align right 1`] = `
-<div
-  className=""
->
+<div>
   <div
     className="relative dib"
   >
@@ -1974,9 +1970,7 @@ exports[`Storyshots HKDropdown align right 1`] = `
 `;
 
 exports[`Storyshots HKDropdown default 1`] = `
-<div
-  className=""
->
+<div>
   <div
     className="relative dib"
   >
@@ -2010,9 +2004,7 @@ exports[`Storyshots HKDropdown default 1`] = `
 `;
 
 exports[`Storyshots HKDropdown disabled 1`] = `
-<div
-  className=""
->
+<div>
   <div
     className="relative dib"
   >
@@ -2046,9 +2038,7 @@ exports[`Storyshots HKDropdown disabled 1`] = `
 `;
 
 exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
-<div
-  className=""
->
+<div>
   <div
     className="relative dib"
   >
@@ -2082,9 +2072,7 @@ exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
 `;
 
 exports[`Storyshots HKDropdown no title 1`] = `
-<div
-  className=""
->
+<div>
   <div
     className="relative dib"
   >

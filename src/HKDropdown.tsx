@@ -32,7 +32,7 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
   public static defaultProps = {
     closeOnClick: true,
     disabled: false,
-    name: 'hkdropdown'
+    name: 'hkdropdown',
   }
 
   public state = {
@@ -46,10 +46,7 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
   public render () {
     const { align, children, className, contentClassName, disabled, name, title } = this.props
     const { showDropdown } = this.state
-    const popperPlacement = {
-      [Align.Left]: 'bottom-start',
-      [Align.Right]: 'bottom-end'
-    }[align ? align : Align.Right]
+    const popperPlacement = align === Align.Right ? 'bottom-end' : 'bottom-start'
     
     return (
       <Manager>
