@@ -1,6 +1,7 @@
 import { MalibuIcon } from '@heroku/react-malibu'
 import classnames from 'classnames'
 import * as React from 'react'
+import { Manager, Popper, Reference } from 'react-popper'
 
 import {
   default as HKButton,
@@ -45,22 +46,33 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
   public render () {
     const { align, children, className, contentClassName, disabled, name, title } = this.props
     const { showDropdown } = this.state
-    const alignDropdown = align ? `hk-dropdown--${align}` : `hk-dropdown`
+    const popperPlacement = align === Align.Right ? 'bottom-end' : 'bottom-start'
     return (
-      <div className='relative dib'>
-        <HKButton data-testid={`${name}-dropdown-button`} className={classnames({ ph1: !title }, className)} type={Type.Secondary} disabled={disabled} onClick={this.handleDropdown}>
-          {title}
-          <MalibuIcon key='icon' name='caret-16' size={16} fillClass='fill-purple' extraClasses={classnames({ pl1: title })} />
-        </HKButton>
-        <div data-testid={`${name}-dropdown-content`} onClick={this.handleContentClick}>
-          {
-            showDropdown &&
-            (<ul className={classnames(alignDropdown, contentClassName)}>
-              {children}
-            </ul>)
-          }
-        </div>
-      </div>
+      <Manager>
+        <Reference>
+          {({ ref }) => (
+            <div className='relative dib' ref={ref}>
+              <HKButton onClick={this.handleDropdown} data-testid={`${name}-dropdown-button`} className={classnames({ ph1: !title }, className)} type={Type.Secondary} disabled={disabled}>
+                {title}
+                <MalibuIcon key='icon' name='caret-16' size={16} fillClass='fill-purple' extraClasses={classnames({ pl1: title })} />
+              </HKButton>
+            </div>
+          )}
+        </Reference>
+        {
+          showDropdown && (
+            <Popper placement={popperPlacement}>
+              {({ ref, style, placement }) => (
+                <div className='z-max' onClick={this.handleContentClick} data-testid={`${name}-dropdown-content`} ref={ref} style={style} data-placement={placement}>
+                  <ul className={classnames(contentClassName, 'list br1 pl0 pv1 mv1 shadow-outer-2 bg-white')}>
+                    {children}
+                  </ul>
+                </div>
+              )}
+            </Popper>
+          )
+        }
+      </Manager>
     )
   }
 }
