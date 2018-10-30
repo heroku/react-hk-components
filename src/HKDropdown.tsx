@@ -1,7 +1,7 @@
 import { MalibuIcon } from '@heroku/react-malibu'
 import classnames from 'classnames'
 import * as React from 'react'
-import ClickOutside from 'react-click-outside'
+import OutsideClickHandler from 'react-outside-click-handler'
 import { Manager, Popper, Reference } from 'react-popper'
 
 import {
@@ -62,7 +62,7 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
         </Reference>
         {
           showDropdown && (
-            <ClickOutside onClickOutside={this.handleDropdown}>
+            <OutsideClickHandler onOutsideClick={this.handleDropdown}>
               <Popper placement={popperPlacement}>
                 {({ ref, style, placement }) => (
                   <div className='z-max' onClick={this.handleContentClick} data-testid={`${name}-dropdown-content`} ref={ref} style={style} data-placement={placement}>
@@ -72,7 +72,7 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
                   </div>
                 )}
               </Popper>
-            </ClickOutside>
+            </OutsideClickHandler>
           )
         }
       </Manager>
