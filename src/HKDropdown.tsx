@@ -1,6 +1,7 @@
 import { MalibuIcon } from '@heroku/react-malibu'
 import classnames from 'classnames'
 import * as React from 'react'
+import ClickOutside from 'react-click-outside'
 import { Manager, Popper, Reference } from 'react-popper'
 
 import {
@@ -61,15 +62,17 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
         </Reference>
         {
           showDropdown && (
-            <Popper placement={popperPlacement}>
-              {({ ref, style, placement }) => (
-                <div className='z-max' onClick={this.handleContentClick} data-testid={`${name}-dropdown-content`} ref={ref} style={style} data-placement={placement}>
-                  <ul className={classnames(contentClassName, 'list br1 pl0 pv1 mv1 shadow-outer-2 bg-white')}>
-                    {children}
-                  </ul>
-                </div>
-              )}
-            </Popper>
+            <ClickOutside onClickOutside={this.handleDropdown}>
+              <Popper placement={popperPlacement}>
+                {({ ref, style, placement }) => (
+                  <div className='z-max' onClick={this.handleContentClick} data-testid={`${name}-dropdown-content`} ref={ref} style={style} data-placement={placement}>
+                    <ul className={classnames(contentClassName, 'list br1 pl0 pv1 mv1 shadow-outer-2 bg-white')}>
+                      {children}
+                    </ul>
+                  </div>
+                )}
+              </Popper>
+            </ClickOutside>
           )
         }
       </Manager>

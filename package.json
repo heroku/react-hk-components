@@ -15,6 +15,7 @@
     "moment": "2.21.0",
     "prop-types": "15.x",
     "react": "^16.4.1",
+    "react-click-outside": "tj/react-click-outside",
     "react-dom": "^16.4.1",
     "react-measure": "^2.0.0",
     "react-popper": "^1.0.2",
