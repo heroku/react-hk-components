@@ -51,6 +51,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "file-loader": "^1.1.11",
     "jest": "^22.1.4",
+    "jest-css-modules-transform": "^2.1.1",
     "np": "^2.19.0",
     "react-hot-loader": "^4.3.1",
     "react-test-renderer": "16",
@@ -75,7 +76,8 @@
   },
   "jest": {
     "transform": {
-      "^.+\\.[tj]sx?$": "ts-jest"
+      "^.+\\.[tj]sx?$": "ts-jest",
+      ".+\\.(css)$": "<rootDir>/node_modules/jest-css-modules-transform"
     },
     "setupFiles": [
       "<rootDir>/test/test-setup.ts"
