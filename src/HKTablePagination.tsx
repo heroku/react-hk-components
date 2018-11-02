@@ -42,6 +42,11 @@ const HKTablePagination = (props: IPaginationProps) => {
   const nextDisabled = currentPage === pages
   const visiblePages = buildPager(pages, currentPage, 1)
 
+  const jumpTo = (pageNum) => {
+    const index = pageNum - 1
+    onPageChange(index)
+  }
+
   const handlePageClick = (pageNum) => () => jumpTo(pageNum)
 
   const onPrevious = () => {
@@ -49,10 +54,6 @@ const HKTablePagination = (props: IPaginationProps) => {
   }
   const onNext = () => {
     onPageChange(page + 1)
-  }
-  const jumpTo = (pageNum) => {
-    const index = pageNum - 1
-    onPageChange(index)
   }
 
   return (
