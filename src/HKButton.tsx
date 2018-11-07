@@ -15,6 +15,7 @@ interface IButtonProps {
   children: React.ReactNode,
   className?: string,
   disabled?: boolean,
+  forwardedRef: React.RefForwardingComponent<HTMLButtonElement, any>,
   onClick?: (e: React.MouseEvent<HTMLElement>) => void,
   small?: boolean,
   title?: string,
@@ -22,36 +23,35 @@ interface IButtonProps {
   value?: string,
 }
 
-export default class HKButton extends React.Component<IButtonProps, {}> {
-  public static defaultProps = {
-    async: false,
-    className: '',
-    disabled: false,
-    small: false,
-    type: 'secondary',
-  }
-
-  public render () {
-    const { async, disabled, small, type, children, className, title, value } = this.props
-    let buttonClass = 'hk-button'
-    if (async) {
-      buttonClass += '--async'
-    } else {
-      const disabledClass = disabled ? 'disabled-' : ''
-      const smallClass = small ? '-sm' : ''
-      buttonClass += `${smallClass}--${disabledClass}${type}`
-    }
-    if (className) {
-      buttonClass += ` ${className}`
-    }
-    return (
-      <button type='button' className={buttonClass} disabled={disabled} onClick={this.handleClick} title={title} value={value || title}> {children} </button>
-    )
-  }
-
-  private handleClick = (e: React.MouseEvent<HTMLElement>) => {
-    if (this.props.onClick) {
-      this.props.onClick(e)
-    }
-  }
+function refHOC (Component) {
+  return React.forwardRef<any, any>((props, ref) => {
+    return <Component {...props} forwardedRef={ref} />
+  })
 }
+
+const HKButton = (props: IButtonProps) => {
+  const { onClick, forwardedRef, async = false, title, value, children, disabled = false, type = 'secondary', small = false, className = '' } = props
+  const handleClick = (e: React.MouseEvent<HTMLElement>) => {
+    if (onClick) {
+      onClick(e)
+    }
+  }
+
+  let buttonClass = 'hk-button'
+  if (async) {
+    buttonClass += '--async'
+  } else {
+    const disabledClass = disabled ? 'disabled-' : ''
+    const smallClass = small ? '-sm' : ''
+    buttonClass += `${smallClass}--${disabledClass}${type}`
+  }
+  if (className) {
+    buttonClass += ` ${className}`
+  }
+
+  return (
+    <button type='button' ref={forwardedRef} className={buttonClass} disabled={disabled} onClick={handleClick} title={title} value={value || title}> {children} </button>
+  )
+}
+
+export default refHOC(HKButton)
