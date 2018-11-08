@@ -4,10 +4,7 @@ import * as d3array from 'd3-array'
 import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
 
-import flatMap from 'lodash-es/flatMap'
-import head from 'lodash-es/head'
-import isFinite from 'lodash-es/isFinite'
-import last from 'lodash-es/last'
+import { flatMap, head, isFinite, last } from 'lodash-es'
 
 import moment from 'moment'
 import { ChartPadding } from './constants'
