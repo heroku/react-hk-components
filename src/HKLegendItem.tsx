@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { MalibuIcon } from '@heroku/react-malibu'
-import * as classnames from 'classnames'
+import classnames from 'classnames'
 import { colours } from './constants'
 
 interface IHKLegendItemProps {

@@ -1,5 +1,5 @@
 import { MalibuIcon } from '@heroku/react-malibu'
-import * as _ from 'lodash'
+import range from 'lodash/range'
 import * as React from 'react'
 import {
   default as HKButton,
@@ -31,7 +31,7 @@ const buildPager = (totalItems, currentPage, pageSize) => {
       endPage = currentPage + 4
     }
   }
-  return _.range(startPage, endPage + 1)
+  return range(startPage, endPage + 1)
 }
 
 const HKTablePagination = (props: IPaginationProps) => {

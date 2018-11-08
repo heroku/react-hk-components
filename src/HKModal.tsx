@@ -1,5 +1,5 @@
 import { MalibuIcon } from '@heroku/react-malibu'
-import * as classnames from 'classnames'
+import classnames from 'classnames'
 import * as React from 'react'
 import { Transition } from 'react-transition-group'
 import SRMModal from 'simple-react-modal'

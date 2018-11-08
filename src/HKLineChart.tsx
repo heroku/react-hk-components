@@ -4,8 +4,6 @@ import { default as HKLegendItem } from './HKLegendItem'
 import { default as HKLineChartData } from './HKLineChartData'
 import { default as HKResizeContainer } from './HKResizeContainer'
 
-import * as _ from 'lodash'
-
 import { getMaxValues, getNumVisibleCharts } from './helpers'
 
 interface ILineChartProps {
