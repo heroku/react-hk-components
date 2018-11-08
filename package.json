@@ -8,7 +8,6 @@
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "@heroku/react-malibu": "3.2.0",
-    "@types/storybook__addon-actions": "^3.0.1",
     "classnames": "^2.2.6",
     "d3": "^5.4.0",
     "lodash": "4.17.5",
@@ -35,6 +34,7 @@
     "@types/react-dom": "^16.0.6",
     "@types/react-test-renderer": "^16.0.0",
     "@types/react-transition-group": "^2.0.11",
+    "@types/storybook__addon-actions": "^3.4.1",
     "@types/storybook__react": "^3.0.6",
     "awesome-typescript-loader": "^3.4.1",
     "babel-core": "^6.26.0",
