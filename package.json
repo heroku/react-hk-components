@@ -10,7 +10,6 @@
     "@heroku/react-malibu": "3.2.0",
     "classnames": "^2.2.6",
     "d3": "^5.4.0",
-    "lodash": "4.17.5",
     "moment": "2.21.0",
     "prop-types": "15.x",
     "react": "^16.4.1",
@@ -29,7 +28,7 @@
     "@types/enzyme": "^3.1.6",
     "@types/enzyme-adapter-react-15": "^1.0.1",
     "@types/jest": "^22.1.1",
-    "@types/lodash": "^4.14.118",
+    "@types/lodash-es": "^4.17.1",
     "@types/prop-types": "^15.5.2",
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
@@ -51,6 +50,7 @@
     "file-loader": "^1.1.11",
     "jest": "^22.1.4",
     "jest-css-modules-transform": "^2.1.1",
+    "lodash-es": "^4.17.11",
     "np": "^2.19.0",
     "react-hot-loader": "^4.3.1",
     "react-test-renderer": "16",
@@ -78,6 +78,9 @@
       "^.+\\.[tj]sx?$": "ts-jest",
       ".+\\.(css)$": "<rootDir>/node_modules/jest-css-modules-transform"
     },
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/(?!lodash-es/.*)"
+    ],
     "setupFiles": [
       "<rootDir>/test/test-setup.ts"
     ],
