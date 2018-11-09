@@ -14,6 +14,11 @@ import { default as HKGrid } from './HKGrid'
 import { default as HKLine } from './HKLine'
 import { default as HKTooltip } from './HKTooltip'
 
+interface ILineChartCoordinate {
+  x: Date,
+  y: number,
+}
+
 interface ILineChartDataProps {
   data: any, // Assumes the data comes in the format [{time, value},...]
   height: number,
@@ -56,12 +61,10 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
                   .sort((a, b) => moment(a.x).diff(moment(b.x)))
 
     // Domain of x coordinates (date))
-    /* tslint:disable */
     const timeExtent = [
-      (head(measurements) as any).x,
-      (last(measurements) as any).x,
+      (head(measurements) as ILineChartCoordinate).x,
+      (last(measurements) as ILineChartCoordinate).x,
     ]
-    /* tslint:enable */
 
     // Domain of y coordinates (value)
     const valueExtent = d3array.extent(values)
