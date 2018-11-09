@@ -1,5 +1,5 @@
 import * as d3array from 'd3-array'
-import unzip from 'lodash-es/unzip'
+import { unzip } from 'lodash-es'
 
 export function getMaxValues (data, type = 'line') {
   if (!data) {
