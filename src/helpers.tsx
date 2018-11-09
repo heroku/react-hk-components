@@ -3,7 +3,7 @@ import { unzip } from 'lodash-es'
 
 export function getMaxValues (data, type = 'line') {
   if (!data) {
-    return null
+    return []
   }
 
   if (type === 'line') {
