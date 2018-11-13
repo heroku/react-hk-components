@@ -1,6 +1,6 @@
 {
   "name": "@heroku/react-hk-components",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "React components for Heroku",
   "main": "dist/index.js",
   "repository": "https://github.com/heroku/react-hk-components.git",
