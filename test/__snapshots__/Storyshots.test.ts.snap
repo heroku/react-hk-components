@@ -1908,6 +1908,7 @@ exports[`Storyshots HKDropdown align left 1`] = `
   >
     <button
       className="hk-button--secondary"
+      data-testid="story-dropdown-button"
       disabled={false}
       onClick={[Function]}
       title={undefined}
@@ -1942,6 +1943,7 @@ exports[`Storyshots HKDropdown align right 1`] = `
   >
     <button
       className="hk-button--secondary"
+      data-testid="story-dropdown-button"
       disabled={false}
       onClick={[Function]}
       title={undefined}
@@ -1976,6 +1978,7 @@ exports[`Storyshots HKDropdown default 1`] = `
   >
     <button
       className="hk-button--secondary"
+      data-testid="story-dropdown-button"
       disabled={false}
       onClick={[Function]}
       title={undefined}
@@ -2010,6 +2013,7 @@ exports[`Storyshots HKDropdown disabled 1`] = `
   >
     <button
       className="hk-button--disabled-secondary"
+      data-testid="story-dropdown-button"
       disabled={true}
       onClick={[Function]}
       title={undefined}
@@ -2044,6 +2048,7 @@ exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
   >
     <button
       className="hk-button--secondary"
+      data-testid="story-dropdown-button"
       disabled={false}
       onClick={[Function]}
       title={undefined}
@@ -2078,6 +2083,7 @@ exports[`Storyshots HKDropdown no title 1`] = `
   >
     <button
       className="hk-button--secondary ph1"
+      data-testid="story-dropdown-button"
       disabled={false}
       onClick={[Function]}
       title={undefined}

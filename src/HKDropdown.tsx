@@ -46,10 +46,24 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
     this.setState((prevState) => ({ showDropdown: !prevState.showDropdown }))
   }
 
+  public testId = () => {
+    const { name } = this.props
+    return `${name}-dropdown-button`
+  }
+
   public handleContentClick = () => this.props.closeOnClick && this.setState({ showDropdown: false })
 
   public handleClose = (e) => {
-    if (!e.path.includes(this.buttonRef.current)) {
+    const eventNodes = e.path.filter((node) => {
+      return node.nodeType === 1
+    })
+    const didClickButton = eventNodes.some((node) => {
+      return (
+        node.hasAttribute('data-testid') &&
+        node.getAttribute('data-testid') === this.testId()
+      )
+    })
+    if (!didClickButton) {
       this.setState({
         showDropdown: false,
       })
@@ -65,7 +79,7 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
         <Reference>
           {({ ref }) => (
             <div className='relative dib' ref={ref}>
-              <HKButton ref={this.buttonRef} onClick={this.handleDropdown} data-testid={`${name}-dropdown-button`} className={classnames({ ph1: !title }, className)} type={Type.Secondary} disabled={disabled}>
+              <HKButton onClick={this.handleDropdown} data-testid={this.testId()} className={classnames({ ph1: !title }, className)} type={Type.Secondary} disabled={disabled}>
                 {title}
                 <MalibuIcon key='icon' name='caret-16' size={16} fillClass='fill-purple' extraClasses={classnames({ pl1: title })} />
               </HKButton>
