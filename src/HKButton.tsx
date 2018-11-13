@@ -23,7 +23,15 @@ interface IButtonProps {
   value?: string,
 }
 
-const HKButton = (props: IButtonProps) => {
+const defaultProps = {
+  async: false,
+  className: '',
+  disabled: false,
+  small: false,
+  type: Type.Secondary,
+}
+
+const HKButton: React.SFC<IButtonProps> = (props) => {
   const { onClick, async = false, title, value, children, disabled = false, type = 'secondary', small = false, className = '' } = props
   const testId = props['data-testid']
   const conditionalTestId = testId && {
@@ -52,12 +60,6 @@ const HKButton = (props: IButtonProps) => {
   )
 }
 
-HKButton.defaultProps = {
-  async: false,
-  className: '',
-  disabled: false,
-  small: false,
-  type: 'secondary',
-}
+HKButton.defaultProps = defaultProps
 
 export default HKButton
