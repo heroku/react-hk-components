@@ -66,7 +66,7 @@
     "tslint": "tslint -c tslint.json --project .",
     "lint": "yarn run eslint && yarn run tslint",
     "storybook": "start-storybook -p ${PORT:-9001} -s ./src/static -c .storybook",
-    "build": "rm -rf ./dist; tsc --project tsconfig.build.json; yarn staticfiles",
+    "build": "rm -rf ./dist && tsc --project tsconfig.build.json && yarn staticfiles",
     "prepublish": "yarn run build",
     "test": "jest --testPathPattern $PWD/test",
     "test:watch": "jest --watch",
