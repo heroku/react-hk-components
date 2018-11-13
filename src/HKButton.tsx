@@ -14,8 +14,8 @@ interface IButtonProps {
   async?: boolean,
   children: React.ReactNode,
   className?: string,
+  'data-testid'?: string,
   disabled?: boolean,
-  forwardedRef: React.RefForwardingComponent<HTMLButtonElement, any>,
   onClick?: (e: React.MouseEvent<HTMLElement>) => void,
   small?: boolean,
   title?: string,
@@ -23,14 +23,12 @@ interface IButtonProps {
   value?: string,
 }
 
-function refHOC (Component) {
-  return React.forwardRef<any, any>((props, ref) => {
-    return <Component {...props} forwardedRef={ref} />
-  })
-}
-
 const HKButton = (props: IButtonProps) => {
-  const { onClick, forwardedRef, async = false, title, value, children, disabled = false, type = 'secondary', small = false, className = '' } = props
+  const { onClick, async = false, title, value, children, disabled = false, type = 'secondary', small = false, className = '' } = props
+  const testId = props['data-testid']
+  const conditionalTestId = testId && {
+    'data-testid': testId,
+  }
   const handleClick = (e: React.MouseEvent<HTMLElement>) => {
     if (onClick) {
       onClick(e)
@@ -50,8 +48,8 @@ const HKButton = (props: IButtonProps) => {
   }
 
   return (
-    <button type='button' ref={forwardedRef} className={buttonClass} disabled={disabled} onClick={handleClick} title={title} value={value || title}> {children} </button>
+    <button type='button' {...conditionalTestId} className={buttonClass} disabled={disabled} onClick={handleClick} title={title} value={value || title}> {children} </button>
   )
 }
 
-export default refHOC(HKButton)
+export default HKButton
