@@ -52,4 +52,12 @@ const HKButton = (props: IButtonProps) => {
   )
 }
 
+HKButton.defaultProps = {
+  async: false,
+  className: '',
+  disabled: false,
+  small: false,
+  type: 'secondary',
+}
+
 export default HKButton
