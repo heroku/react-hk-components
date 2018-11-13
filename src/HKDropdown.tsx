@@ -40,8 +40,6 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
     showDropdown: false,
   }
 
-  private buttonRef = React.createRef<any>()
-
   public handleDropdown = () => {
     this.setState((prevState) => ({ showDropdown: !prevState.showDropdown }))
   }
