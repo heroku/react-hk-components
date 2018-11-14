@@ -1,16 +1,16 @@
 import * as d3array from 'd3-array'
-import * as _ from 'lodash'
+import { unzip } from 'lodash-es'
 
 export function getMaxValues (data, type = 'line') {
   if (!data) {
-    return null
+    return []
   }
 
   if (type === 'line') {
     data = data.map((d) => d[1])
   }
 
-  const values = _.unzip(data)
+  const values = unzip(data)
   const maxValues = values.map((value) => d3array.max(value))
   return maxValues
 }

@@ -3,14 +3,21 @@ import * as React from 'react'
 import * as d3array from 'd3-array'
 import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
-import * as _ from 'lodash'
-import * as moment from 'moment'
+
+import { flatMap, head, isFinite, last } from 'lodash-es'
+
+import moment from 'moment'
 import { ChartPadding } from './constants'
 import { getMaxValues } from './helpers'
 
 import { default as HKGrid } from './HKGrid'
 import { default as HKLine } from './HKLine'
 import { default as HKTooltip } from './HKTooltip'
+
+interface ILineChartCoordinate {
+  x: Date,
+  y: number,
+}
 
 interface ILineChartDataProps {
   data: any, // Assumes the data comes in the format [{time, value},...]
@@ -46,7 +53,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
     const { width, height, data } = newProps
     const chartHeight = height - ChartPadding.Vertical
     const chartWidth = width - ChartPadding.Horizontal
-    const values = _.flatMap(data.map((d) => d[1]))
+    const values = flatMap(data.map((d) => d[1]))
 
     // Cleanse data into valid format(date and values)
     // Make sure our coordinates are sorted by date asscending
@@ -55,8 +62,8 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
 
     // Domain of x coordinates (date)
     const timeExtent = [
-      _.head(measurements).x,
-      _.last(measurements).x,
+      (head(measurements) as ILineChartCoordinate).x,
+      (last(measurements) as ILineChartCoordinate).x,
     ]
 
     // Domain of y coordinates (value)
@@ -140,7 +147,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
     const { onHover, data } = this.props
 
     this.setState({ hoverIndex: -1, idx: -1 })
-    onHover(getMaxValues(data))
+    onHover(getMaxValues(data) as any)
   }
 
   public render () {
@@ -219,6 +226,6 @@ function formatData (dataSet) {
   }
   return dataSet.map((d) => ({
     x: moment.utc(d[0]).toDate(),
-    y: d[1].map((v) => _.isFinite(v) ? v : 0),
+    y: d[1].map((v) => isFinite(v) ? v : 0),
   }))
 }
