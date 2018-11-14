@@ -60,7 +60,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
     const measurements = formatData(data)
                   .sort((a, b) => moment(a.x).diff(moment(b.x)))
 
-    // Domain of x coordinates (date))
+    // Domain of x coordinates (date)
     const timeExtent = [
       (head(measurements) as ILineChartCoordinate).x,
       (last(measurements) as ILineChartCoordinate).x,
