@@ -7,6 +7,7 @@ import * as d3shape from 'd3-shape'
 import { flatMap, head, isFinite, last } from 'lodash-es'
 
 import moment from 'moment'
+moment.locale('en')
 import { ChartPadding } from './constants'
 import { getMaxValues } from './helpers'
 
