@@ -22,8 +22,10 @@
     "simple-react-modal": "0.5.1"
   },
   "devDependencies": {
-    "@storybook/addon-storyshots": "^3.3.11",
-    "@storybook/react": "^3.3.10",
+    "@storybook/addon-actions": "^4.0.7",
+    "@storybook/addon-options": "^4.0.7",
+    "@storybook/addon-storyshots": "^4.0.7",
+    "@storybook/react": "^4.0.7",
     "@types/classnames": "^2.2.4",
     "@types/enzyme": "^3.1.6",
     "@types/enzyme-adapter-react-15": "^1.0.1",
@@ -37,6 +39,13 @@
     "@types/storybook__addon-actions": "^3.4.1",
     "@types/storybook__react": "^3.0.6",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "7",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.1",
     "enzyme": "^3.3.0",
@@ -57,6 +66,7 @@
     "np": "^2.19.0",
     "react-hot-loader": "^4.3.1",
     "react-test-renderer": "16",
+    "regenerator-runtime": "^0.12.1",
     "style-loader": "^0.23.1",
     "ts-jest": "^22.0.1",
     "tslint": "^5.9.1",
@@ -83,7 +93,8 @@
   },
   "jest": {
     "transform": {
-      "^.+\\.[tj]sx?$": "ts-jest",
+      "^.+\\.[t]sx?$": "ts-jest",
+      "\\.jsx?$": "babel-jest",
       ".+\\.(css)$": "<rootDir>/node_modules/jest-css-modules-transform"
     },
     "transformIgnorePatterns": [

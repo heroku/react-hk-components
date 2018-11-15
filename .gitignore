@@ -7,3 +7,4 @@ dist
 .env.*
 /tmp
 .nyc_output-*/
+.cache
