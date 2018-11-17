@@ -4686,7 +4686,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
         className="rt-thead -header"
         style={
           Object {
-            "minWidth": "100px",
+            "minWidth": "200px",
           }
         }
       >
@@ -4736,13 +4736,41 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               onTouchStart={[Function]}
             />
           </div>
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            onClick={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <div
+                className="pa2 dark-gray tl ttc b f5 flex items-center"
+              >
+                Age
+              </div>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
         </div>
       </div>
       <div
         className="rt-tbody"
         style={
           Object {
-            "minWidth": "100px",
+            "minWidth": "200px",
           }
         }
       >
@@ -4769,6 +4797,20 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             >
               Tanner Linsley
             </div>
+            <div
+              className="rt-td"
+              onClick={[Function]}
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              26
+            </div>
           </div>
         </div>
         <div
@@ -4780,6 +4822,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -4821,6 +4878,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -4832,6 +4904,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -4873,6 +4960,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -4884,6 +4986,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -4925,6 +5042,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -4936,6 +5068,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -4977,6 +5124,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -4988,6 +5150,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5029,6 +5206,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5040,6 +5232,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5081,6 +5288,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5092,6 +5314,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5133,6 +5370,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5144,6 +5396,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5185,6 +5452,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5196,6 +5478,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5237,6 +5534,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5248,6 +5560,21 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5355,7 +5682,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
         className="rt-thead -header"
         style={
           Object {
-            "minWidth": "100px",
+            "minWidth": "200px",
           }
         }
       >
@@ -5405,13 +5732,41 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
               onTouchStart={[Function]}
             />
           </div>
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            onClick={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <div
+                className="pa2 dark-gray tl ttc b f5 flex items-center"
+              >
+                Age
+              </div>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
         </div>
       </div>
       <div
         className="rt-tbody"
         style={
           Object {
-            "minWidth": "100px",
+            "minWidth": "200px",
           }
         }
       >
@@ -5438,6 +5793,20 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
             >
               Tanner Linsley
             </div>
+            <div
+              className="rt-td"
+              onClick={[Function]}
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              26
+            </div>
           </div>
         </div>
         <div
@@ -5449,6 +5818,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5490,6 +5874,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5501,6 +5900,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5542,6 +5956,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5553,6 +5982,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5594,6 +6038,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5605,6 +6064,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5646,6 +6120,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5657,6 +6146,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5698,6 +6202,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5709,6 +6228,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5750,6 +6284,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5761,6 +6310,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5802,6 +6366,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5813,6 +6392,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5854,6 +6448,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5865,6 +6474,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
@@ -5906,6 +6530,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                  
               </span>
             </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
           </div>
         </div>
         <div
@@ -5917,6 +6556,21 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
             role="row"
             style={Object {}}
           >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
             <div
               className="rt-td"
               role="gridcell"
