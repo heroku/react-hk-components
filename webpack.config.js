@@ -1,7 +1,6 @@
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const webpack = require('webpack')
 
@@ -30,7 +29,6 @@ module.exports = {
     ]
   },
   plugins: [
-    // new BundleAnalyzerPlugin(),
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new CopyWebpackPlugin([
       {
@@ -50,7 +48,8 @@ module.exports = {
         loader: 'awesome-typescript-loader',
         exclude: /node_modules/,
         options: {
-          configFileName: 'tsconfig.build.json'
+          configFileName: 'tsconfig.build.json',
+          silent: true
         }
       },
       {

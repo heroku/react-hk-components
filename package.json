@@ -79,6 +79,7 @@
     "webpack-cli": "^3.1.2"
   },
   "scripts": {
+    "analyze": "rm stats.json && webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json",
     "eslint": "eslint ./src",
     "tslint": "tslint -c tslint.json --project .",
     "lint": "yarn run eslint && yarn run tslint",

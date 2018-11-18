@@ -8,3 +8,4 @@ dist
 /tmp
 .nyc_output-*/
 .cache
+stats.json
