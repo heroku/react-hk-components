@@ -2,7 +2,7 @@ import { configure, addDecorator } from '@storybook/react'
 import { withOptions } from '@storybook/addon-options'
 import React from 'react'
 import heroku from './heroku-theme'
-// import { MalibuSprites } from '@heroku/react-malibu'
+import { MalibuSprites } from '@heroku/react-malibu'
 
 // automatically import all files ending in *.stories.ts and *.stories.tsx
 const req = require.context('../stories', true, /.stories.tsx?$/)
@@ -20,7 +20,7 @@ addDecorator(
 
 addDecorator((storyFn) => {
   return (<div>
-    {/* <MalibuSprites /> */}
+    <MalibuSprites />
     { storyFn() }
     </div>)
 })

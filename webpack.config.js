@@ -2,7 +2,6 @@ const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const webpack = require('webpack')
 
 module.exports = {
   mode: 'production',
@@ -29,7 +28,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, './src/static'),
