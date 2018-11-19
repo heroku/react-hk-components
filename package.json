@@ -62,6 +62,7 @@
     "jest": "^22.1.4",
     "jest-css-modules-transform": "^2.1.1",
     "lodash-es": "^4.17.11",
+    "lodash-webpack-plugin": "^0.11.5",
     "mini-css-extract-plugin": "^0.4.4",
     "np": "^2.19.0",
     "react-hot-loader": "^4.3.1",
