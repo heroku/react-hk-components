@@ -225,10 +225,8 @@ function formatData (dataSet) {
   if (!dataSet) {
     return null
   }
-  return dataSet.map((d) => {
-    return {
-      x: dayjs(d[0]).toDate(),
-      y: d[1].map((v) => isFinite(v) ? v : 0),
-    }
-  })
+  return dataSet.map((d) => ({
+    x: dayjs(d[0]).toDate(),
+    y: d[1].map((v) => isFinite(v) ? v : 0),
+  }))
 }
