@@ -22,6 +22,9 @@ const sort = {
 const columns = [{
   Header: () => <HKTableHeader label='Name' id='name' sort={sort} />,
   accessor: 'name',
+}, {
+  Header: () => <HKTableHeader label='Age' id='age' sort={sort} />,
+  accessor: 'age',
 }]
 
 storiesOf('HKTable', module)

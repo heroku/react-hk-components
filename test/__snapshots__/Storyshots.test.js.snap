@@ -1,0 +1,7243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots HKBanner/danger default 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--danger flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-red mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#warning-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      Lorem ipsum dolor sit amet.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/danger with button 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--danger flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-red mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#warning-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--danger flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/danger with className 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--danger flex items-center pv2 pv5"
+  >
+    <svg
+      className="malibu-fill-gradient-red mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#warning-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--danger flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/danger with title 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--danger flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-red mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#warning-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/danger with title and button 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--danger flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-red mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#warning-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--danger flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/generic default 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--generic flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-dark-gray mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#logo-block-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      Lorem ipsum dolor sit amet.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/generic with button 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--generic flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-dark-gray mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#logo-block-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--secondary flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/generic with className 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--generic flex items-center pv2 pv5"
+  >
+    <svg
+      className="malibu-fill-gradient-dark-gray mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#logo-block-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--secondary flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/generic with title 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--generic flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-dark-gray mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#logo-block-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/generic with title and button 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--generic flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-dark-gray mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#logo-block-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--secondary flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/info default 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--info flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-blue mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#info-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      Lorem ipsum dolor sit amet.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/info with button 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--info flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-blue mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#info-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--info flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/info with className 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--info flex items-center pv2 pv5"
+  >
+    <svg
+      className="malibu-fill-gradient-blue mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#info-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--info flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/info with title 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--info flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-blue mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#info-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/info with title and button 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--info flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-blue mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#info-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--info flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/success default 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--success flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-green mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#success-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      Lorem ipsum dolor sit amet.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/success with button 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--success flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-green mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#success-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--success flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/success with className 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--success flex items-center pv2 pv5"
+  >
+    <svg
+      className="malibu-fill-gradient-green mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#success-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--success flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/success with title 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--success flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-green mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#success-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/success with title and button 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--success flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-green mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#success-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--success flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/warning default 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--warning flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-orange mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#warning-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      Lorem ipsum dolor sit amet.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/warning with button 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--warning flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-orange mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#warning-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--warning flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/warning with className 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--warning flex items-center pv2 pv5"
+  >
+    <svg
+      className="malibu-fill-gradient-orange mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#warning-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--warning flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/warning with title 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--warning flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-orange mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#warning-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBanner/warning with title and button 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="hk-banner--warning flex items-center pv2"
+  >
+    <svg
+      className="malibu-fill-gradient-orange mr2 flex-none"
+      style={
+        Object {
+          "height": "24px",
+          "width": "24px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#warning-ring-28"
+      />
+    </svg>
+    <div
+      className="flex-auto"
+    >
+      <div
+        className="b"
+      >
+        This is the title line
+      </div>
+      Lorem ipsum dolor sit amet.
+    </div>
+    <button
+      className="hk-button--warning flex-none"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Click Me
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKBarChart default 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="flex"
+  >
+    <div
+      className="flex-auto"
+    >
+      <svg
+        height={300}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+        preserveAspectRatio="none"
+        viewBox="0 0 100 300"
+        width={100}
+      >
+        <g
+          transform="translate(35, 0)"
+        >
+          <rect
+            className="br0 ba b--silver z-1"
+            fill="none"
+            height={300}
+            stroke="silver"
+            width={65}
+            x="0"
+            y="0"
+          />
+          <g>
+            <g>
+              <line
+                stroke="#96a3b6"
+                strokeOpacity="0.3"
+                strokeWidth="0.5"
+                x1="0"
+                x2={100}
+                y1={300}
+                y2={300}
+              />
+              <text
+                className="f7 fill-gray"
+                textAnchor="end"
+                x={-3}
+                y={300}
+              >
+                 
+                0
+                 
+              </text>
+            </g>
+            <g>
+              <line
+                stroke="#96a3b6"
+                strokeOpacity="0.3"
+                strokeWidth="0.5"
+                x1="0"
+                x2={100}
+                y1={254}
+                y2={254}
+              />
+              <text
+                className="f7 fill-gray"
+                textAnchor="end"
+                x={-3}
+                y={254}
+              >
+                 
+                200K
+                 
+              </text>
+            </g>
+            <g>
+              <line
+                stroke="#96a3b6"
+                strokeOpacity="0.3"
+                strokeWidth="0.5"
+                x1="0"
+                x2={100}
+                y1={208}
+                y2={208}
+              />
+              <text
+                className="f7 fill-gray"
+                textAnchor="end"
+                x={-3}
+                y={208}
+              >
+                 
+                400K
+                 
+              </text>
+            </g>
+            <g>
+              <line
+                stroke="#96a3b6"
+                strokeOpacity="0.3"
+                strokeWidth="0.5"
+                x1="0"
+                x2={100}
+                y1={163}
+                y2={163}
+              />
+              <text
+                className="f7 fill-gray"
+                textAnchor="end"
+                x={-3}
+                y={163}
+              >
+                 
+                600K
+                 
+              </text>
+            </g>
+            <g>
+              <line
+                stroke="#96a3b6"
+                strokeOpacity="0.3"
+                strokeWidth="0.5"
+                x1="0"
+                x2={100}
+                y1={117}
+                y2={117}
+              />
+              <text
+                className="f7 fill-gray"
+                textAnchor="end"
+                x={-3}
+                y={117}
+              >
+                 
+                800K
+                 
+              </text>
+            </g>
+            <g>
+              <line
+                stroke="#96a3b6"
+                strokeOpacity="0.3"
+                strokeWidth="0.5"
+                x1="0"
+                x2={100}
+                y1={71}
+                y2={71}
+              />
+              <text
+                className="f7 fill-gray"
+                textAnchor="end"
+                x={-3}
+                y={71}
+              >
+                 
+                1M
+                 
+              </text>
+            </g>
+            <g>
+              <line
+                stroke="#96a3b6"
+                strokeOpacity="0.3"
+                strokeWidth="0.5"
+                x1="0"
+                x2={100}
+                y1={25}
+                y2={25}
+              />
+              <text
+                className="f7 fill-gray"
+                textAnchor="end"
+                x={-3}
+                y={25}
+              >
+                 
+                1.2M
+                 
+              </text>
+            </g>
+          </g>
+          <g
+            className="dim"
+          >
+            <rect
+              className="dim"
+              fill="#CFD7E6"
+              height={45}
+              width={2.907303370786517}
+              x={0.2528089887640448}
+              y={255}
+            />
+            <rect
+              className="dim"
+              fill="#CCC2DC"
+              height={285}
+              width={2.907303370786517}
+              x={3.4129213483146064}
+              y={15}
+            />
+          </g>
+          <g
+            className="dim"
+          >
+            <rect
+              className="dim"
+              fill="#CFD7E6"
+              height={48}
+              width={2.907303370786517}
+              x={7.556179775280898}
+              y={252}
+            />
+            <rect
+              className="dim"
+              fill="#CCC2DC"
+              height={285}
+              width={2.907303370786517}
+              x={10.716292134831459}
+              y={15}
+            />
+          </g>
+          <g
+            className="dim"
+          >
+            <rect
+              className="dim"
+              fill="#CFD7E6"
+              height={50}
+              width={2.907303370786517}
+              x={14.859550561797752}
+              y={250}
+            />
+            <rect
+              className="dim"
+              fill="#CCC2DC"
+              height={285}
+              width={2.907303370786517}
+              x={18.019662921348313}
+              y={15}
+            />
+          </g>
+          <g
+            className="dim"
+          >
+            <rect
+              className="dim"
+              fill="#CFD7E6"
+              height={52}
+              width={2.907303370786517}
+              x={22.162921348314605}
+              y={248}
+            />
+            <rect
+              className="dim"
+              fill="#CCC2DC"
+              height={285}
+              width={2.907303370786517}
+              x={25.323033707865164}
+              y={15}
+            />
+          </g>
+          <g
+            className="dim"
+          >
+            <rect
+              className="dim"
+              fill="#CFD7E6"
+              height={52}
+              width={2.907303370786517}
+              x={29.46629213483146}
+              y={248}
+            />
+            <rect
+              className="dim"
+              fill="#CCC2DC"
+              height={285}
+              width={2.907303370786517}
+              x={32.62640449438202}
+              y={15}
+            />
+          </g>
+          <g
+            className="dim"
+          >
+            <rect
+              className="dim"
+              fill="#CFD7E6"
+              height={52}
+              width={2.907303370786517}
+              x={36.76966292134831}
+              y={248}
+            />
+            <rect
+              className="dim"
+              fill="#CCC2DC"
+              height={216}
+              width={2.907303370786517}
+              x={39.92977528089887}
+              y={84}
+            />
+          </g>
+          <g
+            className="dim"
+          >
+            <rect
+              className="dim"
+              fill="#CFD7E6"
+              height={52}
+              width={2.907303370786517}
+              x={44.073033707865164}
+              y={248}
+            />
+            <rect
+              className="dim"
+              fill="#CCC2DC"
+              height={285}
+              width={2.907303370786517}
+              x={47.233146067415724}
+              y={15}
+            />
+          </g>
+          <g
+            className="dim"
+          >
+            <rect
+              className="dim"
+              fill="#CFD7E6"
+              height={54}
+              width={2.907303370786517}
+              x={51.37640449438202}
+              y={246}
+            />
+            <rect
+              className="dim"
+              fill="#CCC2DC"
+              height={285}
+              width={2.907303370786517}
+              x={54.53651685393258}
+              y={15}
+            />
+          </g>
+          <g
+            className="dim"
+          >
+            <rect
+              className="dim"
+              fill="#CFD7E6"
+              height={55}
+              width={2.907303370786517}
+              x={58.67977528089887}
+              y={245}
+            />
+            <rect
+              className="dim"
+              fill="#CCC2DC"
+              height={255}
+              width={2.907303370786517}
+              x={61.83988764044943}
+              y={45}
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div
+      className="w6"
+    >
+      <a
+        className="cursor-hand"
+        onClick={[Function]}
+      >
+        <div
+          className="hk-label flex flex-row br2 pa2 mh2 items-center bg-lightest-silver"
+        >
+          <div
+            className="flex items-center"
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
+              style={undefined}
+            >
+              <use
+                xlinkHref="#confirm-16"
+              />
+            </svg>
+            <svg
+              className="mr1"
+              height="31"
+              viewBox="0 0 7 31"
+              width="7"
+            >
+              <rect
+                fill="#CFD7E6"
+                fillOpacity={1}
+                height="100%"
+                width="7"
+                x="0"
+                y="0"
+              />
+            </svg>
+          </div>
+          <div
+            className="items-center"
+          >
+            <span
+              className="db ma1 ttu f7 tracked"
+            >
+              apples
+            </span>
+            <span
+              className="db ma1 ttu b f6"
+            >
+              242152
+            </span>
+          </div>
+        </div>
+      </a>
+      <a
+        className="cursor-hand"
+        onClick={[Function]}
+      >
+        <div
+          className="hk-label flex flex-row br2 pa2 mh2 items-center bg-lightest-silver"
+        >
+          <div
+            className="flex items-center"
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
+              style={undefined}
+            >
+              <use
+                xlinkHref="#confirm-16"
+              />
+            </svg>
+            <svg
+              className="mr1"
+              height="31"
+              viewBox="0 0 7 31"
+              width="7"
+            >
+              <rect
+                fill="#CCC2DC"
+                fillOpacity={1}
+                height="100%"
+                width="7"
+                x="0"
+                y="0"
+              />
+            </svg>
+          </div>
+          <div
+            className="items-center"
+          >
+            <span
+              className="db ma1 ttu f7 tracked"
+            >
+              oranges
+            </span>
+            <span
+              className="db ma1 ttu b f6"
+            >
+              1245496
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKButton with custom title 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--secondary"
+    disabled={false}
+    onClick={[Function]}
+    title="a custom title"
+    type="button"
+    value="a custom title"
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton with custom value 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--secondary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value="a custom value"
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/danger regular-disabled-async 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--async"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/danger regular-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--disabled-danger"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/danger regular-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--danger"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/danger small-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--disabled-danger"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/danger small-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--danger"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/info regular-disabled-async 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--async"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/info regular-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--disabled-info"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/info regular-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--info"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/info small-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--disabled-info"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/info small-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--info"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/primary regular-disabled-async 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--async"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/primary regular-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--disabled-primary"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/primary regular-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/primary small-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--disabled-primary"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/primary small-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--primary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/secondary regular-disabled-async 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--async"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/secondary regular-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--disabled-secondary"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/secondary regular-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--secondary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/secondary small-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--disabled-secondary"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/secondary small-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--secondary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/success regular-disabled-async 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--async"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/success regular-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--disabled-success"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/success regular-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--success"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/success small-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--disabled-success"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/success small-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--success"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/tertiary regular-disabled-async 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--async"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/tertiary regular-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--disabled-tertiary"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/tertiary regular-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--tertiary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/tertiary small-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--disabled-tertiary"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/tertiary small-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--tertiary"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/warning regular-disabled-async 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--async"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/warning regular-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--disabled-warning"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/warning regular-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button--warning"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/warning small-disabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--disabled-warning"
+    disabled={true}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKButton/warning small-enabled-normal 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <button
+    className="hk-button-sm--warning"
+    disabled={false}
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+    value={undefined}
+  >
+     
+    Click Me
+     
+  </button>
+</div>
+`;
+
+exports[`Storyshots HKDropdown align left 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <div
+      className="relative dib"
+    >
+      <button
+        className="hk-button--secondary"
+        data-testid="story-dropdown-button"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Dropdown
+        <svg
+          className="fill-purple pl1"
+          style={
+            Object {
+              "height": "16px",
+              "width": "16px",
+            }
+          }
+        >
+          <use
+            xlinkHref="#caret-16"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown align right 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <div
+      className="relative dib"
+    >
+      <button
+        className="hk-button--secondary"
+        data-testid="story-dropdown-button"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Dropdown
+        <svg
+          className="fill-purple pl1"
+          style={
+            Object {
+              "height": "16px",
+              "width": "16px",
+            }
+          }
+        >
+          <use
+            xlinkHref="#caret-16"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown default 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <div
+      className="relative dib"
+    >
+      <button
+        className="hk-button--secondary"
+        data-testid="story-dropdown-button"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Dropdown
+        <svg
+          className="fill-purple pl1"
+          style={
+            Object {
+              "height": "16px",
+              "width": "16px",
+            }
+          }
+        >
+          <use
+            xlinkHref="#caret-16"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown disabled 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <div
+      className="relative dib"
+    >
+      <button
+        className="hk-button--disabled-secondary"
+        data-testid="story-dropdown-button"
+        disabled={true}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Dropdown
+        <svg
+          className="fill-purple pl1"
+          style={
+            Object {
+              "height": "16px",
+              "width": "16px",
+            }
+          }
+        >
+          <use
+            xlinkHref="#caret-16"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <div
+      className="relative dib"
+    >
+      <button
+        className="hk-button--secondary"
+        data-testid="story-dropdown-button"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Dropdown
+        <svg
+          className="fill-purple pl1"
+          style={
+            Object {
+              "height": "16px",
+              "width": "16px",
+            }
+          }
+        >
+          <use
+            xlinkHref="#caret-16"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown no title 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <div
+      className="relative dib"
+    >
+      <button
+        className="hk-button--secondary ph1"
+        data-testid="story-dropdown-button"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        <svg
+          className="fill-purple"
+          style={
+            Object {
+              "height": "16px",
+              "width": "16px",
+            }
+          }
+        >
+          <use
+            xlinkHref="#caret-16"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKFlagIcon australia 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <img
+    className=""
+    src="/flags/region-australia.png"
+    srcSet="/flags/region-australia.png 1x, /flags/region-australia@2x.png 2x"
+  />
+</div>
+`;
+
+exports[`Storyshots HKFlagIcon brazil 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <img
+    className=""
+    src="/flags/region-brazil.png"
+    srcSet="/flags/region-brazil.png 1x, /flags/region-brazil@2x.png 2x"
+  />
+</div>
+`;
+
+exports[`Storyshots HKFlagIcon default 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <img
+    className=""
+    src="/flags/region-default.png"
+    srcSet="/flags/region-default.png 1x, /flags/region-default@2x.png 2x"
+  />
+</div>
+`;
+
+exports[`Storyshots HKFlagIcon europe 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <img
+    className=""
+    src="/flags/region-europe.png"
+    srcSet="/flags/region-europe.png 1x, /flags/region-europe@2x.png 2x"
+  />
+</div>
+`;
+
+exports[`Storyshots HKFlagIcon germany 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <img
+    className=""
+    src="/flags/region-germany.png"
+    srcSet="/flags/region-germany.png 1x, /flags/region-germany@2x.png 2x"
+  />
+</div>
+`;
+
+exports[`Storyshots HKFlagIcon ireland 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <img
+    className=""
+    src="/flags/region-ireland.png"
+    srcSet="/flags/region-ireland.png 1x, /flags/region-ireland@2x.png 2x"
+  />
+</div>
+`;
+
+exports[`Storyshots HKFlagIcon japan 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <img
+    className=""
+    src="/flags/region-japan.png"
+    srcSet="/flags/region-japan.png 1x, /flags/region-japan@2x.png 2x"
+  />
+</div>
+`;
+
+exports[`Storyshots HKFlagIcon private 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <img
+    className=""
+    src="/flags/region-private.png"
+    srcSet="/flags/region-private.png 1x, /flags/region-private@2x.png 2x"
+  />
+</div>
+`;
+
+exports[`Storyshots HKFlagIcon singapore 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <img
+    className=""
+    src="/flags/region-singapore.png"
+    srcSet="/flags/region-singapore.png 1x, /flags/region-singapore@2x.png 2x"
+  />
+</div>
+`;
+
+exports[`Storyshots HKFlagIcon united-states 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <img
+    className=""
+    src="/flags/region-united-states.png"
+    srcSet="/flags/region-united-states.png 1x, /flags/region-united-states@2x.png 2x"
+  />
+</div>
+`;
+
+exports[`Storyshots HKLineChart default 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="flex"
+  >
+    <div
+      className="flex-auto"
+    >
+      <div>
+        <svg
+          height={300}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          preserveAspectRatio="none"
+          viewBox="0 0 100 300"
+          width={100}
+        >
+          <g
+            transform="translate(35, 0)"
+          >
+            <g>
+              <g>
+                <line
+                  stroke="#96a3b6"
+                  strokeOpacity="0.3"
+                  strokeWidth="0.5"
+                  x1="0"
+                  x2={100}
+                  y1={300}
+                  y2={300}
+                />
+                <text
+                  className="f7 fill-gray"
+                  textAnchor="end"
+                  x={-3}
+                  y={300}
+                >
+                   
+                  0
+                   
+                </text>
+              </g>
+              <g>
+                <line
+                  stroke="#96a3b6"
+                  strokeOpacity="0.3"
+                  strokeWidth="0.5"
+                  x1="0"
+                  x2={100}
+                  y1={236.625261837734}
+                  y2={236.625261837734}
+                />
+                <text
+                  className="f7 fill-gray"
+                  textAnchor="end"
+                  x={-3}
+                  y={236.625261837734}
+                >
+                   
+                  200K
+                   
+                </text>
+              </g>
+              <g>
+                <line
+                  stroke="#96a3b6"
+                  strokeOpacity="0.3"
+                  strokeWidth="0.5"
+                  x1="0"
+                  x2={100}
+                  y1={173.25052367546797}
+                  y2={173.25052367546797}
+                />
+                <text
+                  className="f7 fill-gray"
+                  textAnchor="end"
+                  x={-3}
+                  y={173.25052367546797}
+                >
+                   
+                  400K
+                   
+                </text>
+              </g>
+              <g>
+                <line
+                  stroke="#96a3b6"
+                  strokeOpacity="0.3"
+                  strokeWidth="0.5"
+                  x1="0"
+                  x2={100}
+                  y1={109.87578551320195}
+                  y2={109.87578551320195}
+                />
+                <text
+                  className="f7 fill-gray"
+                  textAnchor="end"
+                  x={-3}
+                  y={109.87578551320195}
+                >
+                   
+                  600K
+                   
+                </text>
+              </g>
+              <g>
+                <line
+                  stroke="#96a3b6"
+                  strokeOpacity="0.3"
+                  strokeWidth="0.5"
+                  x1="0"
+                  x2={100}
+                  y1={46.50104735093595}
+                  y2={46.50104735093595}
+                />
+                <text
+                  className="f7 fill-gray"
+                  textAnchor="end"
+                  x={-3}
+                  y={46.50104735093595}
+                >
+                   
+                  800K
+                   
+                </text>
+              </g>
+            </g>
+            <rect
+              className="br0 ba b--silver z-1"
+              fill="none"
+              height={300}
+              stroke="silver"
+              width={65}
+              x="0"
+              y="0"
+            />
+            <g
+              transform="translate(0, 15)"
+            >
+              <g>
+                <path
+                  d="M0,255.25823538044855L0,255.43188216301317L1.5443934873819343,255.43188216301317L1.5443934873819343,255.83241050819868L64.97771158896634,255.83241050819868L64.97771158896634,254.8792544462382L65,254.8792544462382"
+                  fill="none"
+                  stroke="#79589f"
+                  strokeWidth="1"
+                />
+                <path
+                  d="M0,255.25823538044855L0,255.43188216301317L1.5443934873819343,255.43188216301317L1.5443934873819343,255.83241050819868L64.97771158896634,255.83241050819868L64.97771158896634,254.8792544462382L65,254.8792544462382L65,285L64.97771158896634,285L64.97771158896634,285L1.5443934873819343,285L1.5443934873819343,285L0,285L0,285Z"
+                  fill="#79589f"
+                  fillOpacity="0.2"
+                />
+              </g>
+              <g>
+                <path
+                  d="M0,133.2821443342984L0,128.30595989379728L1.5443934873819343,128.30595989379728L1.5443934873819343,128.6925457965871L64.97771158896634,128.6925457965871L64.97771158896634,0L65,0"
+                  fill="none"
+                  stroke="#79589f"
+                  strokeWidth="1"
+                />
+                <path
+                  d="M0,133.2821443342984L0,128.30595989379728L1.5443934873819343,128.30595989379728L1.5443934873819343,128.6925457965871L64.97771158896634,128.6925457965871L64.97771158896634,0L65,0L65,285L64.97771158896634,285L64.97771158896634,285L1.5443934873819343,285L1.5443934873819343,285L0,285L0,285Z"
+                  fill="#79589f"
+                  fillOpacity="0.2"
+                />
+              </g>
+              <g>
+                <path
+                  d="M0,253.2033094955371L0,210.74286867420048L1.5443934873819343,210.74286867420048L1.5443934873819343,273.930334485197L64.97771158896634,273.930334485197L64.97771158896634,281.8312630918867L65,281.8312630918867"
+                  fill="none"
+                  stroke="#79589f"
+                  strokeWidth="1"
+                />
+                <path
+                  d="M0,253.2033094955371L0,210.74286867420048L1.5443934873819343,210.74286867420048L1.5443934873819343,273.930334485197L64.97771158896634,273.930334485197L64.97771158896634,281.8312630918867L65,281.8312630918867L65,285L64.97771158896634,285L64.97771158896634,285L1.5443934873819343,285L1.5443934873819343,285L0,285L0,285Z"
+                  fill="#79589f"
+                  fillOpacity="0.2"
+                />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div
+      className="w6"
+    >
+      <a
+        className="cursor-hand"
+        onClick={[Function]}
+      >
+        <div
+          className="hk-label flex flex-row br2 pa2 mh2 items-center bg-lightest-silver"
+        >
+          <div
+            className="flex items-center"
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
+              style={undefined}
+            >
+              <use
+                xlinkHref="#confirm-16"
+              />
+            </svg>
+            <svg
+              className="mr1"
+              height="31"
+              viewBox="0 0 7 31"
+              width="7"
+            >
+              <rect
+                fill="#79589f"
+                fillOpacity={0.2}
+                height="100%"
+                width="7"
+                x="0"
+                y="0"
+              />
+            </svg>
+          </div>
+          <div
+            className="items-center"
+          >
+            <span
+              className="db ma1 ttu f7 tracked"
+            >
+              dragonfruit
+            </span>
+            <span
+              className="db ma1 ttu b f6"
+            >
+              95056
+            </span>
+          </div>
+        </div>
+      </a>
+      <a
+        className="cursor-hand"
+        onClick={[Function]}
+      >
+        <div
+          className="hk-label flex flex-row br2 pa2 mh2 items-center bg-lightest-silver"
+        >
+          <div
+            className="flex items-center"
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
+              style={undefined}
+            >
+              <use
+                xlinkHref="#confirm-16"
+              />
+            </svg>
+            <svg
+              className="mr1"
+              height="31"
+              viewBox="0 0 7 31"
+              width="7"
+            >
+              <rect
+                fill="#79589f"
+                fillOpacity={0.4}
+                height="100%"
+                width="7"
+                x="0"
+                y="0"
+              />
+            </svg>
+          </div>
+          <div
+            className="items-center"
+          >
+            <span
+              className="db ma1 ttu f7 tracked"
+            >
+              mango
+            </span>
+            <span
+              className="db ma1 ttu b f6"
+            >
+              899412
+            </span>
+          </div>
+        </div>
+      </a>
+      <a
+        className="cursor-hand"
+        onClick={[Function]}
+      >
+        <div
+          className="hk-label flex flex-row br2 pa2 mh2 items-center bg-lightest-silver"
+        >
+          <div
+            className="flex items-center"
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
+              style={undefined}
+            >
+              <use
+                xlinkHref="#confirm-16"
+              />
+            </svg>
+            <svg
+              className="mr1"
+              height="31"
+              viewBox="0 0 7 31"
+              width="7"
+            >
+              <rect
+                fill="#79589f"
+                fillOpacity={0.6000000000000001}
+                height="100%"
+                width="7"
+                x="0"
+                y="0"
+              />
+            </svg>
+          </div>
+          <div
+            className="items-center"
+          >
+            <span
+              className="db ma1 ttu f7 tracked"
+            >
+              nectarines
+            </span>
+            <span
+              className="db ma1 ttu b f6"
+            >
+              234343
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed default 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed default without footer 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed default without header 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed default without header and footer 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed destructive 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed flyout 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed flyout without footer 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed flyout without header 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed flyout without header and footer 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially closed with confirmation 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open default 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+    <div
+      className="flex flex-column items-center justify-center"
+      data-modal="true"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "rgba(0, 0, 0, .2)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+          "zIndex": 9999,
+        }
+      }
+    >
+      <div
+        className="bg-white shadow-outer-1 relative w-100 mw7 center br1"
+        style={Object {}}
+      >
+        <div
+          className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4"
+        >
+          <div>
+            header text
+          </div>
+          <div
+            className="right-1 absolute pointer"
+            onClick={[Function]}
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+              style={
+                Object {
+                  "height": "16px",
+                  "width": "16px",
+                }
+              }
+            >
+              <use
+                xlinkHref="#delete-16"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className=""
+        >
+          <div
+            className="pa6"
+          >
+            <p>
+              with some important details here below
+            </p>
+          </div>
+        </div>
+        <div
+          className="bt b--light-silver w-100 pa3 tr"
+        >
+          <button
+            className="hk-button--tertiary ml1"
+            disabled={false}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value="cancel"
+          >
+             
+            Cancel
+             
+          </button>
+          <button
+            className="hk-button--primary ml1"
+            disabled={false}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value="ok"
+          >
+             
+            OK
+             
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open default without footer 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+    <div
+      className="flex flex-column items-center justify-center"
+      data-modal="true"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "rgba(0, 0, 0, .2)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+          "zIndex": 9999,
+        }
+      }
+    >
+      <div
+        className="bg-white shadow-outer-1 relative w-100 mw7 center br1"
+        style={Object {}}
+      >
+        <div
+          className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4"
+        >
+          <div>
+            header text
+          </div>
+          <div
+            className="right-1 absolute pointer"
+            onClick={[Function]}
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+              style={
+                Object {
+                  "height": "16px",
+                  "width": "16px",
+                }
+              }
+            >
+              <use
+                xlinkHref="#delete-16"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className=""
+        >
+          <div
+            className="pa6"
+          >
+            <p>
+              with some important details here below
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open default without header 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+    <div
+      className="flex flex-column items-center justify-center"
+      data-modal="true"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "rgba(0, 0, 0, .2)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+          "zIndex": 9999,
+        }
+      }
+    >
+      <div
+        className="bg-white shadow-outer-1 relative w-100 mw7 center br1"
+        style={Object {}}
+      >
+        <div
+          className="hk-modal-header f4 flex items-center justify-center br--top br2"
+        >
+          <div
+            className="right-1 absolute pointer top-1"
+            onClick={[Function]}
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+              style={
+                Object {
+                  "height": "16px",
+                  "width": "16px",
+                }
+              }
+            >
+              <use
+                xlinkHref="#delete-16"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className=""
+        >
+          <div
+            className="pa6"
+          >
+            <p>
+              with some important details here below
+            </p>
+          </div>
+        </div>
+        <div
+          className="bt b--light-silver w-100 pa3 tr"
+        >
+          <button
+            className="hk-button--tertiary ml1"
+            disabled={false}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value="cancel"
+          >
+             
+            Cancel
+             
+          </button>
+          <button
+            className="hk-button--primary ml1"
+            disabled={false}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value="ok"
+          >
+             
+            OK
+             
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open default without header and footer 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+    <div
+      className="flex flex-column items-center justify-center"
+      data-modal="true"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "rgba(0, 0, 0, .2)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+          "zIndex": 9999,
+        }
+      }
+    >
+      <div
+        className="bg-white shadow-outer-1 relative w-100 mw7 center br1"
+        style={Object {}}
+      >
+        <div
+          className="hk-modal-header f4 flex items-center justify-center br--top br2"
+        >
+          <div
+            className="right-1 absolute pointer top-1"
+            onClick={[Function]}
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+              style={
+                Object {
+                  "height": "16px",
+                  "width": "16px",
+                }
+              }
+            >
+              <use
+                xlinkHref="#delete-16"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className=""
+        >
+          <div
+            className="pa6"
+          >
+            <p>
+              with some important details here below
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open destructive 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+    <div
+      className="flex flex-column items-center justify-center"
+      data-modal="true"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "rgba(0, 0, 0, .2)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+          "zIndex": 9999,
+        }
+      }
+    >
+      <div
+        className="bg-white shadow-outer-1 relative w-100 mw7 center br1"
+        style={Object {}}
+      >
+        <div
+          className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4 red"
+        >
+          <div>
+            header text
+          </div>
+          <div
+            className="right-1 absolute pointer"
+            onClick={[Function]}
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+              style={
+                Object {
+                  "height": "16px",
+                  "width": "16px",
+                }
+              }
+            >
+              <use
+                xlinkHref="#delete-16"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className=""
+        >
+          <div
+            className="pa6"
+          >
+            <p>
+              with some important details here below
+            </p>
+          </div>
+        </div>
+        <div
+          className="bt b--light-silver w-100 pa3 tr"
+        >
+          <button
+            className="hk-button--tertiary ml1"
+            disabled={false}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value="cancel"
+          >
+             
+            Cancel
+             
+          </button>
+          <button
+            className="hk-button--danger ml1"
+            disabled={false}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value="ok"
+          >
+             
+            OK
+             
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open flyout 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+    <div
+      className="flex flex-column"
+      data-modal="true"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "rgba(0, 0, 0, .2)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+          "zIndex": 9999,
+        }
+      }
+    >
+      <div
+        className="bg-white shadow-outer-1 relative fixed right-0 w7 h-100 flex flex-column"
+        style={
+          Object {
+            "transform": "translateX(0)",
+            "transition": "transform 250ms cubic-bezier(0,1,0.5,1)",
+            "width": "350px",
+          }
+        }
+      >
+        <div
+          className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4"
+        >
+          <div>
+            header text
+          </div>
+          <div
+            className="right-1 absolute pointer"
+            onClick={[Function]}
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+              style={
+                Object {
+                  "height": "16px",
+                  "width": "16px",
+                }
+              }
+            >
+              <use
+                xlinkHref="#delete-16"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="flex-auto"
+        >
+          <div
+            className="pa6"
+          >
+            <p>
+              with some important details here below
+            </p>
+          </div>
+        </div>
+        <div
+          className="bt b--light-silver w-100 pa3 tr"
+        >
+          <button
+            className="hk-button--tertiary ml1"
+            disabled={false}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value="cancel"
+          >
+             
+            Cancel
+             
+          </button>
+          <button
+            className="hk-button--primary ml1"
+            disabled={false}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value="ok"
+          >
+             
+            OK
+             
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open flyout without footer 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+    <div
+      className="flex flex-column"
+      data-modal="true"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "rgba(0, 0, 0, .2)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+          "zIndex": 9999,
+        }
+      }
+    >
+      <div
+        className="bg-white shadow-outer-1 relative fixed right-0 w7 h-100 flex flex-column"
+        style={
+          Object {
+            "transform": "translateX(0)",
+            "transition": "transform 250ms cubic-bezier(0,1,0.5,1)",
+            "width": "350px",
+          }
+        }
+      >
+        <div
+          className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4"
+        >
+          <div>
+            header text
+          </div>
+          <div
+            className="right-1 absolute pointer"
+            onClick={[Function]}
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+              style={
+                Object {
+                  "height": "16px",
+                  "width": "16px",
+                }
+              }
+            >
+              <use
+                xlinkHref="#delete-16"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="flex-auto"
+        >
+          <div
+            className="pa6"
+          >
+            <p>
+              with some important details here below
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open flyout without header 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+    <div
+      className="flex flex-column"
+      data-modal="true"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "rgba(0, 0, 0, .2)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+          "zIndex": 9999,
+        }
+      }
+    >
+      <div
+        className="bg-white shadow-outer-1 relative fixed right-0 w7 h-100 flex flex-column"
+        style={
+          Object {
+            "transform": "translateX(0)",
+            "transition": "transform 250ms cubic-bezier(0,1,0.5,1)",
+            "width": "350px",
+          }
+        }
+      >
+        <div
+          className="hk-modal-header f4 flex items-center justify-center br--top br2"
+        >
+          <div
+            className="right-1 absolute pointer top-1"
+            onClick={[Function]}
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+              style={
+                Object {
+                  "height": "16px",
+                  "width": "16px",
+                }
+              }
+            >
+              <use
+                xlinkHref="#delete-16"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="flex-auto"
+        >
+          <div
+            className="pa6"
+          >
+            <p>
+              with some important details here below
+            </p>
+          </div>
+        </div>
+        <div
+          className="bt b--light-silver w-100 pa3 tr"
+        >
+          <button
+            className="hk-button--tertiary ml1"
+            disabled={false}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value="cancel"
+          >
+             
+            Cancel
+             
+          </button>
+          <button
+            className="hk-button--primary ml1"
+            disabled={false}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value="ok"
+          >
+             
+            OK
+             
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open flyout without header and footer 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+    <div
+      className="flex flex-column"
+      data-modal="true"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "rgba(0, 0, 0, .2)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+          "zIndex": 9999,
+        }
+      }
+    >
+      <div
+        className="bg-white shadow-outer-1 relative fixed right-0 w7 h-100 flex flex-column"
+        style={
+          Object {
+            "transform": "translateX(0)",
+            "transition": "transform 250ms cubic-bezier(0,1,0.5,1)",
+            "width": "350px",
+          }
+        }
+      >
+        <div
+          className="hk-modal-header f4 flex items-center justify-center br--top br2"
+        >
+          <div
+            className="right-1 absolute pointer top-1"
+            onClick={[Function]}
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+              style={
+                Object {
+                  "height": "16px",
+                  "width": "16px",
+                }
+              }
+            >
+              <use
+                xlinkHref="#delete-16"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="flex-auto"
+        >
+          <div
+            className="pa6"
+          >
+            <p>
+              with some important details here below
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKModal/initially open with confirmation 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div>
+    <button
+      className="hk-button--primary"
+      disabled={false}
+      onClick={[Function]}
+      title={undefined}
+      type="button"
+      value={undefined}
+    >
+       
+      Show the Modal
+       
+    </button>
+    <div
+      className="flex flex-column items-center justify-center"
+      data-modal="true"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "rgba(0, 0, 0, .2)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "transition": "background 250ms ease-in-out, opacity 250ms ease-in-out",
+          "zIndex": 9999,
+        }
+      }
+    >
+      <div
+        className="bg-white shadow-outer-1 relative w-100 mw7 center br1"
+        style={Object {}}
+      >
+        <div
+          className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4 red"
+        >
+          <div>
+            header text
+          </div>
+          <div
+            className="right-1 absolute pointer"
+            onClick={[Function]}
+          >
+            <svg
+              className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 fill-dark-gray o-50 hover-o-100 h-100 v-mid"
+              style={
+                Object {
+                  "height": "16px",
+                  "width": "16px",
+                }
+              }
+            >
+              <use
+                xlinkHref="#delete-16"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className=""
+        >
+          <div
+            className="pa6"
+          >
+            <p>
+              with some important details here below
+            </p>
+            <div>
+              <p>
+                Type 'confirm' to enable the OK button
+              </p>
+              <input
+                autoCorrect="off"
+                autoFocus={true}
+                className="hk-input w-100"
+                id="verifyForceRotateCredential"
+                onChange={[Function]}
+                spellCheck={false}
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="bt b--light-silver w-100 pa3 tr"
+        >
+          <button
+            className="hk-button--tertiary ml1"
+            disabled={false}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value="cancel"
+          >
+             
+            Cancel
+             
+          </button>
+          <button
+            className="hk-button--disabled-danger ml1"
+            disabled={true}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value="ok"
+          >
+             
+            OK
+             
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKTable With Pagination 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="ReactTable"
+    style={Object {}}
+  >
+    <div
+      className="rt-table"
+      role="grid"
+      style={undefined}
+    >
+      <div
+        className="rt-thead -header"
+        style={
+          Object {
+            "minWidth": "200px",
+          }
+        }
+      >
+        <div
+          className="rt-tr"
+          role="row"
+          style={undefined}
+        >
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            onClick={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <div
+                className="pa2 dark-gray tl ttc b f5 flex items-center"
+              >
+                <svg
+                  className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
+                  style={
+                    Object {
+                      "height": "16px",
+                      "width": "16px",
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#direction-down-16"
+                  />
+                </svg>
+                Name
+              </div>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            onClick={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <div
+                className="pa2 dark-gray tl ttc b f5 flex items-center"
+              >
+                Age
+              </div>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="rt-tbody"
+        style={
+          Object {
+            "minWidth": "200px",
+          }
+        }
+      >
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -odd"
+            role="row"
+            style={undefined}
+          >
+            <div
+              className="rt-td"
+              onClick={[Function]}
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              Tanner Linsley
+            </div>
+            <div
+              className="rt-td"
+              onClick={[Function]}
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              26
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="pagination-bottom"
+    >
+      <div
+        className="pv4 ph3 mw8 center"
+      >
+        <div
+          className="flex items-center justify-between"
+        >
+          <button
+            className="hk-button--disabled-tertiary"
+            disabled={true}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value={undefined}
+          >
+             
+            Previous
+             
+          </button>
+          <div
+            className="purple"
+          >
+            <button
+              className="hk-button--tertiary bg-lightest-purple"
+              disabled={false}
+              onClick={[Function]}
+              title={undefined}
+              type="button"
+              value={undefined}
+            >
+               
+              1
+               
+            </button>
+          </div>
+          <button
+            className="hk-button--disabled-tertiary"
+            disabled={true}
+            onClick={[Function]}
+            title={undefined}
+            type="button"
+            value={undefined}
+          >
+             
+            Next
+             
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="-loading"
+    >
+      <div
+        className="-loading-inner"
+      >
+        Loading...
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKTable Without Pagination 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="ReactTable"
+    style={Object {}}
+  >
+    <div
+      className="rt-table"
+      role="grid"
+      style={undefined}
+    >
+      <div
+        className="rt-thead -header"
+        style={
+          Object {
+            "minWidth": "200px",
+          }
+        }
+      >
+        <div
+          className="rt-tr"
+          role="row"
+          style={undefined}
+        >
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            onClick={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <div
+                className="pa2 dark-gray tl ttc b f5 flex items-center"
+              >
+                <svg
+                  className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
+                  style={
+                    Object {
+                      "height": "16px",
+                      "width": "16px",
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#direction-down-16"
+                  />
+                </svg>
+                Name
+              </div>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            onClick={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <div
+                className="pa2 dark-gray tl ttc b f5 flex items-center"
+              >
+                Age
+              </div>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="rt-tbody"
+        style={
+          Object {
+            "minWidth": "200px",
+          }
+        }
+      >
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -odd"
+            role="row"
+            style={undefined}
+          >
+            <div
+              className="rt-td"
+              onClick={[Function]}
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              Tanner Linsley
+            </div>
+            <div
+              className="rt-td"
+              onClick={[Function]}
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              26
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -odd"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tr-group"
+          role="rowgroup"
+        >
+          <div
+            className="rt-tr -padRow -even"
+            role="row"
+            style={Object {}}
+          >
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+            <div
+              className="rt-td"
+              role="gridcell"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+            >
+              <span>
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="-loading"
+    >
+      <div
+        className="-loading-inner"
+      >
+        Loading...
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKTableHeader Asc 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="pa2 dark-gray tl ttc b f5 flex items-center"
+  >
+    <svg
+      className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
+      style={
+        Object {
+          "height": "16px",
+          "width": "16px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#direction-down-16"
+      />
+    </svg>
+    Title
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKTableHeader Desc 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="pa2 dark-gray tl ttc b f5 flex items-center"
+  >
+    <svg
+      className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
+      style={
+        Object {
+          "height": "16px",
+          "width": "16px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#direction-up-16"
+      />
+    </svg>
+    Title
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKTableHeader Unsorted 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="pa2 dark-gray tl ttc b f5 flex items-center"
+  >
+    Title
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKTablePagination beginning 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="pv4 ph3 mw8 center"
+  >
+    <div
+      className="flex items-center justify-between"
+    >
+      <button
+        className="hk-button--disabled-tertiary"
+        disabled={true}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Previous
+         
+      </button>
+      <div
+        className="purple"
+      >
+        <button
+          className="hk-button--tertiary bg-lightest-purple"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          1
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          2
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          3
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          4
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          5
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          6
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          7
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          8
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          9
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          10
+           
+        </button>
+      </div>
+      <button
+        className="hk-button--tertiary"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Next
+        <svg
+          className="malibu-fill-gradient-purple ml1"
+          style={
+            Object {
+              "height": "16px",
+              "width": "16px",
+            }
+          }
+        >
+          <use
+            xlinkHref="#direction-right-28"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKTablePagination end 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="pv4 ph3 mw8 center"
+  >
+    <div
+      className="flex items-center justify-between"
+    >
+      <button
+        className="hk-button--tertiary"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        <svg
+          className="malibu-fill-gradient-purple mr1"
+          style={
+            Object {
+              "height": "16px",
+              "width": "16px",
+            }
+          }
+        >
+          <use
+            xlinkHref="#direction-left-28"
+          />
+        </svg>
+        Previous
+         
+      </button>
+      <div
+        className="purple"
+      >
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          11
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          12
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          13
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          14
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          15
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          16
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          17
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          18
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          19
+           
+        </button>
+        <button
+          className="hk-button--tertiary bg-lightest-purple"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          20
+           
+        </button>
+      </div>
+      <button
+        className="hk-button--disabled-tertiary"
+        disabled={true}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Next
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKTablePagination middle 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <div
+    className="pv4 ph3 mw8 center"
+  >
+    <div
+      className="flex items-center justify-between"
+    >
+      <button
+        className="hk-button--tertiary"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        <svg
+          className="malibu-fill-gradient-purple mr1"
+          style={
+            Object {
+              "height": "16px",
+              "width": "16px",
+            }
+          }
+        >
+          <use
+            xlinkHref="#direction-left-28"
+          />
+        </svg>
+        Previous
+         
+      </button>
+      <div
+        className="purple"
+      >
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          6
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          7
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          8
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          9
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          10
+           
+        </button>
+        <button
+          className="hk-button--tertiary bg-lightest-purple"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          11
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          12
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          13
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          14
+           
+        </button>
+        <button
+          className="hk-button--tertiary"
+          disabled={false}
+          onClick={[Function]}
+          title={undefined}
+          type="button"
+          value={undefined}
+        >
+           
+          15
+           
+        </button>
+      </div>
+      <button
+        className="hk-button--tertiary"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Next
+        <svg
+          className="malibu-fill-gradient-purple ml1"
+          style={
+            Object {
+              "height": "16px",
+              "width": "16px",
+            }
+          }
+        >
+          <use
+            xlinkHref="#direction-right-28"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
