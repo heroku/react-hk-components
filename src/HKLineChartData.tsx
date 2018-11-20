@@ -188,7 +188,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
         r={2}
       />) : null)
 
-    const timeStamp = dayjs(xScale.invert(hoverIndex)).format('ddd, MMM D YYYY h:mm A')
+    const timeStamp = dayjs(xScale.invert(hoverIndex)).format('ddd, MMM D, YYYY h:mm A')
     const indicator = isHovering && (
       <g>
         <line x1={hoverPos} y1='0' x2={hoverPos} y2={height} stroke='#79589f' strokeWidth='1' />
