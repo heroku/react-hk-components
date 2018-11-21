@@ -1,6 +1,8 @@
+import classnames from 'classnames'
 import * as React from 'react'
 
 interface ITextFieldProps {
+  className?: string,
   autoSelect?: boolean,
   disabled?: boolean,
   name?: string,
@@ -17,8 +19,10 @@ const defaultProps = {
 }
 
 const HKTextField: React.SFC<ITextFieldProps> = (props) => {
-  const { placeholder, value, type, onChange, name, readOnly, disabled, autoSelect } = props
-  const inputClass = `hk-input${readOnly ? '--read-only' : ''}`
+  const { placeholder, value, type, onChange, name, readOnly, disabled, autoSelect, className } = props
+  const purpleClass = `hk-input${readOnly ? '--read-only' : ''}`
+  const inputClass = classnames(purpleClass, className)
+
   const handleFocus = (e) => {
     if (autoSelect) {
       e.target.select()

@@ -13,6 +13,9 @@ storiesOf('HKTextField', module)
   .add('default, type PASSWORD', () => {
     return <HKTextField onChange={action('onChange event')} value='1234' placeholder='Enter some text' type='password' />
   })
+  .add('default, custom class', () => {
+    return <HKTextField className='f1 w-100 red' onChange={action('onChange event')} value='Hello world' placeholder='Enter some text' type='text' />
+  })
   .add('disabled', () => {
     return <HKTextField disabled={true} value='1234' placeholder='Enter some text' type='text' />
   })
