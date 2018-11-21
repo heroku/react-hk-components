@@ -16,7 +16,7 @@ const defaultProps = {
   type: 'text',
 }
 
-const HKTextField: React.FunctionComponent<ITextFieldProps> = (props) => {
+const HKTextField: React.SFC<ITextFieldProps> = (props) => {
   const { placeholder, value, type, onChange, name, readOnly, disabled, autoSelect } = props
   const inputClass = `hk-input${readOnly ? '--read-only' : ''}`
   const handleFocus = (e) => {

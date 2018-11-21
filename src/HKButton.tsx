@@ -31,7 +31,7 @@ const defaultProps = {
   type: Type.Secondary,
 }
 
-const HKButton: React.FunctionComponent<IButtonProps> = (props) => {
+const HKButton: React.SFC<IButtonProps> = (props) => {
   const { onClick, async = false, title, value, children, disabled = false, type = 'secondary', small = false, className = '' } = props
   const testId = props['data-testid']
   const conditionalTestId = testId && {
