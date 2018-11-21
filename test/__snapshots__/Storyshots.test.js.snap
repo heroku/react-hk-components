@@ -7241,3 +7241,118 @@ exports[`Storyshots HKTablePagination middle 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots HKTextField autoSelect true 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <input
+    className="hk-input"
+    disabled={undefined}
+    name={undefined}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Enter some text"
+    type="text"
+    value="Hello world"
+  />
+</div>
+`;
+
+exports[`Storyshots HKTextField blank 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <input
+    className="hk-input"
+    disabled={undefined}
+    name={undefined}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Enter some text"
+    type="text"
+    value=""
+  />
+</div>
+`;
+
+exports[`Storyshots HKTextField default, type PASSWORD 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <input
+    className="hk-input"
+    disabled={undefined}
+    name={undefined}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Enter some text"
+    type="password"
+    value="1234"
+  />
+</div>
+`;
+
+exports[`Storyshots HKTextField default, type TEXT 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <input
+    className="hk-input"
+    disabled={undefined}
+    name={undefined}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Enter some text"
+    type="text"
+    value="Hello world"
+  />
+</div>
+`;
+
+exports[`Storyshots HKTextField readOnly true 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <input
+    className="hk-input--read-only"
+    disabled={true}
+    name={undefined}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Enter some text"
+    type="text"
+    value="Hello world"
+  />
+</div>
+`;
