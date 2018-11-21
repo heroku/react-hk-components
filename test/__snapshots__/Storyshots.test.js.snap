@@ -7259,6 +7259,7 @@ exports[`Storyshots HKTextField autoSelect true 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
+    readOnly={undefined}
     type="text"
     value="Hello world"
   />
@@ -7282,6 +7283,7 @@ exports[`Storyshots HKTextField blank 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
+    readOnly={undefined}
     type="text"
     value=""
   />
@@ -7305,6 +7307,7 @@ exports[`Storyshots HKTextField default, type PASSWORD 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
+    readOnly={undefined}
     type="password"
     value="1234"
   />
@@ -7328,6 +7331,55 @@ exports[`Storyshots HKTextField default, type TEXT 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
+    readOnly={undefined}
+    type="text"
+    value="Hello world"
+  />
+</div>
+`;
+
+exports[`Storyshots HKTextField disabled 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <input
+    className="hk-input"
+    disabled={true}
+    name={undefined}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Enter some text"
+    readOnly={undefined}
+    type="text"
+    value="1234"
+  />
+</div>
+`;
+
+exports[`Storyshots HKTextField readOnly + autoSelect 1`] = `
+<div>
+  <span
+    className="SVGInline"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+  <input
+    className="hk-input--read-only"
+    disabled={undefined}
+    name={undefined}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Enter some text"
+    readOnly={true}
     type="text"
     value="Hello world"
   />
@@ -7346,11 +7398,12 @@ exports[`Storyshots HKTextField readOnly true 1`] = `
   />
   <input
     className="hk-input--read-only"
-    disabled={true}
+    disabled={undefined}
     name={undefined}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
+    readOnly={true}
     type="text"
     value="Hello world"
   />

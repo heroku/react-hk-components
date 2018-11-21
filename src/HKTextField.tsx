@@ -24,7 +24,7 @@ const HKTextField: React.SFC<ITextFieldProps> = (props) => {
       e.target.select()
     }
   }
-  return <input onFocus={handleFocus} disabled={readOnly || disabled} name={name} onChange={onChange} value={value} type={type} className={inputClass} placeholder={placeholder} />
+  return <input onFocus={handleFocus} readOnly={readOnly} disabled={disabled} name={name} onChange={onChange} value={value} type={type} className={inputClass} placeholder={placeholder} />
 }
 
 HKTextField.defaultProps = defaultProps

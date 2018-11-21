@@ -13,9 +13,15 @@ storiesOf('HKTextField', module)
   .add('default, type PASSWORD', () => {
     return <HKTextField onChange={action('onChange event')} value='1234' placeholder='Enter some text' type='password' />
   })
+  .add('disabled', () => {
+    return <HKTextField disabled={true} value='1234' placeholder='Enter some text' type='text' />
+  })
   .add('autoSelect true', () => {
     return <HKTextField autoSelect={true} onChange={action('onChange event')} value='Hello world' placeholder='Enter some text' type='text' />
   })
   .add('readOnly true', () => {
     return <HKTextField readOnly={true} value='Hello world' placeholder='Enter some text' type='text' />
+  })
+  .add('readOnly + autoSelect', () => {
+    return <HKTextField readOnly={true} autoSelect={true} value='Hello world' placeholder='Enter some text' type='text' />
   })
