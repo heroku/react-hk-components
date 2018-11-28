@@ -7,7 +7,7 @@
   "author": "Idan Gazit <idan@heroku.com>",
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
-    "@heroku/react-malibu": "3.2.0",
+    "@heroku/react-malibu": "^4.0.0",
     "classnames": "^2.2.6",
     "d3": "^5.4.0",
     "dayjs": "^1.7.7",

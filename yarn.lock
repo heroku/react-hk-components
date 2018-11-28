@@ -780,13 +780,13 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.1.3.tgz#b700d97385fa91affed60c71dfd51c67e9dad762"
   integrity sha512-QsYGKdhhuDFNq7bjm2r44y0mp5xW3uO3csuTPDWZc0OIiMQv+AIY5Cqwd4mJiC5N8estVl7qlvOx1hbtOuUWbw==
 
-"@heroku/react-malibu@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@heroku/react-malibu/-/react-malibu-3.2.0.tgz#b282464605789328d7a7e0f14732e67225deb864"
-  integrity sha512-ZgwKEdaeIZcCdVX64pDXrEJPrtmlDsvVg8rZW8pg6C26kOvbg3kuRhPiTbQCKFzDZ+vhjYC9m8g+q0CNtV3ssQ==
+"@heroku/react-malibu@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@heroku/react-malibu/-/react-malibu-4.0.0.tgz#11a73743f4e79d6c209f4439115edb93367b6a00"
+  integrity sha512-yMlMvvoPS/NNPPIv1g44GnPEkA5mbE7Xg3eFDeVHm824IrA52hULw/gFmQFtJ24PcKT0RHxxlVTRmibI+i46GQ==
   dependencies:
     babel-polyfill "^6.23.0"
-    prop-types "^15.5.10"
+    prop-types "^15.6.2"
     react-svg-inline "^2.0.0"
     whatwg-fetch "^2.0.3"
 
