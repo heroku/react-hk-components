@@ -84,7 +84,7 @@
     "eslint": "eslint ./src",
     "tslint": "tslint -c tslint.json --project .",
     "lint": "yarn run eslint && yarn run tslint",
-    "storybook": "start-storybook -p ${PORT:-9001} -s ./src/static -c .storybook",
+    "storybook": "start-storybook --ci -p ${PORT:-9001} -s ./src/static -c .storybook",
     "build": "yarn run clean && tsc --project tsconfig.build.json && webpack",
     "clean": "rm -rf ./dist",
     "prepublish": "yarn run build",
