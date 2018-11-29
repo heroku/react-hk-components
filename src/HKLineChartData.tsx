@@ -54,7 +54,7 @@ export default class HKLineChartData extends React.PureComponent<ILineChartDataP
     const { width, height, data } = newProps
     const chartHeight = height - ChartPadding.Vertical
     const chartWidth = width - ChartPadding.Horizontal
-    const values = flatMap(data.map((d) => d[1]))
+    const values = flatMap(data, (d) => d[1])
 
     // Cleanse data into valid format(date and values)
     // Make sure our coordinates are sorted by date asscending
