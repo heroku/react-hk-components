@@ -174,7 +174,11 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
             onClose={this.handleClose}
           >
             <div className={classnames('hk-modal-header f4 flex items-center justify-center br--top br2', { 'bg-near-white bb b--light-silver pa4': header, 'red': type === 'destructive' })}>
-              {header && <div>{header}</div>}
+              {/*
+                N.B.: without the wrapper div here, React gets confused because of multiple dynamic children
+                and warns about missing `key` props. There may be a better way to work around this.
+              */
+              header && <div>{header}</div>}
               {dismissElem}
             </div>
 
