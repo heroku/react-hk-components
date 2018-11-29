@@ -3648,9 +3648,7 @@ exports[`Storyshots HKModal/initially open default 1`] = `
           className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4"
         >
           <div>
-            <div>
-              header text
-            </div>
+            header text
           </div>
           <div
             className="right-1 absolute pointer"
@@ -3765,9 +3763,7 @@ exports[`Storyshots HKModal/initially open default without footer 1`] = `
           className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4"
         >
           <div>
-            <div>
-              header text
-            </div>
+            header text
           </div>
           <div
             className="right-1 absolute pointer"
@@ -4050,9 +4046,7 @@ exports[`Storyshots HKModal/initially open destructive 1`] = `
           className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4 red"
         >
           <div>
-            <div>
-              header text
-            </div>
+            header text
           </div>
           <div
             className="right-1 absolute pointer"
@@ -4173,9 +4167,7 @@ exports[`Storyshots HKModal/initially open flyout 1`] = `
           className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4"
         >
           <div>
-            <div>
-              header text
-            </div>
+            header text
           </div>
           <div
             className="right-1 absolute pointer"
@@ -4296,9 +4288,7 @@ exports[`Storyshots HKModal/initially open flyout without footer 1`] = `
           className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4"
         >
           <div>
-            <div>
-              header text
-            </div>
+            header text
           </div>
           <div
             className="right-1 absolute pointer"
@@ -4593,9 +4583,7 @@ exports[`Storyshots HKModal/initially open with confirmation 1`] = `
           className="hk-modal-header f4 flex items-center justify-center br--top br2 bg-near-white bb b--light-silver pa4 red"
         >
           <div>
-            <div>
-              header text
-            </div>
+            header text
           </div>
           <div
             className="right-1 absolute pointer"

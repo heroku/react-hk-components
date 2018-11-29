@@ -175,10 +175,10 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
           >
             <div className={classnames('hk-modal-header f4 flex items-center justify-center br--top br2', { 'bg-near-white bb b--light-silver pa4': header, 'red': type === 'destructive' })}>
               {/*
-                N.B.: without the wrapper div here, React gets confused because of multiple dynamic children
-                and warns about missing `key` props. There may be a better way to work around this.
+                N.B.: without the wrapper div Fragment, React gets confused because of
+                multiple dynamic children and warns about missing `key` props.
               */
-              header && <div>{header}</div>}
+              header && <React.Fragment>{header}</React.Fragment>}
               {dismissElem}
             </div>
 
