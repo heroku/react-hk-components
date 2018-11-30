@@ -51,8 +51,18 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
 
   public handleContentClick = () => this.props.closeOnClick && this.setState({ showDropdown: false })
 
-  public handleClose = (e) => {
-    const eventNodes = e.path.filter((node) => {
+  public handleClickOutside = (e) => {
+    // When closing by clicking on the menu button again,
+    // both this handler and handleDropdown will fire.
+    // Make sure we noop in that scenario so that the dropdown actually closes.
+    const path = e.path || (e.composedPath && e.composedPath())
+    if (!path) {
+      this.setState({
+        showDropdown: false,
+      })
+      return
+    }
+    const eventNodes = path.filter((node) => {
       return node.nodeType === 1
     })
     const didClickButton = eventNodes.some((node) => {
@@ -86,7 +96,7 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
         </Reference>
         {
           showDropdown && (
-            <OutsideClickHandler onOutsideClick={this.handleClose}>
+            <OutsideClickHandler onOutsideClick={this.handleClickOutside}>
               <Popper placement={popperPlacement}>
                 {({ ref, style, placement }) => (
                   <div className='z-max' onClick={this.handleContentClick} data-testid={`${name}-dropdown-content`} ref={ref} style={style} data-placement={placement}>
