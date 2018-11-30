@@ -52,7 +52,14 @@ export default class HKDropdown extends React.Component<IDropdownProps, IDropdow
   public handleContentClick = () => this.props.closeOnClick && this.setState({ showDropdown: false })
 
   public handleClose = (e) => {
-    const eventNodes = e.path.filter((node) => {
+    const path = e.path || (e.composedPath && e.composedPath())
+    if (!path) {
+      this.setState({
+        showDropdown: false,
+      })
+      return
+    }
+    const eventNodes = path.filter((node) => {
       return node.nodeType === 1
     })
     const didClickButton = eventNodes.some((node) => {
