@@ -45,6 +45,8 @@ interface ILineChartDataState {
 }
 
 export default class HKLineChartData extends React.PureComponent<ILineChartDataProps, ILineChartDataState> {
+  public static displayName = 'HKLineChartData'
+
   // setState based on new props passed
   public static getDerivedStateFromProps (newProps, prevState) {
     if (['data', 'width', 'height'].every((o) => newProps[o] === prevState[o])) {

@@ -11,6 +11,8 @@ interface IResizeContainerState {
 }
 
 export default class HKResizeContainer extends React.PureComponent<IResizeContainerProps, IResizeContainerState> {
+  public static displayName = 'HKResizeContainer'
+
   constructor (props) {
     super(props)
 

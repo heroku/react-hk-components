@@ -20,6 +20,8 @@ interface IFlagIconProps {
 }
 
 export default class HKFlagIcon extends React.Component<IFlagIconProps> {
+  public static displayName = 'HKFlagIcon'
+
   public static defaultProps = {
     basePath: '/static/dist/flags/',
     className: '',

@@ -18,6 +18,7 @@ interface ILineChartState {
 }
 
 export default class HKLineChart extends React.Component<ILineChartProps, ILineChartState> {
+  public static displayName = 'HKLineChart'
 
   constructor (props) {
     super(props)
