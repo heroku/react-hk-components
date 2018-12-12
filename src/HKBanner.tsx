@@ -26,6 +26,8 @@ interface IBannerProps {
 }
 
 export default class HKBanner extends React.Component<IBannerProps> {
+  public static displayName = 'HKBanner'
+
   private typeMap = {
     [BannerType.generic]: ButtonType.Secondary,
     [BannerType.info]: ButtonType.Info,

@@ -56,6 +56,8 @@ Dramatis personae of the event flow in this component
 9. T     F   T   F   Controlling component wants us to display! gDSFP will take us to step 3.
 */
 export default class HKModal extends React.Component<IModalProps, IModalState> {
+  public static displayName = 'HKModal'
+
   public static defaultProps: Partial<IModalProps> = {
     isFlyout: false,
   }

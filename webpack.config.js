@@ -22,8 +22,7 @@ module.exports = {
     minimizer: [
       new UglifyJsPlugin({
         uglifyOptions: {
-          mangle: false,
-          keep_fnames: true,
+          keep_fnames: true
         }
       })
     ]

@@ -775,10 +775,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.1.3.tgz#b700d97385fa91affed60c71dfd51c67e9dad762"
   integrity sha512-QsYGKdhhuDFNq7bjm2r44y0mp5xW3uO3csuTPDWZc0OIiMQv+AIY5Cqwd4mJiC5N8estVl7qlvOx1hbtOuUWbw==
 
-"@heroku/react-malibu@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@heroku/react-malibu/-/react-malibu-4.0.0.tgz#11a73743f4e79d6c209f4439115edb93367b6a00"
-  integrity sha512-yMlMvvoPS/NNPPIv1g44GnPEkA5mbE7Xg3eFDeVHm824IrA52hULw/gFmQFtJ24PcKT0RHxxlVTRmibI+i46GQ==
+"@heroku/react-malibu@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@heroku/react-malibu/-/react-malibu-4.1.0.tgz#b03325736a7b52a2591aeffb01981083c88f1663"
+  integrity sha512-+yaDtUOSVJ2Tj9wT1490lnB0DYmbWIYyQfpvxEZX8SH9eIR5zDtxOpkIIbmsNIHBtp0kvKnYnyFPPz1rkyfjBQ==
   dependencies:
     babel-polyfill "^6.23.0"
     prop-types "^15.6.2"

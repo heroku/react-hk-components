@@ -61,5 +61,6 @@ const HKButton: React.FunctionComponent<IButtonProps> = (props) => {
 }
 
 HKButton.defaultProps = defaultProps
+HKButton.displayName = 'HKButton'
 
 export default HKButton

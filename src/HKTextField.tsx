@@ -32,5 +32,6 @@ const HKTextField: React.FunctionComponent<ITextFieldProps> = (props) => {
 }
 
 HKTextField.defaultProps = defaultProps
+HKTextField.displayName = 'HKTextField'
 
 export default HKTextField

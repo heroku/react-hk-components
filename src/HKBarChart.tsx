@@ -17,6 +17,7 @@ interface IBarChartState {
 }
 
 export default class HKBarChart extends React.Component<IBarChartProps, IBarChartState> {
+  public static displayName = 'HKBarChart'
 
   constructor (props) {
     super(props)

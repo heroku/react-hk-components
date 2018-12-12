@@ -7,6 +7,7 @@ interface ILineProps {
 }
 
 export default class HKLine extends React.PureComponent<ILineProps, {}> {
+  public static displayName = 'HKLine'
 
   public render () {
     const { line, area, data } = this.props

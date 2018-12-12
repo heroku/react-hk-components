@@ -30,6 +30,7 @@ interface IBarChartDataState {
 }
 
 export default class HKBarChartData extends React.PureComponent<IBarChartDataProps, IBarChartDataState> {
+  public static displayName = 'HKBarChartData'
 
   public static getDerivedStateFromProps (newProps, prevState) {
     if (['data', 'width', 'height', 'toggleInfo'].every((o) => newProps[o] === prevState[o])) {

@@ -6,5 +6,9 @@ import {
   default as HKTablePagination,
 } from './HKTablePagination'
 
-const HKTable = (props) => <ReactTable {...props} PaginationComponent={HKTablePagination} />
+const HKTable: React.FunctionComponent<any> = (props) => {
+  return <ReactTable {...props} PaginationComponent={HKTablePagination} />
+}
+
+HKTable.displayName = 'HKTable'
 export default HKTable

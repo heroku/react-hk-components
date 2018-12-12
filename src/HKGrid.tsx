@@ -12,6 +12,8 @@ interface IGridProps {
 }
 
 export default class HKGrid extends React.PureComponent<IGridProps, {}> {
+  public static displayName = 'HKGrid'
+
   public render () {
     const { width, height, type, yScale } = this.props
 

@@ -16,6 +16,8 @@ interface IHKLegendItemProps {
 }
 
 export default class HKLegendItem extends React.PureComponent<IHKLegendItemProps, {}> {
+  public static displayName = 'HKLegendItem'
+
   public static defaultProps = {
     disableToggle: false,
   }

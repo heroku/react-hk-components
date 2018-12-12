@@ -11,6 +11,8 @@ interface IHKTooltipProps {
 }
 
 export default class HKTooltip extends React.PureComponent<IHKTooltipProps, {}> {
+  public static displayName = 'HKTooltip'
+
   public render () {
     const { children, height, width, xPos, yPos, style } = this.props
     const styleProps = {

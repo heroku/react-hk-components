@@ -30,6 +30,8 @@ interface IDropdownState {
 }
 
 export default class HKDropdown extends React.Component<IDropdownProps, IDropdownState> {
+  public static displayName = 'HKDropdown'
+
   public static defaultProps = {
     closeOnClick: true,
     disabled: false,

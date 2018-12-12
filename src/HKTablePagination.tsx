@@ -34,7 +34,7 @@ const buildPager = (totalItems, currentPage, pageSize) => {
   return range(startPage, endPage + 1)
 }
 
-const HKTablePagination = (props: IPaginationProps) => {
+const HKTablePagination: React.FunctionComponent<any> = (props: IPaginationProps) => {
   const { page, pages, onPageChange } = props
 
   const currentPage = page + 1
@@ -80,4 +80,5 @@ const HKTablePagination = (props: IPaginationProps) => {
   )
 }
 
+HKTablePagination.displayName = 'HKTablePagination'
 export default HKTablePagination
