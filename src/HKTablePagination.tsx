@@ -1,15 +1,12 @@
 import { MalibuIcon } from '@heroku/react-malibu'
 import { range } from 'lodash-es'
 import * as React from 'react'
-import {
-  default as HKButton,
-  Type,
-} from './HKButton'
+import { default as HKButton, Type } from './HKButton'
 
 interface IPaginationProps {
-  onPageChange: (...args: any[]) => any,
-  page: number,
-  pages: number,
+  onPageChange: (...args: any[]) => any
+  page: number
+  pages: number
 }
 
 const buildPager = (totalItems, currentPage, pageSize) => {
@@ -34,7 +31,9 @@ const buildPager = (totalItems, currentPage, pageSize) => {
   return range(startPage, endPage + 1)
 }
 
-const HKTablePagination: React.FunctionComponent<any> = (props: IPaginationProps) => {
+const HKTablePagination: React.FunctionComponent<any> = (
+  props: IPaginationProps
+) => {
   const { page, pages, onPageChange } = props
 
   const currentPage = page + 1
@@ -42,12 +41,12 @@ const HKTablePagination: React.FunctionComponent<any> = (props: IPaginationProps
   const nextDisabled = currentPage === pages
   const visiblePages = buildPager(pages, currentPage, 1)
 
-  const jumpTo = (pageNum) => {
+  const jumpTo = pageNum => {
     const index = pageNum - 1
     onPageChange(index)
   }
 
-  const handlePageClick = (pageNum) => () => jumpTo(pageNum)
+  const handlePageClick = pageNum => () => jumpTo(pageNum)
 
   const onPrevious = () => {
     onPageChange(page - 1)
@@ -59,21 +58,46 @@ const HKTablePagination: React.FunctionComponent<any> = (props: IPaginationProps
   return (
     <div className='pv4 ph3 mw8 center'>
       <div className='flex items-center justify-between'>
-        <HKButton type={Type.Tertiary} onClick={onPrevious} disabled={prevDisabled}>
-          {!prevDisabled && <MalibuIcon name='direction-left-28' size={16} fillClass='purple' extraClasses='mr1'/>}
+        <HKButton
+          type={Type.Tertiary}
+          onClick={onPrevious}
+          disabled={prevDisabled}
+        >
+          {!prevDisabled && (
+            <MalibuIcon
+              name='direction-left-28'
+              size={16}
+              fillClass='purple'
+              extraClasses='mr1'
+            />
+          )}
           Previous
         </HKButton>
         <div className='purple'>
-          {
-            visiblePages.map((p) => {
-              const isActive = p === currentPage
-              return <HKButton className={isActive ? 'bg-lightest-purple' : ''} key={p} type={Type.Tertiary} onClick={handlePageClick(p)}>{p}</HKButton>
-            })
-          }
+          {visiblePages.map(p => {
+            const isActive = p === currentPage
+            return (
+              <HKButton
+                className={isActive ? 'bg-lightest-purple' : ''}
+                key={p}
+                type={Type.Tertiary}
+                onClick={handlePageClick(p)}
+              >
+                {p}
+              </HKButton>
+            )
+          })}
         </div>
         <HKButton type={Type.Tertiary} onClick={onNext} disabled={nextDisabled}>
           Next
-          {!nextDisabled && <MalibuIcon name='direction-right-28' size={16} fillClass='purple' extraClasses='ml1'/>}
+          {!nextDisabled && (
+            <MalibuIcon
+              name='direction-right-28'
+              size={16}
+              fillClass='purple'
+              extraClasses='ml1'
+            />
+          )}
         </HKButton>
       </div>
     </div>

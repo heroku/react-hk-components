@@ -3,10 +3,7 @@ import classnames from 'classnames'
 import * as React from 'react'
 import { Transition } from 'react-transition-group'
 import SRMModal from 'simple-react-modal'
-import {
-  default as HKButton,
-  Type as ButtonType,
-} from './HKButton'
+import { default as HKButton, Type as ButtonType } from './HKButton'
 
 export enum Type {
   Actionable = 'actionable',
@@ -15,26 +12,26 @@ export enum Type {
 }
 
 interface IButtonDefinition {
-  classNames?: string,
-  disabled: boolean,
-  text: string,
-  type: ButtonType,
-  value: string,
+  classNames?: string
+  disabled: boolean
+  text: string
+  type: ButtonType
+  value: string
 }
 
 interface IModalProps {
-  children: React.ReactNode,
-  header?: React.ReactNode,
-  buttons?: IButtonDefinition[],
-  isFlyout?: boolean,
-  onDismiss: (value?: string) => any,
-  show: boolean,
-  type?: Type,
+  children: React.ReactNode
+  header?: React.ReactNode
+  buttons?: IButtonDefinition[]
+  isFlyout?: boolean
+  onDismiss: (value?: string) => any
+  show: boolean
+  type?: Type
 }
 
 interface IModalState {
-  isShowing: boolean,
-  isClosing: boolean,
+  isShowing: boolean
+  isClosing: boolean
 }
 
 /*
@@ -62,7 +59,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
     isFlyout: false,
   }
 
-  public static getDerivedStateFromProps (props, state) {
+  public static getDerivedStateFromProps(props, state) {
     if (props.show) {
       // reset state, we're showing the thing and not closing at all
       return { isShowing: true, isClosing: false }
@@ -89,12 +86,16 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
   }
 
   public handleExited = (node: Element) => {
-    node.addEventListener('transitionend', () => {
-      this.setState({ isShowing: false })
-    }, false)
+    node.addEventListener(
+      'transitionend',
+      () => {
+        this.setState({ isShowing: false })
+      },
+      false
+    )
   }
 
-  public render () {
+  public render() {
     const duration = 250
     const { children, onDismiss, header, buttons, isFlyout, type } = this.props
     const { isShowing, isClosing } = this.state
@@ -110,20 +111,27 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
       exiting: { background: 'rgba(0, 0, 0, .2)', opacity: 1 },
     }
 
-    const innerTransition = isFlyout ? {
-      transform: 'translateX(100%)',
-      transition: `transform ${duration}ms cubic-bezier(0,1,0.5,1)`,
-    } : {}
+    const innerTransition = isFlyout
+      ? {
+          transform: 'translateX(100%)',
+          transition: `transform ${duration}ms cubic-bezier(0,1,0.5,1)`,
+        }
+      : {}
 
-    const innerStyles = isFlyout ? {
-      entered: { transform: 'translateX(0)', width: '350px' },
-      entering: { transform: 'translateX(100%)', width: '350px' },
-      exited: { transform: 'translateX(100%)', width: '350px' },
-      exiting: { transform: 'translateX(0)', width: '350px' },
-    } : {}
+    const innerStyles = isFlyout
+      ? {
+          entered: { transform: 'translateX(0)', width: '350px' },
+          entering: { transform: 'translateX(100%)', width: '350px' },
+          exited: { transform: 'translateX(100%)', width: '350px' },
+          exiting: { transform: 'translateX(0)', width: '350px' },
+        }
+      : {}
 
     const dismissElem = onDismiss && (
-      <div className={classnames('right-1 absolute pointer', { 'top-1': !header })} onClick={this.handleClose}>
+      <div
+        className={classnames('right-1 absolute pointer', { 'top-1': !header })}
+        onClick={this.handleClose}
+      >
         <MalibuIcon
           name='delete-16'
           fillClass='dark-gray'
@@ -146,20 +154,32 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
       'flex-auto': isFlyout,
     }
 
-    const footer = (buttons || []).map((b) => (
-      <HKButton key={b.value} value={b.value} type={b.type} disabled={b.disabled} onClick={this.handleButtonClick} className={classnames('ml1', b.classNames)}>{b.text}</HKButton>
+    const footer = (buttons || []).map(b => (
+      <HKButton
+        key={b.value}
+        value={b.value}
+        type={b.type}
+        disabled={b.disabled}
+        onClick={this.handleButtonClick}
+        className={classnames('ml1', b.classNames)}
+      >
+        {b.text}
+      </HKButton>
     ))
 
     // in={!isClosing} is derived from the state table at the top of this component
     return (
       <Transition in={!isClosing} timeout={0} onExited={this.handleExited}>
-        {(state) => (
+        {state => (
           <SRMModal
             containerStyle={{
               ...innerTransition,
               ...innerStyles[state],
             }}
-            containerClassName={classnames('bg-white shadow-outer-1 relative', modalClass)}
+            containerClassName={classnames(
+              'bg-white shadow-outer-1 relative',
+              modalClass
+            )}
             style={{
               bottom: 0,
               left: 0,
@@ -175,7 +195,15 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
             show={isShowing}
             onClose={this.handleClose}
           >
-            <div className={classnames('hk-modal-header f4 flex items-center justify-center br--top br2', { 'bg-near-white bb b--light-silver pa4': header, 'red': type === 'destructive' })}>
+            <div
+              className={classnames(
+                'hk-modal-header f4 flex items-center justify-center br--top br2',
+                {
+                  'bg-near-white bb b--light-silver pa4': header,
+                  red: type === 'destructive',
+                }
+              )}
+            >
               {/*
                 N.B.: without the wrapper div Fragment, React gets confused because of
                 multiple dynamic children and warns about missing `key` props.
@@ -186,7 +214,9 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
 
             <div className={classnames(modalChildrenClass)}>{children}</div>
 
-            {buttons && <div className='bt b--light-silver w-100 pa3 tr'>{footer}</div>}
+            {buttons && (
+              <div className='bt b--light-silver w-100 pa3 tr'>{footer}</div>
+            )}
           </SRMModal>
         )}
       </Transition>
