@@ -11,16 +11,16 @@ export enum Type {
 }
 
 interface IButtonProps {
-  async?: boolean,
-  children: React.ReactNode,
-  className?: string,
-  'data-testid'?: string,
-  disabled?: boolean,
-  onClick?: (e: React.MouseEvent<HTMLElement>) => void,
-  small?: boolean,
-  title?: string,
-  type?: Type,
-  value?: string,
+  async?: boolean
+  children: React.ReactNode
+  className?: string
+  'data-testid'?: string
+  disabled?: boolean
+  onClick?: (e: React.MouseEvent<HTMLElement>) => void
+  small?: boolean
+  title?: string
+  type?: Type
+  value?: string
 }
 
 const defaultProps = {
@@ -31,8 +31,18 @@ const defaultProps = {
   type: Type.Secondary,
 }
 
-const HKButton: React.FunctionComponent<IButtonProps> = (props) => {
-  const { onClick, async = false, title, value, children, disabled = false, type = 'secondary', small = false, className = '' } = props
+const HKButton: React.FunctionComponent<IButtonProps> = props => {
+  const {
+    onClick,
+    async = false,
+    title,
+    value,
+    children,
+    disabled = false,
+    type = 'secondary',
+    small = false,
+    className = '',
+  } = props
   const testId = props['data-testid']
   const conditionalTestId = testId && {
     'data-testid': testId,
@@ -56,7 +66,18 @@ const HKButton: React.FunctionComponent<IButtonProps> = (props) => {
   }
 
   return (
-    <button type='button' {...conditionalTestId} className={buttonClass} disabled={disabled} onClick={handleClick} title={title} value={value || title}> {children} </button>
+    <button
+      type='button'
+      {...conditionalTestId}
+      className={buttonClass}
+      disabled={disabled}
+      onClick={handleClick}
+      title={title}
+      value={value || title}
+    >
+      {' '}
+      {children}{' '}
+    </button>
   )
 }
 

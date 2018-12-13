@@ -14,9 +14,9 @@ export enum Regions {
 }
 
 interface IFlagIconProps {
-  basePath?: string,
-  className?: string,
-  region: Regions,
+  basePath?: string
+  className?: string
+  region: Regions
 }
 
 export default class HKFlagIcon extends React.Component<IFlagIconProps> {
@@ -26,9 +26,15 @@ export default class HKFlagIcon extends React.Component<IFlagIconProps> {
     basePath: '/static/dist/flags/',
     className: '',
   }
-  public render () {
+  public render() {
     const { className, basePath, region } = this.props
     const src = `${basePath}region-${region}`
-    return (<img src={`${src}.png`} srcSet={`${src}.png 1x, ${src}@2x.png 2x`} className={className} />)
+    return (
+      <img
+        src={`${src}.png`}
+        srcSet={`${src}.png 1x, ${src}@2x.png 2x`}
+        className={className}
+      />
+    )
   }
 }

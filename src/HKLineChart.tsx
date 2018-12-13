@@ -7,20 +7,23 @@ import { default as HKResizeContainer } from './HKResizeContainer'
 import { getMaxValues, getNumVisibleCharts } from './helpers'
 
 interface ILineChartProps {
-  data: any, // Assumes the data comes in the format [{time, value =[1,2,] },...]
-  height: number,
-  labels: string[],
+  data: any // Assumes the data comes in the format [{time, value =[1,2,] },...]
+  height: number
+  labels: string[]
 }
 
 interface ILineChartState {
-  hoverInfo: object,
-  toggleInfo: object,
+  hoverInfo: object
+  toggleInfo: object
 }
 
-export default class HKLineChart extends React.Component<ILineChartProps, ILineChartState> {
+export default class HKLineChart extends React.Component<
+  ILineChartProps,
+  ILineChartState
+> {
   public static displayName = 'HKLineChart'
 
-  constructor (props) {
+  constructor(props) {
     super(props)
     const hoverInfo = {}
     const toggleInfo = {}
@@ -38,7 +41,7 @@ export default class HKLineChart extends React.Component<ILineChartProps, ILineC
     }
   }
 
-  public render () {
+  public render() {
     const { hoverInfo, toggleInfo } = this.state
     const legend = this.props.labels.map((label, i) => (
       <HKLegendItem
@@ -49,34 +52,43 @@ export default class HKLineChart extends React.Component<ILineChartProps, ILineC
         show={toggleInfo[`${label}-${i}`]}
         onToggle={this.handleToggle}
         value={hoverInfo[`${label}-${i}`]}
-        disableToggle={toggleInfo[`${label}-${i}`] && getNumVisibleCharts(toggleInfo) === 1}
+        disableToggle={
+          toggleInfo[`${label}-${i}`] && getNumVisibleCharts(toggleInfo) === 1
+        }
       />
     ))
 
     return (
       <div className='flex'>
         <HKResizeContainer>
-          {(width) => (<HKLineChartData {...this.props} width={width} onHover={this.handleHover} toggleInfo={toggleInfo}/>)}
+          {width => (
+            <HKLineChartData
+              {...this.props}
+              width={width}
+              onHover={this.handleHover}
+              toggleInfo={toggleInfo}
+            />
+          )}
         </HKResizeContainer>
-        <div className='w6'>
-          {legend}
-        </div>
+        <div className='w6'>{legend}</div>
       </div>
     )
   }
 
-  private handleHover = (values) => {
+  private handleHover = values => {
     const hoverInfo = {}
 
-    this.props.labels.forEach((label, index) => hoverInfo[`${label}-${index}`] = values[index])
+    this.props.labels.forEach(
+      (label, index) => (hoverInfo[`${label}-${index}`] = values[index])
+    )
     this.setState({ hoverInfo })
   }
 
   private handleToggle = (label, i) =>
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       toggleInfo: {
         ...prevState.toggleInfo,
-        [`${label}-${i}`] : !prevState.toggleInfo[`${label}-${i}`],
+        [`${label}-${i}`]: !prevState.toggleInfo[`${label}-${i}`],
       },
     }))
 }

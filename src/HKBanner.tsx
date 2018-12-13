@@ -2,10 +2,7 @@ import { MalibuIcon } from '@heroku/react-malibu'
 import classnames from 'classnames'
 import * as React from 'react'
 
-import {
-  default as HKButton,
-  Type as ButtonType,
-} from './HKButton'
+import { default as HKButton, Type as ButtonType } from './HKButton'
 
 export enum BannerType {
   generic = 'generic',
@@ -16,13 +13,13 @@ export enum BannerType {
 }
 
 interface IBannerProps {
-  buttonText?: string,
-  title?: string,
-  children: JSX.Element | JSX.Element[] | string,
-  className?: string,
-  icon: string,
-  onClick?: () => void,
-  type: BannerType,
+  buttonText?: string
+  title?: string
+  children: JSX.Element | JSX.Element[] | string
+  className?: string
+  icon: string
+  onClick?: () => void
+  type: BannerType
 }
 
 export default class HKBanner extends React.Component<IBannerProps> {
@@ -44,16 +41,34 @@ export default class HKBanner extends React.Component<IBannerProps> {
     warning: 'orange',
   }
 
-  public render () {
+  public render() {
     const { buttonText, children, type, icon, title, className } = this.props
     let button
     if (buttonText) {
-      button = <HKButton type={this.typeMap[type]} onClick={this.handleClick} className='flex-none'>{buttonText}</HKButton>
+      button = (
+        <HKButton
+          type={this.typeMap[type]}
+          onClick={this.handleClick}
+          className='flex-none'
+        >
+          {buttonText}
+        </HKButton>
+      )
     }
 
     return (
-      <div className={classnames(`hk-banner--${type} flex items-center pv2`, className)}>
-        <MalibuIcon name={icon} size={24} fillClass={this.colorMap[type]} extraClasses='mr2 flex-none' />
+      <div
+        className={classnames(
+          `hk-banner--${type} flex items-center pv2`,
+          className
+        )}
+      >
+        <MalibuIcon
+          name={icon}
+          size={24}
+          fillClass={this.colorMap[type]}
+          extraClasses='mr2 flex-none'
+        />
         <div className='flex-auto'>
           {title && <div className='b'>{title}</div>}
           {children}

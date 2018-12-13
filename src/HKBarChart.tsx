@@ -6,20 +6,23 @@ import { default as HKLegendItem } from './HKLegendItem'
 import { default as HKResizeContainer } from './HKResizeContainer'
 
 interface IBarChartProps {
-  data: any,
-  height: number,
-  labels: string[],
+  data: any
+  height: number
+  labels: string[]
 }
 
 interface IBarChartState {
-  hoverInfo: object,
-  toggleInfo: object,
+  hoverInfo: object
+  toggleInfo: object
 }
 
-export default class HKBarChart extends React.Component<IBarChartProps, IBarChartState> {
+export default class HKBarChart extends React.Component<
+  IBarChartProps,
+  IBarChartState
+> {
   public static displayName = 'HKBarChart'
 
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     const hoverInfo = {}
@@ -38,7 +41,7 @@ export default class HKBarChart extends React.Component<IBarChartProps, IBarChar
     }
   }
 
-  public render () {
+  public render() {
     const { hoverInfo, toggleInfo } = this.state
     const { labels } = this.props
 
@@ -58,11 +61,16 @@ export default class HKBarChart extends React.Component<IBarChartProps, IBarChar
     return (
       <div className='flex'>
         <HKResizeContainer>
-          {(width) => (<HKBarChartData {...this.props} width={width} onHover={this.handleHover} toggleInfo={toggleInfo} />)}
+          {width => (
+            <HKBarChartData
+              {...this.props}
+              width={width}
+              onHover={this.handleHover}
+              toggleInfo={toggleInfo}
+            />
+          )}
         </HKResizeContainer>
-        <div className='w6'>
-          {legend}
-        </div>
+        <div className='w6'>{legend}</div>
       </div>
     )
   }
@@ -70,21 +78,21 @@ export default class HKBarChart extends React.Component<IBarChartProps, IBarChar
   private handleToggle = (label, i) => {
     const maxValues = getMaxValues(this.props.data, 'bar')
 
-    this.setState((prevState) => ({
-      hoverInfo : {
+    this.setState(prevState => ({
+      hoverInfo: {
         ...prevState.hoverInfo,
-        [i] : !prevState.toggleInfo[i] ? maxValues[i] : null,
+        [i]: !prevState.toggleInfo[i] ? maxValues[i] : null,
       },
       toggleInfo: {
         ...prevState.toggleInfo,
-        [i] : !prevState.toggleInfo[i],
+        [i]: !prevState.toggleInfo[i],
       },
     }))
   }
 
   private handleHover = (values, keys) => {
     const hoverInfo = {}
-    keys.forEach((key, index) => hoverInfo[key] = values[index])
+    keys.forEach((key, index) => (hoverInfo[key] = values[index]))
     this.setState({ hoverInfo })
   }
 }

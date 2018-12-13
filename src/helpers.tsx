@@ -1,27 +1,27 @@
 import * as d3array from 'd3-array'
 import { unzip } from 'lodash-es'
 
-export function getMaxValues (data, type = 'line') {
+export function getMaxValues(data, type = 'line') {
   if (!data) {
     return []
   }
 
   if (type === 'line') {
-    data = data.map((d) => d[1])
+    data = data.map(d => d[1])
   }
 
   const values = unzip(data)
-  const maxValues = values.map((value) => d3array.max(value))
+  const maxValues = values.map(value => d3array.max(value))
   return maxValues
 }
 
-export function getNumVisibleCharts (toggleInfo) {
+export function getNumVisibleCharts(toggleInfo) {
   return Object.keys(toggleInfo)
-    .map((key) => toggleInfo[key])
-    .reduce((count, toggled) => toggled ? ++count : count, 0)
+    .map(key => toggleInfo[key])
+    .reduce((count, toggled) => (toggled ? ++count : count), 0)
 }
 
-export function prettier (size) {
+export function prettier(size) {
   if (size === 0) {
     return '0'
   }

@@ -1,6 +1,6 @@
 {
   "plugins": ["react"],
-  "extends": ["standard", "plugin:react/recommended"],
+  "extends": ["plugin:react/recommended", "plugin:prettier/recommended", "prettier/react"],
   "env": {
     "browser": true,
     "node": true,
@@ -10,17 +10,13 @@
     "ecmaFeatures": {
       "jsx": true
     }
-  }
-  ,
+  },
   "rules": {
-    "comma-dangle": ["off", "always-multiline"],
     "import/first": "off",
-    "indent": ["off"],
     "no-unused-expressions": "off",
     "no-unused-vars": "warn",
     "react/jsx-handler-names": "error",
     "react/jsx-key": "error",
-    "react/jsx-tag-spacing": ["error", {"beforeSelfClosing": "always"}],
     "react/jsx-wrap-multilines": "error",
     "react/no-direct-mutation-state": "error",
     "react/sort-comp": "error",
