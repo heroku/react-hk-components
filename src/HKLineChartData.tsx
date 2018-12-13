@@ -4,7 +4,7 @@ import * as d3array from 'd3-array'
 import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
 
-import { head, isFinite, last } from 'lodash-es'
+import { flatMap, head, isFinite, last } from 'lodash-es'
 
 import { differenceInMilliseconds, format, parse } from 'date-fns'
 
@@ -73,7 +73,7 @@ export default class HKLineChartData extends React.PureComponent<
     ]
 
     // Domain of y coordinates (value)
-    const values = data.flatMap(d => d[1])
+    const values = flatMap(data, d => d[1])
     const [minVal, maxVal] = d3array.extent(values)
 
     const xScale = d3scale
