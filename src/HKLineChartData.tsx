@@ -4,7 +4,7 @@ import * as d3array from 'd3-array'
 import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
 
-import { flatMap, head, isFinite, last } from 'lodash-es'
+import { head, isFinite, last } from 'lodash-es'
 
 import { differenceInMilliseconds, format, parse } from 'date-fns'
 
@@ -59,7 +59,6 @@ export default class HKLineChartData extends React.PureComponent<
     const { width, height, data } = newProps
     const chartHeight = height - ChartPadding.Vertical
     const chartWidth = width - ChartPadding.Horizontal
-    const values = flatMap(data, d => d[1])
 
     // Cleanse data into valid format(date and values)
     // Make sure our coordinates are sorted by date asscending
@@ -74,7 +73,8 @@ export default class HKLineChartData extends React.PureComponent<
     ]
 
     // Domain of y coordinates (value)
-    const valueExtent = d3array.extent(values)
+    const values = data.flatMap(d => d[1])
+    const [minVal, maxVal] = d3array.extent(values)
 
     const xScale = d3scale
       .scaleTime()
@@ -83,7 +83,7 @@ export default class HKLineChartData extends React.PureComponent<
 
     const yScale = d3scale
       .scaleLinear()
-      .domain([Math.min(valueExtent[0], 0), valueExtent[1]])
+      .domain([Math.min(minVal, 0), maxVal])
       .range([chartHeight, 0])
 
     const line = d3shape
@@ -95,7 +95,7 @@ export default class HKLineChartData extends React.PureComponent<
     const area = d3shape
       .area()
       .x(d => xScale(d.x))
-      .y0(yScale(valueExtent[0] < 0 ? yScale(valueExtent) : 0))
+      .y0(yScale(Math.min(minVal, 0)))
       .y1(d => yScale(d.y))
       .curve(d3shape.curveStepBefore)
     return {
@@ -234,11 +234,9 @@ export default class HKLineChartData extends React.PureComponent<
     return (
       <div>
         {isHovering && (
-          <HKTooltip
-            xPos={hoverPos}
-            yPos={height / 3}
-            children={`${timeStamp}`}
-          />
+          <HKTooltip xPos={hoverPos} yPos={height / 3}>
+            {timeStamp}
+          </HKTooltip>
         )}
         <svg
           preserveAspectRatio='none'
