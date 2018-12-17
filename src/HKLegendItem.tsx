@@ -56,6 +56,11 @@ export default class HKLegendItem extends React.PureComponent<
       </div>
     )
 
+    // As per: https://stackoverflow.com/a/24437562
+    // If a null value is sent through, let's
+    // short-circuit to a non-breaking space
+    const legendValue = value || '\u00a0'
+
     return (
       <a
         className={classnames({ 'cursor-hand': !disableToggle })}
@@ -72,7 +77,7 @@ export default class HKLegendItem extends React.PureComponent<
           {legendIcon}
           <div className='items-center'>
             <span className='db ma1 ttu f7 tracked'>{label}</span>
-            <span className='db ma1 ttu b f6'>{value}</span>
+            <span className='db ma1 ttu b f6'>{legendValue}</span>
           </div>
         </div>
       </a>
