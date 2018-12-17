@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/react'
 import * as React from 'react'
 import Select from 'react-select'
 import { default as HKIcon, Fill } from '../src/HKIcon'
-import { Product, Marketing } from '../src/IconNames'
+import { Marketing, Product } from '../src/IconNames'
 
 const ColorOption = props => {
   return (
