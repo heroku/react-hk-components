@@ -1,8 +1,9 @@
 import { storiesOf } from '@storybook/react'
 import * as React from 'react'
 import Select from 'react-select'
-import { default as HKIcon, Fill } from '../src/HKIcon'
-import { Marketing, Product } from '../src/IconNames'
+import { Fills } from '../src'
+import { MarketingIcons, ProductIcons } from '../src'
+import { default as HKIcon } from '../src/HKIcon'
 
 const ColorOption = props => {
   return (
@@ -28,22 +29,22 @@ const IconOption = props => {
   )
 }
 
-const fillNames = Object.keys(Fill)
+const fillNames = Object.keys(Fills)
 const fillOptions = fillNames.map(n => ({
   label: n,
-  value: Fill[n],
+  value: Fills[n],
 }))
 
-const productIconNames = Object.keys(Product)
+const productIconNames = Object.keys(ProductIcons)
 const productIconOptions = productIconNames.map(n => ({
   label: n,
-  value: Product[n],
+  value: ProductIcons[n],
 }))
 
-const marketingIconNames = Object.keys(Marketing)
+const marketingIconNames = Object.keys(MarketingIcons)
 const marketingIconOptions = marketingIconNames.map(n => ({
   label: n,
-  value: Marketing[n],
+  value: MarketingIcons[n],
 }))
 
 interface IPickerProps {
