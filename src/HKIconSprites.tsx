@@ -1,13 +1,13 @@
 import * as React from 'react'
 import SVG from 'react-inlinesvg'
 
-export enum SpriteSet {
+export enum Sprites {
   Product = '',
   Marketing = 'marketing',
 }
 
 interface ISpriteProps {
-  set?: SpriteSet
+  set?: Sprites
   version?: string
 }
 
@@ -21,7 +21,7 @@ const HKIconSprites: React.FunctionComponent<ISpriteProps> = ({
 }
 
 HKIconSprites.defaultProps = {
-  set: SpriteSet.Product,
+  set: Sprites.Product,
   version: 'latest',
 }
 HKIconSprites.displayName = 'HKIconSprites'
