@@ -55,7 +55,7 @@ export default class HKLegendItem extends React.PureComponent<
         </svg>
       </div>
     )
-
+    const legendValue = value === null ? '\u00a0' : value
     return (
       <a
         className={classnames({ 'cursor-hand': !disableToggle })}
@@ -72,7 +72,7 @@ export default class HKLegendItem extends React.PureComponent<
           {legendIcon}
           <div className='items-center'>
             <span className='db ma1 ttu f7 tracked'>{label}</span>
-            <span className='db ma1 ttu b f6'>{value}</span>
+            <span className='db ma1 ttu b f6'>{legendValue}</span>
           </div>
         </div>
       </a>
