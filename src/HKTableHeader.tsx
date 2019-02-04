@@ -18,15 +18,18 @@ const HKTableHeader: React.FunctionComponent<any> = ({
   id,
   sort,
 }: IHeaderPropTypes) => {
-  return (
-    <div className='pa2 dark-gray tl ttc b f5 flex items-center'>
-      {sort.id === id && (
+  const sortUi = sort
+    ? sort.id === id && (
         <MalibuIcon
           name={sort.desc ? 'direction-up-16' : 'direction-down-16'}
           size={16}
           extraClasses={classnames('malibu-fill-gradient-dark-gray')}
         />
-      )}
+      )
+    : null
+  return (
+    <div className='pa2 dark-gray tl ttc b f5 flex items-center'>
+      {sortUi}
       {label}
     </div>
   )
