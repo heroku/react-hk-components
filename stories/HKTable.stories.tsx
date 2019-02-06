@@ -40,3 +40,11 @@ storiesOf('HKTable', module)
   .add(`With Pagination`, () => (
     <HKTable showPagination={true} columns={columns} data={paginatedData} />
   ))
+  .add(`Fixed Height With Pagination`, () => (
+    <HKTable
+      height={400}
+      showPagination={true}
+      columns={columns}
+      data={paginatedData}
+    />
+  ))
