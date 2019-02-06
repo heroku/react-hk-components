@@ -5399,6 +5399,1093 @@ exports[`Storyshots HKModal/initially open with confirmation 1`] = `
 </div>
 `;
 
+exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
+<div>
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <div>
+    <div
+      className="ReactTable"
+      style={
+        Object {
+          "height": "400px",
+        }
+      }
+    >
+      <div
+        className="rt-table"
+        role="grid"
+        style={undefined}
+      >
+        <div
+          className="rt-thead -header"
+          style={
+            Object {
+              "minWidth": "200px",
+            }
+          }
+        >
+          <div
+            className="rt-tr"
+            role="row"
+            style={undefined}
+          >
+            <div
+              className="rt-th rt-resizable-header -cursor-pointer"
+              onClick={[Function]}
+              role="columnheader"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+              tabIndex="-1"
+            >
+              <div
+                className="rt-resizable-header-content"
+              >
+                <div
+                  className="pa2 dark-gray tl ttc b f5 flex items-center"
+                >
+                  <svg
+                    className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
+                    style={
+                      Object {
+                        "height": "16px",
+                        "width": "16px",
+                      }
+                    }
+                  >
+                    <use
+                      xlinkHref="#direction-down-16"
+                    />
+                  </svg>
+                  Name
+                </div>
+              </div>
+              <div
+                className="rt-resizer"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+              />
+            </div>
+            <div
+              className="rt-th rt-resizable-header -cursor-pointer"
+              onClick={[Function]}
+              role="columnheader"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+              tabIndex="-1"
+            >
+              <div
+                className="rt-resizable-header-content"
+              >
+                <div
+                  className="pa2 dark-gray tl ttc b f5 flex items-center"
+                >
+                  Age
+                </div>
+              </div>
+              <div
+                className="rt-resizer"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tbody"
+          style={
+            Object {
+              "minWidth": "200px",
+            }
+          }
+        >
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -odd"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -even"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -odd"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -even"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -odd"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -even"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -odd"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -even"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -odd"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -even"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -odd"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -even"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -odd"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -even"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -odd"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -even"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -odd"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -even"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -odd"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tr-group"
+            role="rowgroup"
+          >
+            <div
+              className="rt-tr -even"
+              role="row"
+              style={undefined}
+            >
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                Matt Rothenberg
+              </div>
+              <div
+                className="rt-td"
+                onClick={[Function]}
+                role="gridcell"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+              >
+                18
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="pagination-bottom"
+      >
+        <div
+          className="pv4 ph3 mw8 center"
+        >
+          <div
+            className="flex items-center justify-between"
+          >
+            <button
+              className="hk-button--disabled-tertiary"
+              disabled={true}
+              onClick={[Function]}
+              title={undefined}
+              type="button"
+              value={undefined}
+            >
+               
+              Previous
+               
+            </button>
+            <div
+              className="purple"
+            >
+              <button
+                className="hk-button--tertiary bg-lightest-purple"
+                disabled={false}
+                onClick={[Function]}
+                title={undefined}
+                type="button"
+                value={undefined}
+              >
+                 
+                1
+                 
+              </button>
+              <button
+                className="hk-button--tertiary"
+                disabled={false}
+                onClick={[Function]}
+                title={undefined}
+                type="button"
+                value={undefined}
+              >
+                 
+                2
+                 
+              </button>
+              <button
+                className="hk-button--tertiary"
+                disabled={false}
+                onClick={[Function]}
+                title={undefined}
+                type="button"
+                value={undefined}
+              >
+                 
+                3
+                 
+              </button>
+              <button
+                className="hk-button--tertiary"
+                disabled={false}
+                onClick={[Function]}
+                title={undefined}
+                type="button"
+                value={undefined}
+              >
+                 
+                4
+                 
+              </button>
+              <button
+                className="hk-button--tertiary"
+                disabled={false}
+                onClick={[Function]}
+                title={undefined}
+                type="button"
+                value={undefined}
+              >
+                 
+                5
+                 
+              </button>
+              <button
+                className="hk-button--tertiary"
+                disabled={false}
+                onClick={[Function]}
+                title={undefined}
+                type="button"
+                value={undefined}
+              >
+                 
+                6
+                 
+              </button>
+              <button
+                className="hk-button--tertiary"
+                disabled={false}
+                onClick={[Function]}
+                title={undefined}
+                type="button"
+                value={undefined}
+              >
+                 
+                7
+                 
+              </button>
+              <button
+                className="hk-button--tertiary"
+                disabled={false}
+                onClick={[Function]}
+                title={undefined}
+                type="button"
+                value={undefined}
+              >
+                 
+                8
+                 
+              </button>
+              <button
+                className="hk-button--tertiary"
+                disabled={false}
+                onClick={[Function]}
+                title={undefined}
+                type="button"
+                value={undefined}
+              >
+                 
+                9
+                 
+              </button>
+              <button
+                className="hk-button--tertiary"
+                disabled={false}
+                onClick={[Function]}
+                title={undefined}
+                type="button"
+                value={undefined}
+              >
+                 
+                10
+                 
+              </button>
+            </div>
+            <button
+              className="hk-button--tertiary"
+              disabled={false}
+              onClick={[Function]}
+              title={undefined}
+              type="button"
+              value={undefined}
+            >
+               
+              Next
+              <svg
+                className="malibu-fill-gradient-purple ml1"
+                style={
+                  Object {
+                    "height": "16px",
+                    "width": "16px",
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#direction-right-28"
+                />
+              </svg>
+               
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="-loading"
+      >
+        <div
+          className="-loading-inner"
+        >
+          Loading...
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots HKTable With Pagination 1`] = `
 <div>
   <span

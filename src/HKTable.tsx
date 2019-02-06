@@ -9,17 +9,35 @@ const HKTable: React.FunctionComponent<any> = props => {
 
   const handlePageChange = (...args) => {
     if (tableRef.current) {
-      tableRef.current.scrollIntoView()
+      const isFixedHeight = !!props.height
+      if (isFixedHeight) {
+        const scrollableTbody = tableRef.current.querySelector(
+          '.rt-tbody'
+        ) as HTMLDivElement
+        if (scrollableTbody) {
+          scrollableTbody.scrollTo(0, 0)
+        }
+      } else {
+        tableRef.current.scrollIntoView()
+      }
     }
+
     if (props.onPageChange) {
       props.onPageChange(...args)
     }
   }
 
+  const heightStyle = props.height
+    ? {
+        height: `${props.height}px`,
+      }
+    : null
+
   return (
     <div ref={tableRef}>
       <ReactTable
         {...props}
+        style={heightStyle}
         onPageChange={handlePageChange}
         PaginationComponent={HKTablePagination}
       />
