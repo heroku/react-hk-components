@@ -5496,7 +5496,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 className="rt-resizable-header-content"
               >
                 <div
-                  className="pa2 dark-gray ttc b f5 flex items-center"
+                  className="pa2 dark-gray ttc b f5 flex items-center justify-end"
                 >
                   Age
                 </div>
@@ -5547,6 +5547,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -5586,6 +5587,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -5625,6 +5627,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -5664,6 +5667,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -5703,6 +5707,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -5742,6 +5747,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -5781,6 +5787,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -5820,6 +5827,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -5859,6 +5867,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -5898,6 +5907,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -5937,6 +5947,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -5976,6 +5987,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6015,6 +6027,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6054,6 +6067,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6093,6 +6107,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6132,6 +6147,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6171,6 +6187,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6210,6 +6227,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6249,6 +6267,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6288,6 +6307,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6579,7 +6599,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 className="rt-resizable-header-content"
               >
                 <div
-                  className="pa2 dark-gray ttc b f5 flex items-center"
+                  className="pa2 dark-gray ttc b f5 flex items-center justify-end"
                 >
                   Age
                 </div>
@@ -6630,6 +6650,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6669,6 +6690,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6708,6 +6730,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6747,6 +6770,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6786,6 +6810,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6825,6 +6850,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6864,6 +6890,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6903,6 +6930,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6942,6 +6970,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -6981,6 +7010,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7020,6 +7050,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7059,6 +7090,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7098,6 +7130,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7137,6 +7170,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7176,6 +7210,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7215,6 +7250,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7254,6 +7290,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7293,6 +7330,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7332,6 +7370,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7371,6 +7410,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7662,7 +7702,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 className="rt-resizable-header-content"
               >
                 <div
-                  className="pa2 dark-gray ttc b f5 flex items-center"
+                  className="pa2 dark-gray ttc b f5 flex items-center justify-end"
                 >
                   Age
                 </div>
@@ -7713,6 +7753,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7752,6 +7793,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7793,6 +7835,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7834,6 +7877,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7875,6 +7919,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7916,6 +7961,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7957,6 +8003,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -7998,6 +8045,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -8039,6 +8087,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -8080,6 +8129,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -8121,6 +8171,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -8162,6 +8213,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -8203,6 +8255,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -8244,6 +8297,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -8285,6 +8339,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -8326,6 +8381,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -8367,6 +8423,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -8408,6 +8465,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -8449,6 +8507,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }
@@ -8490,6 +8549,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 style={
                   Object {
                     "flex": "100 0 auto",
+                    "justifyContent": "flex-end",
                     "maxWidth": null,
                     "width": "100px",
                   }

@@ -5,6 +5,16 @@ import { default as HKTable } from '../src/HKTable'
 
 import { default as HKTableHeader } from '../src/HKTableHeader'
 
+let sort = {
+  desc: false,
+  id: 'name',
+}
+
+const handleSortChange = clickedColumns => {
+  const [column] = clickedColumns
+  sort = column
+}
+
 const data = [
   {
     age: 26,
@@ -17,34 +27,45 @@ const paginatedData = Array.from(new Array(500), () => ({
   name: 'Matt Rothenberg',
 }))
 
-const sort = {
-  desc: false,
-  id: 'name',
-}
-
 const columns = [
   {
     Header: () => <HKTableHeader label='Name' id='name' sort={sort} />,
     accessor: 'name',
   },
   {
-    Header: () => <HKTableHeader label='Age' id='age' sort={sort} />,
+    Header: () => (
+      <HKTableHeader className='justify-end' label='Age' id='age' sort={sort} />
+    ),
     accessor: 'age',
+    style: {
+      justifyContent: 'flex-end',
+    },
   },
 ]
 
 storiesOf('HKTable', module)
   .add(`Without Pagination`, () => (
-    <HKTable showPagination={false} columns={columns} data={data} />
+    <HKTable
+      onSortedChange={handleSortChange}
+      showPagination={false}
+      columns={columns}
+      data={data}
+    />
   ))
   .add(`With Pagination`, () => (
-    <HKTable showPagination={true} columns={columns} data={paginatedData} />
+    <HKTable
+      onSortedChange={handleSortChange}
+      showPagination={true}
+      columns={columns}
+      data={paginatedData}
+    />
   ))
   .add(`Fixed Height With Pagination`, () => (
     <HKTable
       height={400}
       showPagination={true}
       columns={columns}
+      onSortedChange={handleSortChange}
       data={paginatedData}
     />
   ))
