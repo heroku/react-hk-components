@@ -8,12 +8,14 @@ interface ISort {
 }
 
 interface IHeaderPropTypes {
+  className: string
   id: string
   label: string
   sort: ISort
 }
 
 const HKTableHeader: React.FunctionComponent<any> = ({
+  className,
   label,
   id,
   sort,
@@ -28,7 +30,12 @@ const HKTableHeader: React.FunctionComponent<any> = ({
       )
     : null
   return (
-    <div className='pa2 dark-gray tl ttc b f5 flex items-center'>
+    <div
+      className={classnames(
+        'pa2 dark-gray ttc b f5 flex items-center',
+        className
+      )}
+    >
       {sortUi}
       {label}
     </div>

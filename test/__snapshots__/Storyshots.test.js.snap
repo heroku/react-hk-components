@@ -5455,7 +5455,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 className="rt-resizable-header-content"
               >
                 <div
-                  className="pa2 dark-gray tl ttc b f5 flex items-center"
+                  className="pa2 dark-gray ttc b f5 flex items-center"
                 >
                   <svg
                     className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
@@ -5496,7 +5496,7 @@ exports[`Storyshots HKTable Fixed Height With Pagination 1`] = `
                 className="rt-resizable-header-content"
               >
                 <div
-                  className="pa2 dark-gray tl ttc b f5 flex items-center"
+                  className="pa2 dark-gray ttc b f5 flex items-center"
                 >
                   Age
                 </div>
@@ -6538,7 +6538,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 className="rt-resizable-header-content"
               >
                 <div
-                  className="pa2 dark-gray tl ttc b f5 flex items-center"
+                  className="pa2 dark-gray ttc b f5 flex items-center"
                 >
                   <svg
                     className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
@@ -6579,7 +6579,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
                 className="rt-resizable-header-content"
               >
                 <div
-                  className="pa2 dark-gray tl ttc b f5 flex items-center"
+                  className="pa2 dark-gray ttc b f5 flex items-center"
                 >
                   Age
                 </div>
@@ -7621,7 +7621,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 className="rt-resizable-header-content"
               >
                 <div
-                  className="pa2 dark-gray tl ttc b f5 flex items-center"
+                  className="pa2 dark-gray ttc b f5 flex items-center"
                 >
                   <svg
                     className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
@@ -7662,7 +7662,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
                 className="rt-resizable-header-content"
               >
                 <div
-                  className="pa2 dark-gray tl ttc b f5 flex items-center"
+                  className="pa2 dark-gray ttc b f5 flex items-center"
                 >
                   Age
                 </div>
@@ -8530,7 +8530,7 @@ exports[`Storyshots HKTableHeader Asc 1`] = `
     style={undefined}
   />
   <div
-    className="pa2 dark-gray tl ttc b f5 flex items-center"
+    className="pa2 dark-gray ttc b f5 flex items-center"
   >
     <svg
       className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
@@ -8563,7 +8563,7 @@ exports[`Storyshots HKTableHeader Desc 1`] = `
     style={undefined}
   />
   <div
-    className="pa2 dark-gray tl ttc b f5 flex items-center"
+    className="pa2 dark-gray ttc b f5 flex items-center"
   >
     <svg
       className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
@@ -8596,9 +8596,42 @@ exports[`Storyshots HKTableHeader Unsorted 1`] = `
     style={undefined}
   />
   <div
-    className="pa2 dark-gray tl ttc b f5 flex items-center"
+    className="pa2 dark-gray ttc b f5 flex items-center"
   >
     Title
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKTableHeader With custom classes 1`] = `
+<div>
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <div
+    className="pa2 dark-gray ttc b f5 flex items-center justify-end"
+  >
+    <svg
+      className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
+      style={
+        Object {
+          "height": "16px",
+          "width": "16px",
+        }
+      }
+    >
+      <use
+        xlinkHref="#direction-down-16"
+      />
+    </svg>
+    Aligned Right!
   </div>
 </div>
 `;
