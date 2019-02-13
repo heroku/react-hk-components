@@ -94,6 +94,7 @@ export default class HKDropdown extends React.Component<
     const { showDropdown } = this.state
     const popperPlacement =
       align === Align.Right ? 'bottom-end' : 'bottom-start'
+    const iconFillClass = disabled ? 'fill-gray' : 'fill-purple'
     return (
       <Manager>
         <Reference>
@@ -111,7 +112,7 @@ export default class HKDropdown extends React.Component<
                   key='icon'
                   name='caret-16'
                   size={16}
-                  fillClass='fill-purple'
+                  fillClass={iconFillClass}
                   extraClasses={classnames({ pl1: title })}
                 />
               </HKButton>

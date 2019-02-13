@@ -2826,7 +2826,7 @@ exports[`Storyshots HKDropdown disabled 1`] = `
          
         Dropdown
         <svg
-          className="fill-purple pl1"
+          className="fill-gray pl1"
           style={
             Object {
               "height": "16px",
