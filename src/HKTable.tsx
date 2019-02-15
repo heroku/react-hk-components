@@ -29,7 +29,7 @@ const HKTable: React.FunctionComponent<any> = props => {
 
   const heightStyle = props.height
     ? {
-        height: `${props.height}px`,
+        height: `${props.height}`,
       }
     : null
 
