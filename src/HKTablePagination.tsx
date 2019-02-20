@@ -56,7 +56,7 @@ const HKTablePagination: React.FunctionComponent<any> = (
   }
 
   return (
-    <div className='pv4 ph3 mw8 center'>
+    <div className='pv2 ph2 mw8 center'>
       <div className='flex items-center justify-between'>
         <HKButton
           type={Type.Tertiary}

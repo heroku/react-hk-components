@@ -1,3 +1,4 @@
+import classnames from 'classnames'
 import * as React from 'react'
 import ReactTable from 'react-table'
 import './static/styles/table.css'
@@ -29,19 +30,32 @@ const HKTable: React.FunctionComponent<any> = props => {
 
   const heightStyle = props.height
     ? {
-        height: `${props.height}px`,
+        height: `${props.height}`,
       }
     : null
 
+  const tableStyle = {
+    ...props.style,
+    ...heightStyle,
+  }
+
   return (
-    <div ref={tableRef}>
-      <ReactTable
-        {...props}
-        style={heightStyle}
-        onPageChange={handlePageChange}
-        PaginationComponent={HKTablePagination}
-      />
-    </div>
+    <ReactTable
+      {...props}
+      style={tableStyle}
+      onPageChange={handlePageChange}
+      PaginationComponent={HKTablePagination}
+      TableComponent={({ children, className, ...rest }) => (
+        <div
+          ref={tableRef}
+          className={classnames('rt-table', className)}
+          role='grid'
+          {...rest}
+        >
+          {children}
+        </div>
+      )}
+    />
   )
 }
 
