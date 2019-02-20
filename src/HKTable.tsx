@@ -1,12 +1,12 @@
-import * as React from 'react'
+import classnames from 'classnames'
+import React from 'react'
 import ReactTable from 'react-table'
 import './static/styles/table.css'
-import classnames from 'classnames'
 
 import { default as HKTablePagination } from './HKTablePagination'
 
 const HKTable: React.FunctionComponent<any> = props => {
-  let tableRef = React.createRef<HTMLDivElement>()
+  const tableRef = React.createRef<HTMLDivElement>()
 
   const handlePageChange = (...args) => {
     if (tableRef.current) {
