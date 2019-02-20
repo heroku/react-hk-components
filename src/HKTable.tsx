@@ -1,11 +1,12 @@
 import * as React from 'react'
 import ReactTable from 'react-table'
 import './static/styles/table.css'
+import classnames from 'classnames'
 
 import { default as HKTablePagination } from './HKTablePagination'
 
 const HKTable: React.FunctionComponent<any> = props => {
-  const tableRef = React.createRef<HTMLDivElement>()
+  let tableRef = React.createRef<HTMLDivElement>()
 
   const handlePageChange = (...args) => {
     if (tableRef.current) {
@@ -33,15 +34,28 @@ const HKTable: React.FunctionComponent<any> = props => {
       }
     : null
 
+  const tableStyle = {
+    ...props.style,
+    ...heightStyle,
+  }
+
   return (
-    <div ref={tableRef}>
-      <ReactTable
-        {...props}
-        style={heightStyle}
-        onPageChange={handlePageChange}
-        PaginationComponent={HKTablePagination}
-      />
-    </div>
+    <ReactTable
+      {...props}
+      style={tableStyle}
+      onPageChange={handlePageChange}
+      PaginationComponent={HKTablePagination}
+      TableComponent={({ children, className, ...rest }) => (
+        <div
+          ref={tableRef}
+          className={classnames('rt-table', className)}
+          role='grid'
+          {...rest}
+        >
+          {children}
+        </div>
+      )}
+    />
   )
 }
 

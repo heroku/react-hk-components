@@ -69,6 +69,18 @@ storiesOf('HKTable', module)
       data={paginatedData}
     />
   ))
+  .add(`Fixed Height (px) With Pagination and Custom Style`, () => (
+    <HKTable
+      style={{
+        background: 'red',
+        maxHeight: 200,
+      }}
+      showPagination={true}
+      columns={columns}
+      onSortedChange={handleSortChange}
+      data={paginatedData}
+    />
+  ))
   .add(`Fixed Height (vh) With Pagination`, () => (
     <HKTable
       height={'100vh'}
