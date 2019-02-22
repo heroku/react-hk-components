@@ -9,3 +9,4 @@ dist
 .nyc_output-*/
 .cache
 stats.json
+/yarn-error.log
