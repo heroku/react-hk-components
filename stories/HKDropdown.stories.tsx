@@ -2,8 +2,8 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import * as React from 'react'
 
-import { Align, default as HKDropdown } from '../src/HKDropdown'
 import { Type } from '../src/HKButton'
+import { Align, default as HKDropdown } from '../src/HKDropdown'
 
 const dropdownProps = [
   {
@@ -14,8 +14,8 @@ const dropdownProps = [
   },
   {
     props: {
-      title: 'Dropdown',
       small: true,
+      title: 'Dropdown',
     },
     storyName: 'small',
   },
