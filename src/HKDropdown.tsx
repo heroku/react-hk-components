@@ -5,6 +5,7 @@ import OutsideClickHandler from 'react-outside-click-handler'
 import { Manager, Popper, Reference } from 'react-popper'
 
 import { default as HKButton, Type } from './HKButton'
+import { default as HKIcon } from './HKIcon'
 
 export enum Align {
   Left = 'left',
@@ -19,7 +20,9 @@ interface IDropdownProps {
   contentClassName?: string // dropdown content styling
   disabled?: boolean
   name?: string // name of the dropdown, used for testing in testID
+  small?: boolean
   title?: string
+  type?: Type
 }
 
 interface IDropdownState {
@@ -36,6 +39,8 @@ export default class HKDropdown extends React.Component<
     closeOnClick: true,
     disabled: false,
     name: 'hkdropdown',
+    small: false,
+    type: Type.Secondary,
   }
 
   public state = {
@@ -89,12 +94,13 @@ export default class HKDropdown extends React.Component<
       contentClassName,
       disabled,
       name,
+      small,
       title,
+      type,
     } = this.props
     const { showDropdown } = this.state
     const popperPlacement =
       align === Align.Right ? 'bottom-end' : 'bottom-start'
-    const iconFillClass = disabled ? 'fill-gray' : 'fill-purple'
     return (
       <Manager>
         <Reference>
@@ -104,16 +110,15 @@ export default class HKDropdown extends React.Component<
                 onClick={this.handleDropdown}
                 data-testid={this.testId()}
                 className={classnames({ ph1: !title }, className)}
-                type={Type.Secondary}
+                type={type}
+                small={small}
                 disabled={disabled}
               >
                 {title}
-                <MalibuIcon
-                  key='icon'
+                <HKIcon
                   name='caret-16'
                   size={16}
-                  fillClass={iconFillClass}
-                  extraClasses={classnames({ pl1: title })}
+                  className={classnames({ pl1: title })}
                 />
               </HKButton>
             </div>

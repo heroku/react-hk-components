@@ -2685,11 +2685,12 @@ exports[`Storyshots HKDropdown align left 1`] = `
          
         Dropdown
         <svg
-          className="fill-purple pl1"
+          className="pl1"
           style={
             Object {
-              "height": "16px",
-              "width": "16px",
+              "fill": "currentColor",
+              "height": 16,
+              "width": 16,
             }
           }
         >
@@ -2732,11 +2733,60 @@ exports[`Storyshots HKDropdown align right 1`] = `
          
         Dropdown
         <svg
-          className="fill-purple pl1"
+          className="pl1"
           style={
             Object {
-              "height": "16px",
-              "width": "16px",
+              "fill": "currentColor",
+              "height": 16,
+              "width": 16,
+            }
+          }
+        >
+          <use
+            xlinkHref="#caret-16"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown danger 1`] = `
+<div>
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <div>
+    <div
+      className="relative dib"
+    >
+      <button
+        className="hk-button--danger"
+        data-testid="story-dropdown-button"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Dropdown
+        <svg
+          className="pl1"
+          style={
+            Object {
+              "fill": "currentColor",
+              "height": 16,
+              "width": 16,
             }
           }
         >
@@ -2779,11 +2829,12 @@ exports[`Storyshots HKDropdown default 1`] = `
          
         Dropdown
         <svg
-          className="fill-purple pl1"
+          className="pl1"
           style={
             Object {
-              "height": "16px",
-              "width": "16px",
+              "fill": "currentColor",
+              "height": 16,
+              "width": 16,
             }
           }
         >
@@ -2826,11 +2877,12 @@ exports[`Storyshots HKDropdown disabled 1`] = `
          
         Dropdown
         <svg
-          className="fill-gray pl1"
+          className="pl1"
           style={
             Object {
-              "height": "16px",
-              "width": "16px",
+              "fill": "currentColor",
+              "height": 16,
+              "width": 16,
             }
           }
         >
@@ -2873,11 +2925,12 @@ exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
          
         Dropdown
         <svg
-          className="fill-purple pl1"
+          className="pl1"
           style={
             Object {
-              "height": "16px",
-              "width": "16px",
+              "fill": "currentColor",
+              "height": 16,
+              "width": 16,
             }
           }
         >
@@ -2919,11 +2972,108 @@ exports[`Storyshots HKDropdown no title 1`] = `
       >
          
         <svg
-          className="fill-purple"
+          className=""
           style={
             Object {
-              "height": "16px",
-              "width": "16px",
+              "fill": "currentColor",
+              "height": 16,
+              "width": 16,
+            }
+          }
+        >
+          <use
+            xlinkHref="#caret-16"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown primary 1`] = `
+<div>
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <div>
+    <div
+      className="relative dib"
+    >
+      <button
+        className="hk-button--primary"
+        data-testid="story-dropdown-button"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Dropdown
+        <svg
+          className="pl1"
+          style={
+            Object {
+              "fill": "currentColor",
+              "height": 16,
+              "width": 16,
+            }
+          }
+        >
+          <use
+            xlinkHref="#caret-16"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown small 1`] = `
+<div>
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <div>
+    <div
+      className="relative dib"
+    >
+      <button
+        className="hk-button-sm--secondary"
+        data-testid="story-dropdown-button"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Dropdown
+        <svg
+          className="pl1"
+          style={
+            Object {
+              "fill": "currentColor",
+              "height": 16,
+              "width": 16,
             }
           }
         >

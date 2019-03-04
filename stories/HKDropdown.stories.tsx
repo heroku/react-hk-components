@@ -2,10 +2,8 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import * as React from 'react'
 
-import {
-  Align,
-  default as HKDropdown,
-} from '../src/HKDropdown'
+import { Type } from '../src/HKButton'
+import { Align, default as HKDropdown } from '../src/HKDropdown'
 
 const dropdownProps = [
   {
@@ -13,6 +11,27 @@ const dropdownProps = [
       title: 'Dropdown',
     },
     storyName: 'default',
+  },
+  {
+    props: {
+      small: true,
+      title: 'Dropdown',
+    },
+    storyName: 'small',
+  },
+  {
+    props: {
+      title: 'Dropdown',
+      type: Type.Primary,
+    },
+    storyName: 'primary',
+  },
+  {
+    props: {
+      title: 'Dropdown',
+      type: Type.Danger,
+    },
+    storyName: 'danger',
   },
   {
     props: {
@@ -50,16 +69,28 @@ const dropdownProps = [
 ]
 
 const stories = storiesOf(`HKDropdown`, module)
-dropdownProps.forEach((dropdown) => {
+dropdownProps.forEach(dropdown => {
   stories.add(dropdown.storyName, () => (
     <div>
       <HKDropdown name='story' {...dropdown.props}>
-        <li className='hk-dropdown-item' onClick={action('Dropdown-item called')}>
+        <li
+          className='hk-dropdown-item'
+          onClick={action('Dropdown-item called')}
+        >
           Callback executed onClick
         </li>
-        <li><a className='hk-dropdown-item' href='https://www.google.com'>External link </a></li>
-        <li className='hk-dropdown-divider'/>
-        <li className='hk-dropdown-item--danger' onClick={action('Dropdown-item called')}>Dangerous action </li>
+        <li>
+          <a className='hk-dropdown-item' href='https://www.google.com'>
+            External link{' '}
+          </a>
+        </li>
+        <li className='hk-dropdown-divider' />
+        <li
+          className='hk-dropdown-item--danger'
+          onClick={action('Dropdown-item called')}
+        >
+          Dangerous action{' '}
+        </li>
       </HKDropdown>
     </div>
   ))

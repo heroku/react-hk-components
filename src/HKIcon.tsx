@@ -10,7 +10,6 @@ interface IIconProps {
 }
 
 const defaultProps = {
-  fill: Fills.Black,
   size: 16,
 }
 
@@ -22,7 +21,13 @@ const HKIcon: React.FunctionComponent<IIconProps> = ({
 }) => {
   const href = `#${name}`
   const svgClass = classNames(fill, className)
+  const currentColorDefault = !fill
+    ? {
+        fill: 'currentColor',
+      }
+    : null
   const style = {
+    ...currentColorDefault,
     height: size,
     width: size,
   }
