@@ -5604,7 +5604,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
               className="rt-resizable-header-content"
             >
               <div
-                className="pa2 dark-gray ttc b f5 flex items-center"
+                className="pa2 dark-gray b f5 flex items-center"
               >
                 <svg
                   className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
@@ -5645,7 +5645,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
               className="rt-resizable-header-content"
             >
               <div
-                className="pa2 dark-gray ttc b f5 flex items-center justify-end"
+                className="pa2 dark-gray b f5 flex items-center justify-end"
               >
                 Age
               </div>
@@ -6710,7 +6710,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
               className="rt-resizable-header-content"
             >
               <div
-                className="pa2 dark-gray ttc b f5 flex items-center"
+                className="pa2 dark-gray b f5 flex items-center"
               >
                 <svg
                   className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
@@ -6751,7 +6751,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
               className="rt-resizable-header-content"
             >
               <div
-                className="pa2 dark-gray ttc b f5 flex items-center justify-end"
+                className="pa2 dark-gray b f5 flex items-center justify-end"
               >
                 Age
               </div>
@@ -7815,7 +7815,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
               className="rt-resizable-header-content"
             >
               <div
-                className="pa2 dark-gray ttc b f5 flex items-center"
+                className="pa2 dark-gray b f5 flex items-center"
               >
                 <svg
                   className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
@@ -7856,7 +7856,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
               className="rt-resizable-header-content"
             >
               <div
-                className="pa2 dark-gray ttc b f5 flex items-center justify-end"
+                className="pa2 dark-gray b f5 flex items-center justify-end"
               >
                 Age
               </div>
@@ -8916,7 +8916,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               className="rt-resizable-header-content"
             >
               <div
-                className="pa2 dark-gray ttc b f5 flex items-center"
+                className="pa2 dark-gray b f5 flex items-center"
               >
                 <svg
                   className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
@@ -8957,7 +8957,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               className="rt-resizable-header-content"
             >
               <div
-                className="pa2 dark-gray ttc b f5 flex items-center justify-end"
+                className="pa2 dark-gray b f5 flex items-center justify-end"
               >
                 Age
               </div>
@@ -10017,7 +10017,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
               className="rt-resizable-header-content"
             >
               <div
-                className="pa2 dark-gray ttc b f5 flex items-center"
+                className="pa2 dark-gray b f5 flex items-center"
               >
                 <svg
                   className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
@@ -10058,7 +10058,7 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
               className="rt-resizable-header-content"
             >
               <div
-                className="pa2 dark-gray ttc b f5 flex items-center justify-end"
+                className="pa2 dark-gray b f5 flex items-center justify-end"
               >
                 Age
               </div>
@@ -10945,7 +10945,7 @@ exports[`Storyshots HKTableHeader Asc 1`] = `
     style={undefined}
   />
   <div
-    className="pa2 dark-gray ttc b f5 flex items-center"
+    className="pa2 dark-gray b f5 flex items-center"
   >
     <svg
       className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
@@ -10978,7 +10978,7 @@ exports[`Storyshots HKTableHeader Desc 1`] = `
     style={undefined}
   />
   <div
-    className="pa2 dark-gray ttc b f5 flex items-center"
+    className="pa2 dark-gray b f5 flex items-center"
   >
     <svg
       className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
@@ -11011,7 +11011,7 @@ exports[`Storyshots HKTableHeader Unsorted 1`] = `
     style={undefined}
   />
   <div
-    className="pa2 dark-gray ttc b f5 flex items-center"
+    className="pa2 dark-gray b f5 flex items-center"
   >
     Title
   </div>
@@ -11031,7 +11031,7 @@ exports[`Storyshots HKTableHeader With custom classes 1`] = `
     style={undefined}
   />
   <div
-    className="pa2 dark-gray ttc b f5 flex items-center justify-end"
+    className="pa2 dark-gray b f5 flex items-center justify-end"
   >
     <svg
       className="malibu-fill-gradient-purple malibu-fill-gradient-dark-gray"
