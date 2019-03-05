@@ -31,10 +31,7 @@ const HKTableHeader: React.FunctionComponent<any> = ({
     : null
   return (
     <div
-      className={classnames(
-        'pa2 dark-gray ttc b f5 flex items-center',
-        className
-      )}
+      className={classnames('pa2 dark-gray b f5 flex items-center', className)}
     >
       {sortUi}
       {label}
