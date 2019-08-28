@@ -1,8 +1,8 @@
 import classnames from 'classnames'
+import { Modifiers } from 'popper.js'
 import * as React from 'react'
 import OutsideClickHandler from 'react-outside-click-handler'
 import { Manager, Popper, Reference } from 'react-popper'
-import { Modifiers } from 'popper.js'
 
 import { default as HKButton, Type } from './HKButton'
 import { default as HKIcon } from './HKIcon'
@@ -39,9 +39,9 @@ export default class HKDropdown extends React.Component<
 
   public static defaultProps = {
     closeOnClick: true,
-    positionFixed: false,
     disabled: false,
     name: 'hkdropdown',
+    positionFixed: false,
     small: false,
     type: Type.Secondary,
   }
