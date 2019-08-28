@@ -1,5 +1,5 @@
-import { MalibuIcon } from '@heroku/react-malibu'
 import classnames from 'classnames'
+import { Modifiers } from 'popper.js'
 import * as React from 'react'
 import OutsideClickHandler from 'react-outside-click-handler'
 import { Manager, Popper, Reference } from 'react-popper'
@@ -14,6 +14,8 @@ export enum Align {
 
 interface IDropdownProps {
   align?: Align // align dropdown component anchoring button
+  positionFixed?: boolean
+  modifiers?: Modifiers
   children?: JSX.Element | JSX.Element[] | string
   className?: string // dropdown button styling
   closeOnClick?: boolean // hide dropdown content after onClick in dropdown content
@@ -39,6 +41,7 @@ export default class HKDropdown extends React.Component<
     closeOnClick: true,
     disabled: false,
     name: 'hkdropdown',
+    positionFixed: false,
     small: false,
     type: Type.Secondary,
   }
@@ -93,7 +96,9 @@ export default class HKDropdown extends React.Component<
       className,
       contentClassName,
       disabled,
+      modifiers,
       name,
+      positionFixed,
       small,
       title,
       type,
@@ -126,7 +131,11 @@ export default class HKDropdown extends React.Component<
         </Reference>
         {showDropdown && (
           <OutsideClickHandler onOutsideClick={this.handleClickOutside}>
-            <Popper placement={popperPlacement}>
+            <Popper
+              placement={popperPlacement}
+              modifiers={modifiers}
+              positionFixed={positionFixed}
+            >
               {({ ref, style, placement }) => (
                 <div
                   className='z-max'

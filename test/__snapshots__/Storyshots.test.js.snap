@@ -2897,6 +2897,54 @@ exports[`Storyshots HKDropdown disabled 1`] = `
 </div>
 `;
 
+exports[`Storyshots HKDropdown fixed position 1`] = `
+<div>
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <div>
+    <div
+      className="relative dib"
+    >
+      <button
+        className="hk-button--secondary"
+        data-testid="story-dropdown-button"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Dropdown
+        <svg
+          className="pl1"
+          style={
+            Object {
+              "fill": "currentColor",
+              "height": 16,
+              "width": 16,
+            }
+          }
+        >
+          <use
+            xlinkHref="#caret-16"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
 <div>
   <span
@@ -3058,6 +3106,54 @@ exports[`Storyshots HKDropdown small 1`] = `
     >
       <button
         className="hk-button-sm--secondary"
+        data-testid="story-dropdown-button"
+        disabled={false}
+        onClick={[Function]}
+        title={undefined}
+        type="button"
+        value={undefined}
+      >
+         
+        Dropdown
+        <svg
+          className="pl1"
+          style={
+            Object {
+              "fill": "currentColor",
+              "height": 16,
+              "width": 16,
+            }
+          }
+        >
+          <use
+            xlinkHref="#caret-16"
+          />
+        </svg>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HKDropdown with modifiers 1`] = `
+<div>
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <span
+    className="isvg loading"
+    dangerouslySetInnerHTML={undefined}
+    style={undefined}
+  />
+  <div>
+    <div
+      className="relative dib"
+    >
+      <button
+        className="hk-button--secondary"
         data-testid="story-dropdown-button"
         disabled={false}
         onClick={[Function]}

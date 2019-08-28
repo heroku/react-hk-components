@@ -61,6 +61,27 @@ const dropdownProps = [
   {
     props: {
       align: Align.Left,
+      positionFixed: true,
+      title: 'Dropdown',
+    },
+    storyName: 'fixed position',
+  },
+  {
+    props: {
+      align: Align.Left,
+      modifiers: {
+        offset: {
+          offset: 100,
+        },
+      },
+      positionFixed: true,
+      title: 'Dropdown',
+    },
+    storyName: 'with modifiers',
+  },
+  {
+    props: {
+      align: Align.Left,
       closeOnClick: false,
       title: 'Dropdown',
     },
