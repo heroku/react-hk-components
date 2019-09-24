@@ -10,3 +10,4 @@ dist
 .cache
 stats.json
 /yarn-error.log
+storybook-static
