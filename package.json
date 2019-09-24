@@ -96,7 +96,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "release": "np",
-    "heroku-postbuild": "build-storybook -c .storybook -o .out"
+    "heroku-postbuild": "build-storybook -c .storybook -o storybook-static"
   },
   "jest": {
     "transform": {
