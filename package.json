@@ -6,9 +6,6 @@
   "repository": "https://github.com/heroku/react-hk-components.git",
   "author": "Idan Gazit <idan@heroku.com>",
   "license": "SEE LICENSE IN LICENSE",
-  "engines": {
-    "node": "16.x"
-  },
   "dependencies": {
     "@heroku/react-malibu": "^4.1.0",
     "classnames": "^2.2.6",
