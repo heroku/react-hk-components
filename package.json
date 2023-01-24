@@ -25,10 +25,11 @@
     "@storybook/addon-actions": "^4.0.7",
     "@storybook/addon-options": "^4.0.7",
     "@storybook/addon-storyshots": "^4.0.7",
-    "@storybook/react": "^4.0.7",
+    "@storybook/react": "^6.4.13",
     "uglifyjs-webpack-plugin": "^2.0.1",
-    "copy-webpack-plugin": "^4.6.0",
-    "mini-css-extract-plugin": "^0.4.4"
+    "copy-webpack-plugin": "^5.1.2",
+    "mini-css-extract-plugin": "^0.4.4",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.4",
@@ -91,11 +92,12 @@
     "storybook": "start-storybook --ci -p ${PORT:-9001} -s ./src/static -c .storybook",
     "build": "yarn run clean && tsc --project tsconfig.build.json && webpack",
     "clean": "rm -rf ./dist",
-    "prepublish": "yarn run build",
+    "prepublish": "yarn run snyk-protect && yarn run build",
     "test": "jest --testPathPattern $PWD/test",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "release": "np"
+    "release": "np",
+    "snyk-protect": "snyk-protect"
   },
   "jest": {
     "transform": {
@@ -147,5 +149,6 @@
       "prettier --write",
       "git add"
     ]
-  }
+  },
+  "snyk": true
 }
