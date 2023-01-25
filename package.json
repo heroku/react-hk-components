@@ -40,7 +40,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "babel-core": "^6.26.3",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^24.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.0",
@@ -56,7 +56,8 @@
     "@types/react-transition-group": "^2.0.11",
     "@types/storybook__addon-actions": "^3.4.1",
     "@types/storybook__react": "^3.0.6",
-    "regenerator-runtime": "^0.12.1"
+    "regenerator-runtime": "^0.12.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "eslint": "^4.15.0",
@@ -91,11 +92,12 @@
     "storybook": "start-storybook --ci -p ${PORT:-9001} -s ./src/static -c .storybook",
     "build": "yarn run clean && tsc --project tsconfig.build.json && webpack",
     "clean": "rm -rf ./dist",
-    "prepublish": "yarn run build",
+    "prepublish": "yarn run snyk-protect && yarn run build",
     "test": "jest --testPathPattern $PWD/test",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "release": "np"
+    "release": "np",
+    "snyk-protect": "snyk-protect"
   },
   "jest": {
     "transform": {
@@ -147,5 +149,6 @@
       "prettier --write",
       "git add"
     ]
-  }
+  },
+  "snyk": true
 }
