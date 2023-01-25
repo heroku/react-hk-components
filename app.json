@@ -8,7 +8,7 @@
       "value": "false"
     }
   },
-  "stack": "heroku-18",
+  "stack": "heroku-20",
   "environments": {
     "test": {
       "scripts": {
