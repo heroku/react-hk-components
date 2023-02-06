@@ -150,5 +150,8 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "resolutions": {
+    "chokidar": "^3.3.1"
   }
 }
