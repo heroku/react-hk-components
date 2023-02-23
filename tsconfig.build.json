@@ -1,16 +1,15 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist/esm",
-        "sourceMap": true,
-        "strictNullChecks": true,
-        "module": "es2015",
-        "jsx": "react",
-        "target": "es5",
-        "allowJs": true,
-        "esModuleInterop": true,
-        "moduleResolution": "node"
-    },
-    "include": [
-        "./src/"
-    ]
+  "compilerOptions": {
+    "outDir": "./dist/esm",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "module": "es2015",
+    "jsx": "react",
+    "target": "es5",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true
+  },
+  "include": ["./src/"]
 }
