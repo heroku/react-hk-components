@@ -2,16 +2,6 @@
 
 exports[`Storyshots HKBanner/danger default 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--danger flex items-center pv2"
   >
@@ -39,16 +29,6 @@ exports[`Storyshots HKBanner/danger default 1`] = `
 
 exports[`Storyshots HKBanner/danger with button 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--danger flex items-center pv2"
   >
@@ -88,16 +68,6 @@ exports[`Storyshots HKBanner/danger with button 1`] = `
 
 exports[`Storyshots HKBanner/danger with className 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--danger flex items-center pv2 pv5"
   >
@@ -142,16 +112,6 @@ exports[`Storyshots HKBanner/danger with className 1`] = `
 
 exports[`Storyshots HKBanner/danger with title 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--danger flex items-center pv2"
   >
@@ -184,16 +144,6 @@ exports[`Storyshots HKBanner/danger with title 1`] = `
 
 exports[`Storyshots HKBanner/danger with title and button 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--danger flex items-center pv2"
   >
@@ -238,16 +188,6 @@ exports[`Storyshots HKBanner/danger with title and button 1`] = `
 
 exports[`Storyshots HKBanner/generic default 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--generic flex items-center pv2"
   >
@@ -275,16 +215,6 @@ exports[`Storyshots HKBanner/generic default 1`] = `
 
 exports[`Storyshots HKBanner/generic with button 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--generic flex items-center pv2"
   >
@@ -324,16 +254,6 @@ exports[`Storyshots HKBanner/generic with button 1`] = `
 
 exports[`Storyshots HKBanner/generic with className 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--generic flex items-center pv2 pv5"
   >
@@ -378,16 +298,6 @@ exports[`Storyshots HKBanner/generic with className 1`] = `
 
 exports[`Storyshots HKBanner/generic with title 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--generic flex items-center pv2"
   >
@@ -420,16 +330,6 @@ exports[`Storyshots HKBanner/generic with title 1`] = `
 
 exports[`Storyshots HKBanner/generic with title and button 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--generic flex items-center pv2"
   >
@@ -474,16 +374,6 @@ exports[`Storyshots HKBanner/generic with title and button 1`] = `
 
 exports[`Storyshots HKBanner/info default 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--info flex items-center pv2"
   >
@@ -511,16 +401,6 @@ exports[`Storyshots HKBanner/info default 1`] = `
 
 exports[`Storyshots HKBanner/info with button 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--info flex items-center pv2"
   >
@@ -560,16 +440,6 @@ exports[`Storyshots HKBanner/info with button 1`] = `
 
 exports[`Storyshots HKBanner/info with className 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--info flex items-center pv2 pv5"
   >
@@ -614,16 +484,6 @@ exports[`Storyshots HKBanner/info with className 1`] = `
 
 exports[`Storyshots HKBanner/info with title 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--info flex items-center pv2"
   >
@@ -656,16 +516,6 @@ exports[`Storyshots HKBanner/info with title 1`] = `
 
 exports[`Storyshots HKBanner/info with title and button 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--info flex items-center pv2"
   >
@@ -710,16 +560,6 @@ exports[`Storyshots HKBanner/info with title and button 1`] = `
 
 exports[`Storyshots HKBanner/success default 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--success flex items-center pv2"
   >
@@ -747,16 +587,6 @@ exports[`Storyshots HKBanner/success default 1`] = `
 
 exports[`Storyshots HKBanner/success with button 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--success flex items-center pv2"
   >
@@ -796,16 +626,6 @@ exports[`Storyshots HKBanner/success with button 1`] = `
 
 exports[`Storyshots HKBanner/success with className 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--success flex items-center pv2 pv5"
   >
@@ -850,16 +670,6 @@ exports[`Storyshots HKBanner/success with className 1`] = `
 
 exports[`Storyshots HKBanner/success with title 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--success flex items-center pv2"
   >
@@ -892,16 +702,6 @@ exports[`Storyshots HKBanner/success with title 1`] = `
 
 exports[`Storyshots HKBanner/success with title and button 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--success flex items-center pv2"
   >
@@ -946,16 +746,6 @@ exports[`Storyshots HKBanner/success with title and button 1`] = `
 
 exports[`Storyshots HKBanner/warning default 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--warning flex items-center pv2"
   >
@@ -983,16 +773,6 @@ exports[`Storyshots HKBanner/warning default 1`] = `
 
 exports[`Storyshots HKBanner/warning with button 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--warning flex items-center pv2"
   >
@@ -1032,16 +812,6 @@ exports[`Storyshots HKBanner/warning with button 1`] = `
 
 exports[`Storyshots HKBanner/warning with className 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--warning flex items-center pv2 pv5"
   >
@@ -1086,16 +856,6 @@ exports[`Storyshots HKBanner/warning with className 1`] = `
 
 exports[`Storyshots HKBanner/warning with title 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--warning flex items-center pv2"
   >
@@ -1128,16 +888,6 @@ exports[`Storyshots HKBanner/warning with title 1`] = `
 
 exports[`Storyshots HKBanner/warning with title and button 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="hk-banner--warning flex items-center pv2"
   >
@@ -1182,16 +932,6 @@ exports[`Storyshots HKBanner/warning with title and button 1`] = `
 
 exports[`Storyshots HKBarChart default 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="flex"
   >
@@ -1660,16 +1400,6 @@ exports[`Storyshots HKBarChart default 1`] = `
 
 exports[`Storyshots HKButton with custom title 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--secondary"
     disabled={false}
@@ -1687,16 +1417,6 @@ exports[`Storyshots HKButton with custom title 1`] = `
 
 exports[`Storyshots HKButton with custom value 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--secondary"
     disabled={false}
@@ -1714,16 +1434,6 @@ exports[`Storyshots HKButton with custom value 1`] = `
 
 exports[`Storyshots HKButton/danger regular-disabled-async 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--async"
     disabled={true}
@@ -1741,16 +1451,6 @@ exports[`Storyshots HKButton/danger regular-disabled-async 1`] = `
 
 exports[`Storyshots HKButton/danger regular-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--disabled-danger"
     disabled={true}
@@ -1768,16 +1468,6 @@ exports[`Storyshots HKButton/danger regular-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/danger regular-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--danger"
     disabled={false}
@@ -1795,16 +1485,6 @@ exports[`Storyshots HKButton/danger regular-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/danger small-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--disabled-danger"
     disabled={true}
@@ -1822,16 +1502,6 @@ exports[`Storyshots HKButton/danger small-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/danger small-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--danger"
     disabled={false}
@@ -1849,16 +1519,6 @@ exports[`Storyshots HKButton/danger small-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/info regular-disabled-async 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--async"
     disabled={true}
@@ -1876,16 +1536,6 @@ exports[`Storyshots HKButton/info regular-disabled-async 1`] = `
 
 exports[`Storyshots HKButton/info regular-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--disabled-info"
     disabled={true}
@@ -1903,16 +1553,6 @@ exports[`Storyshots HKButton/info regular-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/info regular-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--info"
     disabled={false}
@@ -1930,16 +1570,6 @@ exports[`Storyshots HKButton/info regular-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/info small-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--disabled-info"
     disabled={true}
@@ -1957,16 +1587,6 @@ exports[`Storyshots HKButton/info small-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/info small-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--info"
     disabled={false}
@@ -1984,16 +1604,6 @@ exports[`Storyshots HKButton/info small-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/primary regular-disabled-async 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--async"
     disabled={true}
@@ -2011,16 +1621,6 @@ exports[`Storyshots HKButton/primary regular-disabled-async 1`] = `
 
 exports[`Storyshots HKButton/primary regular-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--disabled-primary"
     disabled={true}
@@ -2038,16 +1638,6 @@ exports[`Storyshots HKButton/primary regular-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/primary regular-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--primary"
     disabled={false}
@@ -2065,16 +1655,6 @@ exports[`Storyshots HKButton/primary regular-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/primary small-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--disabled-primary"
     disabled={true}
@@ -2092,16 +1672,6 @@ exports[`Storyshots HKButton/primary small-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/primary small-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--primary"
     disabled={false}
@@ -2119,16 +1689,6 @@ exports[`Storyshots HKButton/primary small-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/secondary regular-disabled-async 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--async"
     disabled={true}
@@ -2146,16 +1706,6 @@ exports[`Storyshots HKButton/secondary regular-disabled-async 1`] = `
 
 exports[`Storyshots HKButton/secondary regular-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--disabled-secondary"
     disabled={true}
@@ -2173,16 +1723,6 @@ exports[`Storyshots HKButton/secondary regular-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/secondary regular-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--secondary"
     disabled={false}
@@ -2200,16 +1740,6 @@ exports[`Storyshots HKButton/secondary regular-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/secondary small-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--disabled-secondary"
     disabled={true}
@@ -2227,16 +1757,6 @@ exports[`Storyshots HKButton/secondary small-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/secondary small-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--secondary"
     disabled={false}
@@ -2254,16 +1774,6 @@ exports[`Storyshots HKButton/secondary small-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/success regular-disabled-async 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--async"
     disabled={true}
@@ -2281,16 +1791,6 @@ exports[`Storyshots HKButton/success regular-disabled-async 1`] = `
 
 exports[`Storyshots HKButton/success regular-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--disabled-success"
     disabled={true}
@@ -2308,16 +1808,6 @@ exports[`Storyshots HKButton/success regular-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/success regular-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--success"
     disabled={false}
@@ -2335,16 +1825,6 @@ exports[`Storyshots HKButton/success regular-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/success small-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--disabled-success"
     disabled={true}
@@ -2362,16 +1842,6 @@ exports[`Storyshots HKButton/success small-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/success small-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--success"
     disabled={false}
@@ -2389,16 +1859,6 @@ exports[`Storyshots HKButton/success small-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/tertiary regular-disabled-async 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--async"
     disabled={true}
@@ -2416,16 +1876,6 @@ exports[`Storyshots HKButton/tertiary regular-disabled-async 1`] = `
 
 exports[`Storyshots HKButton/tertiary regular-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--disabled-tertiary"
     disabled={true}
@@ -2443,16 +1893,6 @@ exports[`Storyshots HKButton/tertiary regular-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/tertiary regular-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--tertiary"
     disabled={false}
@@ -2470,16 +1910,6 @@ exports[`Storyshots HKButton/tertiary regular-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/tertiary small-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--disabled-tertiary"
     disabled={true}
@@ -2497,16 +1927,6 @@ exports[`Storyshots HKButton/tertiary small-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/tertiary small-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--tertiary"
     disabled={false}
@@ -2524,16 +1944,6 @@ exports[`Storyshots HKButton/tertiary small-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/warning regular-disabled-async 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--async"
     disabled={true}
@@ -2551,16 +1961,6 @@ exports[`Storyshots HKButton/warning regular-disabled-async 1`] = `
 
 exports[`Storyshots HKButton/warning regular-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--disabled-warning"
     disabled={true}
@@ -2578,16 +1978,6 @@ exports[`Storyshots HKButton/warning regular-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/warning regular-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button--warning"
     disabled={false}
@@ -2605,16 +1995,6 @@ exports[`Storyshots HKButton/warning regular-enabled-normal 1`] = `
 
 exports[`Storyshots HKButton/warning small-disabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--disabled-warning"
     disabled={true}
@@ -2632,16 +2012,6 @@ exports[`Storyshots HKButton/warning small-disabled-normal 1`] = `
 
 exports[`Storyshots HKButton/warning small-enabled-normal 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <button
     className="hk-button-sm--warning"
     disabled={false}
@@ -2659,16 +2029,6 @@ exports[`Storyshots HKButton/warning small-enabled-normal 1`] = `
 
 exports[`Storyshots HKDropdown align left 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <div
       className="relative dib"
@@ -2707,16 +2067,6 @@ exports[`Storyshots HKDropdown align left 1`] = `
 
 exports[`Storyshots HKDropdown align right 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <div
       className="relative dib"
@@ -2755,16 +2105,6 @@ exports[`Storyshots HKDropdown align right 1`] = `
 
 exports[`Storyshots HKDropdown danger 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <div
       className="relative dib"
@@ -2803,16 +2143,6 @@ exports[`Storyshots HKDropdown danger 1`] = `
 
 exports[`Storyshots HKDropdown default 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <div
       className="relative dib"
@@ -2851,16 +2181,6 @@ exports[`Storyshots HKDropdown default 1`] = `
 
 exports[`Storyshots HKDropdown disabled 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <div
       className="relative dib"
@@ -2899,16 +2219,6 @@ exports[`Storyshots HKDropdown disabled 1`] = `
 
 exports[`Storyshots HKDropdown fixed position 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <div
       className="relative dib"
@@ -2947,16 +2257,6 @@ exports[`Storyshots HKDropdown fixed position 1`] = `
 
 exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <div
       className="relative dib"
@@ -2995,16 +2295,6 @@ exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
 
 exports[`Storyshots HKDropdown no title 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <div
       className="relative dib"
@@ -3042,16 +2332,6 @@ exports[`Storyshots HKDropdown no title 1`] = `
 
 exports[`Storyshots HKDropdown primary 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <div
       className="relative dib"
@@ -3090,16 +2370,6 @@ exports[`Storyshots HKDropdown primary 1`] = `
 
 exports[`Storyshots HKDropdown small 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <div
       className="relative dib"
@@ -3138,16 +2408,6 @@ exports[`Storyshots HKDropdown small 1`] = `
 
 exports[`Storyshots HKDropdown with modifiers 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <div
       className="relative dib"
@@ -3186,16 +2446,6 @@ exports[`Storyshots HKDropdown with modifiers 1`] = `
 
 exports[`Storyshots HKFlagIcon australia 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <img
     className=""
     src="/flags/region-australia.png"
@@ -3206,16 +2456,6 @@ exports[`Storyshots HKFlagIcon australia 1`] = `
 
 exports[`Storyshots HKFlagIcon brazil 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <img
     className=""
     src="/flags/region-brazil.png"
@@ -3226,16 +2466,6 @@ exports[`Storyshots HKFlagIcon brazil 1`] = `
 
 exports[`Storyshots HKFlagIcon default 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <img
     className=""
     src="/flags/region-default.png"
@@ -3246,16 +2476,6 @@ exports[`Storyshots HKFlagIcon default 1`] = `
 
 exports[`Storyshots HKFlagIcon europe 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <img
     className=""
     src="/flags/region-europe.png"
@@ -3266,16 +2486,6 @@ exports[`Storyshots HKFlagIcon europe 1`] = `
 
 exports[`Storyshots HKFlagIcon germany 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <img
     className=""
     src="/flags/region-germany.png"
@@ -3286,16 +2496,6 @@ exports[`Storyshots HKFlagIcon germany 1`] = `
 
 exports[`Storyshots HKFlagIcon ireland 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <img
     className=""
     src="/flags/region-ireland.png"
@@ -3306,16 +2506,6 @@ exports[`Storyshots HKFlagIcon ireland 1`] = `
 
 exports[`Storyshots HKFlagIcon japan 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <img
     className=""
     src="/flags/region-japan.png"
@@ -3326,16 +2516,6 @@ exports[`Storyshots HKFlagIcon japan 1`] = `
 
 exports[`Storyshots HKFlagIcon private 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <img
     className=""
     src="/flags/region-private.png"
@@ -3346,16 +2526,6 @@ exports[`Storyshots HKFlagIcon private 1`] = `
 
 exports[`Storyshots HKFlagIcon singapore 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <img
     className=""
     src="/flags/region-singapore.png"
@@ -3366,16 +2536,6 @@ exports[`Storyshots HKFlagIcon singapore 1`] = `
 
 exports[`Storyshots HKFlagIcon united-states 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <img
     className=""
     src="/flags/region-united-states.png"
@@ -3386,16 +2546,6 @@ exports[`Storyshots HKFlagIcon united-states 1`] = `
 
 exports[`Storyshots HKIcon Marketing NO_STORYSHOTS 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="flex"
   >
@@ -3650,16 +2800,6 @@ exports[`Storyshots HKIcon Marketing NO_STORYSHOTS 1`] = `
 
 exports[`Storyshots HKIcon Product NO_STORYSHOTS 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="flex"
   >
@@ -3914,16 +3054,6 @@ exports[`Storyshots HKIcon Product NO_STORYSHOTS 1`] = `
 
 exports[`Storyshots HKLineChart default 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="flex"
   >
@@ -4265,16 +3395,6 @@ exports[`Storyshots HKLineChart default 1`] = `
 
 exports[`Storyshots HKModal/initially closed default 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4294,16 +3414,6 @@ exports[`Storyshots HKModal/initially closed default 1`] = `
 
 exports[`Storyshots HKModal/initially closed default without footer 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4323,16 +3433,6 @@ exports[`Storyshots HKModal/initially closed default without footer 1`] = `
 
 exports[`Storyshots HKModal/initially closed default without header 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4352,16 +3452,6 @@ exports[`Storyshots HKModal/initially closed default without header 1`] = `
 
 exports[`Storyshots HKModal/initially closed default without header and footer 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4381,16 +3471,6 @@ exports[`Storyshots HKModal/initially closed default without header and footer 1
 
 exports[`Storyshots HKModal/initially closed destructive 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4410,16 +3490,6 @@ exports[`Storyshots HKModal/initially closed destructive 1`] = `
 
 exports[`Storyshots HKModal/initially closed flyout 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4439,16 +3509,6 @@ exports[`Storyshots HKModal/initially closed flyout 1`] = `
 
 exports[`Storyshots HKModal/initially closed flyout without footer 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4468,16 +3528,6 @@ exports[`Storyshots HKModal/initially closed flyout without footer 1`] = `
 
 exports[`Storyshots HKModal/initially closed flyout without header 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4497,16 +3547,6 @@ exports[`Storyshots HKModal/initially closed flyout without header 1`] = `
 
 exports[`Storyshots HKModal/initially closed flyout without header and footer 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4526,16 +3566,6 @@ exports[`Storyshots HKModal/initially closed flyout without header and footer 1`
 
 exports[`Storyshots HKModal/initially closed with confirmation 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4555,16 +3585,6 @@ exports[`Storyshots HKModal/initially closed with confirmation 1`] = `
 
 exports[`Storyshots HKModal/initially open default 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4672,16 +3692,6 @@ exports[`Storyshots HKModal/initially open default 1`] = `
 
 exports[`Storyshots HKModal/initially open default without footer 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4761,16 +3771,6 @@ exports[`Storyshots HKModal/initially open default without footer 1`] = `
 
 exports[`Storyshots HKModal/initially open default without header 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4875,16 +3875,6 @@ exports[`Storyshots HKModal/initially open default without header 1`] = `
 
 exports[`Storyshots HKModal/initially open default without header and footer 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -4961,16 +3951,6 @@ exports[`Storyshots HKModal/initially open default without header and footer 1`]
 
 exports[`Storyshots HKModal/initially open destructive 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -5078,16 +4058,6 @@ exports[`Storyshots HKModal/initially open destructive 1`] = `
 
 exports[`Storyshots HKModal/initially open flyout 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -5201,16 +4171,6 @@ exports[`Storyshots HKModal/initially open flyout 1`] = `
 
 exports[`Storyshots HKModal/initially open flyout without footer 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -5296,16 +4256,6 @@ exports[`Storyshots HKModal/initially open flyout without footer 1`] = `
 
 exports[`Storyshots HKModal/initially open flyout without header 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -5416,16 +4366,6 @@ exports[`Storyshots HKModal/initially open flyout without header 1`] = `
 
 exports[`Storyshots HKModal/initially open flyout without header and footer 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -5508,16 +4448,6 @@ exports[`Storyshots HKModal/initially open flyout without header and footer 1`] 
 
 exports[`Storyshots HKModal/initially open with confirmation 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div>
     <button
       className="hk-button--primary"
@@ -5639,16 +4569,6 @@ exports[`Storyshots HKModal/initially open with confirmation 1`] = `
 
 exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="ReactTable"
     style={
@@ -6744,16 +5664,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
 
 exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="ReactTable"
     style={
@@ -7850,16 +6760,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
 
 exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="ReactTable"
     style={
@@ -8955,16 +7855,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
 
 exports[`Storyshots HKTable With Pagination 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="ReactTable"
     style={Object {}}
@@ -10056,16 +8946,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
 
 exports[`Storyshots HKTable Without Pagination 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="ReactTable"
     style={Object {}}
@@ -11022,16 +9902,6 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
 
 exports[`Storyshots HKTableHeader Asc 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="pa2 dark-gray ttc b f5 flex items-center"
   >
@@ -11055,16 +9925,6 @@ exports[`Storyshots HKTableHeader Asc 1`] = `
 
 exports[`Storyshots HKTableHeader Desc 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="pa2 dark-gray ttc b f5 flex items-center"
   >
@@ -11088,16 +9948,6 @@ exports[`Storyshots HKTableHeader Desc 1`] = `
 
 exports[`Storyshots HKTableHeader Unsorted 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="pa2 dark-gray ttc b f5 flex items-center"
   >
@@ -11108,16 +9958,6 @@ exports[`Storyshots HKTableHeader Unsorted 1`] = `
 
 exports[`Storyshots HKTableHeader With custom classes 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="pa2 dark-gray ttc b f5 flex items-center justify-end"
   >
@@ -11141,16 +9981,6 @@ exports[`Storyshots HKTableHeader With custom classes 1`] = `
 
 exports[`Storyshots HKTablePagination beginning 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="pv2 ph2 mw8 center"
   >
@@ -11325,16 +10155,6 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
 
 exports[`Storyshots HKTablePagination end 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="pv2 ph2 mw8 center"
   >
@@ -11509,16 +10329,6 @@ exports[`Storyshots HKTablePagination end 1`] = `
 
 exports[`Storyshots HKTablePagination middle 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <div
     className="pv2 ph2 mw8 center"
   >
@@ -11706,16 +10516,6 @@ exports[`Storyshots HKTablePagination middle 1`] = `
 
 exports[`Storyshots HKTextField autoSelect true 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <input
     className="hk-input"
     disabled={undefined}
@@ -11732,16 +10532,6 @@ exports[`Storyshots HKTextField autoSelect true 1`] = `
 
 exports[`Storyshots HKTextField blank 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <input
     className="hk-input"
     disabled={undefined}
@@ -11758,16 +10548,6 @@ exports[`Storyshots HKTextField blank 1`] = `
 
 exports[`Storyshots HKTextField default, custom class 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <input
     className="hk-input f1 w-100 red"
     disabled={undefined}
@@ -11784,16 +10564,6 @@ exports[`Storyshots HKTextField default, custom class 1`] = `
 
 exports[`Storyshots HKTextField default, type PASSWORD 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <input
     className="hk-input"
     disabled={undefined}
@@ -11810,16 +10580,6 @@ exports[`Storyshots HKTextField default, type PASSWORD 1`] = `
 
 exports[`Storyshots HKTextField default, type TEXT 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <input
     className="hk-input"
     disabled={undefined}
@@ -11836,16 +10596,6 @@ exports[`Storyshots HKTextField default, type TEXT 1`] = `
 
 exports[`Storyshots HKTextField disabled 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <input
     className="hk-input"
     disabled={true}
@@ -11862,16 +10612,6 @@ exports[`Storyshots HKTextField disabled 1`] = `
 
 exports[`Storyshots HKTextField readOnly + autoSelect 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <input
     className="hk-input--read-only"
     disabled={undefined}
@@ -11888,16 +10628,6 @@ exports[`Storyshots HKTextField readOnly + autoSelect 1`] = `
 
 exports[`Storyshots HKTextField readOnly true 1`] = `
 <div>
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
-  <span
-    className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
-  />
   <input
     className="hk-input--read-only"
     disabled={undefined}

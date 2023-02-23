@@ -17,7 +17,7 @@ const HKIconSprites: React.FunctionComponent<ISpriteProps> = ({
 }) => {
   const file = set ? `${set}/sprite.svg` : 'sprite.svg'
   const src = `https://www.herokucdn.com/malibu/${version}/${file}`
-  return <SVG id='spritesheet' uniquifyIDs={false} src={src} />
+  return <SVG uniquifyIDs={false} src={src} />
 }
 
 HKIconSprites.defaultProps = {
