@@ -1,5 +1,5 @@
 import { MalibuIcon } from '@heroku/react-malibu'
-import classnames from 'classnames'
+import classNames from 'classnames'
 import * as React from 'react'
 
 interface ISort {
@@ -25,13 +25,13 @@ const HKTableHeader: React.FunctionComponent<any> = ({
         <MalibuIcon
           name={sort.desc ? 'direction-up-16' : 'direction-down-16'}
           size={16}
-          extraClasses={classnames('malibu-fill-gradient-dark-gray')}
+          extraClasses={classNames('malibu-fill-gradient-dark-gray')}
         />
       )
     : null
   return (
     <div
-      className={classnames(
+      className={classNames(
         'pa2 dark-gray ttc b f5 flex items-center',
         className
       )}

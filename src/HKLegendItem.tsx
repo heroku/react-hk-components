@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { MalibuIcon } from '@heroku/react-malibu'
-import classnames from 'classnames'
+import classNames from 'classnames'
 import { colours } from './constants'
 
 interface IHKLegendItemProps {
@@ -58,11 +58,11 @@ export default class HKLegendItem extends React.PureComponent<
     const legendValue = value === null ? '\u00a0' : value
     return (
       <a
-        className={classnames({ 'cursor-hand': !disableToggle })}
+        className={classNames({ 'cursor-hand': !disableToggle })}
         onClick={!disableToggle ? this.handleOnClick : undefined}
       >
         <div
-          className={classnames(
+          className={classNames(
             'hk-label',
             className,
             'flex flex-row br2 pa2 mh2 items-center',
