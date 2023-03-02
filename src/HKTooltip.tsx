@@ -1,4 +1,4 @@
-import * as classnames from 'classnames'
+import * as classNames from 'classnames'
 import * as React from 'react'
 
 interface IHKTooltipProps {
@@ -28,7 +28,7 @@ export default class HKTooltip extends React.PureComponent<
 
     return (
       <div
-        className={classnames('absolute z-1 f7 b', { mw4: !width })}
+        className={classNames('absolute z-1 f7 b', { mw4: !width })}
         style={styleProps}
       >
         <p>{children}</p>

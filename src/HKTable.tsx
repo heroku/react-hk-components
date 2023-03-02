@@ -1,4 +1,4 @@
-import classnames from 'classnames'
+import classNames from 'classnames'
 import * as React from 'react'
 import ReactTable from 'react-table'
 import './static/styles/table.css'
@@ -48,7 +48,7 @@ const HKTable: React.FunctionComponent<any> = props => {
       TableComponent={({ children, className, ...rest }) => (
         <div
           ref={tableRef}
-          className={classnames('rt-table', className)}
+          className={classNames('rt-table', className)}
           role='grid'
           {...rest}
         >

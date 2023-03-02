@@ -1,5 +1,5 @@
 import { MalibuIcon } from '@heroku/react-malibu'
-import classnames from 'classnames'
+import classNames from 'classnames'
 import * as React from 'react'
 
 import { default as HKButton, Type as ButtonType } from './HKButton'
@@ -58,7 +58,7 @@ export default class HKBanner extends React.Component<IBannerProps> {
 
     return (
       <div
-        className={classnames(
+        className={classNames(
           `hk-banner--${type} flex items-center pv2`,
           className
         )}

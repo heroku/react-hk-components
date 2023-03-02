@@ -1,5 +1,5 @@
 import { MalibuIcon } from '@heroku/react-malibu'
-import classnames from 'classnames'
+import classNames from 'classnames'
 import * as React from 'react'
 import { Transition } from 'react-transition-group'
 import SRMModal from 'simple-react-modal'
@@ -129,7 +129,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
 
     const dismissElem = onDismiss && (
       <div
-        className={classnames('right-1 absolute pointer', { 'top-1': !header })}
+        className={classNames('right-1 absolute pointer', { 'top-1': !header })}
         onClick={this.handleClose}
       >
         <MalibuIcon
@@ -161,7 +161,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
         type={b.type}
         disabled={b.disabled}
         onClick={this.handleButtonClick}
-        className={classnames('ml1', b.classNames)}
+        className={classNames('ml1', b.classNames)}
       >
         {b.text}
       </HKButton>
@@ -176,7 +176,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
               ...innerTransition,
               ...innerStyles[state],
             }}
-            containerClassName={classnames(
+            containerClassName={classNames(
               'bg-white shadow-outer-1 relative',
               modalClass
             )}
@@ -190,13 +190,13 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
               ...fadeTransition,
               ...fadeStyles[state],
             }}
-            className={classnames('flex flex-column', modalParentClass)}
+            className={classNames('flex flex-column', modalParentClass)}
             closeOnOuterClick={true}
             show={isShowing}
             onClose={this.handleClose}
           >
             <div
-              className={classnames(
+              className={classNames(
                 'hk-modal-header f4 flex items-center justify-center br--top br2',
                 {
                   'bg-near-white bb b--light-silver pa4': header,
@@ -212,7 +212,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
               {dismissElem}
             </div>
 
-            <div className={classnames(modalChildrenClass)}>{children}</div>
+            <div className={classNames(modalChildrenClass)}>{children}</div>
 
             {buttons && (
               <div className='bt b--light-silver w-100 pa3 tr'>{footer}</div>

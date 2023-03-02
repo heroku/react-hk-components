@@ -1,4 +1,4 @@
-import classnames from 'classnames'
+import classNames from 'classnames'
 import { Modifiers } from 'popper.js'
 import * as React from 'react'
 import OutsideClickHandler from 'react-outside-click-handler'
@@ -114,7 +114,7 @@ export default class HKDropdown extends React.Component<
               <HKButton
                 onClick={this.handleDropdown}
                 data-testid={this.testId()}
-                className={classnames({ ph1: !title }, className)}
+                className={classNames({ ph1: !title }, className)}
                 type={type}
                 small={small}
                 disabled={disabled}
@@ -123,7 +123,7 @@ export default class HKDropdown extends React.Component<
                 <HKIcon
                   name='caret-16'
                   size={16}
-                  className={classnames({ pl1: title })}
+                  className={classNames({ pl1: title })}
                 />
               </HKButton>
             </div>
@@ -146,7 +146,7 @@ export default class HKDropdown extends React.Component<
                   data-placement={placement}
                 >
                   <ul
-                    className={classnames(
+                    className={classNames(
                       contentClassName,
                       'list br1 pl0 pv1 mv1 shadow-outer-2 bg-white'
                     )}

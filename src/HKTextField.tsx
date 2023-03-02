@@ -1,4 +1,4 @@
-import classnames from 'classnames'
+import classNames from 'classnames'
 import * as React from 'react'
 
 interface ITextFieldProps {
@@ -31,7 +31,7 @@ const HKTextField: React.FunctionComponent<ITextFieldProps> = props => {
     className,
   } = props
   const purpleClass = `hk-input${readOnly ? '--read-only' : ''}`
-  const inputClass = classnames(purpleClass, className)
+  const inputClass = classNames(purpleClass, className)
 
   const handleFocus = e => {
     if (autoSelect) {
