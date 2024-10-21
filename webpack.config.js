@@ -42,11 +42,12 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader',
         exclude: /node_modules/,
-        options: {
-          configFileName: 'tsconfig.build.json',
-          silent: true,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            filename: '.babelrc',
+          },
         },
       },
       {
