@@ -4,13 +4,9 @@ exports[`Storyshots HKBanner/danger default 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--danger flex items-center pv2"
@@ -41,13 +37,9 @@ exports[`Storyshots HKBanner/danger with button 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--danger flex items-center pv2"
@@ -74,9 +66,7 @@ exports[`Storyshots HKBanner/danger with button 1`] = `
       className="hk-button--danger flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -90,13 +80,9 @@ exports[`Storyshots HKBanner/danger with className 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--danger flex items-center pv2 pv5"
@@ -128,9 +114,7 @@ exports[`Storyshots HKBanner/danger with className 1`] = `
       className="hk-button--danger flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -144,13 +128,9 @@ exports[`Storyshots HKBanner/danger with title 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--danger flex items-center pv2"
@@ -186,13 +166,9 @@ exports[`Storyshots HKBanner/danger with title and button 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--danger flex items-center pv2"
@@ -224,9 +200,7 @@ exports[`Storyshots HKBanner/danger with title and button 1`] = `
       className="hk-button--danger flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -240,13 +214,9 @@ exports[`Storyshots HKBanner/generic default 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--generic flex items-center pv2"
@@ -277,13 +247,9 @@ exports[`Storyshots HKBanner/generic with button 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--generic flex items-center pv2"
@@ -310,9 +276,7 @@ exports[`Storyshots HKBanner/generic with button 1`] = `
       className="hk-button--secondary flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -326,13 +290,9 @@ exports[`Storyshots HKBanner/generic with className 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--generic flex items-center pv2 pv5"
@@ -364,9 +324,7 @@ exports[`Storyshots HKBanner/generic with className 1`] = `
       className="hk-button--secondary flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -380,13 +338,9 @@ exports[`Storyshots HKBanner/generic with title 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--generic flex items-center pv2"
@@ -422,13 +376,9 @@ exports[`Storyshots HKBanner/generic with title and button 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--generic flex items-center pv2"
@@ -460,9 +410,7 @@ exports[`Storyshots HKBanner/generic with title and button 1`] = `
       className="hk-button--secondary flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -476,13 +424,9 @@ exports[`Storyshots HKBanner/info default 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--info flex items-center pv2"
@@ -513,13 +457,9 @@ exports[`Storyshots HKBanner/info with button 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--info flex items-center pv2"
@@ -546,9 +486,7 @@ exports[`Storyshots HKBanner/info with button 1`] = `
       className="hk-button--info flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -562,13 +500,9 @@ exports[`Storyshots HKBanner/info with className 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--info flex items-center pv2 pv5"
@@ -600,9 +534,7 @@ exports[`Storyshots HKBanner/info with className 1`] = `
       className="hk-button--info flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -616,13 +548,9 @@ exports[`Storyshots HKBanner/info with title 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--info flex items-center pv2"
@@ -658,13 +586,9 @@ exports[`Storyshots HKBanner/info with title and button 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--info flex items-center pv2"
@@ -696,9 +620,7 @@ exports[`Storyshots HKBanner/info with title and button 1`] = `
       className="hk-button--info flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -712,13 +634,9 @@ exports[`Storyshots HKBanner/success default 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--success flex items-center pv2"
@@ -749,13 +667,9 @@ exports[`Storyshots HKBanner/success with button 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--success flex items-center pv2"
@@ -782,9 +696,7 @@ exports[`Storyshots HKBanner/success with button 1`] = `
       className="hk-button--success flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -798,13 +710,9 @@ exports[`Storyshots HKBanner/success with className 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--success flex items-center pv2 pv5"
@@ -836,9 +744,7 @@ exports[`Storyshots HKBanner/success with className 1`] = `
       className="hk-button--success flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -852,13 +758,9 @@ exports[`Storyshots HKBanner/success with title 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--success flex items-center pv2"
@@ -894,13 +796,9 @@ exports[`Storyshots HKBanner/success with title and button 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--success flex items-center pv2"
@@ -932,9 +830,7 @@ exports[`Storyshots HKBanner/success with title and button 1`] = `
       className="hk-button--success flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -948,13 +844,9 @@ exports[`Storyshots HKBanner/warning default 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--warning flex items-center pv2"
@@ -985,13 +877,9 @@ exports[`Storyshots HKBanner/warning with button 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--warning flex items-center pv2"
@@ -1018,9 +906,7 @@ exports[`Storyshots HKBanner/warning with button 1`] = `
       className="hk-button--warning flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -1034,13 +920,9 @@ exports[`Storyshots HKBanner/warning with className 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--warning flex items-center pv2 pv5"
@@ -1072,9 +954,7 @@ exports[`Storyshots HKBanner/warning with className 1`] = `
       className="hk-button--warning flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -1088,13 +968,9 @@ exports[`Storyshots HKBanner/warning with title 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--warning flex items-center pv2"
@@ -1130,13 +1006,9 @@ exports[`Storyshots HKBanner/warning with title and button 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="hk-banner--warning flex items-center pv2"
@@ -1168,9 +1040,7 @@ exports[`Storyshots HKBanner/warning with title and button 1`] = `
       className="hk-button--warning flex-none"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Click Me
@@ -1184,13 +1054,9 @@ exports[`Storyshots HKBarChart default 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="flex"
@@ -1565,7 +1431,6 @@ exports[`Storyshots HKBarChart default 1`] = `
           >
             <svg
               className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
-              style={undefined}
             >
               <use
                 xlinkHref="#confirm-16"
@@ -1615,7 +1480,6 @@ exports[`Storyshots HKBarChart default 1`] = `
           >
             <svg
               className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
-              style={undefined}
             >
               <use
                 xlinkHref="#confirm-16"
@@ -1662,13 +1526,9 @@ exports[`Storyshots HKButton with custom title 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--secondary"
@@ -1689,19 +1549,14 @@ exports[`Storyshots HKButton with custom value 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--secondary"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
     value="a custom value"
   >
@@ -1716,21 +1571,15 @@ exports[`Storyshots HKButton/danger regular-disabled-async 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--async"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -1743,21 +1592,15 @@ exports[`Storyshots HKButton/danger regular-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--disabled-danger"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -1770,21 +1613,15 @@ exports[`Storyshots HKButton/danger regular-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--danger"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -1797,21 +1634,15 @@ exports[`Storyshots HKButton/danger small-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--disabled-danger"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -1824,21 +1655,15 @@ exports[`Storyshots HKButton/danger small-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--danger"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -1851,21 +1676,15 @@ exports[`Storyshots HKButton/info regular-disabled-async 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--async"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -1878,21 +1697,15 @@ exports[`Storyshots HKButton/info regular-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--disabled-info"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -1905,21 +1718,15 @@ exports[`Storyshots HKButton/info regular-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--info"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -1932,21 +1739,15 @@ exports[`Storyshots HKButton/info small-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--disabled-info"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -1959,21 +1760,15 @@ exports[`Storyshots HKButton/info small-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--info"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -1986,21 +1781,15 @@ exports[`Storyshots HKButton/primary regular-disabled-async 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--async"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2013,21 +1802,15 @@ exports[`Storyshots HKButton/primary regular-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--disabled-primary"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2040,21 +1823,15 @@ exports[`Storyshots HKButton/primary regular-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--primary"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2067,21 +1844,15 @@ exports[`Storyshots HKButton/primary small-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--disabled-primary"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2094,21 +1865,15 @@ exports[`Storyshots HKButton/primary small-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--primary"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2121,21 +1886,15 @@ exports[`Storyshots HKButton/secondary regular-disabled-async 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--async"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2148,21 +1907,15 @@ exports[`Storyshots HKButton/secondary regular-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--disabled-secondary"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2175,21 +1928,15 @@ exports[`Storyshots HKButton/secondary regular-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--secondary"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2202,21 +1949,15 @@ exports[`Storyshots HKButton/secondary small-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--disabled-secondary"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2229,21 +1970,15 @@ exports[`Storyshots HKButton/secondary small-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--secondary"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2256,21 +1991,15 @@ exports[`Storyshots HKButton/success regular-disabled-async 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--async"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2283,21 +2012,15 @@ exports[`Storyshots HKButton/success regular-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--disabled-success"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2310,21 +2033,15 @@ exports[`Storyshots HKButton/success regular-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--success"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2337,21 +2054,15 @@ exports[`Storyshots HKButton/success small-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--disabled-success"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2364,21 +2075,15 @@ exports[`Storyshots HKButton/success small-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--success"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2391,21 +2096,15 @@ exports[`Storyshots HKButton/tertiary regular-disabled-async 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--async"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2418,21 +2117,15 @@ exports[`Storyshots HKButton/tertiary regular-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--disabled-tertiary"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2445,21 +2138,15 @@ exports[`Storyshots HKButton/tertiary regular-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--tertiary"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2472,21 +2159,15 @@ exports[`Storyshots HKButton/tertiary small-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--disabled-tertiary"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2499,21 +2180,15 @@ exports[`Storyshots HKButton/tertiary small-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--tertiary"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2526,21 +2201,15 @@ exports[`Storyshots HKButton/warning regular-disabled-async 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--async"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2553,21 +2222,15 @@ exports[`Storyshots HKButton/warning regular-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--disabled-warning"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2580,21 +2243,15 @@ exports[`Storyshots HKButton/warning regular-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button--warning"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2607,21 +2264,15 @@ exports[`Storyshots HKButton/warning small-disabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--disabled-warning"
     disabled={true}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2634,21 +2285,15 @@ exports[`Storyshots HKButton/warning small-enabled-normal 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <button
     className="hk-button-sm--warning"
     disabled={false}
     onClick={[Function]}
-    title={undefined}
     type="button"
-    value={undefined}
   >
      
     Click Me
@@ -2661,13 +2306,9 @@ exports[`Storyshots HKDropdown align left 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <div
@@ -2678,9 +2319,7 @@ exports[`Storyshots HKDropdown align left 1`] = `
         data-testid="story-dropdown-button"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Dropdown
@@ -2709,13 +2348,9 @@ exports[`Storyshots HKDropdown align right 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <div
@@ -2726,9 +2361,7 @@ exports[`Storyshots HKDropdown align right 1`] = `
         data-testid="story-dropdown-button"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Dropdown
@@ -2757,13 +2390,9 @@ exports[`Storyshots HKDropdown danger 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <div
@@ -2774,9 +2403,7 @@ exports[`Storyshots HKDropdown danger 1`] = `
         data-testid="story-dropdown-button"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Dropdown
@@ -2805,13 +2432,9 @@ exports[`Storyshots HKDropdown default 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <div
@@ -2822,9 +2445,7 @@ exports[`Storyshots HKDropdown default 1`] = `
         data-testid="story-dropdown-button"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Dropdown
@@ -2853,13 +2474,9 @@ exports[`Storyshots HKDropdown disabled 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <div
@@ -2870,9 +2487,7 @@ exports[`Storyshots HKDropdown disabled 1`] = `
         data-testid="story-dropdown-button"
         disabled={true}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Dropdown
@@ -2901,13 +2516,9 @@ exports[`Storyshots HKDropdown fixed position 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <div
@@ -2918,9 +2529,7 @@ exports[`Storyshots HKDropdown fixed position 1`] = `
         data-testid="story-dropdown-button"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Dropdown
@@ -2949,13 +2558,9 @@ exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <div
@@ -2966,9 +2571,7 @@ exports[`Storyshots HKDropdown no close dropdown onclick 1`] = `
         data-testid="story-dropdown-button"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Dropdown
@@ -2997,13 +2600,9 @@ exports[`Storyshots HKDropdown no title 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <div
@@ -3014,9 +2613,7 @@ exports[`Storyshots HKDropdown no title 1`] = `
         data-testid="story-dropdown-button"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         <svg
@@ -3044,13 +2641,9 @@ exports[`Storyshots HKDropdown primary 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <div
@@ -3061,9 +2654,7 @@ exports[`Storyshots HKDropdown primary 1`] = `
         data-testid="story-dropdown-button"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Dropdown
@@ -3092,13 +2683,9 @@ exports[`Storyshots HKDropdown small 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <div
@@ -3109,9 +2696,7 @@ exports[`Storyshots HKDropdown small 1`] = `
         data-testid="story-dropdown-button"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Dropdown
@@ -3140,13 +2725,9 @@ exports[`Storyshots HKDropdown with modifiers 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <div
@@ -3157,9 +2738,7 @@ exports[`Storyshots HKDropdown with modifiers 1`] = `
         data-testid="story-dropdown-button"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Dropdown
@@ -3188,13 +2767,9 @@ exports[`Storyshots HKFlagIcon australia 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <img
     className=""
@@ -3208,13 +2783,9 @@ exports[`Storyshots HKFlagIcon brazil 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <img
     className=""
@@ -3228,13 +2799,9 @@ exports[`Storyshots HKFlagIcon default 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <img
     className=""
@@ -3248,13 +2815,9 @@ exports[`Storyshots HKFlagIcon europe 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <img
     className=""
@@ -3268,13 +2831,9 @@ exports[`Storyshots HKFlagIcon germany 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <img
     className=""
@@ -3288,13 +2847,9 @@ exports[`Storyshots HKFlagIcon ireland 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <img
     className=""
@@ -3308,13 +2863,9 @@ exports[`Storyshots HKFlagIcon japan 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <img
     className=""
@@ -3328,13 +2879,9 @@ exports[`Storyshots HKFlagIcon private 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <img
     className=""
@@ -3348,13 +2895,9 @@ exports[`Storyshots HKFlagIcon singapore 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <img
     className=""
@@ -3368,13 +2911,9 @@ exports[`Storyshots HKFlagIcon united-states 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <img
     className=""
@@ -3388,13 +2927,9 @@ exports[`Storyshots HKIcon Marketing NO_STORYSHOTS 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="flex"
@@ -3429,7 +2964,6 @@ exports[`Storyshots HKIcon Marketing NO_STORYSHOTS 1`] = `
         </label>
         <div
           className="css-10nd86i"
-          id={undefined}
           onKeyDown={[Function]}
         >
           <div
@@ -3458,12 +2992,9 @@ exports[`Storyshots HKIcon Marketing NO_STORYSHOTS 1`] = `
                 >
                   <input
                     aria-autocomplete="list"
-                    aria-label={undefined}
-                    aria-labelledby={undefined}
                     autoCapitalize="none"
                     autoComplete="off"
                     autoCorrect="off"
-                    className={undefined}
                     disabled={false}
                     id="react-select-4-input"
                     onBlur={[Function]}
@@ -3540,7 +3071,6 @@ exports[`Storyshots HKIcon Marketing NO_STORYSHOTS 1`] = `
         </label>
         <div
           className="css-10nd86i"
-          id={undefined}
           onKeyDown={[Function]}
         >
           <div
@@ -3569,12 +3099,9 @@ exports[`Storyshots HKIcon Marketing NO_STORYSHOTS 1`] = `
                 >
                   <input
                     aria-autocomplete="list"
-                    aria-label={undefined}
-                    aria-labelledby={undefined}
                     autoCapitalize="none"
                     autoComplete="off"
                     autoCorrect="off"
-                    className={undefined}
                     disabled={false}
                     id="react-select-5-input"
                     onBlur={[Function]}
@@ -3652,13 +3179,9 @@ exports[`Storyshots HKIcon Product NO_STORYSHOTS 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="flex"
@@ -3693,7 +3216,6 @@ exports[`Storyshots HKIcon Product NO_STORYSHOTS 1`] = `
         </label>
         <div
           className="css-10nd86i"
-          id={undefined}
           onKeyDown={[Function]}
         >
           <div
@@ -3722,12 +3244,9 @@ exports[`Storyshots HKIcon Product NO_STORYSHOTS 1`] = `
                 >
                   <input
                     aria-autocomplete="list"
-                    aria-label={undefined}
-                    aria-labelledby={undefined}
                     autoCapitalize="none"
                     autoComplete="off"
                     autoCorrect="off"
-                    className={undefined}
                     disabled={false}
                     id="react-select-2-input"
                     onBlur={[Function]}
@@ -3804,7 +3323,6 @@ exports[`Storyshots HKIcon Product NO_STORYSHOTS 1`] = `
         </label>
         <div
           className="css-10nd86i"
-          id={undefined}
           onKeyDown={[Function]}
         >
           <div
@@ -3833,12 +3351,9 @@ exports[`Storyshots HKIcon Product NO_STORYSHOTS 1`] = `
                 >
                   <input
                     aria-autocomplete="list"
-                    aria-label={undefined}
-                    aria-labelledby={undefined}
                     autoCapitalize="none"
                     autoComplete="off"
                     autoCorrect="off"
-                    className={undefined}
                     disabled={false}
                     id="react-select-3-input"
                     onBlur={[Function]}
@@ -3916,13 +3431,9 @@ exports[`Storyshots HKLineChart default 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="flex"
@@ -4120,7 +3631,6 @@ exports[`Storyshots HKLineChart default 1`] = `
           >
             <svg
               className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
-              style={undefined}
             >
               <use
                 xlinkHref="#confirm-16"
@@ -4170,7 +3680,6 @@ exports[`Storyshots HKLineChart default 1`] = `
           >
             <svg
               className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
-              style={undefined}
             >
               <use
                 xlinkHref="#confirm-16"
@@ -4220,7 +3729,6 @@ exports[`Storyshots HKLineChart default 1`] = `
           >
             <svg
               className="malibu-fill-gradient-dark-gray icon malibu-icon h1 w1 mr1 fill-dark-gray di"
-              style={undefined}
             >
               <use
                 xlinkHref="#confirm-16"
@@ -4267,22 +3775,16 @@ exports[`Storyshots HKModal/initially closed default 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4296,22 +3798,16 @@ exports[`Storyshots HKModal/initially closed default without footer 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4325,22 +3821,16 @@ exports[`Storyshots HKModal/initially closed default without header 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4354,22 +3844,16 @@ exports[`Storyshots HKModal/initially closed default without header and footer 1
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4383,22 +3867,16 @@ exports[`Storyshots HKModal/initially closed destructive 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4412,22 +3890,16 @@ exports[`Storyshots HKModal/initially closed flyout 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4441,22 +3913,16 @@ exports[`Storyshots HKModal/initially closed flyout without footer 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4470,22 +3936,16 @@ exports[`Storyshots HKModal/initially closed flyout without header 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4499,22 +3959,16 @@ exports[`Storyshots HKModal/initially closed flyout without header and footer 1`
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4528,22 +3982,16 @@ exports[`Storyshots HKModal/initially closed with confirmation 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4557,22 +4005,16 @@ exports[`Storyshots HKModal/initially open default 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4643,7 +4085,6 @@ exports[`Storyshots HKModal/initially open default 1`] = `
             className="hk-button--tertiary ml1"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
             value="cancel"
           >
@@ -4655,7 +4096,6 @@ exports[`Storyshots HKModal/initially open default 1`] = `
             className="hk-button--primary ml1"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
             value="ok"
           >
@@ -4674,22 +4114,16 @@ exports[`Storyshots HKModal/initially open default without footer 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4763,22 +4197,16 @@ exports[`Storyshots HKModal/initially open default without header 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4846,7 +4274,6 @@ exports[`Storyshots HKModal/initially open default without header 1`] = `
             className="hk-button--tertiary ml1"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
             value="cancel"
           >
@@ -4858,7 +4285,6 @@ exports[`Storyshots HKModal/initially open default without header 1`] = `
             className="hk-button--primary ml1"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
             value="ok"
           >
@@ -4877,22 +4303,16 @@ exports[`Storyshots HKModal/initially open default without header and footer 1`]
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -4963,22 +4383,16 @@ exports[`Storyshots HKModal/initially open destructive 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -5049,7 +4463,6 @@ exports[`Storyshots HKModal/initially open destructive 1`] = `
             className="hk-button--tertiary ml1"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
             value="cancel"
           >
@@ -5061,7 +4474,6 @@ exports[`Storyshots HKModal/initially open destructive 1`] = `
             className="hk-button--danger ml1"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
             value="ok"
           >
@@ -5080,22 +4492,16 @@ exports[`Storyshots HKModal/initially open flyout 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -5172,7 +4578,6 @@ exports[`Storyshots HKModal/initially open flyout 1`] = `
             className="hk-button--tertiary ml1"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
             value="cancel"
           >
@@ -5184,7 +4589,6 @@ exports[`Storyshots HKModal/initially open flyout 1`] = `
             className="hk-button--primary ml1"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
             value="ok"
           >
@@ -5203,22 +4607,16 @@ exports[`Storyshots HKModal/initially open flyout without footer 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -5298,22 +4696,16 @@ exports[`Storyshots HKModal/initially open flyout without header 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -5387,7 +4779,6 @@ exports[`Storyshots HKModal/initially open flyout without header 1`] = `
             className="hk-button--tertiary ml1"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
             value="cancel"
           >
@@ -5399,7 +4790,6 @@ exports[`Storyshots HKModal/initially open flyout without header 1`] = `
             className="hk-button--primary ml1"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
             value="ok"
           >
@@ -5418,22 +4808,16 @@ exports[`Storyshots HKModal/initially open flyout without header and footer 1`] 
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -5510,22 +4894,16 @@ exports[`Storyshots HKModal/initially open with confirmation 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div>
     <button
       className="hk-button--primary"
       disabled={false}
       onClick={[Function]}
-      title={undefined}
       type="button"
-      value={undefined}
     >
        
       Show the Modal
@@ -5610,7 +4988,6 @@ exports[`Storyshots HKModal/initially open with confirmation 1`] = `
             className="hk-button--tertiary ml1"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
             value="cancel"
           >
@@ -5622,7 +4999,6 @@ exports[`Storyshots HKModal/initially open with confirmation 1`] = `
             className="hk-button--disabled-danger ml1"
             disabled={true}
             onClick={[Function]}
-            title={undefined}
             type="button"
             value="ok"
           >
@@ -5641,13 +5017,9 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="ReactTable"
@@ -5660,7 +5032,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
     <div
       className="rt-table"
       role="grid"
-      style={undefined}
     >
       <div
         className="rt-thead -header"
@@ -5673,7 +5044,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
         <div
           className="rt-tr"
           role="row"
-          style={undefined}
         >
           <div
             className="rt-th rt-resizable-header -cursor-pointer"
@@ -5761,7 +5131,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -5801,7 +5170,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -5841,7 +5209,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -5881,7 +5248,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -5921,7 +5287,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -5961,7 +5326,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6001,7 +5365,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6041,7 +5404,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6081,7 +5443,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6121,7 +5482,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6161,7 +5521,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6201,7 +5560,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6241,7 +5599,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6281,7 +5638,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6321,7 +5677,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6361,7 +5716,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6401,7 +5755,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6441,7 +5794,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6481,7 +5833,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6521,7 +5872,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6569,9 +5919,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
             className="hk-button--disabled-tertiary"
             disabled={true}
             onClick={[Function]}
-            title={undefined}
             type="button"
-            value={undefined}
           >
              
             Previous
@@ -6584,9 +5932,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
               className="hk-button--tertiary bg-lightest-purple"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               1
@@ -6596,9 +5942,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               2
@@ -6608,9 +5952,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               3
@@ -6620,9 +5962,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               4
@@ -6632,9 +5972,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               5
@@ -6644,9 +5982,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               6
@@ -6656,9 +5992,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               7
@@ -6668,9 +6002,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               8
@@ -6680,9 +6012,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               9
@@ -6692,9 +6022,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               10
@@ -6705,9 +6033,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination 1`] = `
             className="hk-button--tertiary"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
-            value={undefined}
           >
              
             Next
@@ -6746,13 +6072,9 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="ReactTable"
@@ -6766,7 +6088,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
     <div
       className="rt-table"
       role="grid"
-      style={undefined}
     >
       <div
         className="rt-thead -header"
@@ -6779,7 +6100,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
         <div
           className="rt-tr"
           role="row"
-          style={undefined}
         >
           <div
             className="rt-th rt-resizable-header -cursor-pointer"
@@ -6867,7 +6187,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6907,7 +6226,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6947,7 +6265,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -6987,7 +6304,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7027,7 +6343,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7067,7 +6382,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7107,7 +6421,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7147,7 +6460,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7187,7 +6499,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7227,7 +6538,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7267,7 +6577,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7307,7 +6616,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7347,7 +6655,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7387,7 +6694,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7427,7 +6733,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7467,7 +6772,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7507,7 +6811,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7547,7 +6850,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7587,7 +6889,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7627,7 +6928,6 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -7675,9 +6975,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
             className="hk-button--disabled-tertiary"
             disabled={true}
             onClick={[Function]}
-            title={undefined}
             type="button"
-            value={undefined}
           >
              
             Previous
@@ -7690,9 +6988,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
               className="hk-button--tertiary bg-lightest-purple"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               1
@@ -7702,9 +6998,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               2
@@ -7714,9 +7008,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               3
@@ -7726,9 +7018,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               4
@@ -7738,9 +7028,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               5
@@ -7750,9 +7038,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               6
@@ -7762,9 +7048,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               7
@@ -7774,9 +7058,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               8
@@ -7786,9 +7068,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               9
@@ -7798,9 +7078,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               10
@@ -7811,9 +7089,7 @@ exports[`Storyshots HKTable Fixed Height (px) With Pagination and Custom Style 1
             className="hk-button--tertiary"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
-            value={undefined}
           >
              
             Next
@@ -7852,13 +7128,9 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="ReactTable"
@@ -7871,7 +7143,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
     <div
       className="rt-table"
       role="grid"
-      style={undefined}
     >
       <div
         className="rt-thead -header"
@@ -7884,7 +7155,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
         <div
           className="rt-tr"
           role="row"
-          style={undefined}
         >
           <div
             className="rt-th rt-resizable-header -cursor-pointer"
@@ -7972,7 +7242,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8012,7 +7281,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8052,7 +7320,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8092,7 +7359,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8132,7 +7398,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8172,7 +7437,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8212,7 +7476,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8252,7 +7515,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8292,7 +7554,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8332,7 +7593,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8372,7 +7632,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8412,7 +7671,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8452,7 +7710,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8492,7 +7749,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8532,7 +7788,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8572,7 +7827,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8612,7 +7866,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8652,7 +7905,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8692,7 +7944,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8732,7 +7983,6 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -8780,9 +8030,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
             className="hk-button--disabled-tertiary"
             disabled={true}
             onClick={[Function]}
-            title={undefined}
             type="button"
-            value={undefined}
           >
              
             Previous
@@ -8795,9 +8043,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
               className="hk-button--tertiary bg-lightest-purple"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               1
@@ -8807,9 +8053,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               2
@@ -8819,9 +8063,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               3
@@ -8831,9 +8073,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               4
@@ -8843,9 +8083,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               5
@@ -8855,9 +8093,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               6
@@ -8867,9 +8103,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               7
@@ -8879,9 +8113,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               8
@@ -8891,9 +8123,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               9
@@ -8903,9 +8133,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               10
@@ -8916,9 +8144,7 @@ exports[`Storyshots HKTable Fixed Height (vh) With Pagination 1`] = `
             className="hk-button--tertiary"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
-            value={undefined}
           >
              
             Next
@@ -8957,13 +8183,9 @@ exports[`Storyshots HKTable With Pagination 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="ReactTable"
@@ -8972,7 +8194,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
     <div
       className="rt-table"
       role="grid"
-      style={undefined}
     >
       <div
         className="rt-thead -header"
@@ -8985,7 +8206,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
         <div
           className="rt-tr"
           role="row"
-          style={undefined}
         >
           <div
             className="rt-th rt-resizable-header -cursor-pointer"
@@ -9073,7 +8293,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9113,7 +8332,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9153,7 +8371,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9193,7 +8410,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9233,7 +8449,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9273,7 +8488,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9313,7 +8527,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9353,7 +8566,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9393,7 +8605,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9433,7 +8644,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9473,7 +8683,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9513,7 +8722,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9553,7 +8761,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9593,7 +8800,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9633,7 +8839,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9673,7 +8878,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9713,7 +8917,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9753,7 +8956,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9793,7 +8995,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9833,7 +9034,6 @@ exports[`Storyshots HKTable With Pagination 1`] = `
           <div
             className="rt-tr -even"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -9881,9 +9081,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             className="hk-button--disabled-tertiary"
             disabled={true}
             onClick={[Function]}
-            title={undefined}
             type="button"
-            value={undefined}
           >
              
             Previous
@@ -9896,9 +9094,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               className="hk-button--tertiary bg-lightest-purple"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               1
@@ -9908,9 +9104,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               2
@@ -9920,9 +9114,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               3
@@ -9932,9 +9124,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               4
@@ -9944,9 +9134,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               5
@@ -9956,9 +9144,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               6
@@ -9968,9 +9154,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               7
@@ -9980,9 +9164,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               8
@@ -9992,9 +9174,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               9
@@ -10004,9 +9184,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
               className="hk-button--tertiary"
               disabled={false}
               onClick={[Function]}
-              title={undefined}
               type="button"
-              value={undefined}
             >
                
               10
@@ -10017,9 +9195,7 @@ exports[`Storyshots HKTable With Pagination 1`] = `
             className="hk-button--tertiary"
             disabled={false}
             onClick={[Function]}
-            title={undefined}
             type="button"
-            value={undefined}
           >
              
             Next
@@ -10058,13 +9234,9 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="ReactTable"
@@ -10073,7 +9245,6 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
     <div
       className="rt-table"
       role="grid"
-      style={undefined}
     >
       <div
         className="rt-thead -header"
@@ -10086,7 +9257,6 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
         <div
           className="rt-tr"
           role="row"
-          style={undefined}
         >
           <div
             className="rt-th rt-resizable-header -cursor-pointer"
@@ -10174,7 +9344,6 @@ exports[`Storyshots HKTable Without Pagination 1`] = `
           <div
             className="rt-tr -odd"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-td"
@@ -11024,13 +10193,9 @@ exports[`Storyshots HKTableHeader Asc 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="pa2 dark-gray ttc b f5 flex items-center"
@@ -11057,13 +10222,9 @@ exports[`Storyshots HKTableHeader Desc 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="pa2 dark-gray ttc b f5 flex items-center"
@@ -11090,13 +10251,9 @@ exports[`Storyshots HKTableHeader Unsorted 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="pa2 dark-gray ttc b f5 flex items-center"
@@ -11110,13 +10267,9 @@ exports[`Storyshots HKTableHeader With custom classes 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="pa2 dark-gray ttc b f5 flex items-center justify-end"
@@ -11143,13 +10296,9 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="pv2 ph2 mw8 center"
@@ -11161,9 +10310,7 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
         className="hk-button--disabled-tertiary"
         disabled={true}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Previous
@@ -11176,9 +10323,7 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
           className="hk-button--tertiary bg-lightest-purple"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           1
@@ -11188,9 +10333,7 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           2
@@ -11200,9 +10343,7 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           3
@@ -11212,9 +10353,7 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           4
@@ -11224,9 +10363,7 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           5
@@ -11236,9 +10373,7 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           6
@@ -11248,9 +10383,7 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           7
@@ -11260,9 +10393,7 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           8
@@ -11272,9 +10403,7 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           9
@@ -11284,9 +10413,7 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           10
@@ -11297,9 +10424,7 @@ exports[`Storyshots HKTablePagination beginning 1`] = `
         className="hk-button--tertiary"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Next
@@ -11327,13 +10452,9 @@ exports[`Storyshots HKTablePagination end 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="pv2 ph2 mw8 center"
@@ -11345,9 +10466,7 @@ exports[`Storyshots HKTablePagination end 1`] = `
         className="hk-button--tertiary"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         <svg
@@ -11373,9 +10492,7 @@ exports[`Storyshots HKTablePagination end 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           11
@@ -11385,9 +10502,7 @@ exports[`Storyshots HKTablePagination end 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           12
@@ -11397,9 +10512,7 @@ exports[`Storyshots HKTablePagination end 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           13
@@ -11409,9 +10522,7 @@ exports[`Storyshots HKTablePagination end 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           14
@@ -11421,9 +10532,7 @@ exports[`Storyshots HKTablePagination end 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           15
@@ -11433,9 +10542,7 @@ exports[`Storyshots HKTablePagination end 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           16
@@ -11445,9 +10552,7 @@ exports[`Storyshots HKTablePagination end 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           17
@@ -11457,9 +10562,7 @@ exports[`Storyshots HKTablePagination end 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           18
@@ -11469,9 +10572,7 @@ exports[`Storyshots HKTablePagination end 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           19
@@ -11481,9 +10582,7 @@ exports[`Storyshots HKTablePagination end 1`] = `
           className="hk-button--tertiary bg-lightest-purple"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           20
@@ -11494,9 +10593,7 @@ exports[`Storyshots HKTablePagination end 1`] = `
         className="hk-button--disabled-tertiary"
         disabled={true}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Next
@@ -11511,13 +10608,9 @@ exports[`Storyshots HKTablePagination middle 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <div
     className="pv2 ph2 mw8 center"
@@ -11529,9 +10622,7 @@ exports[`Storyshots HKTablePagination middle 1`] = `
         className="hk-button--tertiary"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         <svg
@@ -11557,9 +10648,7 @@ exports[`Storyshots HKTablePagination middle 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           6
@@ -11569,9 +10658,7 @@ exports[`Storyshots HKTablePagination middle 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           7
@@ -11581,9 +10668,7 @@ exports[`Storyshots HKTablePagination middle 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           8
@@ -11593,9 +10678,7 @@ exports[`Storyshots HKTablePagination middle 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           9
@@ -11605,9 +10688,7 @@ exports[`Storyshots HKTablePagination middle 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           10
@@ -11617,9 +10698,7 @@ exports[`Storyshots HKTablePagination middle 1`] = `
           className="hk-button--tertiary bg-lightest-purple"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           11
@@ -11629,9 +10708,7 @@ exports[`Storyshots HKTablePagination middle 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           12
@@ -11641,9 +10718,7 @@ exports[`Storyshots HKTablePagination middle 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           13
@@ -11653,9 +10728,7 @@ exports[`Storyshots HKTablePagination middle 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           14
@@ -11665,9 +10738,7 @@ exports[`Storyshots HKTablePagination middle 1`] = `
           className="hk-button--tertiary"
           disabled={false}
           onClick={[Function]}
-          title={undefined}
           type="button"
-          value={undefined}
         >
            
           15
@@ -11678,9 +10749,7 @@ exports[`Storyshots HKTablePagination middle 1`] = `
         className="hk-button--tertiary"
         disabled={false}
         onClick={[Function]}
-        title={undefined}
         type="button"
-        value={undefined}
       >
          
         Next
@@ -11708,22 +10777,15 @@ exports[`Storyshots HKTextField autoSelect true 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <input
     className="hk-input"
-    disabled={undefined}
-    name={undefined}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
-    readOnly={undefined}
     type="text"
     value="Hello world"
   />
@@ -11734,22 +10796,15 @@ exports[`Storyshots HKTextField blank 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <input
     className="hk-input"
-    disabled={undefined}
-    name={undefined}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
-    readOnly={undefined}
     type="text"
     value=""
   />
@@ -11760,22 +10815,15 @@ exports[`Storyshots HKTextField default, custom class 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <input
     className="hk-input f1 w-100 red"
-    disabled={undefined}
-    name={undefined}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
-    readOnly={undefined}
     type="text"
     value="Hello world"
   />
@@ -11786,22 +10834,15 @@ exports[`Storyshots HKTextField default, type PASSWORD 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <input
     className="hk-input"
-    disabled={undefined}
-    name={undefined}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
-    readOnly={undefined}
     type="password"
     value="1234"
   />
@@ -11812,22 +10853,15 @@ exports[`Storyshots HKTextField default, type TEXT 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <input
     className="hk-input"
-    disabled={undefined}
-    name={undefined}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
-    readOnly={undefined}
     type="text"
     value="Hello world"
   />
@@ -11838,22 +10872,16 @@ exports[`Storyshots HKTextField disabled 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <input
     className="hk-input"
     disabled={true}
-    name={undefined}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
-    readOnly={undefined}
     type="text"
     value="1234"
   />
@@ -11864,18 +10892,12 @@ exports[`Storyshots HKTextField readOnly + autoSelect 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <input
     className="hk-input--read-only"
-    disabled={undefined}
-    name={undefined}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
@@ -11890,18 +10912,12 @@ exports[`Storyshots HKTextField readOnly true 1`] = `
 <div>
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <span
     className="isvg loading"
-    dangerouslySetInnerHTML={undefined}
-    style={undefined}
   />
   <input
     className="hk-input--read-only"
-    disabled={undefined}
-    name={undefined}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Enter some text"
