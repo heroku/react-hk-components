@@ -27,12 +27,14 @@ module.exports = {
     ],
   },
   plugins: [
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, './src/static'),
-        to: path.resolve(__dirname, './dist/static'),
-      },
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, './src/static'),
+          to: path.resolve(__dirname, './dist/static'),
+        },
+      ],
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
