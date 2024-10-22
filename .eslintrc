@@ -6,7 +6,9 @@
     "node": true,
     "es6": true
   },
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
+    "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
     }
@@ -19,7 +21,13 @@
     "react/jsx-key": "error",
     "react/jsx-wrap-multilines": "error",
     "react/no-direct-mutation-state": "error",
-    "react/sort-comp": "error",
+    "react/prop-types": "warn",
+    "react/sort-comp": "warn",
     "react/sort-prop-types": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
