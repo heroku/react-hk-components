@@ -170,6 +170,8 @@ enum ProductIcons {
   InfoRing28 = 'info-ring-28',
   LanguageClojure16 = 'language-clojure-16',
   LanguageClojure28 = 'language-clojure-28',
+  LanguageDotnet16 = 'language-net-16',
+  languageDotnet28 = 'language-net-28',
   LanguageGo16 = 'language-go-16',
   LanguageGo28 = 'language-go-28',
   LanguageGradle16 = 'language-gradle-16',
