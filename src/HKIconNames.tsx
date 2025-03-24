@@ -356,6 +356,7 @@ enum MarketingIcons {
   InternalRouting48 = 'marketing-internal-routing-48',
   Kafka48 = 'marketing-kafka-48',
   LanguageClojure48 = 'marketing-language-clojure-48',
+  LanguageDotnet48 = 'marketing-language-net-48',
   LanguageGo48 = 'marketing-language-go-48',
   LanguageGradle48 = 'marketing-language-gradle-48',
   LanguageJava48 = 'marketing-language-java-48',
