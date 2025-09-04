@@ -4,7 +4,7 @@ import * as d3array from 'd3-array'
 import * as d3scale from 'd3-scale'
 import * as d3shape from 'd3-shape'
 
-import { flatMap, head, isFinite, last } from 'lodash-es'
+import { flatMap, head, isFinite, last } from 'lodash'
 
 import { differenceInMilliseconds, format, parse } from 'date-fns'
 

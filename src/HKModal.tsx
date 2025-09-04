@@ -127,7 +127,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
         }
       : {}
 
-    const dismissElem = onDismiss && (
+    const dismissElem = (
       <div
         className={classNames('right-1 absolute pointer', { 'top-1': !header })}
         onClick={this.handleClose}
@@ -170,7 +170,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
     // in={!isClosing} is derived from the state table at the top of this component
     return (
       <Transition in={!isClosing} timeout={0} onExited={this.handleExited}>
-        {state => (
+        {(state: any) => (
           <SRMModal
             containerStyle={{
               ...innerTransition,
