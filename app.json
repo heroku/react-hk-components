@@ -4,7 +4,7 @@
   "repository": "https://github.com/heroku/react-hk-components",
   "env": {
     "NPM_CONFIG_PRODUCTION": {
-      "description": "Ensure node buildpack leaves dev deps for Storybook",
+      "description": "Ensure node buildpack leaves dev dependencies",
       "value": "false"
     }
   },
