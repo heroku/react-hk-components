@@ -3,18 +3,19 @@ module.exports = {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        loader: require.resolve('awesome-typescript-loader')
+        loader: require.resolve('ts-loader'),
+        options: {
+          configFile: 'tsconfig.json',
+          silent: true,
+        },
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
-      }
-    ]
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
   resolve: {
-    extensions: [
-      '.ts',
-      '.tsx'
-    ]
-  }
+    extensions: ['.ts', '.tsx'],
+  },
 }

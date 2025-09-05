@@ -1,5 +1,5 @@
 import { MalibuIcon } from '@heroku/react-malibu'
-import { range } from 'lodash-es'
+import { range } from 'lodash'
 import * as React from 'react'
 import { default as HKButton, Type } from './HKButton'
 
