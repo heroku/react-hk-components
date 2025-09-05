@@ -69,11 +69,14 @@ const dropdownProps = [
   {
     props: {
       align: Align.Left,
-      modifiers: {
-        offset: {
-          offset: 100,
-        },
-      },
+      modifiers: [
+        {
+          name: 'offset',
+          options: {
+            offset: [0, 100],
+          },
+        } as any,
+      ],
       positionFixed: true,
       title: 'Dropdown',
     },
