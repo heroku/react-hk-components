@@ -1,5 +1,5 @@
+import { Modifier } from '@popperjs/core'
 import classNames from 'classnames'
-import { Modifiers } from 'popper.js'
 import * as React from 'react'
 import OutsideClickHandler from 'react-outside-click-handler'
 import { Manager, Popper, Reference } from 'react-popper'
@@ -15,7 +15,7 @@ export enum Align {
 interface IDropdownProps {
   align?: Align // align dropdown component anchoring button
   positionFixed?: boolean
-  modifiers?: Modifiers
+  modifiers?: Array<Modifier<any, any>>
   children?: JSX.Element | JSX.Element[] | string
   className?: string // dropdown button styling
   closeOnClick?: boolean // hide dropdown content after onClick in dropdown content

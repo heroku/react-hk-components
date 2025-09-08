@@ -42,10 +42,10 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader',
+        loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
-          configFileName: 'tsconfig.build.json',
+          configFile: 'tsconfig.build.json',
           silent: true,
         },
       },

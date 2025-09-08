@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import * as d3array from 'd3-array'
 import * as d3scale from 'd3-scale'
-import { includes } from 'lodash-es'
+import { includes } from 'lodash'
 
 import { ChartPadding, colours } from './constants'
 import { getMaxValues } from './helpers'
