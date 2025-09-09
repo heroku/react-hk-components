@@ -10,6 +10,9 @@
     "node": "16.x"
   },
   "dependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@babel/preset-react": "^7.22.0",
     "@heroku/react-malibu": "^4.1.0",
     "@popperjs/core": "^2.11.8",
     "@types/jest": "^27.5.2",
@@ -18,12 +21,9 @@
     "@types/react-dom": "^18.0.11",
     "@types/react-test-renderer": "^18.0.0",
     "@types/react-transition-group": "^4.4.5",
-    "@babel/core": "^7.23.0",
     "babel-jest": "^29.7.0",
     "babel-loader": "^9.1.0",
     "babel-plugin-require-context-hook": "^1.0.0",
-    "@babel/preset-env": "^7.23.0",
-    "@babel/preset-react": "^7.22.0",
     "classnames": "^2.3.2",
     "copy-webpack-plugin": "6.4.1",
     "css-loader": "^5.2.7",
@@ -43,8 +43,8 @@
     "regenerator-runtime": "^0.12.1",
     "simple-react-modal": "0.5.1",
     "style-loader": "^2.0.0",
-    "ts-loader": "^8.4.0",
-    "terser-webpack-plugin": "^4.2.3"
+    "terser-webpack-plugin": "^4.2.3",
+    "ts-loader": "^8.4.0"
   },
   "devDependencies": {
     "eslint": "^4.15.0",
