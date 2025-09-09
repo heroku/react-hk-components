@@ -42,7 +42,7 @@
     "react-transition-group": "^4.4.5",
     "regenerator-runtime": "^0.12.1",
     "simple-react-modal": "0.5.1",
-    "style-loader": "^2.0.0",
+    "style-loader": "3.3.4",
     "terser-webpack-plugin": "^4.2.3",
     "ts-loader": "^8.4.0"
   },
