@@ -1,4 +1,4 @@
-import { Modifier } from '@popperjs/core'
+import { Modifier } from '@popperjs/core/lib/types'
 import classNames from 'classnames'
 import * as React from 'react'
 import OutsideClickHandler from 'react-outside-click-handler'
