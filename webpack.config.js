@@ -1,6 +1,6 @@
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
@@ -17,22 +17,38 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
   },
+  externals: {
+    react: {
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'react',
+      root: 'React',
+    },
+    'react-dom': {
+      commonjs: 'react-dom',
+      commonjs2: 'react-dom',
+      amd: 'react-dom',
+      root: 'ReactDOM',
+    },
+  },
   optimization: {
     minimizer: [
-      new UglifyJsPlugin({
-        uglifyOptions: {
+      new TerserPlugin({
+        terserOptions: {
           keep_fnames: true,
         },
       }),
     ],
   },
   plugins: [
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, './src/static'),
-        to: path.resolve(__dirname, './dist/static'),
-      },
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, './src/static'),
+          to: path.resolve(__dirname, './dist/static'),
+        },
+      ],
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
