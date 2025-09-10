@@ -41,12 +41,12 @@ const HKTablePagination: React.FunctionComponent<any> = (
   const nextDisabled = currentPage === pages
   const visiblePages = buildPager(pages, currentPage, 1)
 
-  const jumpTo = pageNum => {
+  const jumpTo = (pageNum) => {
     const index = pageNum - 1
     onPageChange(index)
   }
 
-  const handlePageClick = pageNum => () => jumpTo(pageNum)
+  const handlePageClick = (pageNum) => () => jumpTo(pageNum)
 
   const onPrevious = () => {
     onPageChange(page - 1)
@@ -74,7 +74,7 @@ const HKTablePagination: React.FunctionComponent<any> = (
           Previous
         </HKButton>
         <div className='purple'>
-          {visiblePages.map(p => {
+          {visiblePages.map((p) => {
             const isActive = p === currentPage
             return (
               <HKButton

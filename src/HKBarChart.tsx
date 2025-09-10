@@ -61,7 +61,7 @@ export default class HKBarChart extends React.Component<
     return (
       <div className='flex'>
         <HKResizeContainer>
-          {width => (
+          {(width) => (
             <HKBarChartData
               {...this.props}
               width={width}
@@ -78,7 +78,7 @@ export default class HKBarChart extends React.Component<
   private handleToggle = (label, i) => {
     const maxValues = getMaxValues(this.props.data, 'bar')
 
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       hoverInfo: {
         ...prevState.hoverInfo,
         [i]: !prevState.toggleInfo[i] ? maxValues[i] : null,

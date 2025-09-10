@@ -38,7 +38,7 @@ export default class HKBarChartData extends React.PureComponent<
   public static getDerivedStateFromProps(newProps, prevState) {
     if (
       ['data', 'width', 'height', 'toggleInfo'].every(
-        o => newProps[o] === prevState[o]
+        (o) => newProps[o] === prevState[o]
       )
     ) {
       return null
@@ -50,14 +50,14 @@ export default class HKBarChartData extends React.PureComponent<
     const chartWidth = width - ChartPadding.Horizontal
     // keys: an array of the indexes from bar chart data that are toggled on
     const keys = Object.keys(toggleInfo)
-      .filter(k => toggleInfo[k])
+      .filter((k) => toggleInfo[k])
       .map(Number)
-    const shownData = data.map(rowData =>
+    const shownData = data.map((rowData) =>
       rowData.filter((colData, i) => includes(keys, i))
     )
 
-    const minValues = d3array.min(shownData, arr => d3array.min(arr))
-    const maxValues = d3array.max(shownData, arr => d3array.max(arr))
+    const minValues = d3array.min(shownData, (arr) => d3array.min(arr))
+    const maxValues = d3array.max(shownData, (arr) => d3array.max(arr))
 
     const x0Scale = d3scale
       .scaleBand()
@@ -106,7 +106,7 @@ export default class HKBarChartData extends React.PureComponent<
     }
   }
 
-  public handleMouseMove = e => {
+  public handleMouseMove = (e) => {
     if (!this.ref || !this.props.onHover) {
       return null
     }
@@ -119,7 +119,7 @@ export default class HKBarChartData extends React.PureComponent<
     this.props.onHover(values, keys)
   }
 
-  public handleMouseLeave = e => {
+  public handleMouseLeave = (e) => {
     const { onHover } = this.props
     const { data, keys } = this.state
 
@@ -161,7 +161,7 @@ export default class HKBarChartData extends React.PureComponent<
         width={width}
         height={height}
         viewBox={`0 0 ${width} ${height}`}
-        ref={ref => (this.ref = ref)}
+        ref={(ref) => (this.ref = ref)}
       >
         <g transform={`translate(${ChartPadding.Horizontal}, 0)`}>
           <rect

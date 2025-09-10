@@ -52,7 +52,9 @@ export default class HKLineChartData extends React.PureComponent<
 
   // setState based on new props passed
   public static getDerivedStateFromProps(newProps, prevState) {
-    if (['data', 'width', 'height'].every(o => newProps[o] === prevState[o])) {
+    if (
+      ['data', 'width', 'height'].every((o) => newProps[o] === prevState[o])
+    ) {
       return null
     }
 
@@ -73,13 +75,10 @@ export default class HKLineChartData extends React.PureComponent<
     ]
 
     // Domain of y coordinates (value)
-    const values = flatMap(data, d => d[1])
+    const values = flatMap(data, (d) => d[1])
     const [minVal, maxVal] = d3array.extent(values)
 
-    const xScale = d3scale
-      .scaleTime()
-      .domain(timeExtent)
-      .range([0, chartWidth])
+    const xScale = d3scale.scaleTime().domain(timeExtent).range([0, chartWidth])
 
     const yScale = d3scale
       .scaleLinear()
@@ -88,15 +87,15 @@ export default class HKLineChartData extends React.PureComponent<
 
     const line = d3shape
       .line()
-      .x(d => xScale(d.x))
-      .y(d => yScale(d.y))
+      .x((d) => xScale(d.x))
+      .y((d) => yScale(d.y))
       .curve(d3shape.curveStepBefore)
 
     const area = d3shape
       .area()
-      .x(d => xScale(d.x))
+      .x((d) => xScale(d.x))
       .y0(yScale(Math.min(minVal, 0)))
-      .y1(d => yScale(d.y))
+      .y1((d) => yScale(d.y))
       .curve(d3shape.curveStepBefore)
     return {
       data,
@@ -135,7 +134,7 @@ export default class HKLineChartData extends React.PureComponent<
     }
   }
 
-  public handleMouseMove = e => {
+  public handleMouseMove = (e) => {
     const { measurements, xScale } = this.state
 
     if (!this.ref) {
@@ -147,7 +146,7 @@ export default class HKLineChartData extends React.PureComponent<
       e.clientX -
       this.ref.getBoundingClientRect().left -
       ChartPadding.Horizontal
-    const bisectX = d3array.bisector(d => d.x).left
+    const bisectX = d3array.bisector((d) => d.x).left
     const newIdx = bisectX(measurements, xScale.invert(hoverIndex))
     this.setState({ idx: newIdx, hoverIndex })
 
@@ -157,7 +156,7 @@ export default class HKLineChartData extends React.PureComponent<
     }
   }
 
-  public handleMouseLeave = e => {
+  public handleMouseLeave = (e) => {
     const { onHover, data } = this.props
 
     this.setState({ hoverIndex: -1, idx: -1 })
@@ -187,10 +186,10 @@ export default class HKLineChartData extends React.PureComponent<
       }
     })
 
-    const timeseries = valueIndexes.map(i => {
+    const timeseries = valueIndexes.map((i) => {
       const lineProps = {
         area,
-        data: measurements.map(m => ({
+        data: measurements.map((m) => ({
           x: m.x,
           y: m.y[i],
         })),
@@ -199,10 +198,10 @@ export default class HKLineChartData extends React.PureComponent<
       return <HKLine key={i} {...lineProps} />
     })
 
-    const indicatorPoints = valueIndexes.map(v =>
+    const indicatorPoints = valueIndexes.map((v) =>
       // check if y-values exist and check if specific line is toggled on
       measurements[idx] &&
-      Object.keys(toggleInfo).map(key => toggleInfo[key])[v] ? (
+      Object.keys(toggleInfo).map((key) => toggleInfo[key])[v] ? (
         <circle
           key={v}
           className='indicatorPoints'
@@ -245,7 +244,7 @@ export default class HKLineChartData extends React.PureComponent<
           viewBox={`0 0 ${width} ${height}`}
           onMouseMove={this.handleMouseMove}
           onMouseLeave={this.handleMouseLeave}
-          ref={ref => (this.ref = ref)}
+          ref={(ref) => (this.ref = ref)}
         >
           {indicator}
           <g transform={`translate(${ChartPadding.Horizontal}, 0)`}>
@@ -279,8 +278,8 @@ function formatData(dataSet) {
   if (!dataSet) {
     return null
   }
-  return dataSet.map(d => ({
+  return dataSet.map((d) => ({
     x: parse(d[0]),
-    y: d[1].map(v => (isFinite(v) ? v : 0)),
+    y: d[1].map((v) => (isFinite(v) ? v : 0)),
   }))
 }

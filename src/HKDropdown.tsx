@@ -48,7 +48,7 @@ export default class HKDropdown extends React.Component<
   private dropdownRef = React.createRef<HTMLDivElement>()
 
   public handleDropdown = () => {
-    this.setState(prevState => ({ showDropdown: !prevState.showDropdown }))
+    this.setState((prevState) => ({ showDropdown: !prevState.showDropdown }))
   }
 
   public testId = () => {

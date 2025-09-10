@@ -5,7 +5,7 @@ import './static/styles/table.css'
 
 import { default as HKTablePagination } from './HKTablePagination'
 
-const HKTable: React.FunctionComponent<any> = props => {
+const HKTable: React.FunctionComponent<any> = (props) => {
   const tableRef = React.createRef<HTMLDivElement>()
 
   const handlePageChange = (...args) => {

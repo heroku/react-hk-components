@@ -26,15 +26,8 @@ export default class HKLegendItem extends React.PureComponent<
   }
 
   public render() {
-    const {
-      className,
-      disableToggle,
-      label,
-      show,
-      value,
-      zIndex,
-      type,
-    } = this.props
+    const { className, disableToggle, label, show, value, zIndex, type } =
+      this.props
 
     const legendIcon = show && (
       <div className='flex items-center'>

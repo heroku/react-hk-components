@@ -18,7 +18,7 @@ const defaultProps = {
   type: 'text',
 }
 
-const HKTextField: React.FunctionComponent<ITextFieldProps> = props => {
+const HKTextField: React.FunctionComponent<ITextFieldProps> = (props) => {
   const {
     placeholder,
     value,
@@ -33,7 +33,7 @@ const HKTextField: React.FunctionComponent<ITextFieldProps> = props => {
   const purpleClass = `hk-input${readOnly ? '--read-only' : ''}`
   const inputClass = classNames(purpleClass, className)
 
-  const handleFocus = e => {
+  const handleFocus = (e) => {
     if (autoSelect) {
       e.target.select()
     }

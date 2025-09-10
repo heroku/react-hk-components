@@ -31,7 +31,7 @@ const defaultProps = {
   type: Type.Secondary,
 }
 
-const HKButton: React.FunctionComponent<IButtonProps> = props => {
+const HKButton: React.FunctionComponent<IButtonProps> = (props) => {
   const {
     onClick,
     async = false,

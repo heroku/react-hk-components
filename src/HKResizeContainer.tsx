@@ -24,7 +24,7 @@ export default class HKResizeContainer extends React.PureComponent<
     }
   }
 
-  public handleOnResize = contentRect =>
+  public handleOnResize = (contentRect) =>
     this.setState({ width: contentRect.bounds.width })
 
   public render() {
