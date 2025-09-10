@@ -101,12 +101,12 @@ export default class HKDropdown extends React.Component<
     const { showDropdown } = this.state
 
     const dropdownStyle: React.CSSProperties = {
-      position: 'absolute',
-      top: '100%',
       left: align === Align.Right ? 'auto' : '0',
-      right: align === Align.Right ? '0' : 'auto',
-      zIndex: 9999,
       minWidth: '200px',
+      position: 'absolute',
+      right: align === Align.Right ? '0' : 'auto',
+      top: '100%',
+      zIndex: 9999,
     }
 
     return (
