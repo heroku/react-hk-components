@@ -40,6 +40,19 @@
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/ban-types": "warn",
-    "prettier/prettier": "warn"
+    "prettier/prettier": "warn",
+    // Additional TypeScript rules (replacing TSLint functionality)
+    "@typescript-eslint/no-unused-expressions": "error",
+    "@typescript-eslint/no-var-requires": "error",
+    "@typescript-eslint/no-inferrable-types": "warn",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/no-non-null-assertion": "warn",
+    "@typescript-eslint/prefer-nullish-coalescing": "warn",
+    "@typescript-eslint/prefer-optional-chain": "warn",
+    // React-specific rules
+    "react/display-name": "warn",
+    "react/no-array-index-key": "warn",
+    "react/no-unescaped-entities": "error",
+    "react/self-closing-comp": "warn"
   }
 }
