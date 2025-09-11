@@ -61,7 +61,7 @@ export default class HKLineChart extends React.Component<
     return (
       <div className='flex'>
         <HKResizeContainer>
-          {width => (
+          {(width) => (
             <HKLineChartData
               {...this.props}
               width={width}
@@ -75,7 +75,7 @@ export default class HKLineChart extends React.Component<
     )
   }
 
-  private handleHover = values => {
+  private handleHover = (values) => {
     const hoverInfo = {}
 
     this.props.labels.forEach(
@@ -85,7 +85,7 @@ export default class HKLineChart extends React.Component<
   }
 
   private handleToggle = (label, i) =>
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       toggleInfo: {
         ...prevState.toggleInfo,
         [`${label}-${i}`]: !prevState.toggleInfo[`${label}-${i}`],

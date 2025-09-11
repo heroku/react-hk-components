@@ -8,11 +8,18 @@ module.exports = {
   entry: {
     'react-hk-components': './src/index.ts',
   },
+  // Webpack 5 node configuration - disable Node.js polyfills
+  node: {
+    global: false,
+  },
   output: {
     path: path.resolve(__dirname, './dist/umd'),
     filename: '[name].js',
-    libraryTarget: 'umd',
-    library: 'react-hk-components',
+    library: {
+      name: 'react-hk-components',
+      type: 'umd',
+    },
+    globalObject: 'this', // Important for UMD
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -32,6 +39,7 @@ module.exports = {
     },
   },
   optimization: {
+    minimize: true,
     minimizer: [
       new TerserPlugin({
         terserOptions: {

@@ -7,29 +7,29 @@
   "author": "Heroku",
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
-    "node": "16.x"
+    "node": ">=18.20.0"
   },
   "dependencies": {
-    "@babel/core": "^7.23.0",
-    "@babel/preset-env": "^7.23.0",
-    "@babel/preset-react": "^7.22.0",
+    "@babel/core": "^7.25.9",
+    "@babel/preset-env": "^7.25.9",
+    "@babel/preset-react": "^7.25.9",
     "@heroku/react-malibu": "^4.1.0",
-    "@types/jest": "^27.5.2",
+    "@types/jest": "^29.5.14",
     "@types/lodash": "^4.17.20",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@types/react-test-renderer": "^18.0.0",
-    "@types/react-transition-group": "^4.4.5",
-    "babel-jest": "^29.7.0",
-    "babel-loader": "^9.1.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/react-test-renderer": "^18.3.0",
+    "@types/react-transition-group": "^4.4.12",
+    "babel-jest": "^30.1.2",
+    "babel-loader": "^9.1.3",
     "babel-plugin-require-context-hook": "^1.0.0",
-    "classnames": "^2.3.2",
-    "copy-webpack-plugin": "6.4.1",
+    "classnames": "^2.5.1",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^5.2.7",
     "d3": "^7.9.0",
     "date-fns": "^1.30.1",
     "lodash": "^4.17.21",
-    "mini-css-extract-plugin": "^1.6.2",
+    "mini-css-extract-plugin": "^2.7.6",
     "react-inlinesvg": "^0.8.3",
     "react-measure": "^2.0.0",
     "react-outside-click-handler": "^1.2.2",
@@ -37,55 +37,59 @@
     "react-transition-group": "^4.4.5",
     "regenerator-runtime": "^0.12.1",
     "simple-react-modal": "0.5.1",
-    "style-loader": "3.3.4",
-    "terser-webpack-plugin": "^4.2.3",
-    "ts-loader": "^8.4.0"
+    "style-loader": "^3.3.4",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-loader": "^9.4.4"
   },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "eslint": "^4.15.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-import": "^2.8.0",
+    "@eslint/js": "^9.15.0",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-react": "^7.37.2",
     "file-loader": "^6.2.0",
-    "husky": "^1.2.0",
-    "jest": "^27.5.1",
+    "husky": "^8.0.3",
+    "jest": "^30.1.3",
     "jest-css-modules-transform": "4.4.2",
-    "lint-staged": "^13.3.0",
-    "np": "7.7.0",
-    "prettier": "1.15.3",
-    "react-test-renderer": "^18.2.0",
-    "ts-jest": "^27.1.5",
-    "tslint": "^5.9.1",
-    "tslint-config-prettier": "^1.17.0",
-    "tslint-react": "^3.4.0",
-    "typescript": "^4.9.5",
-    "webpack": "4.47.0",
-    "webpack-bundle-analyzer": "4.10.2",
-    "webpack-cli": "4.9.2"
+    "lint-staged": "^15.2.10",
+    "np": "^10.2.0",
+    "prettier": "^3.4.0",
+    "react-test-renderer": "^18.3.1",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.2",
+    "webpack": "^5.101.3",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "analyze": "rm stats.json && webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json",
-    "eslint": "eslint ./src",
-    "tslint": "tslint -c tslint.json --project .",
-    "lint": "yarn run eslint && yarn run tslint",
+    "analyze": "rm -f stats.json && npx webpack --profile --json > stats.json && npx webpack-bundle-analyzer stats.json",
+    "eslint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint": "yarn run eslint",
     "build": "yarn run clean && tsc --project tsconfig.build.json && webpack",
     "clean": "rm -rf ./dist",
     "prepublish": "yarn run build",
-    "test": "jest --testPathPattern $PWD/test/helpers.test.tsx",
+    "test": "jest --testPathPatterns $PWD/test/helpers.test.tsx",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "release": "np"
   },
   "jest": {
     "transform": {
-      "^.+\\.[t]sx?$": "ts-jest",
+      "^.+\\.[t]sx?$": [
+        "ts-jest",
+        {
+          "tsconfig": "tsconfig.json"
+        }
+      ],
       "\\.jsx?$": "babel-jest",
       ".+\\.(css)$": "<rootDir>/node_modules/jest-css-modules-transform"
     },
@@ -104,7 +108,9 @@
       "/node_modules/"
     ],
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$",
-    "testURL": "http://localhost/",
+    "testEnvironmentOptions": {
+      "url": "http://localhost/"
+    },
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -112,12 +118,7 @@
       "jsx",
       "json",
       "node"
-    ],
-    "globals": {
-      "ts-jest": {
-        "tsconfig": "tsconfig.json"
-      }
-    }
+    ]
   },
   "files": [
     "dist",
@@ -143,5 +144,9 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "resolutions": {
+    "minimatch": "^3.1.2",
+    "ansi-regex": "^5.0.1"
   }
 }

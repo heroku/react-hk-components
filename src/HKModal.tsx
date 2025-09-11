@@ -154,7 +154,7 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
       'flex-auto': isFlyout,
     }
 
-    const footer = (buttons || []).map(b => (
+    const footer = (buttons || []).map((b) => (
       <HKButton
         key={b.value}
         value={b.value}
@@ -204,11 +204,13 @@ export default class HKModal extends React.Component<IModalProps, IModalState> {
                 }
               )}
             >
-              {/*
+              {
+                /*
                 N.B.: without the wrapper div Fragment, React gets confused because of
                 multiple dynamic children and warns about missing `key` props.
               */
-              header && <React.Fragment>{header}</React.Fragment>}
+                header && <React.Fragment>{header}</React.Fragment>
+              }
               {dismissElem}
             </div>
 

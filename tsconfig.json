@@ -9,7 +9,8 @@
     "allowJs": true, // allow a partial TypeScript and JavaScript codebase
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "lib": ["dom", "dom.iterable", "es6"]
   },
   "include": ["./src/", "./stories"]
 }
