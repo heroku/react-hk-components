@@ -13,7 +13,7 @@
     "@babel/core": "^7.25.9",
     "@babel/preset-env": "^7.25.9",
     "@babel/preset-react": "^7.25.9",
-    "@heroku/react-malibu": "^4.1.0",
+    "@heroku/react-malibu": "^5.0.2",
     "@types/jest": "^29.5.14",
     "@types/lodash": "^4.17.20",
     "@types/react": "^18.3.12",

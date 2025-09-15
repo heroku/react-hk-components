@@ -1107,10 +1107,10 @@
     "@eslint/core" "^0.15.2"
     levn "^0.4.1"
 
-"@heroku/react-malibu@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@heroku/react-malibu/-/react-malibu-4.1.0.tgz#b03325736a7b52a2591aeffb01981083c88f1663"
-  integrity sha512-+yaDtUOSVJ2Tj9wT1490lnB0DYmbWIYyQfpvxEZX8SH9eIR5zDtxOpkIIbmsNIHBtp0kvKnYnyFPPz1rkyfjBQ==
+"@heroku/react-malibu@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@heroku/react-malibu/-/react-malibu-5.0.2.tgz#f793cb6a236cbf4d45c43536e3f1cac0162accbf"
+  integrity sha512-LR6FvIZYW99rBkVFNOFajLWsth1YDKQewbf+LpQ+O33ffM1BtQfH+cjNvpgtKKxgwMI8+Iojf5opXTNWCsaOHg==
   dependencies:
     babel-polyfill "^6.23.0"
     prop-types "^15.6.2"
@@ -5947,7 +5947,7 @@ log-update@^6.1.0:
     strip-ansi "^7.1.0"
     wrap-ansi "^9.0.0"
 
-loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
+loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -6733,15 +6733,7 @@ prop-types-exact@^1.2.0:
     object.assign "^4.1.0"
     reflect.ownkeys "^0.2.0"
 
-prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2:
-  version "15.6.2"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
-  integrity sha512-3pboPvLiWD7dkI3qf3KbUe6hKFKa52w+AE0VCqECtf+QHAKgOL37tTaNCnuX1nAAQ4ZhyP+kYVKf8rLmJ/feDQ==
-  dependencies:
-    loose-envify "^1.3.1"
-    object-assign "^4.1.1"
-
-prop-types@^15.8.1:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
