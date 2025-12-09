@@ -73,10 +73,10 @@
   "scripts": {
     "analyze": "rm -f stats.json && npx webpack --profile --json > stats.json && npx webpack-bundle-analyzer stats.json",
     "eslint": "eslint \"src/**/*.{ts,tsx}\"",
-    "lint": "yarn run eslint",
-    "build": "yarn run clean && tsc --project tsconfig.build.json && webpack",
+    "lint": "pnpm run eslint",
+    "build": "pnpm run clean && tsc --project tsconfig.build.json && webpack",
     "clean": "rm -rf ./dist",
-    "prepublish": "yarn run build",
+    "prepublish": "pnpm run build",
     "test": "jest --testPathPatterns $PWD/test/helpers.test.tsx",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -146,7 +146,12 @@
     ]
   },
   "resolutions": {
-    "minimatch": "^3.1.2",
-    "ansi-regex": "^5.0.1"
+    "ansi-regex": "^5.0.1",
+    "brace-expansion": "^1.1.12",
+    "glob": "^10.5.0",
+    "js-yaml": "^4.1.1",
+    "tmp": "^0.2.4",
+    "kind-of": "^6.0.3",
+    "test-exclude": "^7.0.1"
   }
 }
