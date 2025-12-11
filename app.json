@@ -12,7 +12,7 @@
   "environments": {
     "test": {
       "scripts": {
-        "test": "yarn run test && yarn run lint"
+        "test": "pnpm run test && pnpm run lint"
       }
     }
   }

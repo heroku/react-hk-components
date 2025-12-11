@@ -10,7 +10,7 @@ Usage of these components assumes you are using the [Purple3 CSS framework](http
 
 ### Installation
 
-`yarn add @heroku/react-hk-components`
+`pnpm add @heroku/react-hk-components`
 
 If you want to use `HKFlagIcon`, you will need to tell Webpack to copy the flag images into a directory that is served up by your app:
 
@@ -114,12 +114,12 @@ See the component source code for usage examples.
 
 - `git clone https://github.com/heroku/react-hk-components`
 - `cd react-hk-components`
-- `yarn`
+- `pnpm install`
 
 ### Running
 
-- `yarn build` - Build the component library
-- `yarn test` - Run the test suite
+- `pnpm build` - Build the component library
+- `pnpm test` - Run the test suite
 
 ### Local Usage in Another Application
 
@@ -127,17 +127,17 @@ It can be helpful to consume your version of this addon in another application
 either to more easily develop your changes or to validate that your
 changes work as you expect. You can use your local version of
 `react-hk-components` in another application that consumes it via
-yarn's [link](https://yarnpkg.com/lang/en/docs/cli/link/) command.
+pnpm's [link](https://pnpm.io/cli/link) command.
 
 ```console
 # in your react-hk-components directory
-$ yarn link
+$ pnpm link --global
 
 # in your consuming app directory
-$ yarn link @heroku/react-hk-components
+$ pnpm link --global @heroku/react-hk-components
 
-# You will need to re-run yarn in your consuming app directory and restart your app
-$ yarn
+# You will need to re-run pnpm install in your consuming app directory and restart your app
+$ pnpm install
 ```
 
 You can check the success of linking in your consuming app
@@ -149,9 +149,9 @@ changes will be reflected in the consuming application.
 
 Caveats when linking - you will need to rebuild each time you want to see
 changes in your consuming app directory.
-`yarn build`
+`pnpm build`
 
-To simplify, you can install [watch](https://www.npmjs.com/package/watch#cli) or a similar tool and run `watch 'yarn run build' src` in `react-hk-components`.
+To simplify, you can install [watch](https://www.npmjs.com/package/watch#cli) or a similar tool and run `watch 'pnpm run build' src` in `react-hk-components`.
 This will rebuild the bundled version that your consuming app directory
 pulls in whenever you make changes in rhkc.
 
@@ -166,6 +166,6 @@ Remember to unlink rhkc once finished.
 #### Release
 
 1. `rm -rf node_modules`
-2. `yarn`
-3. `yarn test`. No errors? Lovely, proceed.
+2. `pnpm install`
+3. `pnpm test`. No errors? Lovely, proceed.
 4. When you're ready to publish, `np`.
