@@ -28,7 +28,7 @@ importers:
         version: 7.27.1(@babel/core@7.28.4)
       '@heroku/react-malibu':
         specifier: ^4.1.0
-        version: 4.1.0
+        version: 4.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -94,25 +94,25 @@ importers:
         version: 18.3.1(react@18.3.1)
       react-inlinesvg:
         specifier: ^0.8.3
-        version: 0.8.3(prop-types@15.8.1)
+        version: 0.8.3(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-measure:
         specifier: ^2.0.0
-        version: 2.1.3
+        version: 2.1.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-outside-click-handler:
         specifier: ^1.2.2
-        version: 1.2.2
+        version: 1.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-table:
         specifier: ^6.8.6
-        version: 6.8.6
+        version: 6.8.6(react@18.3.1)
       react-transition-group:
         specifier: ^4.4.5
-        version: 4.4.5
+        version: 4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       regenerator-runtime:
         specifier: ^0.12.1
         version: 0.12.1
       simple-react-modal:
         specifier: 0.5.1
-        version: 0.5.1
+        version: 0.5.1(react@18.3.1)
       style-loader:
         specifier: ^3.3.4
         version: 3.3.4(webpack@5.101.3)
@@ -176,7 +176,7 @@ importers:
         version: 3.6.2
       react-test-renderer:
         specifier: ^18.3.1
-        version: 18.3.1
+        version: 18.3.1(react@18.3.1)
       ts-jest:
         specifier: ^29.2.5
         version: 29.4.1(@babel/core@7.28.4)(@jest/transform@30.1.2)(@jest/types@30.0.5)(babel-jest@30.1.2(@babel/core@7.28.4))(jest-util@30.0.5)(jest@30.1.3(@types/node@24.3.1))(typescript@5.9.2)
@@ -187,11 +187,11 @@ importers:
         specifier: ^5.101.3
         version: 5.101.3(webpack-cli@5.1.4)
       webpack-bundle-analyzer:
-        specifier: ^4.10.2
-        version: 4.10.2
+        specifier: ^5.2.0
+        version: 5.2.0
       webpack-cli:
         specifier: ^5.1.4
-        version: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack@5.101.3)
+        version: 5.1.4(webpack-bundle-analyzer@5.2.0)(webpack@5.101.3)
 
 packages:
 
@@ -2225,9 +2225,6 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  duplexer@0.1.2:
-    resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
-
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
@@ -2697,10 +2694,6 @@ packages:
 
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
-
-  gzip-size@6.0.0:
-    resolution: {integrity: sha512-ax7ZYomf6jqPTQ4+XCpUGyXKHk5WweS+e05MBO4/y3WJ5RkmPXNKvX+bx1behVILVwr6JSQvZAku021CHPXG3Q==}
-    engines: {node: '>=10'}
 
   handlebars@4.7.8:
     resolution: {integrity: sha512-vafaFqs8MZkRrSX7sFVUdo3ap/eNiLnb4IakshzvP56X5Nr1iGKAIqdX6tMlm6HcNRIkr6AxO5jFEoJzzpT8aQ==}
@@ -4168,9 +4161,9 @@ packages:
     peerDependencies:
       react: '>=0.14 || >=15.0'
 
-  sirv@2.0.4:
-    resolution: {integrity: sha512-94Bdh3cC2PKrbgSOUqTiGPWVZeSiXfKOVZNJniWoqrWrRkB1CJzBU3NEbiTsPcYy1lDsANA/THzS+9WBiy5nfQ==}
-    engines: {node: '>= 10'}
+  sirv@3.0.2:
+    resolution: {integrity: sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g==}
+    engines: {node: '>=18'}
 
   slash@3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
@@ -4595,9 +4588,9 @@ packages:
     resolution: {integrity: sha512-c5EGNOiyxxV5qmTtAB7rbiXxi1ooX1pQKMLX/MIabJjRA0SJBQOjKF+KSVfHkr9U1cADPon0mRiVe/riyaiDUA==}
     engines: {node: '>=10.13.0'}
 
-  webpack-bundle-analyzer@4.10.2:
-    resolution: {integrity: sha512-vJptkMm9pk5si4Bv922ZbKLV8UTT4zib4FPgXMhgzUny0bfDDkLXAVQs3ly3fS4/TN9ROFtb0NFrm04UXFE/Vw==}
-    engines: {node: '>= 10.13.0'}
+  webpack-bundle-analyzer@5.2.0:
+    resolution: {integrity: sha512-Etrauj1wYO/xjiz/Vfd6bW1lG9fEhrJpNmu10tv0X9kv+gyY3qiE09uYepqg1Xd0PxOvllRXwWYWjtQYoO/glQ==}
+    engines: {node: '>= 20.9.0'}
     hasBin: true
 
   webpack-cli@5.1.4:
@@ -4703,12 +4696,12 @@ packages:
     resolution: {integrity: sha512-+QU2zd6OTD8XWIJCbffaiQeH9U73qIqafo1x6V1snCWYGJf6cVE0cDR4D8xRzcEnfI21IFrUPzPGtcPf8AC+Rw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
-  ws@7.5.10:
-    resolution: {integrity: sha512-+dbF1tHwZpXcbOJdVOkzLDxZP1ailvSxM6ZweXTegylPny803bFhA+vqBYw4s31NSAk4S2Qz+AKXK9a4wkdjcQ==}
-    engines: {node: '>=8.3.0'}
+  ws@8.19.0:
+    resolution: {integrity: sha512-blAT2mjOEIi0ZzruJfIhb3nps74PRWTCz1IjglWEEpQl5XS/UNama6u2/rjFkDDouqr4L67ry+1aGIALViWjDg==}
+    engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
-      utf-8-validate: ^5.0.2
+      utf-8-validate: '>=5.0.2'
     peerDependenciesMeta:
       bufferutil:
         optional: true
@@ -5612,11 +5605,13 @@ snapshots:
       '@eslint/core': 0.15.2
       levn: 0.4.1
 
-  '@heroku/react-malibu@4.1.0':
+  '@heroku/react-malibu@4.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       babel-polyfill: 6.26.0
       prop-types: 15.8.1
-      react-svg-inline: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-svg-inline: 2.1.1(react@18.3.1)
       whatwg-fetch: 2.0.4
 
   '@humanfs/core@0.19.1': {}
@@ -6379,17 +6374,17 @@ snapshots:
   '@webpack-cli/configtest@2.1.1(webpack-cli@5.1.4)(webpack@5.101.3)':
     dependencies:
       webpack: 5.101.3(webpack-cli@5.1.4)
-      webpack-cli: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack@5.101.3)
+      webpack-cli: 5.1.4(webpack-bundle-analyzer@5.2.0)(webpack@5.101.3)
 
   '@webpack-cli/info@2.0.2(webpack-cli@5.1.4)(webpack@5.101.3)':
     dependencies:
       webpack: 5.101.3(webpack-cli@5.1.4)
-      webpack-cli: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack@5.101.3)
+      webpack-cli: 5.1.4(webpack-bundle-analyzer@5.2.0)(webpack@5.101.3)
 
   '@webpack-cli/serve@2.0.5(webpack-cli@5.1.4)(webpack@5.101.3)':
     dependencies:
       webpack: 5.101.3(webpack-cli@5.1.4)
-      webpack-cli: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack@5.101.3)
+      webpack-cli: 5.1.4(webpack-bundle-analyzer@5.2.0)(webpack@5.101.3)
 
   '@xtuc/ieee754@1.2.0': {}
 
@@ -6409,7 +6404,7 @@ snapshots:
 
   acorn@8.15.0: {}
 
-  airbnb-prop-types@2.11.0:
+  airbnb-prop-types@2.11.0(react@18.3.1):
     dependencies:
       array.prototype.find: 2.0.4
       function.prototype.name: 1.1.8
@@ -6420,6 +6415,7 @@ snapshots:
       object.entries: 1.1.9
       prop-types: 15.8.1
       prop-types-exact: 1.2.0
+      react: 18.3.1
 
   ajv-formats@2.1.1(ajv@8.17.1):
     optionalDependencies:
@@ -7177,8 +7173,6 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  duplexer@0.1.2: {}
-
   eastasianwidth@0.2.0: {}
 
   electron-to-chromium@1.5.214: {}
@@ -7764,10 +7758,6 @@ snapshots:
   graceful-fs@4.2.11: {}
 
   graphemer@1.4.0: {}
-
-  gzip-size@6.0.0:
-    dependencies:
-      duplexer: 0.1.2
 
   handlebars@4.7.8:
     dependencies:
@@ -9162,55 +9152,67 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
-  react-inlinesvg@0.8.3(prop-types@15.8.1):
+  react-inlinesvg@0.8.3(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       httpplease: 0.16.4
       once: 1.4.0
       prop-types: 15.8.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react-is@16.13.1: {}
 
   react-is@18.3.1: {}
 
-  react-measure@2.1.3:
+  react-measure@2.1.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       get-node-dimensions: 1.2.1
       prop-types: 15.8.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
       resize-observer-polyfill: 1.5.1
 
-  react-outside-click-handler@1.2.2:
+  react-outside-click-handler@1.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      airbnb-prop-types: 2.11.0
+      airbnb-prop-types: 2.11.0(react@18.3.1)
       consolidated-events: 2.0.2
       object.values: 1.2.1
       prop-types: 15.8.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  react-shallow-renderer@16.15.0:
+  react-shallow-renderer@16.15.0(react@18.3.1):
     dependencies:
       object-assign: 4.1.1
+      react: 18.3.1
       react-is: 18.3.1
 
-  react-svg-inline@2.1.1:
+  react-svg-inline@2.1.1(react@18.3.1):
     dependencies:
       classnames: 2.5.1
       prop-types: 15.8.1
+      react: 18.3.1
 
-  react-table@6.8.6:
+  react-table@6.8.6(react@18.3.1):
     dependencies:
       classnames: 2.5.1
+      react: 18.3.1
 
-  react-test-renderer@18.3.1:
+  react-test-renderer@18.3.1(react@18.3.1):
     dependencies:
+      react: 18.3.1
       react-is: 18.3.1
-      react-shallow-renderer: 16.15.0
+      react-shallow-renderer: 16.15.0(react@18.3.1)
       scheduler: 0.23.2
 
-  react-transition-group@4.4.5:
+  react-transition-group@4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.28.4
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react@18.3.1:
     dependencies:
@@ -9474,9 +9476,11 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  simple-react-modal@0.5.1: {}
+  simple-react-modal@0.5.1(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
-  sirv@2.0.4:
+  sirv@3.0.2:
     dependencies:
       '@polka/url': 1.0.0-next.29
       mrmime: 2.0.1
@@ -9925,7 +9929,7 @@ snapshots:
       glob-to-regexp: 0.4.1
       graceful-fs: 4.2.11
 
-  webpack-bundle-analyzer@4.10.2:
+  webpack-bundle-analyzer@5.2.0:
     dependencies:
       '@discoveryjs/json-ext': 0.5.7
       acorn: 8.15.0
@@ -9933,17 +9937,16 @@ snapshots:
       commander: 7.2.0
       debounce: 1.2.1
       escape-string-regexp: 4.0.0
-      gzip-size: 6.0.0
       html-escaper: 2.0.2
       opener: 1.5.2
       picocolors: 1.1.1
-      sirv: 2.0.4
-      ws: 7.5.10
+      sirv: 3.0.2
+      ws: 8.19.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  webpack-cli@5.1.4(webpack-bundle-analyzer@4.10.2)(webpack@5.101.3):
+  webpack-cli@5.1.4(webpack-bundle-analyzer@5.2.0)(webpack@5.101.3):
     dependencies:
       '@discoveryjs/json-ext': 0.5.7
       '@webpack-cli/configtest': 2.1.1(webpack-cli@5.1.4)(webpack@5.101.3)
@@ -9960,7 +9963,7 @@ snapshots:
       webpack: 5.101.3(webpack-cli@5.1.4)
       webpack-merge: 5.10.0
     optionalDependencies:
-      webpack-bundle-analyzer: 4.10.2
+      webpack-bundle-analyzer: 5.2.0
 
   webpack-merge@5.10.0:
     dependencies:
@@ -9998,7 +10001,7 @@ snapshots:
       watchpack: 2.4.4
       webpack-sources: 3.3.3
     optionalDependencies:
-      webpack-cli: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack@5.101.3)
+      webpack-cli: 5.1.4(webpack-bundle-analyzer@5.2.0)(webpack@5.101.3)
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild
@@ -10099,7 +10102,7 @@ snapshots:
       imurmurhash: 0.1.4
       signal-exit: 4.1.0
 
-  ws@7.5.10: {}
+  ws@8.19.0: {}
 
   wsl-utils@0.1.0:
     dependencies:
