@@ -97,7 +97,7 @@ importers:
         version: 0.8.3(prop-types@15.8.1)
       react-measure:
         specifier: ^2.0.0
-        version: 2.1.3
+        version: 2.5.2
       react-outside-click-handler:
         specifier: ^1.2.2
         version: 1.2.2
@@ -826,6 +826,10 @@ packages:
 
   '@babel/runtime@7.28.4':
     resolution: {integrity: sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.28.6':
+    resolution: {integrity: sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.27.2':
@@ -3952,8 +3956,8 @@ packages:
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
 
-  react-measure@2.1.3:
-    resolution: {integrity: sha512-KRgEs44mtilTm/7wEO4hWLbFRMeRioA10LUYIC+yLaM2Nv45M6qxo/oqyAUZukv6RcCIuiIiOXcay18qH3L5RA==}
+  react-measure@2.5.2:
+    resolution: {integrity: sha512-M+rpbTLWJ3FD6FXvYV6YEGvQ5tMayQ3fGrZhRPHrE9bVlBYfDCLuDcgNttYfk8IqfOI03jz6cbpqMRTUclQnaA==}
     peerDependencies:
       react: '>0.13.0'
       react-dom: '>0.13.0'
@@ -5673,6 +5677,8 @@ snapshots:
       - supports-color
 
   '@babel/runtime@7.28.4': {}
+
+  '@babel/runtime@7.28.6': {}
 
   '@babel/template@7.27.2':
     dependencies:
@@ -9356,8 +9362,9 @@ snapshots:
 
   react-is@18.3.1: {}
 
-  react-measure@2.1.3:
+  react-measure@2.5.2:
     dependencies:
+      '@babel/runtime': 7.28.6
       get-node-dimensions: 1.2.1
       prop-types: 15.8.1
       resize-observer-polyfill: 1.5.1
