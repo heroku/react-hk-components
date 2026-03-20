@@ -1,3 +1,9 @@
+// Polyfill crypto for serialize-javascript in Node.js environment
+// serialize-javascript@7.0.4 expects crypto global but Node.js requires explicit setup
+if (typeof crypto === 'undefined') {
+  global.crypto = require('crypto').webcrypto
+}
+
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
