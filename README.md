@@ -121,6 +121,22 @@ See the component source code for usage examples.
 - `pnpm build` - Build the component library
 - `pnpm test` - Run the test suite
 
+### Build Configuration Notes
+
+#### Node.js Crypto Polyfill
+
+The `webpack.config.js` includes a crypto polyfill at the top:
+
+```javascript
+if (typeof crypto === 'undefined') {
+  global.crypto = require('crypto').webcrypto
+}
+```
+
+**Why?** `serialize-javascript@7.0.4` (transitive dependency via copy-webpack-plugin) expects `crypto` as a global variable (browser behavior), but Node.js 18 requires explicit setup via `require('crypto').webcrypto`. Without this polyfill, webpack.config.js loading fails with `ReferenceError: crypto is not defined`.
+
+**When to remove?** When serialize-javascript is updated to properly detect and use Node.js crypto, or when parent packages (terser-webpack-plugin, copy-webpack-plugin) drop the serialize-javascript dependency entirely.
+
 ### Local Usage in Another Application
 
 It can be helpful to consume your version of this addon in another application
@@ -169,3 +185,11 @@ Remember to unlink rhkc once finished.
 2. `pnpm install`
 3. `pnpm test`. No errors? Lovely, proceed.
 4. When you're ready to publish, `np`.
+
+## Dependency Override Registry
+
+Active version-forcing entries (`pnpm.overrides`). These are band-aids for transitive dependency resolution issues. Each override should eventually be removed when parent packages catch up or we upgrade direct dependencies.
+
+| Override Key | Version | Why Override? | When to Remove | Reference |
+|---|---|---|---|---|
+| `serialize-javascript` | `^7.0.3` | Transitive via `terser-webpack-plugin@5.3.9` and `copy-webpack-plugin@11.0.0`. Both packages declare `serialize-javascript@^6.0.0` in their dependency specs, but lockfile resolved to vulnerable `6.0.2`. Vulnerability: Code injection via RegExp.flags and Date.prototype.toISOString() allowing XSS attacks. Direct upgrade of parent packages not feasible without major version bumps (copy-webpack-plugin 11→14 is 3 major versions). Override forces safe version `7.0.4` across all dependency chains. **Build Note:** v7.0.4 requires crypto polyfill in webpack.config.js (see Build Configuration Notes). | When `terser-webpack-plugin` is upgraded to v5.4.0+ (which removed serialize-javascript dependency entirely), or when `copy-webpack-plugin` is upgraded to v14.0.0+ (which uses serialize-javascript@^7.0.3). Check if new versions naturally resolve to fixed version. | GHSA-5c6j-r48x-rmvq |
