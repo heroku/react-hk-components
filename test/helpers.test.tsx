@@ -70,3 +70,19 @@ describe('prettier', () => {
     })
   })
 })
+
+describe('postcss override (GHSA advisory 1117015)', () => {
+  it('resolves to a version that escapes </style> in stringify output', () => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const postcss = require('postcss')
+    const pkg = require('postcss/package.json')
+
+    const [maj, min, patch] = pkg.version.split('.').map((n: string) => parseInt(n, 10))
+    const atLeast = maj > 8 || (maj === 8 && (min > 5 || (min === 5 && patch >= 10)))
+    expect(atLeast).toBe(true)
+
+    const root = postcss.parse('a { content: "</style>" }')
+    const out = root.toString()
+    expect(out).not.toContain('</style>')
+  })
+})
