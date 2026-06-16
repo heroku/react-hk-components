@@ -1,0 +1,13 @@
+{
+  "check_id": "Z0",
+  "check_name": "verify config presence",
+  "tier": 0,
+  "status": "SKIP",
+  "summary": "no .verify/config.yml at repo root; verify cannot run. See verify/docs/check-catalog.md (config bootstrap) to opt this repo in.",
+  "metrics": {},
+  "evidence": [],
+  "details": {},
+  "started_at": "2026-06-16T04:07:14.340Z",
+  "ended_at": "2026-06-16T04:07:14.340Z",
+  "duration_ms": 0
+}

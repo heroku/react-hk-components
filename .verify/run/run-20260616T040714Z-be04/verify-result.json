@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "contract_version": "1.0.0",
+    "repo": "/Users/ephem/lcode/3pp-grackle/cache/babysit-work/heroku--react-hk-components",
+    "repo_name": "heroku--react-hk-components",
+    "run_id": "run-20260616T040714Z-be04",
+    "started_at": "2026-06-16T04:07:14.339Z",
+    "ended_at": "2026-06-16T04:07:14.341Z",
+    "duration_ms": 2
+  },
+  "config": {
+    "package_manager": "none",
+    "ecosystem": "none",
+    "tiers_enabled": [],
+    "normalizers": [],
+    "tier3_opt_ins": [],
+    "skip_checks": []
+  },
+  "checks": [
+    {
+      "check_id": "Z0",
+      "check_name": "verify config presence",
+      "tier": 0,
+      "status": "SKIP",
+      "summary": "no .verify/config.yml at repo root; verify cannot run. See verify/docs/check-catalog.md (config bootstrap) to opt this repo in.",
+      "metrics": {},
+      "evidence": [],
+      "details": {},
+      "started_at": "2026-06-16T04:07:14.340Z",
+      "ended_at": "2026-06-16T04:07:14.340Z",
+      "duration_ms": 0
+    }
+  ]
+}
