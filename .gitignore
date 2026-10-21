@@ -10,3 +10,5 @@ dist
 .cache
 stats.json
 /yarn-error.log
+.agent
+.logs
